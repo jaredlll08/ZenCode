@@ -29,7 +29,6 @@ import org.openzen.zenscript.parser.expression.ParsedExpression;
 import java.io.IOException;
 import java.lang.reflect.*;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class JavaNativeHeaderConverter {
 	private final JavaNativeTypeConverter typeConverter;
@@ -97,8 +96,8 @@ public class JavaNativeHeaderConverter {
 
 			//AnnotatedType parameterType = parameter.getAnnotatedType();
 			TypeID type = typeConverter.loadStoredType(context, parameter);
-			Expression defaultValue = getDefaultValue(parameter, type);
-			parameters[i] = new FunctionParameter(type, parameter.getName(), defaultValue, parameter.isVarArgs());
+			parameters[i] = new FunctionParameter(type, parameter.getName(), parameter.isVarArgs());
+			parameters[i].defaultValue = getDefaultValue(parameter, type, parameters[i]);
 		}
 		if (classParameters > 0 && classParameters == typeParameters.length) {
 			parameters = Arrays.copyOfRange(parameters, classParameters, parameters.length);
@@ -122,7 +121,7 @@ public class JavaNativeHeaderConverter {
 		return result;
 	}
 
-	public Expression getDefaultValue(Parameter parameter, TypeID type) {
+	public Expression getDefaultValue(Parameter parameter, TypeID type, FunctionParameter functionParameter) {
 		if (parameter.isAnnotationPresent(ZenCodeType.Optional.class)) {
 			if(JavaTypeInfo.get(type).primitive){
 				throw new IllegalArgumentException("Cannot use generic Optional annotation for type (" + type.withoutOptional().toString() + ") as it is primitive! Use the corresponding primitive @Optional annotation instead (E.G. @OptionalInt, @OptionalBoolean).");
@@ -131,7 +130,7 @@ public class JavaNativeHeaderConverter {
 			if (s.isEmpty()) {
 				Expression defaultValue = type.getDefaultValue();
 				if (defaultValue == null)
-					throw new IllegalArgumentException(type.toString() + " doesn't have a default value");
+					throw new IllegalArgumentException(type + " doesn't have a default value");
 				return defaultValue;
 			}
 			try {
@@ -140,7 +139,7 @@ public class JavaNativeHeaderConverter {
 				final CompilingPackage rootCompiling = new CompilingPackage(packageInfo.getPkg(), packageInfo.getModule());
 				final ModuleTypeResolutionContext context = new ModuleTypeResolutionContext(typeConversionContext.registry, new AnnotationDefinition[0], packageInfo.getPkg(), rootCompiling, typeConversionContext.globals);
 				final FileResolutionContext fContext = new FileResolutionContext(context, packageInfo.getPkg(), rootCompiling);
-				final FileScope fileScope = new FileScope(fContext, Collections.emptyList(), typeConversionContext.globals, member -> {
+				final FileScope fileScope = new FileScope(fContext, typeConversionContext.compiled.getExpansions(), typeConversionContext.globals, member -> {
 				});
 				final ZSTokenParser tokens = ZSTokenParser.create(new LiteralSourceFile(filename, s), bep);
 
@@ -200,6 +199,13 @@ public class JavaNativeHeaderConverter {
 				return new ConstantBoolExpression(CodePosition.NATIVE, annotation.value());
 			} else {
 				throw new IllegalArgumentException("Cannot use boolean default values for " + type.toString());
+			}
+		} else if (parameter.isAnnotationPresent(ZenCodeType.OptionalChar.class)) {
+			ZenCodeType.OptionalChar annotation = parameter.getAnnotation(ZenCodeType.OptionalChar.class);
+			if (type == BasicTypeID.CHAR) {
+				return new ConstantCharExpression(CodePosition.NATIVE, annotation.value());
+			} else {
+				throw new IllegalArgumentException("Cannot use char default values for " + type.toString());
 			}
 		} else {
 			return null;
