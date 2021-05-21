@@ -1,36 +1,42 @@
 package org.openzen.zenscript.lsp.server;
 
-import com.google.common.collect.Streams;
 import org.eclipse.lsp4j.*;
 import org.eclipse.lsp4j.jsonrpc.messages.Either;
 import org.eclipse.lsp4j.services.LanguageClient;
 import org.eclipse.lsp4j.services.TextDocumentService;
-import org.openzen.zencode.shared.CodePosition;
-import org.openzen.zenscript.codemodel.PackageDefinitions;
-import org.openzen.zenscript.lexer.ParseException;
-import org.openzen.zenscript.lexer.ZSToken;
-import org.openzen.zenscript.lexer.ZSTokenParser;
+import org.openzen.zencode.java.ScriptingEngine;
+import org.openzen.zencode.java.module.JavaNativeModule;
+import org.openzen.zencode.shared.CompileException;
+import org.openzen.zencode.shared.LiteralSourceFile;
+import org.openzen.zencode.shared.SourceFile;
+import org.openzen.zenscript.codemodel.HighLevelDefinition;
+import org.openzen.zenscript.codemodel.ScriptBlock;
+import org.openzen.zenscript.codemodel.SemanticModule;
+import org.openzen.zenscript.codemodel.definition.*;
+import org.openzen.zenscript.codemodel.statement.Statement;
+import org.openzen.zenscript.codemodel.statement.VarStatement;
+import org.openzen.zenscript.lsp.server.internal_classes.Globals;
+import org.openzen.zenscript.lsp.server.local_variables.LocalVariableNameCollectionStatementVisitor;
 import org.openzen.zenscript.lsp.server.semantictokens.LSPSemanticTokenProvider;
-import org.openzen.zenscript.parser.ParsedFile;
 
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class OpenzenTextDocumentService implements TextDocumentService {
 	private final LSPSemanticTokenProvider semanticTokenProvider;
 	private final OpenzenLSPServer openzenLSPServer;
 	private final Map<String, OpenFileInfo> openFiles = new HashMap<>();
 
+	private ScriptingEngine scriptingEngine;
+
 
 	public OpenzenTextDocumentService(LSPSemanticTokenProvider semanticTokenProvider, OpenzenLSPServer openzenLSPServer) {
 		this.semanticTokenProvider = semanticTokenProvider;
 		this.openzenLSPServer = openzenLSPServer;
 	}
-
 
 
 	@Override
@@ -44,9 +50,82 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 			completionItem.setKind(CompletionItemKind.Snippet);
 			completionItem.setInsertText("public function helloWorld() {\n\tprintln('Hello World');\n}");
 			result.add(completionItem);
+
+			result.addAll(scriptingEngine.registry.getDefinitions()
+					.stream()
+					.map(id -> id.definition)
+					.distinct()
+					.map(this::convertDefinitionToCompletionItem)
+					.filter(Objects::nonNull)
+					.collect(Collectors.toList()));
+
+
+			final HashSet<VarStatement> varStatements = new HashSet<>();
+			final LocalVariableNameCollectionStatementVisitor visitor = new LocalVariableNameCollectionStatementVisitor();
+
+			for (SemanticModule compiledModule : scriptingEngine.getCompiledModules()) {
+				for (ScriptBlock script : compiledModule.scripts) {
+					for (Statement statement : script.statements) {
+						statement.accept(varStatements, visitor);
+					}
+				}
+			}
+			result.addAll(varStatements.stream()
+					.map(this::convertVarStatementToDefinition)
+					.filter(Objects::nonNull)
+					.collect(Collectors.toList()));
+
+
+
 			return Either.forLeft(result);
 		});
 	}
+
+	private CompletionItem convertVarStatementToDefinition(VarStatement varStatement) {
+		final CompletionItem completionItem = new CompletionItem(varStatement.name);
+		completionItem.setKind(CompletionItemKind.Variable);
+		completionItem.setDetail(varStatement.position.toShortString());
+
+		return completionItem;
+	}
+
+	private CompletionItem convertDefinitionToCompletionItem(HighLevelDefinition definition) {
+		if(definition.name == null) {//Removes Expansions from the list
+			return null;
+		}
+
+		final CompletionItem completionItem = new CompletionItem(definition.getFullName());
+		completionItem.setKind(getKindFromDefinition(definition));
+		completionItem.setDetail(definition.position.toShortString());
+		return completionItem;
+	}
+
+	private CompletionItemKind getKindFromDefinition(HighLevelDefinition definition) {
+		if (definition instanceof EnumDefinition || definition instanceof VariantDefinition) {
+			return CompletionItemKind.Enum;
+		}
+		if (definition instanceof FunctionDefinition) {
+			return CompletionItemKind.Function;
+		}
+		if (definition instanceof InterfaceDefinition) {
+			return CompletionItemKind.Interface;
+		}
+		if(definition instanceof StructDefinition) {
+			return CompletionItemKind.Struct;
+		}
+		if(definition instanceof ExpansionDefinition) {
+			return CompletionItemKind.Class;
+		}
+		if(definition instanceof AliasDefinition) {
+			return CompletionItemKind.Reference;
+		}
+		if(definition instanceof ClassDefinition) {
+			return CompletionItemKind.Class;
+		}
+
+		return null;
+	}
+
 
 	@Override
 	public void didOpen(DidOpenTextDocumentParams params) {
@@ -61,6 +140,24 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 		final LanguageClient client = openzenLSPServer.getClient();
 		if (client != null) {
 			client.publishDiagnostics(from.diagnosticsParams);
+		}
+
+		try {
+			scriptingEngine = new ScriptingEngine();
+			scriptingEngine.debug = true;
+
+			//We need these registered, since otherwise we cannot resolve e.g. globals
+			//Well we'll need them for autocompletion anyways ^^
+			//Later probably rather dynamic (like, we need them from the CrT registry somehow)
+			final JavaNativeModule internal = scriptingEngine.createNativeModule("internal", "");
+			internal.addGlobals(Globals.class);
+			scriptingEngine.registerNativeProvided(internal);
+
+
+			final SemanticModule lsp = scriptingEngine.createScriptedModule("lsp", new SourceFile[]{new LiteralSourceFile(uri, text)});
+			scriptingEngine.registerCompiled(lsp);
+		} catch (Exception e) {
+			Logger.getGlobal().log(Level.WARNING, "Caught exception wenn reading StdLibs.jar", e);
 		}
 	}
 

@@ -137,4 +137,12 @@ public class ZSPackage {
 	public void register(HighLevelDefinition definition) {
 		types.put(definition.name, definition);
 	}
+
+	public Map<String, ZSPackage> getSubPackages() {
+		return subPackages;
+	}
+
+	public Map<String, HighLevelDefinition> getTypes() {
+		return types;
+	}
 }

@@ -171,4 +171,8 @@ public class ScriptingEngine {
 	public List<JavaNativeModule> getNativeModules() {
 		return Collections.unmodifiableList(this.nativeModules);
 	}
+
+	public List<SemanticModule> getCompiledModules() {
+		return Collections.unmodifiableList(compiledModules);
+	}
 }
