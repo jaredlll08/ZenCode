@@ -6,7 +6,6 @@ import org.eclipse.lsp4j.services.LanguageClient;
 import org.eclipse.lsp4j.services.TextDocumentService;
 import org.openzen.zencode.java.ScriptingEngine;
 import org.openzen.zencode.java.module.JavaNativeModule;
-import org.openzen.zencode.shared.CompileException;
 import org.openzen.zencode.shared.LiteralSourceFile;
 import org.openzen.zencode.shared.SourceFile;
 import org.openzen.zenscript.codemodel.HighLevelDefinition;
@@ -18,6 +17,7 @@ import org.openzen.zenscript.codemodel.statement.VarStatement;
 import org.openzen.zenscript.lsp.server.internal_classes.Globals;
 import org.openzen.zenscript.lsp.server.local_variables.LocalVariableNameCollectionStatementVisitor;
 import org.openzen.zenscript.lsp.server.semantictokens.LSPSemanticTokenProvider;
+import org.openzen.zenscript.lsp.server.zencode.logging.DiagnosisLogger;
 
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
@@ -72,9 +72,7 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 			}
 			result.addAll(varStatements.stream()
 					.map(this::convertVarStatementToDefinition)
-					.filter(Objects::nonNull)
 					.collect(Collectors.toList()));
-
 
 
 			return Either.forLeft(result);
@@ -90,7 +88,7 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 	}
 
 	private CompletionItem convertDefinitionToCompletionItem(HighLevelDefinition definition) {
-		if(definition.name == null) {//Removes Expansions from the list
+		if (definition.name == null) {//Removes Expansions from the list
 			return null;
 		}
 
@@ -110,16 +108,16 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 		if (definition instanceof InterfaceDefinition) {
 			return CompletionItemKind.Interface;
 		}
-		if(definition instanceof StructDefinition) {
+		if (definition instanceof StructDefinition) {
 			return CompletionItemKind.Struct;
 		}
-		if(definition instanceof ExpansionDefinition) {
+		if (definition instanceof ExpansionDefinition) {
 			return CompletionItemKind.Class;
 		}
-		if(definition instanceof AliasDefinition) {
+		if (definition instanceof AliasDefinition) {
 			return CompletionItemKind.Reference;
 		}
-		if(definition instanceof ClassDefinition) {
+		if (definition instanceof ClassDefinition) {
 			return CompletionItemKind.Class;
 		}
 
@@ -129,7 +127,6 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 
 	@Override
 	public void didOpen(DidOpenTextDocumentParams params) {
-		Logger.getGlobal().log(Level.FINER, "didOpen(DidOpenTextDocumentParams params)", params);
 		final TextDocumentItem textDocument = params.getTextDocument();
 		parseAndUpdateCache(textDocument.getText(), textDocument.getUri());
 	}
@@ -137,13 +134,10 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 	private void parseAndUpdateCache(String text, String uri) {
 		final OpenFileInfo from = OpenFileInfo.createFrom(text, uri);
 		openFiles.put(uri, from);
-		final LanguageClient client = openzenLSPServer.getClient();
-		if (client != null) {
-			client.publishDiagnostics(from.diagnosticsParams);
-		}
 
+		final DiagnosisLogger diagnosisLogger = new DiagnosisLogger();
 		try {
-			scriptingEngine = new ScriptingEngine();
+			scriptingEngine = new ScriptingEngine(diagnosisLogger);
 			scriptingEngine.debug = true;
 
 			//We need these registered, since otherwise we cannot resolve e.g. globals
@@ -159,11 +153,15 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 		} catch (Exception e) {
 			Logger.getGlobal().log(Level.WARNING, "Caught exception wenn reading StdLibs.jar", e);
 		}
+
+		final LanguageClient client = openzenLSPServer.getClient();
+		if (client != null) {
+			client.publishDiagnostics(diagnosisLogger.mergeDiagnosticParams(from.diagnosticsParams));
+		}
 	}
 
 	@Override
 	public void didChange(DidChangeTextDocumentParams params) {
-		Logger.getGlobal().log(Level.FINER, "didChange(DidChangeTextDocumentParams params)");
 		final VersionedTextDocumentIdentifier textDocument = params.getTextDocument();
 		final List<TextDocumentContentChangeEvent> contentChanges = params.getContentChanges();
 		if (contentChanges.size() > 0) {
@@ -173,26 +171,20 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 
 	@Override
 	public void didClose(DidCloseTextDocumentParams params) {
-		Logger.getGlobal().log(Level.FINER, "didClose(DidCloseTextDocumentParams params)");
-
 	}
 
 	@Override
 	public void didSave(DidSaveTextDocumentParams params) {
-		Logger.getGlobal().log(Level.FINER, "didSave(DidSaveTextDocumentParams params)");
 
 	}
 
 	@Override
 	public CompletableFuture<SemanticTokens> semanticTokensFull(SemanticTokensParams params) {
-		Logger.getGlobal().log(Level.FINER, "semanticTokensFull(SemanticTokensParams params)");
-		System.err.println("SemanticTokensFull");
 		return semanticTokenProvider.tokensFull(params);
 	}
 
 	@Override
 	public CompletableFuture<List<? extends DocumentHighlight>> documentHighlight(DocumentHighlightParams params) {
-		Logger.getGlobal().log(Level.FINER, "documentHighlight(DocumentHighlightParams params)");
 		final OpenFileInfo openFileInfo = openFiles.get(params.getTextDocument().getUri());
 		return CompletableFuture.supplyAsync(() -> openFileInfo.getHighlightOnPosition(params.getPosition()));
 	}

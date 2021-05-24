@@ -85,6 +85,7 @@ public class OpenFileInfo {
 
 			parsedFile = ParsedFile.parse(compilingPackage, tokens);
 			parseExceptions.addAll(tokens.getErrors());
+			parseExceptions.addAll(parsedFile.getErrors());
 		} catch (ParseException | IOException e) {
 			Logger.getGlobal().log(Level.WARNING, "Got exception while opening", e);
 			parsedFile = new ParsedFile(new VirtualSourceFile(uri));
@@ -134,7 +135,7 @@ public class OpenFileInfo {
 		final CodePosition codePosition = positionToCodePosition(position);
 		final ZSToken value = tokensAtPosition.lowerEntry(codePosition).getValue();
 
-		Logger.getGlobal().log(Level.FINEST, "Found " + value + " at " +position);
+		//Logger.getGlobal().log(Level.FINEST, "Found " + value + " at " +position);
 
 		final List<DocumentHighlight> result = new ArrayList<>();
 		for (Map.Entry<CodePosition, ZSToken> codePositionZSTokenEntry : tokensAtPosition.entrySet()) {
@@ -142,15 +143,20 @@ public class OpenFileInfo {
 				final CodePosition key = codePositionZSTokenEntry.getKey();
 				final Range range = codePositionToRange(key);
 
-				Logger.getGlobal().log(Level.FINEST, "Adding highlight", range);
+				//Logger.getGlobal().log(Level.FINEST, "Adding highlight", range);
 				result.add(new DocumentHighlight(range));
 			}
 		}
 		return result;
 	}
 
-	@SuppressWarnings("UnnecessaryLocalVariable")
+
 	private CodePosition positionToCodePosition(Position position) {
+		return positionToCodePosition(uri, position);
+	}
+
+	@SuppressWarnings("UnnecessaryLocalVariable")
+	public static CodePosition positionToCodePosition(String uri, Position position) {
 		final int fromLine = position.getLine() + 1;
 		final int fromLineOffset = position.getCharacter() + 1;
 		final int toLine = fromLine;
@@ -158,7 +164,7 @@ public class OpenFileInfo {
 		return new CodePosition(new VirtualSourceFile(uri), fromLine, fromLineOffset, toLine, toLineOffset);
 	}
 
-	private Range codePositionToRange(CodePosition codePosition) {
+	public static Range codePositionToRange(CodePosition codePosition) {
 
 		final int startLine = codePosition.fromLine - 1;
 		final int startLineOffset = codePosition.fromLineOffset;
