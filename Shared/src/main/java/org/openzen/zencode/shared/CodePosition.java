@@ -1,5 +1,7 @@
 package org.openzen.zencode.shared;
 
+import java.util.*;
+
 public final class CodePosition {
 	public static final CodePosition BUILTIN = new CodePosition(new VirtualSourceFile("builtin"), 0, 0, 0, 0);
 	public static final CodePosition NATIVE = new CodePosition(new VirtualSourceFile("native"), 0, 0, 0, 0);
@@ -26,10 +28,14 @@ public final class CodePosition {
 
 	public String toShortString() {
 		int lastSeparator = file.getFilename().lastIndexOf('/');
-		String shortFilename = lastSeparator >= 0 ? file.getFilename().substring(lastSeparator + 1, (file.getFilename()).length()) : file.getFilename();
+		String shortFilename = lastSeparator >= 0 ? file.getFilename().substring(lastSeparator + 1) : file.getFilename();
 		if (fromLine == 0 && fromLineOffset == 0)
 			return shortFilename;
-		return shortFilename + ":" + Integer.toString(fromLine) + ":" + Integer.toString(fromLineOffset);
+		return shortFilename + ":" + fromLine + ":" + fromLineOffset;
+	}
+
+	public String toLongString() {
+		return toString() + "~" + toLine + ":" + toLineOffset;
 	}
 
 	public CodePosition until(CodePosition to) {
@@ -43,7 +49,7 @@ public final class CodePosition {
 	}
 
 	public String toString() {
-		return fromLine == 0 && fromLineOffset == 0 ? file.getFilename() : file.getFilename() + ":" + Integer.toString(fromLine) + ":" + Integer.toString(fromLineOffset);
+		return fromLine == 0 && fromLineOffset == 0 ? file.getFilename() : file.getFilename() + ":" + fromLine + ":" + fromLineOffset;
 	}
 
 	public SourceFile getFile() {
@@ -64,5 +70,28 @@ public final class CodePosition {
 
 	public int getToLineOffset() {
 		return toLineOffset;
+	}
+
+	public boolean containsFully(CodePosition other) {
+		if (!Objects.equals(this.getFilename(), other.getFilename())) {
+			return false;
+		}
+
+		//This starts later or ends earlier
+		if (this.fromLine > other.fromLine || this.toLine < other.toLine) {
+			return false;
+		}
+
+		//Same start line but other starts earlier
+		if (this.fromLine == other.fromLine && this.fromLineOffset > other.fromLineOffset) {
+			return false;
+		}
+
+		//Same end line, but other ends later
+		if (this.toLine == other.toLine && this.toLineOffset < other.toLineOffset) {
+			return false;
+		}
+
+		return true;
 	}
 }
