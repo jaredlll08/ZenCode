@@ -6,6 +6,7 @@ import org.eclipse.lsp4j.services.LanguageClient;
 import org.eclipse.lsp4j.services.TextDocumentService;
 import org.openzen.zencode.java.ScriptingEngine;
 import org.openzen.zencode.java.module.JavaNativeModule;
+import org.openzen.zencode.shared.CodePosition;
 import org.openzen.zencode.shared.LiteralSourceFile;
 import org.openzen.zencode.shared.SourceFile;
 import org.openzen.zenscript.codemodel.HighLevelDefinition;
@@ -61,7 +62,8 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 
 
 			final HashSet<VarStatement> varStatements = new HashSet<>();
-			final LocalVariableNameCollectionStatementVisitor visitor = new LocalVariableNameCollectionStatementVisitor();
+			final CodePosition queriedPosition = OpenFileInfo.positionToCodePosition(position.getTextDocument().getUri(), position.getPosition());
+			final LocalVariableNameCollectionStatementVisitor visitor = new LocalVariableNameCollectionStatementVisitor(queriedPosition);
 
 			for (SemanticModule compiledModule : scriptingEngine.getCompiledModules()) {
 				for (ScriptBlock script : compiledModule.scripts) {
