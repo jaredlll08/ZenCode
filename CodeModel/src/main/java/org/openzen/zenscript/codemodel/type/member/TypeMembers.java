@@ -643,4 +643,8 @@ public final class TypeMembers {
 	public String toString() {
 		return type.toString();
 	}
+
+	public Collection<String> getMemberNames() {
+		return this.members.keySet();
+	}
 }
