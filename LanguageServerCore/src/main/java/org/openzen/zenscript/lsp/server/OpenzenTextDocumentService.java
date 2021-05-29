@@ -1,52 +1,42 @@
 package org.openzen.zenscript.lsp.server;
 
 import org.eclipse.lsp4j.*;
-import org.eclipse.lsp4j.jsonrpc.messages.Either;
-import org.eclipse.lsp4j.services.LanguageClient;
-import org.eclipse.lsp4j.services.TextDocumentService;
-import org.openzen.zencode.java.ScriptingEngine;
-import org.openzen.zencode.java.module.JavaNativeModule;
-import org.openzen.zencode.shared.CodePosition;
-import org.openzen.zencode.shared.LiteralSourceFile;
-import org.openzen.zencode.shared.SourceFile;
-import org.openzen.zenscript.codemodel.HighLevelDefinition;
-import org.openzen.zenscript.codemodel.ScriptBlock;
-import org.openzen.zenscript.codemodel.SemanticModule;
+import org.eclipse.lsp4j.jsonrpc.messages.*;
+import org.eclipse.lsp4j.services.*;
+import org.openzen.zencode.java.*;
+import org.openzen.zencode.shared.*;
+import org.openzen.zenscript.codemodel.*;
 import org.openzen.zenscript.codemodel.definition.*;
-import org.openzen.zenscript.codemodel.expression.Expression;
-import org.openzen.zenscript.codemodel.member.ref.FunctionalMemberRef;
-import org.openzen.zenscript.codemodel.statement.Statement;
-import org.openzen.zenscript.codemodel.statement.VarStatement;
-import org.openzen.zenscript.codemodel.type.member.LocalMemberCache;
-import org.openzen.zenscript.codemodel.type.member.TypeMember;
-import org.openzen.zenscript.codemodel.type.member.TypeMemberGroup;
-import org.openzen.zenscript.codemodel.type.member.TypeMembers;
-import org.openzen.zenscript.lexer.ZSToken;
-import org.openzen.zenscript.lexer.ZSTokenType;
-import org.openzen.zenscript.lsp.server.internal_classes.Globals;
-import org.openzen.zenscript.lsp.server.local_variables.ExpressionFindingStatementVisitor;
-import org.openzen.zenscript.lsp.server.local_variables.LocalVariableNameCollectionStatementVisitor;
-import org.openzen.zenscript.lsp.server.semantictokens.LSPSemanticTokenProvider;
-import org.openzen.zenscript.lsp.server.zencode.logging.DiagnosisLogger;
+import org.openzen.zenscript.codemodel.expression.*;
+import org.openzen.zenscript.codemodel.member.ref.*;
+import org.openzen.zenscript.codemodel.statement.*;
+import org.openzen.zenscript.codemodel.type.member.*;
+import org.openzen.zenscript.lexer.*;
+import org.openzen.zenscript.lsp.server.local_variables.*;
+import org.openzen.zenscript.lsp.server.semantictokens.*;
+import org.openzen.zenscript.lsp.server.zencode.*;
+import org.openzen.zenscript.lsp.server.zencode.logging.*;
+import org.openzen.zenscript.parser.*;
 
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
-import java.util.function.Function;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.stream.Collectors;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.logging.*;
+import java.util.stream.*;
 
 public class OpenzenTextDocumentService implements TextDocumentService {
 	private static final Logger LOG = Logger.getGlobal();
 	private final LSPSemanticTokenProvider semanticTokenProvider;
 	private final OpenzenLSPServer openzenLSPServer;
 	private final Map<String, OpenFileInfo> openFiles = new HashMap<>();
+	private final ScriptingEngineProvider scriptingEngineProvider;
 	private ScriptingEngine scriptingEngine;
 
 
-	public OpenzenTextDocumentService(LSPSemanticTokenProvider semanticTokenProvider, OpenzenLSPServer openzenLSPServer) {
+	public OpenzenTextDocumentService(LSPSemanticTokenProvider semanticTokenProvider, OpenzenLSPServer openzenLSPServer, ScriptingEngineProvider scriptingEngineProvider) {
 		this.semanticTokenProvider = semanticTokenProvider;
 		this.openzenLSPServer = openzenLSPServer;
+		this.scriptingEngineProvider = scriptingEngineProvider;
 	}
 
 
@@ -147,12 +137,12 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 							field.setKind(CompletionItemKind.Field);
 							field.setDetail(group.getField().member.getType().toString());
 							result.add(field);
-						} else if(group.getGetter() != null) {
+						} else if (group.getGetter() != null) {
 							final CompletionItem getter = new CompletionItem(group.name);
 							getter.setKind(CompletionItemKind.Field);
 							getter.setDetail(group.getGetter().member.getType().toString());
 							result.add(getter);
-						}else {
+						} else {
 							final CompletionItem unknown = new CompletionItem(group.name);
 							unknown.setDetail("Unknown");
 							result.add(unknown);
@@ -227,27 +217,23 @@ public class OpenzenTextDocumentService implements TextDocumentService {
 		final OpenFileInfo from = OpenFileInfo.createFrom(text, uri);
 		openFiles.put(uri, from);
 
-		final DiagnosisLogger diagnosisLogger = new DiagnosisLogger();
 		try {
-			scriptingEngine = new ScriptingEngine(diagnosisLogger);
-			scriptingEngine.debug = true;
+			scriptingEngine = scriptingEngineProvider.createEngine();
+			final BracketExpressionParser bracketExpressionParser = scriptingEngineProvider.getBracketExpressionParser();
+			scriptingEngineProvider.initializeDefaultModules(scriptingEngine, bracketExpressionParser);
 
-			//We need these registered, since otherwise we cannot resolve e.g. globals
-			//Well we'll need them for autocompletion anyways ^^
-			//Later probably rather dynamic (like, we need them from the CrT registry somehow)
-			final JavaNativeModule internal = scriptingEngine.createNativeModule("internal", "");
-			internal.addGlobals(Globals.class);
-			scriptingEngine.registerNativeProvided(internal);
+			final SourceFile[] sources = {new LiteralSourceFile(uri, text)};
+			final FunctionParameter[] functionParameters = scriptingEngineProvider.getFunctionParameters();
 
-
-			final SemanticModule lsp = scriptingEngine.createScriptedModule("lsp", new SourceFile[]{new LiteralSourceFile(uri, text)});
+			final SemanticModule lsp = scriptingEngine.createScriptedModule("lsp", sources, bracketExpressionParser, functionParameters);
 			scriptingEngine.registerCompiled(lsp);
 		} catch (Exception e) {
-			LOG.log(Level.WARNING, "Caught exception wenn reading StdLibs.jar", e);
+			LOG.log(Level.WARNING, "Caught exception wenn initializing engine or registering script", e);
 		}
 
 		final LanguageClient client = openzenLSPServer.getClient();
 		if (client != null) {
+			final DiagnosisLogger diagnosisLogger = (DiagnosisLogger) scriptingEngine.logger;
 			client.publishDiagnostics(diagnosisLogger.mergeDiagnosticParams(from.diagnosticsParams));
 		}
 	}

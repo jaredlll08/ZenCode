@@ -10,13 +10,17 @@ import java.util.logging.*;
 public class StdioLauncher {
 	public static void main(String[] args) {
 		try {
-			removeGlobalLoggingHandlers();
-			enableGlobalFileLogging();
-			Logger.getGlobal().setLevel(Level.ALL);
+			setupLogging();
 			new StreamBasedLauncher(System.in, System.out).startServer();
 		} catch (Throwable throwable) {
 			Logger.getGlobal().log(Level.SEVERE, "Uncaught Error in Application", throwable);
 		}
+	}
+
+	static void setupLogging() {
+		removeGlobalLoggingHandlers();
+		enableGlobalFileLogging();
+		Logger.getGlobal().setLevel(Level.ALL);
 	}
 
 	private static void removeGlobalLoggingHandlers() {

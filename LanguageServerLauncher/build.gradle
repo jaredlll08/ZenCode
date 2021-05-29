@@ -6,6 +6,9 @@ dependencies {
 	compile project(":LanguageServerCore")
 }
 
+//def mainClass = "org.openzen.zenscript.lsp.launcher.StdioLauncher"
+def mainClass = "org.openzen.zenscript.lsp.launcher.ClientSocketLauncher"
+
 jar {
 	manifest {
 		attributes([
@@ -17,7 +20,7 @@ jar {
 				"Implementation-Vendor"   : "ZenCodeLang",
 				"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
 				"Class-Path"              : ".",
-				"Main-Class"              : "org.openzen.zenscript.lsp.launcher.StdioLauncher"
+				"Main-Class"              : mainClass
 		])
 	}
 }
@@ -34,7 +37,7 @@ task fatJar(type: Jar) {
 				"Implementation-Vendor"   : "ZenCodeLang",
 				"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
 				"Class-Path"              : ".",
-				"Main-Class"              : "org.openzen.zenscript.lsp.launcher.StdioLauncher"
+				"Main-Class"              : mainClass
 		])
 	}
 

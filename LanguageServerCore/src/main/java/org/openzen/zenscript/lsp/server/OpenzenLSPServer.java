@@ -3,6 +3,8 @@ package org.openzen.zenscript.lsp.server;
 import org.eclipse.lsp4j.*;
 import org.eclipse.lsp4j.services.*;
 import org.openzen.zenscript.lsp.server.semantictokens.LSPSemanticTokenProvider;
+import org.openzen.zenscript.lsp.server.zencode.ScriptingEngineProvider;
+import org.openzen.zenscript.lsp.server.zencode.ScriptingEngineProviderImpl;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -16,8 +18,12 @@ public class OpenzenLSPServer implements LanguageServer, LanguageClientAware {
 	private LanguageClient client;
 
 	public OpenzenLSPServer() {
+		this(new ScriptingEngineProviderImpl());
+	}
+
+	public OpenzenLSPServer(ScriptingEngineProvider scriptingEngineProvider) {
 		this.semanticTokenProvider = new LSPSemanticTokenProvider();
-		this.textDocumentService = new OpenzenTextDocumentService(semanticTokenProvider, this);
+		this.textDocumentService = new OpenzenTextDocumentService(semanticTokenProvider, this, scriptingEngineProvider);
 		this.workspaceService = new OpenzenWorkspaceService();
 	}
 
