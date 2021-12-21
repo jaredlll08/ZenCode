@@ -17,9 +17,15 @@ dependencies {
 	api project(':JavaIntegration')
 	testImplementation group: "org.junit.jupiter", name: "junit-jupiter", version: "5.4.2"
 	testRuntimeOnly group: "org.junit.jupiter", name: "junit-jupiter", version: "5.4.2"
+	testImplementation project(':JavaIntegration')
 }
 
 processResources {
+	dependsOn(":StdLibs:zipItUp")
+	from files(evaluationDependsOn(":StdLibs").tasks.getByName("zipItUp").outputs)
+}
+
+processTestResources {
 	dependsOn(":StdLibs:zipItUp")
 	from files(evaluationDependsOn(":StdLibs").tasks.getByName("zipItUp").outputs)
 }
