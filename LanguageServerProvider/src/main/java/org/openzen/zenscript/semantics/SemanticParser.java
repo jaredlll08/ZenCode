@@ -67,42 +67,23 @@ public class SemanticParser {
 		}
 	}
 
-	private int parseModifiers(ZSTokenParser tokens) throws ParseException {
-		int modifiers = 0;
+	private void parseModifiers(ZSTokenParser tokens) throws ParseException {
 		while (true) {
 			switch (tokens.peek().type) {
 				case K_PUBLIC:
-					modifiers |= Modifiers.PUBLIC.value;
-					break;
 				case K_PRIVATE:
-					modifiers |= Modifiers.PRIVATE.value;
-					break;
 				case K_INTERNAL:
-					modifiers |= Modifiers.FLAG_INTERNAL;
-					break;
 				case K_EXTERN:
-					modifiers |= Modifiers.FLAG_EXTERN;
-					break;
 				case K_ABSTRACT:
-					modifiers |= Modifiers.FLAG_ABSTRACT;
-					break;
 				case K_FINAL:
-					modifiers |= Modifiers.FLAG_FINAL;
-					break;
 				case K_PROTECTED:
-					modifiers |= Modifiers.PROTECTED.value;
-					break;
 				case K_IMPLICIT:
-					modifiers |= Modifiers.IMPLICIT.value;
-					break;
 				case K_VIRTUAL:
-					modifiers |= Modifiers.FLAG_VIRTUAL;
+					keyword(tokens);
 					break;
 				default:
-					return modifiers;
+					return;
 			}
-			tokens.next();
-			return modifiers;
 		}
 	}
 
