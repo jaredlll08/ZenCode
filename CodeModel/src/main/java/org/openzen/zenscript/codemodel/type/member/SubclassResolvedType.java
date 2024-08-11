@@ -58,6 +58,14 @@ public class SubclassResolvedType implements ResolvedType {
 	}
 
 	@Override
+	public List<StaticCallableMethod> staticMethods() {
+		List<StaticCallableMethod> methods = new ArrayList<>();
+		methods.addAll(resolved.staticMethods());
+		methods.addAll(superclass.staticMethods());
+		return methods;
+	}
+
+	@Override
 	public Optional<StaticCallable> findStaticGetter(String name) {
 		return mergeStatic(resolved.findStaticGetter(name), superclass.findStaticGetter(name));
 	}
@@ -72,7 +80,15 @@ public class SubclassResolvedType implements ResolvedType {
 		return merge(resolved.findMethod(name), superclass.findMethod(name));
 	}
 
-	@Override
+    @Override
+    public List<InstanceCallableMethod> instanceMethods() {
+		List<InstanceCallableMethod> methods = new ArrayList<>();
+		methods.addAll(resolved.instanceMethods());
+		methods.addAll(superclass.instanceMethods());
+        return methods;
+    }
+
+    @Override
 	public Optional<InstanceCallable> findGetter(String name) {
 		return merge(resolved.findGetter(name), superclass.findGetter(name));
 	}

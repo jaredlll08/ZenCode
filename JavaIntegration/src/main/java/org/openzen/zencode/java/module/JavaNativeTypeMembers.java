@@ -63,7 +63,12 @@ public class JavaNativeTypeMembers implements ResolvedType {
 		return loadStatic(MethodID.staticMethod(name));
 	}
 
-	@Override
+    @Override
+    public List<StaticCallableMethod> staticMethods() {
+		return Collections.emptyList();
+    }
+
+    @Override
 	public Optional<StaticCallable> findStaticGetter(String name) {
 		return loadStatic(MethodID.getter(name));
 	}
@@ -78,7 +83,12 @@ public class JavaNativeTypeMembers implements ResolvedType {
 		return load(MethodID.instanceMethod(name));
 	}
 
-	@Override
+    @Override
+    public List<InstanceCallableMethod> instanceMethods() {
+		return Collections.emptyList();
+    }
+
+    @Override
 	public Optional<InstanceCallable> findGetter(String name) {
 		return load(MethodID.getter(name));
 	}

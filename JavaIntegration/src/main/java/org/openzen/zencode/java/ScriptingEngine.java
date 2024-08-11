@@ -197,6 +197,10 @@ public class ScriptingEngine {
 		return root;
 	}
 
+	public List<SemanticModule> getCompiledModules() {
+		return Collections.unmodifiableList(compiledModules);
+	}
+
 	private class ModuleBuilder implements JavaNativeModuleBuilder {
 		private final JavaNativeModule underConstruction;
 
@@ -241,5 +245,9 @@ public class ScriptingEngine {
 
 			return underConstruction;
 		}
+	}
+
+	public ModuleSpace space() {
+		return space;
 	}
 }

@@ -97,6 +97,7 @@ public class LLParserTokenStream<TT extends TokenType, T extends Token<TT>> exte
 		}
 	}
 
+
 	public boolean hasNext() {
 		return peek().getType() != getEOF();
 	}

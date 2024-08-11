@@ -39,6 +39,10 @@ public class ParsedStatementVar extends ParsedStatement {
 		return new Compiling(compiler, compilingVariable, initializer, lastBlock);
 	}
 
+	public String name() {
+		return name;
+	}
+
 	private class Compiling implements CompilingStatement {
 		private final StatementCompiler compiler;
 		private final CompilingVariable compilingVariable;

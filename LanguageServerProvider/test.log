@@ -1,0 +1,1698 @@
+[Trace - 06:43:43 PM] Received request 'initialize - (1)'
+Params: {
+  "processId": null,
+  "rootPath": "X:/other/LSP",
+  "rootUri": "file:///X:/other/LSP",
+  "capabilities": {
+    "workspace": {
+      "workspaceEdit": {
+        "documentChanges": true,
+        "failureHandling": "abort"
+      },
+      "workspaceFolders": true
+    },
+    "textDocument": {
+      "completion": {
+        "completionItem": {
+          "documentationFormat": [
+            "markdown",
+            "plaintext"
+          ],
+          "deprecatedSupport": true,
+          "tagSupport": {
+            "valueSet": [
+              1
+            ]
+          },
+          "insertReplaceSupport": true
+        },
+        "completionList": {
+          "itemDefaults": [
+            "commitCharacters",
+            "editRange",
+            "insertTextFormat",
+            "insertTextMode",
+            "data"
+          ]
+        }
+      },
+      "hover": {
+        "contentFormat": [
+          "markdown",
+          "plaintext"
+        ]
+      },
+      "definition": {
+        "linkSupport": true
+      },
+      "codeAction": {
+        "codeActionLiteralSupport": {
+          "codeActionKind": {
+            "valueSet": [
+              "quickfix"
+            ]
+          }
+        },
+        "disabledSupport": true
+      },
+      "publishDiagnostics": {
+        "tagSupport": {
+          "valueSet": [
+            1,
+            2
+          ]
+        },
+        "versionSupport": true
+      }
+    }
+  },
+  "workspaceFolders": [
+    {
+      "uri": "file:///X:/other/LSP",
+      "name": "LSP"
+    }
+  ]
+}
+
+
+[Trace - 06:43:43 PM] Sending response 'initialize - (1)'. Processing request took 36ms
+Result: {
+  "capabilities": {
+    "textDocumentSync": 1,
+    "completionProvider": {
+      "resolveProvider": true,
+      "triggerCharacters": [
+        "."
+      ]
+    },
+    "definitionProvider": true,
+    "documentHighlightProvider": true,
+    "workspace": {
+      "workspaceFolders": {
+        "changeNotifications": true
+      }
+    },
+    "semanticTokensProvider": {
+      "legend": {
+        "tokenTypes": [
+          "T_COMMENT_SCRIPT",
+          "T_COMMENT_SINGLELINE",
+          "T_COMMENT_MULTILINE",
+          "T_WHITESPACE_SPACE",
+          "T_WHITESPACE_TAB",
+          "T_WHITESPACE_NEWLINE",
+          "T_WHITESPACE_CARRIAGE_RETURN",
+          "T_IDENTIFIER",
+          "T_LOCAL_IDENTIFIER",
+          "T_FLOAT",
+          "T_PREFIXED_INT",
+          "T_INT",
+          "T_STRING_DQ",
+          "T_STRING_DQ_WYSIWYG",
+          "T_STRING_SQ",
+          "T_STRING_SQ_WYSIWYG",
+          "T_AOPEN",
+          "T_ACLOSE",
+          "T_SQOPEN",
+          "T_SQCLOSE",
+          "T_DOT3",
+          "T_DOT2",
+          "T_DOT",
+          "T_COMMA",
+          "T_INCREMENT",
+          "T_ADDASSIGN",
+          "T_ADD",
+          "T_DECREMENT",
+          "T_SUBASSIGN",
+          "T_SUB",
+          "T_CATASSIGN",
+          "T_CAT",
+          "T_MULASSIGN",
+          "T_MUL",
+          "T_DIVASSIGN",
+          "T_DIV",
+          "T_MODASSIGN",
+          "T_MOD",
+          "T_ORASSIGN",
+          "T_OROR",
+          "T_OR",
+          "T_ANDASSIGN",
+          "T_ANDAND",
+          "T_AND",
+          "T_XORASSIGN",
+          "T_XOR",
+          "T_COALESCE",
+          "T_OPTCALL",
+          "T_QUEST",
+          "T_COLON",
+          "T_BROPEN",
+          "T_BRCLOSE",
+          "T_SEMICOLON",
+          "T_LESSEQ",
+          "T_SHLASSIGN",
+          "T_SHL",
+          "T_LESS",
+          "T_GREATEREQ",
+          "T_USHR",
+          "T_USHRASSIGN",
+          "T_SHRASSIGN",
+          "T_SHR",
+          "T_GREATER",
+          "T_LAMBDA",
+          "T_EQUAL3",
+          "T_EQUAL2",
+          "T_ASSIGN",
+          "T_NOTEQUAL2",
+          "T_NOTEQUAL",
+          "T_NOT",
+          "T_DOLLAR",
+          "T_BACKTICK",
+          "K_IMPORT",
+          "K_ALIAS",
+          "K_CLASS",
+          "K_FUNCTION",
+          "K_INTERFACE",
+          "K_ENUM",
+          "K_STRUCT",
+          "K_EXPAND",
+          "K_VARIANT",
+          "K_ABSTRACT",
+          "K_FINAL",
+          "K_OVERRIDE",
+          "K_CONST",
+          "K_PRIVATE",
+          "K_PUBLIC",
+          "K_EXPORT",
+          "K_INTERNAL",
+          "K_STATIC",
+          "K_PROTECTED",
+          "K_IMPLICIT",
+          "K_VIRTUAL",
+          "K_EXTERN",
+          "K_IMMUTABLE",
+          "K_VAL",
+          "K_VAR",
+          "K_GET",
+          "K_IMPLEMENTS",
+          "K_SET",
+          "K_VOID",
+          "K_BOOL",
+          "K_BYTE",
+          "K_SBYTE",
+          "K_SHORT",
+          "K_USHORT",
+          "K_INT",
+          "K_UINT",
+          "K_LONG",
+          "K_ULONG",
+          "K_USIZE",
+          "K_FLOAT",
+          "K_DOUBLE",
+          "K_CHAR",
+          "K_STRING",
+          "K_IF",
+          "K_ELSE",
+          "K_DO",
+          "K_WHILE",
+          "K_FOR",
+          "K_THROW",
+          "K_PANIC",
+          "K_LOCK",
+          "K_TRY",
+          "K_CATCH",
+          "K_FINALLY",
+          "K_RETURN",
+          "K_BREAK",
+          "K_CONTINUE",
+          "K_SWITCH",
+          "K_CASE",
+          "K_DEFAULT",
+          "K_IN",
+          "K_IS",
+          "K_AS",
+          "K_MATCH",
+          "K_THROWS",
+          "K_SUPER",
+          "K_THIS",
+          "K_NULL",
+          "K_TRUE",
+          "K_FALSE",
+          "K_NEW",
+          "INVALID",
+          "EOF"
+        ],
+        "tokenModifiers": [
+          "T_COMMENT_SCRIPT",
+          "T_COMMENT_SINGLELINE",
+          "T_COMMENT_MULTILINE",
+          "T_WHITESPACE_SPACE",
+          "T_WHITESPACE_TAB",
+          "T_WHITESPACE_NEWLINE",
+          "T_WHITESPACE_CARRIAGE_RETURN",
+          "T_IDENTIFIER",
+          "T_LOCAL_IDENTIFIER",
+          "T_FLOAT",
+          "T_PREFIXED_INT",
+          "T_INT",
+          "T_STRING_DQ",
+          "T_STRING_DQ_WYSIWYG",
+          "T_STRING_SQ",
+          "T_STRING_SQ_WYSIWYG",
+          "T_AOPEN",
+          "T_ACLOSE",
+          "T_SQOPEN",
+          "T_SQCLOSE",
+          "T_DOT3",
+          "T_DOT2",
+          "T_DOT",
+          "T_COMMA",
+          "T_INCREMENT",
+          "T_ADDASSIGN",
+          "T_ADD",
+          "T_DECREMENT",
+          "T_SUBASSIGN",
+          "T_SUB",
+          "T_CATASSIGN",
+          "T_CAT",
+          "T_MULASSIGN",
+          "T_MUL",
+          "T_DIVASSIGN",
+          "T_DIV",
+          "T_MODASSIGN",
+          "T_MOD",
+          "T_ORASSIGN",
+          "T_OROR",
+          "T_OR",
+          "T_ANDASSIGN",
+          "T_ANDAND",
+          "T_AND",
+          "T_XORASSIGN",
+          "T_XOR",
+          "T_COALESCE",
+          "T_OPTCALL",
+          "T_QUEST",
+          "T_COLON",
+          "T_BROPEN",
+          "T_BRCLOSE",
+          "T_SEMICOLON",
+          "T_LESSEQ",
+          "T_SHLASSIGN",
+          "T_SHL",
+          "T_LESS",
+          "T_GREATEREQ",
+          "T_USHR",
+          "T_USHRASSIGN",
+          "T_SHRASSIGN",
+          "T_SHR",
+          "T_GREATER",
+          "T_LAMBDA",
+          "T_EQUAL3",
+          "T_EQUAL2",
+          "T_ASSIGN",
+          "T_NOTEQUAL2",
+          "T_NOTEQUAL",
+          "T_NOT",
+          "T_DOLLAR",
+          "T_BACKTICK",
+          "K_IMPORT",
+          "K_ALIAS",
+          "K_CLASS",
+          "K_FUNCTION",
+          "K_INTERFACE",
+          "K_ENUM",
+          "K_STRUCT",
+          "K_EXPAND",
+          "K_VARIANT",
+          "K_ABSTRACT",
+          "K_FINAL",
+          "K_OVERRIDE",
+          "K_CONST",
+          "K_PRIVATE",
+          "K_PUBLIC",
+          "K_EXPORT",
+          "K_INTERNAL",
+          "K_STATIC",
+          "K_PROTECTED",
+          "K_IMPLICIT",
+          "K_VIRTUAL",
+          "K_EXTERN",
+          "K_IMMUTABLE",
+          "K_VAL",
+          "K_VAR",
+          "K_GET",
+          "K_IMPLEMENTS",
+          "K_SET",
+          "K_VOID",
+          "K_BOOL",
+          "K_BYTE",
+          "K_SBYTE",
+          "K_SHORT",
+          "K_USHORT",
+          "K_INT",
+          "K_UINT",
+          "K_LONG",
+          "K_ULONG",
+          "K_USIZE",
+          "K_FLOAT",
+          "K_DOUBLE",
+          "K_CHAR",
+          "K_STRING",
+          "K_IF",
+          "K_ELSE",
+          "K_DO",
+          "K_WHILE",
+          "K_FOR",
+          "K_THROW",
+          "K_PANIC",
+          "K_LOCK",
+          "K_TRY",
+          "K_CATCH",
+          "K_FINALLY",
+          "K_RETURN",
+          "K_BREAK",
+          "K_CONTINUE",
+          "K_SWITCH",
+          "K_CASE",
+          "K_DEFAULT",
+          "K_IN",
+          "K_IS",
+          "K_AS",
+          "K_MATCH",
+          "K_THROWS",
+          "K_SUPER",
+          "K_THIS",
+          "K_NULL",
+          "K_TRUE",
+          "K_FALSE",
+          "K_NEW",
+          "INVALID",
+          "EOF"
+        ]
+      },
+      "full": true
+    }
+  },
+  "serverInfo": {
+    "name": "ZenCode LSP",
+    "version": "0.0.0"
+  }
+}
+
+
+[Trace - 06:43:43 PM] Received notification 'initialized'
+Params: {}
+
+
+[Trace - 06:43:43 PM] Received notification 'textDocument/didOpen'
+Params: {
+  "textDocument": {
+    "uri": "file:///X:/other/LSP/test.zs",
+    "languageId": "zs",
+    "version": 0,
+    "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\n"
+  }
+}
+
+
+[Trace - 06:44:27 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 8
+        },
+        "end": {
+          "line": 4,
+          "character": 8
+        }
+      },
+      "severity": 1,
+      "code": "INVALID_EXPRESSION",
+      "source": "file:///X:/other/LSP/test.zs",
+      "message": "file:///X:/other/LSP/test.zs:5:8: No compatible methods found!"
+    }
+  ]
+}
+
+
+[Trace - 06:44:27 PM] Received request 'textDocument/completion - (2)'
+Params: {
+  "context": {
+    "triggerKind": 1
+  },
+  "textDocument": {
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "position": {
+    "line": 5,
+    "character": 0
+  }
+}
+
+
+[Trace - 06:44:27 PM] Received request 'textDocument/completion - (3)'
+Params: {
+  "context": {
+    "triggerKind": 1
+  },
+  "textDocument": {
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "position": {
+    "line": 5,
+    "character": 0
+  }
+}
+
+
+[Trace - 06:44:27 PM] Sending response 'textDocument/completion - (2)'. Processing request took 2ms
+Result: [
+  {
+    "label": "stdlib.IllegalArgumentException",
+    "kind": 7,
+    "detail": "IllegalArgumentException.zs:1:0"
+  },
+  {
+    "label": "stdlib.List",
+    "kind": 7,
+    "detail": "List.zs:1:0"
+  },
+  {
+    "label": "collections.HashSet",
+    "kind": 7,
+    "detail": "HashSet.zs:1:0"
+  },
+  {
+    "label": "uuid.UUID",
+    "kind": 7,
+    "detail": "uuid.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterable",
+    "kind": 8,
+    "detail": "Iterable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Exception",
+    "kind": 7,
+    "detail": "Exception.zs:1:0"
+  },
+  {
+    "label": "collections.NoSuchElementException",
+    "kind": 7,
+    "detail": "NoSuchElementException.zs:3:0"
+  },
+  {
+    "label": "math.Functions",
+    "kind": 7,
+    "detail": "Functions.zs:1:0"
+  },
+  {
+    "label": "internal.globals",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Result",
+    "kind": 13,
+    "detail": "Result.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuilder",
+    "kind": 7,
+    "detail": "StringBuilder.zs:1:0"
+  },
+  {
+    "label": "internal.Object",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Hashable",
+    "kind": 8,
+    "detail": "Hashable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Comparable",
+    "kind": 8,
+    "detail": "Comparable.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuildable",
+    "kind": 8,
+    "detail": "StringBuildable.zs:1:0"
+  },
+  {
+    "label": "stdlib.EqualsComparable",
+    "kind": 8,
+    "detail": "EqualsComparable.zs:1:0"
+  },
+  {
+    "label": "collections.Set",
+    "kind": 8,
+    "detail": "Set.zs:3:0"
+  },
+  {
+    "label": "stdlib.EnforcementLevel",
+    "kind": 13,
+    "detail": "EnforcementLevel.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterator",
+    "kind": 8,
+    "detail": "Iterator.zs:1:0"
+  },
+  {
+    "label": "math.Constants",
+    "kind": 7,
+    "detail": "Constants.zs:1:0"
+  },
+  {
+    "label": "collections.Stack",
+    "kind": 7,
+    "detail": "Stack.zs:3:0"
+  }
+]
+
+
+[Trace - 06:44:27 PM] Sending response 'textDocument/completion - (3)'. Processing request took 2ms
+Result: [
+  {
+    "label": "stdlib.IllegalArgumentException",
+    "kind": 7,
+    "detail": "IllegalArgumentException.zs:1:0"
+  },
+  {
+    "label": "stdlib.List",
+    "kind": 7,
+    "detail": "List.zs:1:0"
+  },
+  {
+    "label": "collections.HashSet",
+    "kind": 7,
+    "detail": "HashSet.zs:1:0"
+  },
+  {
+    "label": "uuid.UUID",
+    "kind": 7,
+    "detail": "uuid.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterable",
+    "kind": 8,
+    "detail": "Iterable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Exception",
+    "kind": 7,
+    "detail": "Exception.zs:1:0"
+  },
+  {
+    "label": "collections.NoSuchElementException",
+    "kind": 7,
+    "detail": "NoSuchElementException.zs:3:0"
+  },
+  {
+    "label": "math.Functions",
+    "kind": 7,
+    "detail": "Functions.zs:1:0"
+  },
+  {
+    "label": "internal.globals",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Result",
+    "kind": 13,
+    "detail": "Result.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuilder",
+    "kind": 7,
+    "detail": "StringBuilder.zs:1:0"
+  },
+  {
+    "label": "internal.Object",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Hashable",
+    "kind": 8,
+    "detail": "Hashable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Comparable",
+    "kind": 8,
+    "detail": "Comparable.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuildable",
+    "kind": 8,
+    "detail": "StringBuildable.zs:1:0"
+  },
+  {
+    "label": "stdlib.EqualsComparable",
+    "kind": 8,
+    "detail": "EqualsComparable.zs:1:0"
+  },
+  {
+    "label": "collections.Set",
+    "kind": 8,
+    "detail": "Set.zs:3:0"
+  },
+  {
+    "label": "stdlib.EnforcementLevel",
+    "kind": 13,
+    "detail": "EnforcementLevel.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterator",
+    "kind": 8,
+    "detail": "Iterator.zs:1:0"
+  },
+  {
+    "label": "math.Constants",
+    "kind": 7,
+    "detail": "Constants.zs:1:0"
+  },
+  {
+    "label": "collections.Stack",
+    "kind": 7,
+    "detail": "Stack.zs:3:0"
+  }
+]
+
+
+[Trace - 06:44:28 PM] Received request 'textDocument/completion - (4)'
+Params: {
+  "context": {
+    "triggerKind": 1
+  },
+  "textDocument": {
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "position": {
+    "line": 5,
+    "character": 0
+  }
+}
+
+
+[Trace - 06:44:28 PM] Sending response 'textDocument/completion - (4)'. Processing request took 0ms
+Result: [
+  {
+    "label": "stdlib.IllegalArgumentException",
+    "kind": 7,
+    "detail": "IllegalArgumentException.zs:1:0"
+  },
+  {
+    "label": "stdlib.List",
+    "kind": 7,
+    "detail": "List.zs:1:0"
+  },
+  {
+    "label": "collections.HashSet",
+    "kind": 7,
+    "detail": "HashSet.zs:1:0"
+  },
+  {
+    "label": "uuid.UUID",
+    "kind": 7,
+    "detail": "uuid.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterable",
+    "kind": 8,
+    "detail": "Iterable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Exception",
+    "kind": 7,
+    "detail": "Exception.zs:1:0"
+  },
+  {
+    "label": "collections.NoSuchElementException",
+    "kind": 7,
+    "detail": "NoSuchElementException.zs:3:0"
+  },
+  {
+    "label": "math.Functions",
+    "kind": 7,
+    "detail": "Functions.zs:1:0"
+  },
+  {
+    "label": "internal.globals",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Result",
+    "kind": 13,
+    "detail": "Result.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuilder",
+    "kind": 7,
+    "detail": "StringBuilder.zs:1:0"
+  },
+  {
+    "label": "internal.Object",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Hashable",
+    "kind": 8,
+    "detail": "Hashable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Comparable",
+    "kind": 8,
+    "detail": "Comparable.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuildable",
+    "kind": 8,
+    "detail": "StringBuildable.zs:1:0"
+  },
+  {
+    "label": "stdlib.EqualsComparable",
+    "kind": 8,
+    "detail": "EqualsComparable.zs:1:0"
+  },
+  {
+    "label": "collections.Set",
+    "kind": 8,
+    "detail": "Set.zs:3:0"
+  },
+  {
+    "label": "stdlib.EnforcementLevel",
+    "kind": 13,
+    "detail": "EnforcementLevel.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterator",
+    "kind": 8,
+    "detail": "Iterator.zs:1:0"
+  },
+  {
+    "label": "math.Constants",
+    "kind": 7,
+    "detail": "Constants.zs:1:0"
+  },
+  {
+    "label": "collections.Stack",
+    "kind": 7,
+    "detail": "Stack.zs:3:0"
+  }
+]
+
+
+[Trace - 06:44:29 PM] Received request 'textDocument/completion - (5)'
+Params: {
+  "context": {
+    "triggerKind": 1
+  },
+  "textDocument": {
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "position": {
+    "line": 1,
+    "character": 0
+  }
+}
+
+
+[Trace - 06:44:29 PM] Sending response 'textDocument/completion - (5)'. Processing request took 0ms
+Result: [
+  {
+    "label": "stdlib.IllegalArgumentException",
+    "kind": 7,
+    "detail": "IllegalArgumentException.zs:1:0"
+  },
+  {
+    "label": "stdlib.List",
+    "kind": 7,
+    "detail": "List.zs:1:0"
+  },
+  {
+    "label": "collections.HashSet",
+    "kind": 7,
+    "detail": "HashSet.zs:1:0"
+  },
+  {
+    "label": "uuid.UUID",
+    "kind": 7,
+    "detail": "uuid.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterable",
+    "kind": 8,
+    "detail": "Iterable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Exception",
+    "kind": 7,
+    "detail": "Exception.zs:1:0"
+  },
+  {
+    "label": "collections.NoSuchElementException",
+    "kind": 7,
+    "detail": "NoSuchElementException.zs:3:0"
+  },
+  {
+    "label": "math.Functions",
+    "kind": 7,
+    "detail": "Functions.zs:1:0"
+  },
+  {
+    "label": "internal.globals",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Result",
+    "kind": 13,
+    "detail": "Result.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuilder",
+    "kind": 7,
+    "detail": "StringBuilder.zs:1:0"
+  },
+  {
+    "label": "internal.Object",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Hashable",
+    "kind": 8,
+    "detail": "Hashable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Comparable",
+    "kind": 8,
+    "detail": "Comparable.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuildable",
+    "kind": 8,
+    "detail": "StringBuildable.zs:1:0"
+  },
+  {
+    "label": "stdlib.EqualsComparable",
+    "kind": 8,
+    "detail": "EqualsComparable.zs:1:0"
+  },
+  {
+    "label": "collections.Set",
+    "kind": 8,
+    "detail": "Set.zs:3:0"
+  },
+  {
+    "label": "stdlib.EnforcementLevel",
+    "kind": 13,
+    "detail": "EnforcementLevel.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterator",
+    "kind": 8,
+    "detail": "Iterator.zs:1:0"
+  },
+  {
+    "label": "math.Constants",
+    "kind": 7,
+    "detail": "Constants.zs:1:0"
+  },
+  {
+    "label": "collections.Stack",
+    "kind": 7,
+    "detail": "Stack.zs:3:0"
+  }
+]
+
+
+[Trace - 06:44:30 PM] Received request 'textDocument/completion - (6)'
+Params: {
+  "context": {
+    "triggerKind": 1
+  },
+  "textDocument": {
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "position": {
+    "line": 5,
+    "character": 0
+  }
+}
+
+
+[Trace - 06:44:30 PM] Sending response 'textDocument/completion - (6)'. Processing request took 0ms
+Result: [
+  {
+    "label": "stdlib.IllegalArgumentException",
+    "kind": 7,
+    "detail": "IllegalArgumentException.zs:1:0"
+  },
+  {
+    "label": "stdlib.List",
+    "kind": 7,
+    "detail": "List.zs:1:0"
+  },
+  {
+    "label": "collections.HashSet",
+    "kind": 7,
+    "detail": "HashSet.zs:1:0"
+  },
+  {
+    "label": "uuid.UUID",
+    "kind": 7,
+    "detail": "uuid.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterable",
+    "kind": 8,
+    "detail": "Iterable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Exception",
+    "kind": 7,
+    "detail": "Exception.zs:1:0"
+  },
+  {
+    "label": "collections.NoSuchElementException",
+    "kind": 7,
+    "detail": "NoSuchElementException.zs:3:0"
+  },
+  {
+    "label": "math.Functions",
+    "kind": 7,
+    "detail": "Functions.zs:1:0"
+  },
+  {
+    "label": "internal.globals",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Result",
+    "kind": 13,
+    "detail": "Result.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuilder",
+    "kind": 7,
+    "detail": "StringBuilder.zs:1:0"
+  },
+  {
+    "label": "internal.Object",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.Hashable",
+    "kind": 8,
+    "detail": "Hashable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Comparable",
+    "kind": 8,
+    "detail": "Comparable.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuildable",
+    "kind": 8,
+    "detail": "StringBuildable.zs:1:0"
+  },
+  {
+    "label": "stdlib.EqualsComparable",
+    "kind": 8,
+    "detail": "EqualsComparable.zs:1:0"
+  },
+  {
+    "label": "collections.Set",
+    "kind": 8,
+    "detail": "Set.zs:3:0"
+  },
+  {
+    "label": "stdlib.EnforcementLevel",
+    "kind": 13,
+    "detail": "EnforcementLevel.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterator",
+    "kind": 8,
+    "detail": "Iterator.zs:1:0"
+  },
+  {
+    "label": "math.Constants",
+    "kind": 7,
+    "detail": "Constants.zs:1:0"
+  },
+  {
+    "label": "collections.Stack",
+    "kind": 7,
+    "detail": "Stack.zs:3:0"
+  }
+]
+
+
+[Trace - 06:44:31 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 1,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\ncollections.Set"
+    }
+  ]
+}
+
+
+[Trace - 06:44:31 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 15
+        },
+        "end": {
+          "line": 5,
+          "character": 16
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    },
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 15
+        },
+        "end": {
+          "line": 5,
+          "character": 16
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    },
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 15
+        },
+        "end": {
+          "line": 5,
+          "character": 16
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    }
+  ]
+}
+
+
+[Trace - 06:44:32 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 2,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\ncollections."
+    }
+  ]
+}
+
+
+[Trace - 06:44:32 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 12
+        },
+        "end": {
+          "line": 5,
+          "character": 13
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "Invalid expression, last token: "
+    },
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 12
+        },
+        "end": {
+          "line": 5,
+          "character": 13
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "Invalid expression, last token: "
+    },
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 12
+        },
+        "end": {
+          "line": 5,
+          "character": 13
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "Invalid expression, last token: "
+    }
+  ]
+}
+
+
+[Trace - 06:44:32 PM] Received request 'textDocument/completion - (7)'
+Params: {
+  "context": {
+    "triggerKind": 2,
+    "triggerCharacter": "."
+  },
+  "textDocument": {
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "position": {
+    "line": 5,
+    "character": 12
+  }
+}
+
+
+[Trace - 06:44:32 PM] Sending response 'textDocument/completion - (7)'. Processing request took 2ms
+Result: [
+  {
+    "label": "stdlib.EqualsComparable",
+    "kind": 8,
+    "detail": "EqualsComparable.zs:1:0"
+  },
+  {
+    "label": "collections.HashSet",
+    "kind": 7,
+    "detail": "HashSet.zs:1:0"
+  },
+  {
+    "label": "math.Constants",
+    "kind": 7,
+    "detail": "Constants.zs:1:0"
+  },
+  {
+    "label": "stdlib.Comparable",
+    "kind": 8,
+    "detail": "Comparable.zs:1:0"
+  },
+  {
+    "label": "stdlib.List",
+    "kind": 7,
+    "detail": "List.zs:1:0"
+  },
+  {
+    "label": "math.Functions",
+    "kind": 7,
+    "detail": "Functions.zs:1:0"
+  },
+  {
+    "label": "stdlib.Iterable",
+    "kind": 8,
+    "detail": "Iterable.zs:1:0"
+  },
+  {
+    "label": "stdlib.IllegalArgumentException",
+    "kind": 7,
+    "detail": "IllegalArgumentException.zs:1:0"
+  },
+  {
+    "label": "stdlib.Result",
+    "kind": 13,
+    "detail": "Result.zs:1:0"
+  },
+  {
+    "label": "stdlib.StringBuilder",
+    "kind": 7,
+    "detail": "StringBuilder.zs:1:0"
+  },
+  {
+    "label": "internal.Object",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "internal.globals",
+    "kind": 7,
+    "detail": "native"
+  },
+  {
+    "label": "stdlib.EnforcementLevel",
+    "kind": 13,
+    "detail": "EnforcementLevel.zs:1:0"
+  },
+  {
+    "label": "stdlib.Exception",
+    "kind": 7,
+    "detail": "Exception.zs:1:0"
+  },
+  {
+    "label": "collections.NoSuchElementException",
+    "kind": 7,
+    "detail": "NoSuchElementException.zs:3:0"
+  },
+  {
+    "label": "stdlib.Iterator",
+    "kind": 8,
+    "detail": "Iterator.zs:1:0"
+  },
+  {
+    "label": "collections.Set",
+    "kind": 8,
+    "detail": "Set.zs:3:0"
+  },
+  {
+    "label": "collections.Stack",
+    "kind": 7,
+    "detail": "Stack.zs:3:0"
+  },
+  {
+    "label": "stdlib.StringBuildable",
+    "kind": 8,
+    "detail": "StringBuildable.zs:1:0"
+  },
+  {
+    "label": "stdlib.Hashable",
+    "kind": 8,
+    "detail": "Hashable.zs:1:0"
+  },
+  {
+    "label": "uuid.UUID",
+    "kind": 7,
+    "detail": "uuid.zs:1:0"
+  }
+]
+
+
+[Trace - 06:44:33 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 3,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\ncollections.collections.Set"
+    }
+  ]
+}
+
+
+[Trace - 06:44:33 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 27
+        },
+        "end": {
+          "line": 5,
+          "character": 28
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    },
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 27
+        },
+        "end": {
+          "line": 5,
+          "character": 28
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    },
+    {
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 27
+        },
+        "end": {
+          "line": 5,
+          "character": 28
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    }
+  ]
+}
+
+
+[Trace - 06:44:34 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 4,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\ncollections.collections.Set\ncollections.collections.Set"
+    }
+  ]
+}
+
+
+[Trace - 06:44:34 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 0
+        },
+        "end": {
+          "line": 6,
+          "character": 11
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    },
+    {
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 0
+        },
+        "end": {
+          "line": 6,
+          "character": 11
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    },
+    {
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 0
+        },
+        "end": {
+          "line": 6,
+          "character": 11
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    }
+  ]
+}
+
+
+[Trace - 06:44:35 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 5,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\ncollections.collections.Set\n"
+    }
+  ]
+}
+
+
+[Trace - 06:44:35 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 0
+        },
+        "end": {
+          "line": 6,
+          "character": 1
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    },
+    {
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 0
+        },
+        "end": {
+          "line": 6,
+          "character": 1
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    },
+    {
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 0
+        },
+        "end": {
+          "line": 6,
+          "character": 1
+        }
+      },
+      "severity": 1,
+      "source": "LSP",
+      "message": "; expected"
+    }
+  ]
+}
+
+
+[Trace - 06:44:35 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 6,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\n"
+    }
+  ]
+}
+
+
+[Trace - 06:44:35 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 8
+        },
+        "end": {
+          "line": 4,
+          "character": 8
+        }
+      },
+      "severity": 1,
+      "code": "INVALID_EXPRESSION",
+      "source": "file:///X:/other/LSP/test.zs",
+      "message": "file:///X:/other/LSP/test.zs:5:8: No compatible methods found!"
+    }
+  ]
+}
+
+
+[Trace - 06:44:47 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 7,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();"
+    }
+  ]
+}
+
+
+[Trace - 06:44:47 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 8
+        },
+        "end": {
+          "line": 4,
+          "character": 8
+        }
+      },
+      "severity": 1,
+      "code": "INVALID_EXPRESSION",
+      "source": "file:///X:/other/LSP/test.zs",
+      "message": "file:///X:/other/LSP/test.zs:5:8: No compatible methods found!"
+    }
+  ]
+}
+
+
+[Trace - 06:44:51 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 8,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\n"
+    }
+  ]
+}
+
+
+[Trace - 06:44:51 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 8
+        },
+        "end": {
+          "line": 4,
+          "character": 8
+        }
+      },
+      "severity": 1,
+      "code": "INVALID_EXPRESSION",
+      "source": "file:///X:/other/LSP/test.zs",
+      "message": "file:///X:/other/LSP/test.zs:5:8: No compatible methods found!"
+    }
+  ]
+}
+
+
+[Trace - 06:47:53 PM] Received notification 'textDocument/didChange'
+Params: {
+  "textDocument": {
+    "version": 9,
+    "uri": "file:///X:/other/LSP/test.zs"
+  },
+  "contentChanges": [
+    {
+      "text": "import collections.Set;\n\nvar test \u003d \"\";\nprintln(test);\nvar x \u003d new HashSet();\n\n"
+    }
+  ]
+}
+
+
+[Trace - 07:04:43 PM] Sending notification 'textDocument/publishDiagnostics'
+Params: {
+  "uri": "file:///X:/other/LSP/test.zs",
+  "diagnostics": [
+    {
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 8
+        },
+        "end": {
+          "line": 4,
+          "character": 8
+        }
+      },
+      "severity": 1,
+      "code": "INVALID_EXPRESSION",
+      "source": "file:///X:/other/LSP/test.zs",
+      "message": "file:///X:/other/LSP/test.zs:5:8: No compatible methods found!"
+    }
+  ]
+}
+
+
+[Trace - 07:05:18 PM] Received notification 'textDocument/didClose'
+Params: {
+  "textDocument": {
+    "uri": "file:///X:/other/LSP/test.zs"
+  }
+}
+
+
+[Trace - 07:05:18 PM] Received request 'shutdown - (8)'
+Params: null
+
+
+[Trace - 07:05:18 PM] Sending response 'shutdown - (8)'. Processing request took 1ms
+Result: {}
+
+
+[Trace - 07:05:18 PM] Received notification 'exit'
+Params: null
+
+

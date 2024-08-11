@@ -3,11 +3,11 @@ package org.openzen.zenscript.lexer;
 import org.openzen.zencode.shared.CodePosition;
 
 public class WhitespaceFilteringParser<TT extends TokenType, T extends Token<TT>> implements TokenStream<TT, T> {
-	private final TokenStream<TT, T> stream;
-	private T next;
-	private CodePosition position;
-	private CodePosition positionBeforeWhitespace;
-	private String whitespace;
+	protected final TokenStream<TT, T> stream;
+	protected T next;
+	protected CodePosition position;
+	protected CodePosition positionBeforeWhitespace;
+	protected String whitespace;
 
 	public WhitespaceFilteringParser(TokenStream<TT, T> stream) throws ParseException {
 		this.stream = stream;
@@ -66,15 +66,17 @@ public class WhitespaceFilteringParser<TT extends TokenType, T extends Token<TT>
 		return stream.getEOF();
 	}
 
-	private void advance() throws ParseException {
+	protected void advance() throws ParseException {
 		whitespace = "";
 		position = stream.getPosition();
 		positionBeforeWhitespace = position;
 		next = stream.next();
+
 		while (next.getType().isWhitespace()) {
 			whitespace += next.getContent();
 			position = stream.getPosition();
 			next = stream.next();
 		}
+
 	}
 }

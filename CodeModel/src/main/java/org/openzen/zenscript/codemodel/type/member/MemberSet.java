@@ -70,6 +70,11 @@ public class MemberSet implements ResolvedType {
 	}
 
 	@Override
+	public List<StaticCallableMethod> staticMethods() {
+		return this.staticMethods.values().stream().flatMap(Collection::stream).collect(Collectors.toList());
+	}
+
+	@Override
 	public Optional<StaticCallable> findStaticGetter(String name) {
 		return findStatic(MethodID.staticGetter(name));
 	}
@@ -82,6 +87,11 @@ public class MemberSet implements ResolvedType {
 	@Override
 	public Optional<InstanceCallable> findMethod(String name) {
 		return find(MethodID.instanceMethod(name));
+	}
+
+	@Override
+	public List<InstanceCallableMethod> instanceMethods() {
+		return this.instanceMethods.values().stream().flatMap(Collection::stream).collect(Collectors.toList());
 	}
 
 	@Override

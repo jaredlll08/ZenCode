@@ -1,8 +1,9 @@
 package org.openzen.zencode.shared;
 
 import java.util.List;
+import java.util.Objects;
 
-public final class CodePosition {
+public final class CodePosition implements Comparable<CodePosition> {
 	public static final CodePosition BUILTIN = new CodePosition(new VirtualSourceFile("builtin"), 0, 0, 0, 0);
 	public static final CodePosition NATIVE = new CodePosition(new VirtualSourceFile("native"), 0, 0, 0, 0);
 	public static final CodePosition META = new CodePosition(new VirtualSourceFile("meta"), 0, 0, 0, 0);
@@ -34,6 +35,10 @@ public final class CodePosition {
 		return shortFilename + ":" + fromLine + ":" + fromLineOffset;
 	}
 
+	public String toLongString() {
+		return this + "~" + toLine + ":" + toLineOffset;
+	}
+
 	public CodePosition until(CodePosition to) {
 		if (!(file == to.file))
 			throw new AssertionError("From and to positions must be in the same file!");
@@ -44,6 +49,9 @@ public final class CodePosition {
 		return new CodePosition(file, fromLine, fromLineOffset, fromLine, fromLineOffset + characters);
 	}
 
+	public CodePosition end(){
+		return new CodePosition(file, toLine, toLineOffset, toLine, toLineOffset);
+	}
 	public String toString() {
 		return fromLine == 0 && fromLineOffset == 0 ? file.getFilename() : file.getFilename() + ":" + Integer.toString(fromLine) + ":" + Integer.toString(fromLineOffset);
 	}
@@ -66,5 +74,43 @@ public final class CodePosition {
 
 	public int getToLineOffset() {
 		return toLineOffset;
+	}
+
+	public boolean containsFully(CodePosition other) {
+		if (!Objects.equals(this.getFilename(), other.getFilename())) {
+			return false;
+		}
+
+		//This starts later or ends earlier
+		if (this.fromLine > other.fromLine || this.toLine < other.toLine) {
+			return false;
+		}
+
+		//Same start line but other starts earlier
+		if (this.fromLine == other.fromLine && this.fromLineOffset > other.fromLineOffset) {
+			return false;
+		}
+
+		//Same end line, but other ends later
+		if (this.toLine == other.toLine && this.toLineOffset < other.toLineOffset) {
+			return false;
+		}
+
+		return true;
+	}
+
+	@Override
+	public int compareTo(CodePosition other) {
+
+        if (this.fromLine != other.fromLine) {
+            return Integer.compare(this.fromLine, other.fromLine);
+        }
+        if (this.fromLineOffset != other.fromLineOffset) {
+            return Integer.compare(this.fromLineOffset, other.fromLineOffset);
+        }
+        if (this.toLine != other.toLine) {
+            return Integer.compare(this.toLine, other.toLine);
+        }
+        return Integer.compare(this.toLineOffset, other.toLineOffset);
 	}
 }

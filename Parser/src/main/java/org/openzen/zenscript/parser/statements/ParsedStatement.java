@@ -126,7 +126,8 @@ public abstract class ParsedStatement implements CompilableStatement {
 				if (parser.optional(T_ASSIGN) != null) {
 					initializer = ParsedExpression.parse(parser);
 				}
-				parser.required(T_SEMICOLON, "; expected");
+
+				parser.required(T_SEMICOLON,"; expected");
 
 				WhitespaceInfo whitespace = parser.collectWhitespaceInfo(ws, isFirst);
 				return new ParsedStatementVar(position, annotations, whitespace, name, type, initializer, start.getType() == K_VAL);

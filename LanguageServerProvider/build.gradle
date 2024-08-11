@@ -1,0 +1,49 @@
+
+plugins {
+	id 'idea'
+	id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+if (!hasProperty('mainClass')) {
+	ext.mainClass = 'org.openzen.zenscript.Main'
+//	ext.mainClass = 'org.openzen.zenscript.StandardIOLauncher'
+}
+
+dependencies {
+	api project(':Parser')
+	api project(':JavaIntegration')
+	api project(':CodeFormatter')
+	implementation("org.eclipse.lsp4j:org.eclipse.lsp4j:0.21.0")
+	implementation group: 'org.eclipse.lsp4j', name: 'org.eclipse.lsp4j.debug', version: '0.21.0'
+}
+
+processResources {
+	dependsOn(":StdLibs:zipItUpActually")
+	from files(evaluationDependsOn(":StdLibs").tasks.getByName("zipItUpActually").outputs)
+}
+
+def mainClass = "org.openzen.zenscript.Main"
+//def mainClass = "org.openzen.zenscript.StandardIOLauncher"
+
+jar {
+	manifest {
+		attributes([
+				"Specification-Title"     : "zencodelang",
+				"Specification-Vendor"    : "ZenCodeLang",
+				"Specification-Version"   : "1",
+				"Implementation-Title"    : project.name,
+				"Implementation-Version"  : "${version}",
+				"Implementation-Vendor"   : "ZenCodeLang",
+				"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+				"Class-Path"              : ".",
+				"Main-Class"              : mainClass
+		])
+	}
+}
+
+idea {
+	module {
+		downloadJavadoc = true
+		downloadSources = true
+	}
+}

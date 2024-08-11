@@ -77,7 +77,7 @@ public class CastedEval {
 				return new CastedExpression(CastedExpression.Level.EXPLICIT, casted.get());
 		}
 
-		return CastedExpression.invalid(compiler.at(position).invalid(CompileErrors.cannotCast(value.type, type, explicit)));
+		return CastedExpression.invalid(compiler.at(value.position).invalid(CompileErrors.cannotCast(value.type, type, explicit)));
 	}
 
 	public CastedExpression of(CastedExpression.Level level, Expression value) {

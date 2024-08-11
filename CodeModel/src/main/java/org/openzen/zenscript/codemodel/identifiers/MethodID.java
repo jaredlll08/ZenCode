@@ -179,6 +179,10 @@ public final class MethodID {
 		}
 	}
 
+	public String name() {
+		return name;
+	}
+
 	@Override
 	public boolean equals(Object other) {
 		if (this == other)
@@ -208,6 +212,8 @@ public final class MethodID {
 			default:
 				return false;
 		}
+
+
 	}
 
 	public interface Visitor<T> {

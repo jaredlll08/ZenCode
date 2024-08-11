@@ -67,6 +67,11 @@ public class OptionalResolvedType implements ResolvedType {
 	}
 
 	@Override
+	public List<StaticCallableMethod> staticMethods() {
+		return Collections.emptyList();
+	}
+
+	@Override
 	public Optional<StaticCallable> findStaticGetter(String name) {
 		return Optional.empty();
 	}
@@ -81,7 +86,12 @@ public class OptionalResolvedType implements ResolvedType {
 		return Optional.empty();
 	}
 
-	@Override
+    @Override
+    public List<InstanceCallableMethod> instanceMethods() {
+        return Collections.emptyList();
+    }
+
+    @Override
 	public Optional<InstanceCallable> findGetter(String name) {
 		return Optional.empty();
 	}

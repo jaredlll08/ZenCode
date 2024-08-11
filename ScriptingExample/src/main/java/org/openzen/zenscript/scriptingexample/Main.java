@@ -32,13 +32,13 @@ public class Main {
 		scriptingEngine.addAnnotation(TestAnnotationDefinition.INSTANCE);
 
 		JavaNativeModuleBuilder example = scriptingEngine.createNativeModule("example", "org.openzen.zenscript.scriptingexample");
-		example.addGlobals(Globals.class);
-
-		example.addClass(UpdatableGrid.class);
-		example.addClass(TimeSpan.class);
-		example.addClass(TimeSpan.ExpandInt.class);
-		example.addClass(ZCThread.class);
-		example.addClass(MyFunctionalInterfaceClass.class);
+//		example.addGlobals(Globals.class);
+//
+//		example.addClass(UpdatableGrid.class);
+//		example.addClass(TimeSpan.class);
+//		example.addClass(TimeSpan.ExpandInt.class);
+//		example.addClass(ZCThread.class);
+//		example.addClass(MyFunctionalInterfaceClass.class);
 
 		example.complete();
 

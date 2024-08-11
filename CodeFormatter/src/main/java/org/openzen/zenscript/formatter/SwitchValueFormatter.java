@@ -43,4 +43,9 @@ public class SwitchValueFormatter implements SwitchValueVisitor<String> {
 		result.append(")");
 		return result.toString();
 	}
+
+	@Override
+	public String acceptError(ErrorSwitchValue value) {
+		return "";
+	}
 }

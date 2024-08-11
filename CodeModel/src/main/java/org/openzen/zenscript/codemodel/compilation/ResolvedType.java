@@ -41,11 +41,15 @@ public interface ResolvedType {
 	}
 	Optional<StaticCallable> findStaticMethod(String name);
 
+	List<StaticCallableMethod> staticMethods();
+
 	Optional<StaticCallable> findStaticGetter(String name);
 
 	Optional<StaticCallable> findStaticSetter(String name);
 
 	Optional<InstanceCallable> findMethod(String name);
+
+	List<InstanceCallableMethod> instanceMethods();
 
 	Optional<InstanceCallable> findGetter(String name);
 

@@ -78,6 +78,11 @@ public class ExpandedResolvedType implements ResolvedType {
 	}
 
 	@Override
+	public List<StaticCallableMethod> staticMethods() {
+		return base.staticMethods();
+	}
+
+	@Override
 	public Optional<StaticCallable> findStaticGetter(String name) {
 		StaticCallable result = base.findStaticGetter(name).orElse(null);
 		for (ResolvedType expansion : expansions) {
@@ -113,7 +118,12 @@ public class ExpandedResolvedType implements ResolvedType {
 		return Optional.ofNullable(result);
 	}
 
-	@Override
+    @Override
+    public List<InstanceCallableMethod> instanceMethods() {
+        return base.instanceMethods();
+    }
+
+    @Override
 	public Optional<InstanceCallable> findGetter(String name) {
 		InstanceCallable result = base.findGetter(name).orElse(null);
 		for (ResolvedType expansion : expansions) {

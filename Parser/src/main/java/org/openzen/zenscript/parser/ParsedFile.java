@@ -334,4 +334,20 @@ public class ParsedFile {
 	public List<ParseException> getErrors() {
 		return errors;
 	}
+
+	public List<ParsedImport> imports() {
+		return imports;
+	}
+
+	public List<ParsedDefinition> definitions() {
+		return definitions;
+	}
+
+	public List<ParsedStatement> statements() {
+		return statements;
+	}
+
+	public WhitespacePostComment postComment() {
+		return postComment;
+	}
 }

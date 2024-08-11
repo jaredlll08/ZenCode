@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ZSTokenParser extends LLParserTokenStream<ZSTokenType, ZSToken> {
-	private static final CompiledDFA DFA = CompiledDFA.createLexerDFA(ZSTokenType.values(), ZSTokenType.class);
+	protected static final CompiledDFA DFA = CompiledDFA.createLexerDFA(ZSTokenType.values(), ZSTokenType.class);
 	public final BracketExpressionParser bracketParser;
 	private final List<ParseException> parseErrors = new ArrayList<>();
 

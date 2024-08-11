@@ -124,7 +124,7 @@ public class StatementFormatter implements StatementVisitor<Void> {
 		}
 		output.append(" in ");
 		output.append(statement.list.accept(expressionFormatter).value);
-		format(ParentStatementType.LOOP, statement.content);
+		format(ParentStatementType.LOOP, statement.getContent());
 		endSingleLine(whitespace);
 		return null;
 	}

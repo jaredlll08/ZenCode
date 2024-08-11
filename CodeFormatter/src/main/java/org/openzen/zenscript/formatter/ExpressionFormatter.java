@@ -8,6 +8,8 @@ import org.openzen.zenscript.codemodel.statement.ExpressionStatement;
 import org.openzen.zenscript.codemodel.statement.ReturnStatement;
 import org.openzen.zenscript.formattershared.ExpressionString;
 
+import java.util.Optional;
+
 public class ExpressionFormatter implements ExpressionVisitor<ExpressionString> {
 	public final TypeFormatter typeFormatter;
 	public final String indent;
@@ -53,16 +55,16 @@ public class ExpressionFormatter implements ExpressionVisitor<ExpressionString> 
 		MethodID id = expression.method.method.getID();
 		switch (id.getKind()) {
 			case INSTANCEMETHOD: {
-				MethodID.InstanceMethod method = (MethodID.InstanceMethod) id;
+				MethodID method = id;
 				StringBuilder result = new StringBuilder();
 				result.append(expression.target.accept(this).value);
 				result.append(".");
-				result.append(method.name);
+				result.append(method.name());
 				FormattingUtils.formatCall(result, typeFormatter, this, expression.arguments);
 				return new ExpressionString(result.toString(), ZenScriptOperator.PRIMARY);
 			}
 			case OPERATOR:
-				return visitOperatorCall(expression, (MethodID.Operator) id);
+				return visitOperatorCall(expression, (MethodID) id);
 			case CASTER: {
 				StringBuilder result = new StringBuilder();
 				if (!expression.method.isImplicit()) {
@@ -72,22 +74,25 @@ public class ExpressionFormatter implements ExpressionVisitor<ExpressionString> 
 				return new ExpressionString(result.toString(), ZenScriptOperator.CAST);
 			}
 			case GETTER: {
-				MethodID.Getter getter = (MethodID.Getter) id;
-				String result = String.valueOf(expression.target.accept(this)) + '.' + getter.name;
+				MethodID getter = (MethodID) id;
+				String result = String.valueOf(expression.target.accept(this)) + '.' + getter.name();
 				return new ExpressionString(result, ZenScriptOperator.MEMBER);
 			}
 			case SETTER: {
-				MethodID.Setter setter = (MethodID.Setter) id;
+				MethodID setter = (MethodID) id;
 				return new ExpressionString(
-						expression.target.accept(this) + "." + setter.name + " = " + expression.arguments.arguments[0].accept(this),
+						expression.target.accept(this) + "." + setter.name() + " = " + expression.arguments.arguments[0].accept(this),
 						ZenScriptOperator.ASSIGN);
 			}
 			default: throw new UnsupportedOperationException("Invalid method type: " + id.getKind());
 		}
 	}
 
-	private ExpressionString visitOperatorCall(CallExpression expression, MethodID.Operator operator) {
-		switch (operator.operator) {
+	private ExpressionString visitOperatorCall(CallExpression expression, MethodID operator) {
+		if (!operator.getOperator().isPresent()) {
+			throw new UnsupportedOperationException("Unknown operator: " + operator);
+		}
+		switch (operator.getOperator().get()) {
 			case NOT:
 				return unaryPrefix(expression.target, ZenScriptOperator.NOT, "!");
 			case NEG:
@@ -220,40 +225,59 @@ public class ExpressionFormatter implements ExpressionVisitor<ExpressionString> 
 		MethodID id = expression.member.getID();
 		switch (id.getKind()) {
 			case INSTANCEMETHOD: {
-				MethodID.InstanceMethod method = (MethodID.InstanceMethod) id;
 				result.append(".");
-				result.append(method.name);
+				result.append(id.name());
 				FormattingUtils.formatCall(result, typeFormatter, this, expression.arguments);
 				return new ExpressionString(result.toString(), ZenScriptOperator.PRIMARY);
 			}
 			case OPERATOR:
-				MethodID operator = (MethodID.Operator) id;
-				if (operator == OperatorType.CONSTRUCTOR) {
-					StringBuilder result = new StringBuilder();
+				Optional<OperatorType> operator = id.getOperator();
+				if (operator.filter(operatorType -> operatorType == OperatorType.CONSTRUCTOR).isPresent()) {
+					result = new StringBuilder();
 					result.append("new ");
 					result.append(typeFormatter.format(expression.type));
 					FormattingUtils.formatCall(result, typeFormatter, this, expression.arguments);
 					return new ExpressionString(result.toString(), ZenScriptOperator.PRIMARY);
-				} else if (operator.operator == OperatorType.CALL) {
+				} else if (operator.filter(operatorType -> operatorType == OperatorType.CALL).isPresent()) {
 					// nothing
 				} else {
 					result.append(".");
-					result.append(operator.operator);
+					result.append(operator.map(operatorType -> operatorType.operator).orElse("null"));
 				}
 				FormattingUtils.formatCall(result, typeFormatter, this, expression.arguments);
 				return new ExpressionString(result.toString(), ZenScriptOperator.PRIMARY);
 			case GETTER: {
-				MethodID.Getter getter = (MethodID.Getter) id;
-				result.append(".").append(getter.name);
+				result.append(".").append(id.name());
 				return new ExpressionString(result.toString(), ZenScriptOperator.MEMBER);
 			}
 			case SETTER: {
-				MethodID.Setter setter = (MethodID.Setter) id;
-				result.append(".").append(setter.name).append(" = ").append(expression.arguments.arguments[0].accept(this));
+				result.append(".").append(id.name()).append(" = ").append(expression.arguments.arguments[0].accept(this));
 				return new ExpressionString(result.toString(), ZenScriptOperator.ASSIGN);
+			}
+			case STATICOPERATOR: {
+				Optional<OperatorType> staticOperator = id.getOperator();
+				if (staticOperator.filter(operatorType -> operatorType == OperatorType.CONSTRUCTOR).isPresent()) {
+					result = new StringBuilder();
+					result.append("new ");
+					result.append(typeFormatter.format(expression.type));
+					FormattingUtils.formatCall(result, typeFormatter, this, expression.arguments);
+					return new ExpressionString(result.toString(), ZenScriptOperator.PRIMARY);
+				} else if (staticOperator.filter(operatorType -> operatorType == OperatorType.CALL).isPresent()) {
+					// nothing
+				} else {
+					result.append(".");
+					result.append(staticOperator.map(operatorType -> operatorType.operator).orElse("null"));
+				}
+				FormattingUtils.formatCall(result, typeFormatter, this, expression.arguments);
+				return new ExpressionString(result.toString(), ZenScriptOperator.PRIMARY);
 			}
 			default: throw new UnsupportedOperationException("Invalid method type: " + id.getKind());
 		}
+	}
+
+	@Override
+	public ExpressionString visitCallSuper(CallSuperExpression expression) {
+		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
 	@Override
@@ -442,6 +466,11 @@ public class ExpressionFormatter implements ExpressionVisitor<ExpressionString> 
 	}
 
 	@Override
+	public ExpressionString visitGetStaticField(GetStaticFieldExpression expression) {
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	@Override
 	public ExpressionString visitGlobal(GlobalExpression expression) {
 		return new ExpressionString(expression.name, ZenScriptOperator.PRIMARY);
 	}
@@ -524,8 +553,8 @@ public class ExpressionFormatter implements ExpressionVisitor<ExpressionString> 
 
 	@Override
 	public ExpressionString visitPostCall(PostCallExpression expression) {
-		MethodID.Operator operator = (MethodID.Operator) expression.member.getID();
-		return unaryPostfix(expression.target, ZenScriptOperator.INCREMENT, operator.operator == OperatorType.INCREMENT ? "++" : "--");
+		MethodID operator = expression.member.getID();
+		return unaryPostfix(expression.target, ZenScriptOperator.INCREMENT, operator.getOperator().filter(operatorType -> operatorType == OperatorType.INCREMENT).map(operatorType -> "++").orElse("--"));
 	}
 
 	@Override
