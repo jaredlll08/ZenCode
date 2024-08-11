@@ -192,7 +192,7 @@ public class OpenFileInfo {
 	public ZSTokenParser getTokenParser() {
 		try {
 			return ZSTokenParser.create(this.parsedFile.file, null);
-		} catch (IOException | ParseException exception) {
+		} catch (Exception exception) {
 			Logger.getGlobal().log(Level.SEVERE, "Could not read tokenStream", exception);
 			return null; // TODO something
 		}
