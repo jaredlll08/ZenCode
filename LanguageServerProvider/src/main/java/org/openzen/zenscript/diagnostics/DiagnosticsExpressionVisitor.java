@@ -506,14 +506,14 @@ public class DiagnosticsExpressionVisitor implements ExpressionVisitor<Void> {
 	@Override
 	public Void visitInvalid(InvalidExpression expression) {
 		baseExpression(expression);
-		diagnostics.add(new Diagnostic(OpenFileInfo.codePositionToRange(expression.position), expression.error.toString()));
+		diagnostics.add(new Diagnostic(OpenFileInfo.codePositionToRange(expression.position), expression.error.description));
 		return null;
 	}
 
 	@Override
 	public Void visitInvalidAssign(InvalidAssignExpression expression) {
 		baseExpression(expression);
-		diagnostics.add(new Diagnostic(OpenFileInfo.codePositionToRange(expression.position), expression.target.error.toString()));
+		diagnostics.add(new Diagnostic(OpenFileInfo.codePositionToRange(expression.position), expression.target.error.description));
 		return null;
 	}
 }

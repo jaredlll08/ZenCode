@@ -65,7 +65,7 @@ public class DiagnosticsTypeVisitor implements TypeVisitor<Void> {
 
 	@Override
 	public Void visitInvalid(InvalidTypeID type) {
-		this.diagnostics.add(new Diagnostic(OpenFileInfo.codePositionToRange(type.position), type.error.toString()));
+		this.diagnostics.add(new Diagnostic(OpenFileInfo.codePositionToRange(type.position), type.error.description));
 		return null;
 	}
 }

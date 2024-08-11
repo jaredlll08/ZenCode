@@ -70,7 +70,7 @@ public class DiagnosisLogger implements ScriptingEngineLogger {
 	public void logValidationError(ValidationLogEntry errorEntry) {
 		addDiagnosticEntry(
 				errorEntry.position,
-				errorEntry.error.toString(), // TODO
+				errorEntry.error.description, // TODO
 				DiagnosticSeverity.Error,
 				errorEntry.error.code.toString()
 		);

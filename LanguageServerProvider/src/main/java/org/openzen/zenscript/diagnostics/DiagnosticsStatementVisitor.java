@@ -184,7 +184,7 @@ public class DiagnosticsStatementVisitor implements StatementVisitor<Void> {
 
 	@Override
 	public Void visitInvalid(InvalidStatement statement) {
-		diagnostics.add(new Diagnostic(OpenFileInfo.codePositionToRange(statement.position), statement.error.toString()));
+		diagnostics.add(new Diagnostic(OpenFileInfo.codePositionToRange(statement.position), statement.error.description));
 		return null;
 	}
 }
