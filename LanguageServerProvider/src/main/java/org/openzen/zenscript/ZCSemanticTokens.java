@@ -5,6 +5,7 @@ import org.openzen.zencode.shared.CodePosition;
 import org.openzen.zenscript.lexer.ZSToken;
 import org.openzen.zenscript.lexer.ZSTokenParser;
 import org.openzen.zenscript.lexer.ZSTokenType;
+import org.openzen.zenscript.parser.PositionedToken;
 import org.openzen.zenscript.parser.statements.ParsedStatement;
 import org.openzen.zenscript.parser.statements.ParsedStatementVar;
 import org.openzen.zenscript.scripting.LSPEngine;
@@ -56,7 +57,7 @@ public class ZCSemanticTokens {
 		});
 	}
 
-	public static void advancedTokens(LSPEngine engine, OpenFileInfo file, List<Integer> data) {
+	public static void positionedTokens(LSPEngine engine, OpenFileInfo file, List<Integer> data) {
 		TreeMap<CodePosition, ParsedStatementVar> variables = new TreeMap<>(CodePosition::compareTo);
 		for (ParsedStatement statement : file.parsedFile.statements()) {
 			if (statement instanceof ParsedStatementVar) {
@@ -64,11 +65,12 @@ public class ZCSemanticTokens {
 				variables.put(statement.position, parsedStatementVar);
 			}
 		}
-		SemanticParser parser = new SemanticParser(variables);
-		ZSTokenParser tokenParser = file.getTokenParser();
-		parser.parse(tokenParser);
-
-		List<SemanticToken> tokens = parser.tokens();
+		List<SemanticToken> tokens = new ArrayList<>();
+		for (PositionedToken<ZSTokenType, ZSToken> token : file.tokens()) {
+			SemanticTokenType semanticTokenType = ZCSemanticTokens.mapToken(token.getType());
+			if (semanticTokenType != null)
+				tokens.add(new SemanticToken(token.position(), token.delegate()));
+		}
 
 		IntStream.range(0, tokens.size()).forEach(i -> {
 			SemanticToken current = tokens.get(i);
@@ -78,22 +80,6 @@ public class ZCSemanticTokens {
 				current.encode(data, tokens.get(i - 1));
 			}
 		});
-//		try {
-////			SemanticTokenParser.parse(file.getTokenParser());
-////
-////			List<SemanticToken> tokens = SemanticTokenParser.tokens();
-////			IntStream.range(0, tokens.size()).forEach(i -> {
-////				SemanticToken current = tokens.get(i);
-////				if (i == 0) {
-////					current.encode(data);
-////				} else {
-////					current.encode(data, tokens.get(i - 1));
-////				}
-////			});
-////			tokens.clear();
-//		} catch (ParseException e) {
-//			throw new RuntimeException(e);
-//		}
 	}
 
 	public static SemanticTokenType mapToken(ZSTokenType token) {
@@ -128,6 +114,8 @@ public class ZCSemanticTokens {
 			case T_COMMENT_SINGLELINE:
 			case T_COMMENT_MULTILINE:
 				return SemanticTokenType.COMMENT;
+			case T_COMMENT_SCRIPT:
+				return SemanticTokenType.MACRO;
 			case T_STRING_DQ:
 			case T_STRING_DQ_WYSIWYG:
 			case T_STRING_SQ:

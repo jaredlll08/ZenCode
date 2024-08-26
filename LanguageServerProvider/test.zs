@@ -4,7 +4,6 @@
 
 import crafttweaker.api.world.Level;
 
-
 public class X 
  {
     public var x as string : get, set;
@@ -19,6 +18,7 @@ public class X
 }
 
 new X("").doThing();
+
 
 var x = 1;
 

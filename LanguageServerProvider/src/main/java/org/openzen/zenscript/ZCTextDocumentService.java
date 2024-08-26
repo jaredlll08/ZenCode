@@ -27,9 +27,10 @@ import org.openzen.zenscript.codemodel.type.TypeID;
 import org.openzen.zenscript.diagnostics.DiagnosticsStatementVisitor;
 import org.openzen.zenscript.formatter.FileFormatter;
 import org.openzen.zenscript.formatter.ScriptFormattingSettings;
-import org.openzen.zenscript.lexer.ZSToken;
-import org.openzen.zenscript.lexer.ZSTokenType;
+import org.openzen.zenscript.lexer.*;
 import org.openzen.zenscript.parser.BracketExpressionParser;
+import org.openzen.zenscript.parser.PositionalTokenParser;
+import org.openzen.zenscript.parser.PositionedToken;
 import org.openzen.zenscript.scripting.BasicBracketExpressionParser;
 import org.openzen.zenscript.scripting.DiagnosisLogger;
 import org.openzen.zenscript.scripting.LSPEngine;
@@ -38,6 +39,7 @@ import org.openzen.zenscript.scripting.visitor.LocalVariableNameCollectionStatem
 import org.openzen.zenscript.scripting.visitor.completion.CompletionMemberVisitor;
 import org.openzen.zenscript.scripting.visitor.completion.DotCompletionVisitor;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
@@ -89,7 +91,9 @@ public class ZCTextDocumentService implements TextDocumentService {
 			OpenFileInfo file = openFiles.get(params.getTextDocument().getUri());
 			List<Integer> data = new ArrayList<>();
 //			ZCSemanticTokens.basicTokens(file, data);
-			ZCSemanticTokens.advancedTokens(engine, file, data);
+//			ZCSemanticTokens.advancedTokens(engine, file, data);
+			ZCSemanticTokens.positionedTokens(engine, file, data);
+
 			return new SemanticTokens(data);
 		});
 	}
@@ -99,10 +103,22 @@ public class ZCTextDocumentService implements TextDocumentService {
 		return CompletableFuture.supplyAsync(() -> {
 
 			OpenFileInfo file = openFiles.get(params.getTextDocument().getUri());
-			FileFormatter fileFormatter = new FileFormatter(new ScriptFormattingSettings.Builder().classBracketOnSameLine(true).useSingleQuotesForStrings(false).build());
-			CompilingPackage compilingPackage = new CompilingPackage(new ZSPackage(null, "test"), new ModuleSymbol("test"));
-			String format = fileFormatter.format(file.parsedFile.pkg.getPackage(), file.getScriptBlock(engine.engine().space(), compilingPackage), file.getDefinitions(engine.engine().space()));
-			return Collections.singletonList(new TextEdit(OpenFileInfo.codePositionsToRange(file.tokensAtPosition.firstKey(), file.tokensAtPosition.lastKey()), format));
+			try {
+				PositionalTokenParser<ZSToken, ZSTokenType> raw = PositionalTokenParser.create(file.parsedFile.file, new ReaderCharReader(file.parsedFile.file.open()));
+				List<PositionedToken<ZSTokenType, ZSToken>> tokens = new ArrayList<>();
+				while(raw.hasNext()) {
+					PositionedToken<ZSTokenType, ZSToken> next = raw.next();
+					tokens.add(next);
+				}
+				System.out.println(tokens);
+			} catch (IOException | ParseException e) {
+				throw new RuntimeException(e);
+			}
+			return Collections.emptyList();
+//			FileFormatter fileFormatter = new FileFormatter(new ScriptFormattingSettings.Builder().classBracketOnSameLine(true).useSingleQuotesForStrings(false).build());
+//			CompilingPackage compilingPackage = new CompilingPackage(new ZSPackage(null, "test"), new ModuleSymbol("test"));
+//			String format = fileFormatter.format(file.parsedFile.pkg.getPackage(), file.getScriptBlock(engine.engine().space(), compilingPackage), file.getDefinitions(engine.engine().space()));
+//			return Collections.singletonList(new TextEdit(OpenFileInfo.codePositionsToRange(file.tokensAtPosition.firstKey(), file.tokensAtPosition.lastKey()), format));
 //			FormattingParser formattingParser = new FormattingParser();
 //			formattingParser.parse(file.getTokenParser());
 //			return Collections.singletonList(new TextEdit(OpenFileInfo.codePositionsToRange(file.tokensAtPosition.firstKey(), file.tokensAtPosition.lastKey()), String.join("\n", formattingParser.tokens())));

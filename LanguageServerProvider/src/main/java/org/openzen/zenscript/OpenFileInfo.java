@@ -1,10 +1,7 @@
 package org.openzen.zenscript;
 
 import org.eclipse.lsp4j.*;
-import org.openzen.zencode.shared.CodePosition;
-import org.openzen.zencode.shared.CompileException;
-import org.openzen.zencode.shared.LiteralSourceFile;
-import org.openzen.zencode.shared.VirtualSourceFile;
+import org.openzen.zencode.shared.*;
 import org.openzen.zenscript.codemodel.*;
 import org.openzen.zenscript.codemodel.compilation.CompileContext;
 import org.openzen.zenscript.codemodel.compilation.CompilingDefinition;
@@ -19,16 +16,10 @@ import org.openzen.zenscript.codemodel.ssa.CodeBlock;
 import org.openzen.zenscript.codemodel.ssa.SSA;
 import org.openzen.zenscript.codemodel.statement.Statement;
 import org.openzen.zenscript.codemodel.type.BasicTypeID;
-import org.openzen.zenscript.lexer.ParseException;
-import org.openzen.zenscript.lexer.ZSToken;
-import org.openzen.zenscript.lexer.ZSTokenParser;
-import org.openzen.zenscript.parser.ParsedDefinition;
-import org.openzen.zenscript.parser.ParsedFile;
-import org.openzen.zenscript.parser.ParsedFileCompiler;
-import org.openzen.zenscript.parser.ParsedImport;
+import org.openzen.zenscript.lexer.*;
+import org.openzen.zenscript.parser.*;
 import org.openzen.zenscript.parser.statements.ParsedStatement;
 import org.openzen.zenscript.scripting.BasicBracketExpressionParser;
-import org.openzen.zenscript.semantics.SemanticTokenParser;
 
 import java.io.IOException;
 import java.util.*;
@@ -396,6 +387,23 @@ public class OpenFileInfo {
 		}
 		return result;
 	}
+
+	public List<PositionedToken<ZSTokenType, ZSToken>> tokens() {
+
+		List<PositionedToken<ZSTokenType, ZSToken>> tokens = new ArrayList<>();
+		SourceFile file = this.parsedFile.file;
+		try {
+			PositionalTokenParser<ZSToken, ZSTokenType> raw = PositionalTokenParser.create(file, new ReaderCharReader(file.open()));
+			while (raw.hasNext()) {
+				PositionedToken<ZSTokenType, ZSToken> next = raw.next();
+				tokens.add(next);
+			}
+			System.out.println(tokens);
+		} catch (IOException | ParseException ignored) {
+		}
+		return tokens;
+	}
+
 
 	private CodePosition positionToCodePosition(Position position) {
 		return positionToCodePosition(uri, position);

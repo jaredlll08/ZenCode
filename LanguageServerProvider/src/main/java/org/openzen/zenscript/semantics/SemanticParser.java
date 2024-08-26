@@ -27,17 +27,12 @@ public class SemanticParser {
 		this.variables = variables;
 	}
 
-	public void parse(ZSTokenParser tokens) {
-		final CompilingPackage compilingPackage = new CompilingPackage(new ZSPackage(null, "test"), new ModuleSymbol("test"));
-		parse(compilingPackage, tokens);
-	}
-
 	private boolean isVariableDeclaredYet(CodePosition position, String name) {
 		SortedMap<CodePosition, ParsedStatementVar> codePositionParsedStatementVarSortedMap = variables.descendingMap().tailMap(position);
 		return codePositionParsedStatementVarSortedMap.values().stream().map(ParsedStatementVar::name).anyMatch(s -> s.equals(name));
 	}
 
-	public void parse(CompilingPackage compilingPackage, ZSTokenParser tokens) {
+	public void parse(ZSTokenParser tokens) {
 		try {
 			CodePosition currentPos = null;
 			while (true) {
