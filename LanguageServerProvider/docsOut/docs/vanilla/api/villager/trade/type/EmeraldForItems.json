@@ -1,0 +1,87 @@
+{
+  "key": "vanilla/api/villager/trade/type/EmeraldForItems",
+  "display_name": "EmeraldForItems",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.npc.VillagerTrades.EmeraldForItems",
+    "display_name": "EmeraldForItems",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.npc",
+    "class_name": "EmeraldForItems",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.entity.npc.VillagerTrades.ItemListing",
+        "display_name": "ItemListing",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.entity.npc",
+        "class_name": "ItemListing"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.villager.trade.type.EmeraldForItems",
+  "member_groups": {
+    "getOffer": {
+      "key": "getOffer",
+      "members": [
+        {
+          "key": "getOffer",
+          "display_name": "getOffer",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "traderEntity",
+              "display_name": "traderEntity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": false
+            },
+            {
+              "key": "random",
+              "display_name": "random",
+              "type": {
+                "key": "net.minecraft.util.RandomSource",
+                "display_name": "RandomSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.util",
+                "class_name": "RandomSource"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.trading.MerchantOffer",
+            "display_name": "MerchantOffer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.trading",
+            "class_name": "MerchantOffer"
+          }
+        }
+      ]
+    }
+  }
+}

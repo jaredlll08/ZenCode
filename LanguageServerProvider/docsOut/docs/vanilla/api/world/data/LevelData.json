@@ -1,0 +1,254 @@
+{
+  "key": "vanilla/api/world/data/LevelData",
+  "display_name": "LevelData",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.LevelData",
+    "display_name": "LevelData",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage",
+    "class_name": "LevelData"
+  },
+  "zen_code_name": "crafttweaker.api.world.data.LevelData",
+  "member_groups": {
+    "dayTime": {
+      "key": "dayTime",
+      "members": [
+        {
+          "key": "dayTime",
+          "display_name": "dayTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "long",
+            "display_name": "long",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "difficulty": {
+      "key": "difficulty",
+      "members": [
+        {
+          "key": "difficulty",
+          "display_name": "difficulty",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.Difficulty",
+            "display_name": "Difficulty",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "Difficulty"
+          }
+        }
+      ]
+    },
+    "gameTime": {
+      "key": "gameTime",
+      "members": [
+        {
+          "key": "gameTime",
+          "display_name": "gameTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "long",
+            "display_name": "long",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hardcore": {
+      "key": "hardcore",
+      "members": [
+        {
+          "key": "hardcore",
+          "display_name": "hardcore",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isDifficultyLocked": {
+      "key": "isDifficultyLocked",
+      "members": [
+        {
+          "key": "isDifficultyLocked",
+          "display_name": "isDifficultyLocked",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "raining": {
+      "key": "raining",
+      "members": [
+        {
+          "key": "raining",
+          "display_name": "raining",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "raining",
+          "display_name": "raining",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.LevelData",
+                "display_name": "LevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "LevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "raining",
+              "display_name": "raining",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "spawnAngle": {
+      "key": "spawnAngle",
+      "members": [
+        {
+          "key": "spawnAngle",
+          "display_name": "spawnAngle",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "thundering": {
+      "key": "thundering",
+      "members": [
+        {
+          "key": "thundering",
+          "display_name": "thundering",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "xSpawn": {
+      "key": "xSpawn",
+      "members": [
+        {
+          "key": "xSpawn",
+          "display_name": "xSpawn",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "ySpawn": {
+      "key": "ySpawn",
+      "members": [
+        {
+          "key": "ySpawn",
+          "display_name": "ySpawn",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "zSpawn": {
+      "key": "zSpawn",
+      "members": [
+        {
+          "key": "zSpawn",
+          "display_name": "zSpawn",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

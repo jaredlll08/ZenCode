@@ -1,0 +1,61 @@
+{
+  "key": "vanilla/api/util/math/Matrix3f",
+  "display_name": "Matrix3f",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "org.joml.Matrix3f",
+    "display_name": "Matrix3f",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "org.joml",
+    "class_name": "Matrix3f",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "java.io.Externalizable",
+        "display_name": "Externalizable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Externalizable"
+      },
+      {
+        "key": "java.lang.Cloneable",
+        "display_name": "Cloneable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang",
+        "class_name": "Cloneable"
+      },
+      {
+        "key": "org.joml.Matrix3fc",
+        "display_name": "Matrix3fc",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "org.joml",
+        "class_name": "Matrix3fc"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.math.Matrix3f"
+}

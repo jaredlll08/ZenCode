@@ -1,0 +1,175 @@
+{
+  "key": "vanilla/api/util/math/Random",
+  "display_name": "Random",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "java.util.Random",
+    "display_name": "Random",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "java.util",
+    "class_name": "Random",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "java.util.random.RandomGenerator",
+        "display_name": "RandomGenerator",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.util.random",
+        "class_name": "RandomGenerator"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.math.Random",
+  "member_groups": {
+    "nextBoolean": {
+      "key": "nextBoolean",
+      "members": [
+        {
+          "key": "nextBoolean",
+          "display_name": "nextBoolean",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "nextDouble": {
+      "key": "nextDouble",
+      "members": [
+        {
+          "key": "nextDouble",
+          "display_name": "nextDouble",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the next pseudorandom, uniformly distributed double value\r\n between 0.0 and 1.0 from this random number generator\u0027s sequence."
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "nextFloat": {
+      "key": "nextFloat",
+      "members": [
+        {
+          "key": "nextFloat",
+          "display_name": "nextFloat",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the next pseudorandom, uniformly distributed float value\r\n between 0.0f and 1.0f from this random number generator\u0027s sequence."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "nextInt": {
+      "key": "nextInt",
+      "members": [
+        {
+          "key": "nextInt",
+          "display_name": "nextInt",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the next pseudorandom, uniformly distributed int value from this random number generator\u0027s sequence."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "nextInt",
+          "display_name": "nextInt",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the next pseudorandom, uniformly distributed int value between zero (inclusive)\r\n and bound (exclusive) from this random number generator\u0027s sequence"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "bound",
+              "display_name": "bound",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the upper bound (exclusive). Must be positive."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "key": "vanilla/api/world/damage/DamageSource",
+  "display_name": "DamageSource",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.damagesource.DamageSource",
+    "display_name": "DamageSource",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.damagesource",
+    "class_name": "DamageSource",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.damage.DamageSource",
+  "member_groups": {
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "net.minecraft.world.damagesource.DamageType",
+                "display_name": "DamageType",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.damagesource",
+                "class_name": "DamageType"
+              },
+              "optional": false
+            },
+            {
+              "key": "directEntity",
+              "display_name": "directEntity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": true,
+              "default_value": "null"
+            },
+            {
+              "key": "causingEntity",
+              "display_name": "causingEntity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageSource",
+            "display_name": "DamageSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageSource"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "net.minecraft.world.damagesource.DamageType",
+                "display_name": "DamageType",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.damagesource",
+                "class_name": "DamageType"
+              },
+              "optional": false
+            },
+            {
+              "key": "damageSourcePosition",
+              "display_name": "damageSourcePosition",
+              "type": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageSource",
+            "display_name": "DamageSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageSource"
+          }
+        }
+      ]
+    },
+    "directEntity": {
+      "key": "directEntity",
+      "members": [
+        {
+          "key": "directEntity",
+          "display_name": "directEntity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.Entity",
+            "display_name": "Entity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Entity"
+          }
+        }
+      ]
+    },
+    "entity": {
+      "key": "entity",
+      "members": [
+        {
+          "key": "entity",
+          "display_name": "entity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.Entity",
+            "display_name": "Entity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Entity"
+          }
+        }
+      ]
+    },
+    "foodExhaustion": {
+      "key": "foodExhaustion",
+      "members": [
+        {
+          "key": "foodExhaustion",
+          "display_name": "foodExhaustion",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getLocalizedDeathMessage": {
+      "key": "getLocalizedDeathMessage",
+      "members": [
+        {
+          "key": "getLocalizedDeathMessage",
+          "display_name": "getLocalizedDeathMessage",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.LivingEntity",
+                "display_name": "LivingEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "LivingEntity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "indirect": {
+      "key": "indirect",
+      "members": [
+        {
+          "key": "indirect",
+          "display_name": "indirect",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isCreativePlayer": {
+      "key": "isCreativePlayer",
+      "members": [
+        {
+          "key": "isCreativePlayer",
+          "display_name": "isCreativePlayer",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isIn": {
+      "key": "isIn",
+      "members": [
+        {
+          "key": "isIn",
+          "display_name": "isIn",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cDamageType\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.damagesource.DamageType",
+                    "display_name": "DamageType",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.damagesource",
+                    "class_name": "DamageType"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "msgId": {
+      "key": "msgId",
+      "members": [
+        {
+          "key": "msgId",
+          "display_name": "msgId",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "scalesWithDifficulty": {
+      "key": "scalesWithDifficulty",
+      "members": [
+        {
+          "key": "scalesWithDifficulty",
+          "display_name": "scalesWithDifficulty",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "sourcePosition": {
+      "key": "sourcePosition",
+      "members": [
+        {
+          "key": "sourcePosition",
+          "display_name": "sourcePosition",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "sourcePositionRaw": {
+      "key": "sourcePositionRaw",
+      "members": [
+        {
+          "key": "sourcePositionRaw",
+          "display_name": "sourcePositionRaw",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "type": {
+      "key": "type",
+      "members": [
+        {
+          "key": "type",
+          "display_name": "type",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageType",
+            "display_name": "DamageType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageType"
+          }
+        }
+      ]
+    }
+  }
+}

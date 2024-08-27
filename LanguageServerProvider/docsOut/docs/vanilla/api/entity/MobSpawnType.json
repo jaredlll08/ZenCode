@@ -1,0 +1,402 @@
+{
+  "key": "vanilla/api/entity/MobSpawnType",
+  "display_name": "MobSpawnType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.MobSpawnType",
+    "display_name": "MobSpawnType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity",
+    "class_name": "MobSpawnType",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cMobSpawnType\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.entity.MobSpawnType",
+          "display_name": "MobSpawnType",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.entity",
+          "class_name": "MobSpawnType"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.MobSpawnType",
+  "member_groups": {
+    "BREEDING": {
+      "key": "BREEDING",
+      "members": [
+        {
+          "key": "BREEDING",
+          "display_name": "BREEDING",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "BUCKET": {
+      "key": "BUCKET",
+      "members": [
+        {
+          "key": "BUCKET",
+          "display_name": "BUCKET",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "CHUNK_GENERATION": {
+      "key": "CHUNK_GENERATION",
+      "members": [
+        {
+          "key": "CHUNK_GENERATION",
+          "display_name": "CHUNK_GENERATION",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "COMMAND": {
+      "key": "COMMAND",
+      "members": [
+        {
+          "key": "COMMAND",
+          "display_name": "COMMAND",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "CONVERSION": {
+      "key": "CONVERSION",
+      "members": [
+        {
+          "key": "CONVERSION",
+          "display_name": "CONVERSION",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "DISPENSER": {
+      "key": "DISPENSER",
+      "members": [
+        {
+          "key": "DISPENSER",
+          "display_name": "DISPENSER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "EVENT": {
+      "key": "EVENT",
+      "members": [
+        {
+          "key": "EVENT",
+          "display_name": "EVENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "JOCKEY": {
+      "key": "JOCKEY",
+      "members": [
+        {
+          "key": "JOCKEY",
+          "display_name": "JOCKEY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "MOB_SUMMONED": {
+      "key": "MOB_SUMMONED",
+      "members": [
+        {
+          "key": "MOB_SUMMONED",
+          "display_name": "MOB_SUMMONED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "NATURAL": {
+      "key": "NATURAL",
+      "members": [
+        {
+          "key": "NATURAL",
+          "display_name": "NATURAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "PATROL": {
+      "key": "PATROL",
+      "members": [
+        {
+          "key": "PATROL",
+          "display_name": "PATROL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "REINFORCEMENT": {
+      "key": "REINFORCEMENT",
+      "members": [
+        {
+          "key": "REINFORCEMENT",
+          "display_name": "REINFORCEMENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "SPAWNER": {
+      "key": "SPAWNER",
+      "members": [
+        {
+          "key": "SPAWNER",
+          "display_name": "SPAWNER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "SPAWN_EGG": {
+      "key": "SPAWN_EGG",
+      "members": [
+        {
+          "key": "SPAWN_EGG",
+          "display_name": "SPAWN_EGG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "STRUCTURE": {
+      "key": "STRUCTURE",
+      "members": [
+        {
+          "key": "STRUCTURE",
+          "display_name": "STRUCTURE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    },
+    "TRIGGERED": {
+      "key": "TRIGGERED",
+      "members": [
+        {
+          "key": "TRIGGERED",
+          "display_name": "TRIGGERED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobSpawnType",
+            "display_name": "MobSpawnType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobSpawnType"
+          }
+        }
+      ]
+    }
+  }
+}

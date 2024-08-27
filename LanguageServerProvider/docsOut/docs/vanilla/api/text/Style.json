@@ -1,0 +1,913 @@
+{
+  "key": "vanilla/api/text/Style",
+  "display_name": "Style",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.network.chat.Style",
+    "display_name": "Style",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.network.chat",
+    "class_name": "Style",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.text.Style",
+  "member_groups": {
+    "applyFormat": {
+      "key": "applyFormat",
+      "members": [
+        {
+          "key": "applyFormat",
+          "display_name": "applyFormat",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "format",
+              "display_name": "format",
+              "type": {
+                "key": "net.minecraft.ChatFormatting",
+                "display_name": "ChatFormatting",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft",
+                "class_name": "ChatFormatting"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "applyFormats": {
+      "key": "applyFormats",
+      "members": [
+        {
+          "key": "applyFormats",
+          "display_name": "applyFormats",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "formattings",
+              "display_name": "formattings",
+              "type": {
+                "key": "net.minecraft.ChatFormatting[]",
+                "display_name": "ChatFormatting[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.ChatFormatting",
+                  "display_name": "ChatFormatting",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft",
+                  "class_name": "ChatFormatting"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "applyLegacyFormat": {
+      "key": "applyLegacyFormat",
+      "members": [
+        {
+          "key": "applyLegacyFormat",
+          "display_name": "applyLegacyFormat",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "format",
+              "display_name": "format",
+              "type": {
+                "key": "net.minecraft.ChatFormatting",
+                "display_name": "ChatFormatting",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft",
+                "class_name": "ChatFormatting"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "applyTo": {
+      "key": "applyTo",
+      "members": [
+        {
+          "key": "applyTo",
+          "display_name": "applyTo",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "style",
+              "display_name": "style",
+              "type": {
+                "key": "net.minecraft.network.chat.Style",
+                "display_name": "Style",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Style"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "bold": {
+      "key": "bold",
+      "members": [
+        {
+          "key": "isBold",
+          "display_name": "isBold",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "bold",
+          "display_name": "bold",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "color": {
+      "key": "color",
+      "members": [
+        {
+          "key": "getColor",
+          "display_name": "getColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.TextColor",
+            "display_name": "TextColor",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "TextColor"
+          }
+        },
+        {
+          "key": "color",
+          "display_name": "color",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.TextColor",
+            "display_name": "TextColor",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "TextColor"
+          }
+        }
+      ]
+    },
+    "empty": {
+      "key": "empty",
+      "members": [
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        },
+        {
+          "key": "isEmpty",
+          "display_name": "isEmpty",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "font": {
+      "key": "font",
+      "members": [
+        {
+          "key": "getFont",
+          "display_name": "getFont",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "font",
+          "display_name": "font",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "insertion": {
+      "key": "insertion",
+      "members": [
+        {
+          "key": "getInsertion",
+          "display_name": "getInsertion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "insertion",
+          "display_name": "insertion",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "italic": {
+      "key": "italic",
+      "members": [
+        {
+          "key": "isItalic",
+          "display_name": "isItalic",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "italic",
+          "display_name": "italic",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "obfucated": {
+      "key": "obfucated",
+      "members": [
+        {
+          "key": "isObfuscated",
+          "display_name": "isObfuscated",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "obfucated",
+          "display_name": "obfucated",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setBold": {
+      "key": "setBold",
+      "members": [
+        {
+          "key": "setBold",
+          "display_name": "setBold",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "setItalic": {
+      "key": "setItalic",
+      "members": [
+        {
+          "key": "setItalic",
+          "display_name": "setItalic",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "setObfuscated": {
+      "key": "setObfuscated",
+      "members": [
+        {
+          "key": "setObfuscated",
+          "display_name": "setObfuscated",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "setStrikethrough": {
+      "key": "setStrikethrough",
+      "members": [
+        {
+          "key": "setStrikethrough",
+          "display_name": "setStrikethrough",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "setUnderlined": {
+      "key": "setUnderlined",
+      "members": [
+        {
+          "key": "setUnderlined",
+          "display_name": "setUnderlined",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "strikethrough": {
+      "key": "strikethrough",
+      "members": [
+        {
+          "key": "isStrikethrough",
+          "display_name": "isStrikethrough",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "strikethrough",
+          "display_name": "strikethrough",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "underlined": {
+      "key": "underlined",
+      "members": [
+        {
+          "key": "isUnderlined",
+          "display_name": "isUnderlined",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "underlined",
+          "display_name": "underlined",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "withBold": {
+      "key": "withBold",
+      "members": [
+        {
+          "key": "withBold",
+          "display_name": "withBold",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "withColor": {
+      "key": "withColor",
+      "members": [
+        {
+          "key": "withColor",
+          "display_name": "withColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "textColor",
+              "display_name": "textColor",
+              "type": {
+                "key": "net.minecraft.network.chat.TextColor",
+                "display_name": "TextColor",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "TextColor"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        },
+        {
+          "key": "withColor",
+          "display_name": "withColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "formatting",
+              "display_name": "formatting",
+              "type": {
+                "key": "net.minecraft.ChatFormatting",
+                "display_name": "ChatFormatting",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft",
+                "class_name": "ChatFormatting"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        },
+        {
+          "key": "withColor",
+          "display_name": "withColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "color",
+              "display_name": "color",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "withFont": {
+      "key": "withFont",
+      "members": [
+        {
+          "key": "withFont",
+          "display_name": "withFont",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "fontId",
+              "display_name": "fontId",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "withInsertion": {
+      "key": "withInsertion",
+      "members": [
+        {
+          "key": "withInsertion",
+          "display_name": "withInsertion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": true
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "withItalic": {
+      "key": "withItalic",
+      "members": [
+        {
+          "key": "withItalic",
+          "display_name": "withItalic",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "withObfuscated": {
+      "key": "withObfuscated",
+      "members": [
+        {
+          "key": "withObfuscated",
+          "display_name": "withObfuscated",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "withStrikethrough": {
+      "key": "withStrikethrough",
+      "members": [
+        {
+          "key": "withStrikethrough",
+          "display_name": "withStrikethrough",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "withUnderlined": {
+      "key": "withUnderlined",
+      "members": [
+        {
+          "key": "withUnderlined",
+          "display_name": "withUnderlined",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    }
+  }
+}

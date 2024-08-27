@@ -1,0 +1,320 @@
+{
+  "key": "vanilla/api/util/math/AxisCycle",
+  "display_name": "AxisCycle",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:direction/axiscycle"
+  },
+  "type": {
+    "key": "net.minecraft.core.AxisCycle",
+    "display_name": "AxisCycle",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.core",
+    "class_name": "AxisCycle",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cAxisCycle\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.core.AxisCycle",
+          "display_name": "AxisCycle",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.core",
+          "class_name": "AxisCycle"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.math.AxisCycle",
+  "member_groups": {
+    "BACKWARD": {
+      "key": "BACKWARD",
+      "members": [
+        {
+          "key": "BACKWARD",
+          "display_name": "BACKWARD",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.AxisCycle",
+            "display_name": "AxisCycle",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "AxisCycle"
+          }
+        }
+      ]
+    },
+    "FORWARD": {
+      "key": "FORWARD",
+      "members": [
+        {
+          "key": "FORWARD",
+          "display_name": "FORWARD",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.AxisCycle",
+            "display_name": "AxisCycle",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "AxisCycle"
+          }
+        }
+      ]
+    },
+    "NONE": {
+      "key": "NONE",
+      "members": [
+        {
+          "key": "NONE",
+          "display_name": "NONE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.AxisCycle",
+            "display_name": "AxisCycle",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "AxisCycle"
+          }
+        }
+      ]
+    },
+    "cycle": {
+      "key": "cycle",
+      "members": [
+        {
+          "key": "cycle",
+          "display_name": "cycle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "axis",
+              "display_name": "axis",
+              "type": {
+                "key": "net.minecraft.core.Direction.Axis",
+                "display_name": "Axis",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Axis"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "cycle",
+          "display_name": "cycle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "axis",
+              "display_name": "axis",
+              "type": {
+                "key": "net.minecraft.core.Direction.Axis",
+                "display_name": "Axis",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Axis"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "cycle",
+          "display_name": "cycle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "axis",
+              "display_name": "axis",
+              "type": {
+                "key": "net.minecraft.core.Direction.Axis",
+                "display_name": "Axis",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Axis"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction.Axis",
+            "display_name": "Axis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Axis"
+          }
+        }
+      ]
+    },
+    "inverse": {
+      "key": "inverse",
+      "members": [
+        {
+          "key": "inverse",
+          "display_name": "inverse",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.AxisCycle",
+            "display_name": "AxisCycle",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "AxisCycle"
+          }
+        }
+      ]
+    }
+  }
+}

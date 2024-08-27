@@ -1,0 +1,79 @@
+{
+  "key": "vanilla/api/predicate/PlayerPredicate",
+  "display_name": "PlayerPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.PlayerPredicate",
+    "display_name": "PlayerPredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "PlayerPredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+        "display_name": "EntitySubPredicate",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.advancements.critereon",
+        "class_name": "EntitySubPredicate"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.predicate.PlayerPredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate",
+            "display_name": "PlayerPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "PlayerPredicate"
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

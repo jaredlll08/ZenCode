@@ -1,0 +1,194 @@
+{
+  "key": "vanilla/api/predicate/builder/FluidPredicateBuilder",
+  "display_name": "FluidPredicateBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.FluidPredicate.Builder",
+    "display_name": "Builder",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "Builder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.builder.FluidPredicateBuilder",
+  "member_groups": {
+    "blocks": {
+      "key": "blocks",
+      "members": [
+        {
+          "key": "blocks",
+          "display_name": "blocks",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "fluid",
+              "display_name": "fluid",
+              "type": {
+                "key": "net.minecraft.world.level.material.Fluid",
+                "display_name": "Fluid",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.material",
+                "class_name": "Fluid"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.FluidPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "build": {
+      "key": "build",
+      "members": [
+        {
+          "key": "build",
+          "display_name": "build",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.FluidPredicate",
+            "display_name": "FluidPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "FluidPredicate"
+          }
+        }
+      ]
+    },
+    "properties": {
+      "key": "properties",
+      "members": [
+        {
+          "key": "properties",
+          "display_name": "properties",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.StatePropertiesPredicate",
+                "display_name": "StatePropertiesPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "StatePropertiesPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.FluidPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "properties",
+          "display_name": "properties",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.StatePropertiesPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.FluidPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "tag": {
+      "key": "tag",
+      "members": [
+        {
+          "key": "tag",
+          "display_name": "tag",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cFluid\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.level.material.Fluid",
+                    "display_name": "Fluid",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.level.material",
+                    "class_name": "Fluid"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.FluidPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

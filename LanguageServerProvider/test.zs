@@ -41,6 +41,3 @@ block.setFriction(1);
 var list = new stdlib.List<string>();
 // list.add(item);
 
-
-
-

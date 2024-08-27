@@ -1,0 +1,27 @@
+{
+  "key": "vanilla/api/world/SavedData",
+  "display_name": "SavedData",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.saveddata.SavedData",
+    "display_name": "SavedData",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.saveddata",
+    "class_name": "SavedData",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.SavedData"
+}

@@ -1,0 +1,1322 @@
+{
+  "key": "vanilla/api/tag/manager/ITagManager",
+  "display_name": "ITagManager",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker",
+      "tags"
+    ],
+    "examples": {
+      "this": [
+        "\u003ctagmanager:items\u003e"
+      ]
+    }
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.tag.manager.ITagManager",
+    "display_name": "ITagManager\u003cT : MCTag\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+          "display_name": "MCTag",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.blamejared.crafttweaker.api.tag",
+          "class_name": "MCTag"
+        },
+        "bound": "upper"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.tag.manager",
+    "class_name": "ITagManager",
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      },
+      {
+        "key": "java.lang.Iterable",
+        "display_name": "Iterable\u003cT : MCTag\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+              "display_name": "MCTag",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "com.blamejared.crafttweaker.api.tag",
+              "class_name": "MCTag"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Iterable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cITagManager\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "com.blamejared.crafttweaker.api.tag.manager.ITagManager",
+            "display_name": "ITagManager\u003c?\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "?",
+                "display_name": "?",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.tag.manager",
+            "class_name": "ITagManager"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.tag.manager.ITagManager",
+  "member_groups": {
+    "addId": {
+      "key": "addId",
+      "members": [
+        {
+          "key": "addId",
+          "display_name": "addId",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the elements that correspond to the given "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " to the given tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "to",
+              "display_name": "to",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              },
+              "extra": {
+                "examples": {
+                  "to": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to add to."
+                }
+              ]
+            },
+            {
+              "key": "values",
+              "display_name": "values",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation[]",
+                "display_name": "ResourceLocation[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.resources.ResourceLocation",
+                  "display_name": "ResourceLocation",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.resources",
+                  "class_name": "ResourceLocation"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "values": [
+                    "\u003cresource:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The registry key of the elements to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "clear": {
+      "key": "clear",
+      "members": [
+        {
+          "key": "clear",
+          "display_name": "clear",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Clears all values of the given tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "from",
+              "display_name": "from",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              },
+              "extra": {
+                "examples": {
+                  "from": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to clear."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "contains": {
+      "key": "contains",
+      "members": [
+        {
+          "key": "exists",
+          "display_name": "exists",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if a tag with the given id exists and is registered."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "id": [
+                    "\"minecraft:wool\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The id of the tag to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        },
+        {
+          "key": "exists",
+          "display_name": "exists",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if a tag with the given id exists and is registered."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "extra": {
+                "examples": {
+                  "id": [
+                    "\u003cresource:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The id of the tag to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        },
+        {
+          "key": "exists",
+          "display_name": "exists",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if the given tag exists and is registered."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              },
+              "extra": {
+                "examples": {
+                  "tag": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        }
+      ]
+    },
+    "exists": {
+      "key": "exists",
+      "members": [
+        {
+          "key": "exists",
+          "display_name": "exists",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if a tag with the given id exists and is registered."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "id": [
+                    "\"minecraft:wool\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The id of the tag to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "exists",
+          "display_name": "exists",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if a tag with the given id exists and is registered."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "extra": {
+                "examples": {
+                  "id": [
+                    "\u003cresource:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The id of the tag to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "exists",
+          "display_name": "exists",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if the given tag exists and is registered."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              },
+              "extra": {
+                "examples": {
+                  "tag": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getTagsFor": {
+      "key": "getTagsFor",
+      "members": [
+        {
+          "key": "getTagsFor",
+          "display_name": "getTagsFor",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Ges the tags that contain the given element."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "element",
+              "display_name": "element",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cT : MCTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "idElements": {
+      "key": "idElements",
+      "members": [
+        {
+          "key": "idElements",
+          "display_name": "idElements",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " ids of the elements in the given tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "of",
+              "display_name": "of",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              },
+              "extra": {
+                "examples": {
+                  "of": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to get the elements of."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "removeId": {
+      "key": "removeId",
+      "members": [
+        {
+          "key": "removeId",
+          "display_name": "removeId",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the elements that correspond to the given "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " from the given tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "from",
+              "display_name": "from",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              },
+              "extra": {
+                "examples": {
+                  "from": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to remove from."
+                }
+              ]
+            },
+            {
+              "key": "values",
+              "display_name": "values",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation[]",
+                "display_name": "ResourceLocation[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.resources.ResourceLocation",
+                  "display_name": "ResourceLocation",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.resources",
+                  "class_name": "ResourceLocation"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "values": [
+                    "\u003cresource:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The registry key of the elements to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "tag": {
+      "key": "tag",
+      "members": [
+        {
+          "key": "tag",
+          "display_name": "tag",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a tag with the given id."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "id": [
+                    "\"minecraft:wool\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The id of the tag."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+              "display_name": "MCTag",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "com.blamejared.crafttweaker.api.tag",
+              "class_name": "MCTag"
+            },
+            "bound": "upper"
+          }
+        },
+        {
+          "key": "tag",
+          "display_name": "tag",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a tag with the given id."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "extra": {
+                "examples": {
+                  "id": [
+                    "\u003cresource:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The id of the tag."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+              "display_name": "MCTag",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "com.blamejared.crafttweaker.api.tag",
+              "class_name": "MCTag"
+            },
+            "bound": "upper"
+          }
+        }
+      ]
+    },
+    "tagFolder": {
+      "key": "tagFolder",
+      "members": [
+        {
+          "key": "tagFolder",
+          "display_name": "tagFolder",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the tagFolder of this manager."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The tag folder is usually the folder on disk without the `tags/` prefix."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Examples:"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003cul\u003e\r\n \u003cli\u003e`tags/items` turns into `items`\u003c/li\u003e\r\n \u003cli\u003e`tags/potion` turns into `potion`\u003c/li\u003e\r\n \u003cli\u003e`tags/worldgen/biome` turns into `worldgen/biome`\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "tagFolder",
+          "display_name": "tagFolder",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the tagFolder of this manager."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The tag folder is usually the folder on disk without the `tags/` prefix."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Examples:"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003cul\u003e\r\n \u003cli\u003e`tags/items` turns into `items`\u003c/li\u003e\r\n \u003cli\u003e`tags/potion` turns into `potion`\u003c/li\u003e\r\n \u003cli\u003e`tags/worldgen/biome` turns into `worldgen/biome`\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "tagKeys": {
+      "key": "tagKeys",
+      "members": [
+        {
+          "key": "tagKeys",
+          "display_name": "tagKeys",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the keys of the tags that this manager knows about."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "tagKeys",
+          "display_name": "tagKeys",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the keys of the tags that this manager knows about."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "tagMap": {
+      "key": "tagMap",
+      "members": [
+        {
+          "key": "tagMap",
+          "display_name": "tagMap",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a map of id to tag that this manager knows about."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cResourceLocation, T : MCTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "V": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        },
+        {
+          "key": "tagMap",
+          "display_name": "tagMap",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a map of id to tag that this manager knows about."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cResourceLocation, T : MCTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "V": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        }
+      ]
+    },
+    "tags": {
+      "key": "tags",
+      "members": [
+        {
+          "key": "tags",
+          "display_name": "tags",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Ges the tags that this manager knows about."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cT : MCTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "tags",
+          "display_name": "tags",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Ges the tags that this manager knows about."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cT : MCTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    }
+  }
+}

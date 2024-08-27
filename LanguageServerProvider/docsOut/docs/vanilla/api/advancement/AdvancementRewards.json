@@ -1,0 +1,109 @@
+{
+  "key": "vanilla/api/advancement/AdvancementRewards",
+  "display_name": "AdvancementRewards",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.AdvancementRewards",
+    "display_name": "AdvancementRewards",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements",
+    "class_name": "AdvancementRewards",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.advancement.AdvancementRewards",
+  "member_groups": {
+    "grant": {
+      "key": "grant",
+      "members": [
+        {
+          "key": "grant",
+          "display_name": "grant",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.server.level.ServerPlayer",
+                "display_name": "ServerPlayer",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.server.level",
+                "class_name": "ServerPlayer"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "recipes": {
+      "key": "recipes",
+      "members": [
+        {
+          "key": "getRecipes",
+          "display_name": "getRecipes",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation[]",
+            "display_name": "ResourceLocation[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "net.minecraft.resources.ResourceLocation",
+              "display_name": "ResourceLocation",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraft.resources",
+              "class_name": "ResourceLocation"
+            }
+          }
+        },
+        {
+          "key": "recipes",
+          "display_name": "recipes",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation[]",
+            "display_name": "ResourceLocation[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "net.minecraft.resources.ResourceLocation",
+              "display_name": "ResourceLocation",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraft.resources",
+              "class_name": "ResourceLocation"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

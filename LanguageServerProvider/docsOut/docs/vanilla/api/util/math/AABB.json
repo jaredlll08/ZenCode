@@ -1,0 +1,1258 @@
+{
+  "key": "vanilla/api/util/math/AABB",
+  "display_name": "AABB",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.phys.AABB",
+    "display_name": "AABB",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.phys",
+    "class_name": "AABB",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.util.math.AABB",
+  "member_groups": {
+    "center": {
+      "key": "center",
+      "members": [
+        {
+          "key": "getCenter",
+          "display_name": "getCenter",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        },
+        {
+          "key": "center",
+          "display_name": "center",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "clip": {
+      "key": "clip",
+      "members": [
+        {
+          "key": "clip",
+          "display_name": "clip",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "minVec",
+              "display_name": "minVec",
+              "type": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              },
+              "optional": false
+            },
+            {
+              "key": "maxVec",
+              "display_name": "maxVec",
+              "type": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "contains": {
+      "key": "contains",
+      "members": [
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "contract": {
+      "key": "contract",
+      "members": [
+        {
+          "key": "contract",
+          "display_name": "contract",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "deflate": {
+      "key": "deflate",
+      "members": [
+        {
+          "key": "deflate",
+          "display_name": "deflate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        },
+        {
+          "key": "deflate",
+          "display_name": "deflate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "scalar",
+              "display_name": "scalar",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "expandTowards": {
+      "key": "expandTowards",
+      "members": [
+        {
+          "key": "expandTowards",
+          "display_name": "expandTowards",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "vec",
+              "display_name": "vec",
+              "type": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        },
+        {
+          "key": "expandTowards",
+          "display_name": "expandTowards",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "hasNaN": {
+      "key": "hasNaN",
+      "members": [
+        {
+          "key": "hasNaN",
+          "display_name": "hasNaN",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasNaN",
+          "display_name": "hasNaN",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "inflate": {
+      "key": "inflate",
+      "members": [
+        {
+          "key": "inflate",
+          "display_name": "inflate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        },
+        {
+          "key": "inflate",
+          "display_name": "inflate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "scalar",
+              "display_name": "scalar",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "intersect": {
+      "key": "intersect",
+      "members": [
+        {
+          "key": "intersect",
+          "display_name": "intersect",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.phys.AABB",
+                "display_name": "AABB",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "AABB"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "intersects": {
+      "key": "intersects",
+      "members": [
+        {
+          "key": "intersects",
+          "display_name": "intersects",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.phys.AABB",
+                "display_name": "AABB",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "AABB"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "intersects",
+          "display_name": "intersects",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "minX",
+              "display_name": "minX",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "minY",
+              "display_name": "minY",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "minZ",
+              "display_name": "minZ",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "maxX",
+              "display_name": "maxX",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "maxY",
+              "display_name": "maxY",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "maxZ",
+              "display_name": "maxZ",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "intersects",
+          "display_name": "intersects",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "minVec",
+              "display_name": "minVec",
+              "type": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              },
+              "optional": false
+            },
+            {
+              "key": "maxVec",
+              "display_name": "maxVec",
+              "type": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "max": {
+      "key": "max",
+      "members": [
+        {
+          "key": "max",
+          "display_name": "max",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "direction",
+              "display_name": "direction",
+              "type": {
+                "key": "net.minecraft.core.Direction.Axis",
+                "display_name": "Axis",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Axis"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "min": {
+      "key": "min",
+      "members": [
+        {
+          "key": "min",
+          "display_name": "min",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "direction",
+              "display_name": "direction",
+              "type": {
+                "key": "net.minecraft.core.Direction.Axis",
+                "display_name": "Axis",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Axis"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "minmax": {
+      "key": "minmax",
+      "members": [
+        {
+          "key": "minmax",
+          "display_name": "minmax",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.phys.AABB",
+                "display_name": "AABB",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "AABB"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "move": {
+      "key": "move",
+      "members": [
+        {
+          "key": "move",
+          "display_name": "move",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        },
+        {
+          "key": "move",
+          "display_name": "move",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        },
+        {
+          "key": "move",
+          "display_name": "move",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "vec",
+              "display_name": "vec",
+              "type": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "setMaxX": {
+      "key": "setMaxX",
+      "members": [
+        {
+          "key": "setMaxX",
+          "display_name": "setMaxX",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "maxX",
+              "display_name": "maxX",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "setMaxY": {
+      "key": "setMaxY",
+      "members": [
+        {
+          "key": "setMaxY",
+          "display_name": "setMaxY",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "maxY",
+              "display_name": "maxY",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "setMaxZ": {
+      "key": "setMaxZ",
+      "members": [
+        {
+          "key": "setMaxZ",
+          "display_name": "setMaxZ",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "maxZ",
+              "display_name": "maxZ",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "setMinX": {
+      "key": "setMinX",
+      "members": [
+        {
+          "key": "setMinX",
+          "display_name": "setMinX",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "minX",
+              "display_name": "minX",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "setMinY": {
+      "key": "setMinY",
+      "members": [
+        {
+          "key": "setMinY",
+          "display_name": "setMinY",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "minY",
+              "display_name": "minY",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "setMinZ": {
+      "key": "setMinZ",
+      "members": [
+        {
+          "key": "setMinZ",
+          "display_name": "setMinZ",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "minZ",
+              "display_name": "minZ",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "size": {
+      "key": "size",
+      "members": [
+        {
+          "key": "getSize",
+          "display_name": "getSize",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "size",
+          "display_name": "size",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "xSize": {
+      "key": "xSize",
+      "members": [
+        {
+          "key": "getXsize",
+          "display_name": "getXsize",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "xSize",
+          "display_name": "xSize",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "ySize": {
+      "key": "ySize",
+      "members": [
+        {
+          "key": "getYsize",
+          "display_name": "getYsize",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "ySize",
+          "display_name": "ySize",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "zSize": {
+      "key": "zSize",
+      "members": [
+        {
+          "key": "getZsize",
+          "display_name": "getZsize",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "zSize",
+          "display_name": "zSize",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

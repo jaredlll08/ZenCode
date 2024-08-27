@@ -1,0 +1,172 @@
+{
+  "key": "vanilla/api/loot/IntRange",
+  "display_name": "IntRange",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.IntRange",
+    "display_name": "IntRange",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot",
+    "class_name": "IntRange",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.loot.IntRange",
+  "member_groups": {
+    "atLeast": {
+      "key": "atLeast",
+      "members": [
+        {
+          "key": "atLeast",
+          "display_name": "atLeast",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "min",
+              "display_name": "min",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.IntRange",
+            "display_name": "IntRange",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "IntRange"
+          }
+        }
+      ]
+    },
+    "atMost": {
+      "key": "atMost",
+      "members": [
+        {
+          "key": "atMost",
+          "display_name": "atMost",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "max",
+              "display_name": "max",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.IntRange",
+            "display_name": "IntRange",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "IntRange"
+          }
+        }
+      ]
+    },
+    "between": {
+      "key": "between",
+      "members": [
+        {
+          "key": "between",
+          "display_name": "between",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "min",
+              "display_name": "min",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "max",
+              "display_name": "max",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.IntRange",
+            "display_name": "IntRange",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "IntRange"
+          }
+        }
+      ]
+    },
+    "exactly": {
+      "key": "exactly",
+      "members": [
+        {
+          "key": "exactly",
+          "display_name": "exactly",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.IntRange",
+            "display_name": "IntRange",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "IntRange"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "key": "vanilla/api/sound/SoundSource",
+  "display_name": "SoundSource",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:sound/source"
+  },
+  "type": {
+    "key": "net.minecraft.sounds.SoundSource",
+    "display_name": "SoundSource",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.sounds",
+    "class_name": "SoundSource",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cSoundSource\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.sounds.SoundSource",
+          "display_name": "SoundSource",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.sounds",
+          "class_name": "SoundSource"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.sound.SoundSource",
+  "member_groups": {
+    "AMBIENT": {
+      "key": "AMBIENT",
+      "members": [
+        {
+          "key": "AMBIENT",
+          "display_name": "AMBIENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "BLOCKS": {
+      "key": "BLOCKS",
+      "members": [
+        {
+          "key": "BLOCKS",
+          "display_name": "BLOCKS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "HOSTILE": {
+      "key": "HOSTILE",
+      "members": [
+        {
+          "key": "HOSTILE",
+          "display_name": "HOSTILE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "MASTER": {
+      "key": "MASTER",
+      "members": [
+        {
+          "key": "MASTER",
+          "display_name": "MASTER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "MUSIC": {
+      "key": "MUSIC",
+      "members": [
+        {
+          "key": "MUSIC",
+          "display_name": "MUSIC",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "NEUTRAL": {
+      "key": "NEUTRAL",
+      "members": [
+        {
+          "key": "NEUTRAL",
+          "display_name": "NEUTRAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "PLAYERS": {
+      "key": "PLAYERS",
+      "members": [
+        {
+          "key": "PLAYERS",
+          "display_name": "PLAYERS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "RECORDS": {
+      "key": "RECORDS",
+      "members": [
+        {
+          "key": "RECORDS",
+          "display_name": "RECORDS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "VOICE": {
+      "key": "VOICE",
+      "members": [
+        {
+          "key": "VOICE",
+          "display_name": "VOICE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "WEATHER": {
+      "key": "WEATHER",
+      "members": [
+        {
+          "key": "WEATHER",
+          "display_name": "WEATHER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.sounds.SoundSource",
+            "display_name": "SoundSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundSource"
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

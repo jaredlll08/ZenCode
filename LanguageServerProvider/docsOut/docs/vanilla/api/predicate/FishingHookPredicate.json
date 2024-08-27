@@ -1,0 +1,93 @@
+{
+  "key": "vanilla/api/predicate/FishingHookPredicate",
+  "display_name": "FishingHookPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.FishingHookPredicate",
+    "display_name": "FishingHookPredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "FishingHookPredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+        "display_name": "EntitySubPredicate",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.advancements.critereon",
+        "class_name": "EntitySubPredicate"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.predicate.FishingHookPredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.FishingHookPredicate",
+            "display_name": "FishingHookPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "FishingHookPredicate"
+          }
+        }
+      ]
+    },
+    "inOpenWaters": {
+      "key": "inOpenWaters",
+      "members": [
+        {
+          "key": "inOpenWaters",
+          "display_name": "inOpenWaters",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "inOpenWaters",
+              "display_name": "inOpenWaters",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.FishingHookPredicate",
+            "display_name": "FishingHookPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "FishingHookPredicate"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,899 @@
+{
+  "key": "vanilla/api/misc/Cauldron",
+  "display_name": "Cauldron",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "cauldron"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Lets you add new Cauldron interactions."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.misc.CTCauldron",
+    "display_name": "CTCauldron",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.misc",
+    "class_name": "CTCauldron",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.misc.Cauldron",
+  "member_groups": {
+    "addEmptyInteraction": {
+      "key": "addEmptyInteraction",
+      "members": [
+        {
+          "key": "addEmptyInteraction",
+          "display_name": "addEmptyInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds an interaction that will fire when an empty Cauldron is interacted with the given item."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "item": [
+                    "\u003citem:minecraft:dirt\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to interact with."
+                }
+              ]
+            },
+            {
+              "key": "interaction",
+              "display_name": "interaction",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+                "display_name": "CTCauldronInteraction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.misc",
+                "class_name": "CTCauldronInteraction"
+              },
+              "extra": {
+                "examples": {
+                  "interaction": [
+                    "(blockState, level, pos, player, hand, stack) \u003d\u003e {\r\n\r\n if !level.isClientSide {\r\n player.give(\u003citem:minecraft:diamond\u003e);\r\n }\r\n return crafttweaker.api.world.InteractionResult.sidedSuccess(level.isClientSide);\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What happens when the item interacts with the cauldron."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addInteraction": {
+      "key": "addInteraction",
+      "members": [
+        {
+          "key": "addInteraction",
+          "display_name": "addInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds an interaction that will fire when the provided cauldron block is interacted with the given item."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "This method is mainly provided to add support for non-vanilla cauldrons, thus the provided block needs to be a"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.AbstractCauldronBlock",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "AbstractCauldronBlock"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ".\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cauldronBlock",
+              "display_name": "cauldronBlock",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "extra": {
+                "examples": {
+                  "cauldronBlock": [
+                    "\u003cblock:minecraft:lava_cauldron\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The cauldron block to add an interaction to."
+                }
+              ]
+            },
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "item": [
+                    "\u003citem:minecraft:dirt\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to interact with."
+                }
+              ]
+            },
+            {
+              "key": "interaction",
+              "display_name": "interaction",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+                "display_name": "CTCauldronInteraction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.misc",
+                "class_name": "CTCauldronInteraction"
+              },
+              "extra": {
+                "examples": {
+                  "interaction": [
+                    "(blockState, level, pos, player, hand, stack) \u003d\u003e {\r\n\r\n if !level.isClientSide {\r\n player.give(\u003citem:minecraft:diamond\u003e);\r\n }\r\n return crafttweaker.api.world.InteractionResult.sidedSuccess(level.isClientSide);\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What happens when the item interacts with the cauldron."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addLavaInteraction": {
+      "key": "addLavaInteraction",
+      "members": [
+        {
+          "key": "addLavaInteraction",
+          "display_name": "addLavaInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds an interaction that will fire when a Cauldron with lava inside is interacted with the given item."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "item": [
+                    "\u003citem:minecraft:dirt\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to interact with."
+                }
+              ]
+            },
+            {
+              "key": "interaction",
+              "display_name": "interaction",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+                "display_name": "CTCauldronInteraction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.misc",
+                "class_name": "CTCauldronInteraction"
+              },
+              "extra": {
+                "examples": {
+                  "interaction": [
+                    "(blockState, level, pos, player, hand, stack) \u003d\u003e {\r\n\r\n if !level.isClientSide {\r\n player.give(\u003citem:minecraft:diamond\u003e);\r\n }\r\n return crafttweaker.api.world.InteractionResult.sidedSuccess(level.isClientSide);\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What happens when the item interacts with the cauldron."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addPowderSnowInteraction": {
+      "key": "addPowderSnowInteraction",
+      "members": [
+        {
+          "key": "addPowderSnowInteraction",
+          "display_name": "addPowderSnowInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds an interaction that will fire when a Cauldron with powdered snow inside is interacted with the given item."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "item": [
+                    "\u003citem:minecraft:dirt\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to interact with."
+                }
+              ]
+            },
+            {
+              "key": "interaction",
+              "display_name": "interaction",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+                "display_name": "CTCauldronInteraction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.misc",
+                "class_name": "CTCauldronInteraction"
+              },
+              "extra": {
+                "examples": {
+                  "interaction": [
+                    "(blockState, level, pos, player, hand, stack) \u003d\u003e {\r\n\r\n if !level.isClientSide {\r\n player.give(\u003citem:minecraft:diamond\u003e);\r\n }\r\n return crafttweaker.api.world.InteractionResult.sidedSuccess(level.isClientSide);\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What happens when the item interacts with the cauldron."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addWaterInteraction": {
+      "key": "addWaterInteraction",
+      "members": [
+        {
+          "key": "addWaterInteraction",
+          "display_name": "addWaterInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds an interaction that will fire when a Cauldron with water inside is interacted with the given item."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "item": [
+                    "\u003citem:minecraft:dirt\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to interact with."
+                }
+              ]
+            },
+            {
+              "key": "interaction",
+              "display_name": "interaction",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+                "display_name": "CTCauldronInteraction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.misc",
+                "class_name": "CTCauldronInteraction"
+              },
+              "extra": {
+                "examples": {
+                  "interaction": [
+                    "(blockState, level, pos, player, hand, stack) \u003d\u003e {\r\n\r\n if !level.isClientSide {\r\n player.give(\u003citem:minecraft:diamond\u003e);\r\n }\r\n return crafttweaker.api.world.InteractionResult.sidedSuccess(level.isClientSide);\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What happens when the item interacts with the cauldron."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "fillLavaInteraction": {
+      "key": "fillLavaInteraction",
+      "members": [
+        {
+          "key": "getFillLavaInteraction",
+          "display_name": "getFillLavaInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets an interaction that fills a Cauldron with lava."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+            "display_name": "CTCauldronInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.misc",
+            "class_name": "CTCauldronInteraction"
+          }
+        },
+        {
+          "key": "fillLavaInteraction",
+          "display_name": "fillLavaInteraction",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets an interaction that fills a Cauldron with lava."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+            "display_name": "CTCauldronInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.misc",
+            "class_name": "CTCauldronInteraction"
+          }
+        }
+      ]
+    },
+    "fillPowderSnowInteraction": {
+      "key": "fillPowderSnowInteraction",
+      "members": [
+        {
+          "key": "getFillPowderSnowInteraction",
+          "display_name": "getFillPowderSnowInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets an interaction that fills a Cauldron with lava."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+            "display_name": "CTCauldronInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.misc",
+            "class_name": "CTCauldronInteraction"
+          }
+        },
+        {
+          "key": "fillPowderSnowInteraction",
+          "display_name": "fillPowderSnowInteraction",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets an interaction that fills a Cauldron with lava."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+            "display_name": "CTCauldronInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.misc",
+            "class_name": "CTCauldronInteraction"
+          }
+        }
+      ]
+    },
+    "fillWaterInteraction": {
+      "key": "fillWaterInteraction",
+      "members": [
+        {
+          "key": "getFillWaterInteraction",
+          "display_name": "getFillWaterInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets an interaction that fills a cauldron with water."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+            "display_name": "CTCauldronInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.misc",
+            "class_name": "CTCauldronInteraction"
+          }
+        },
+        {
+          "key": "fillWaterInteraction",
+          "display_name": "fillWaterInteraction",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets an interaction that fills a cauldron with water."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+            "display_name": "CTCauldronInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.misc",
+            "class_name": "CTCauldronInteraction"
+          }
+        }
+      ]
+    },
+    "removeEmptyInteraction": {
+      "key": "removeEmptyInteraction",
+      "members": [
+        {
+          "key": "removeEmptyInteraction",
+          "display_name": "removeEmptyInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the interaction for the given item from an empty Cauldron."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to remove the interaction for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeInteraction": {
+      "key": "removeInteraction",
+      "members": [
+        {
+          "key": "removeInteraction",
+          "display_name": "removeInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the interaction that will fire when the provided cauldron block is interacted with the given item."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "This method is mainly provided to add support for non-vanilla cauldrons, thus the provided block needs to be a"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.AbstractCauldronBlock",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "AbstractCauldronBlock"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ".\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cauldronBlock",
+              "display_name": "cauldronBlock",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "extra": {
+                "examples": {
+                  "cauldronBlock": [
+                    "\u003cblock:minecraft:lava_cauldron\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The cauldron block to add an interaction to."
+                }
+              ]
+            },
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "item": [
+                    "\u003citem:minecraft:dirt\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to interact with."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeLavaInteraction": {
+      "key": "removeLavaInteraction",
+      "members": [
+        {
+          "key": "removeLavaInteraction",
+          "display_name": "removeLavaInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the interaction for the given item from a lava filled Cauldron."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to remove the interaction for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removePowderSnowInteraction": {
+      "key": "removePowderSnowInteraction",
+      "members": [
+        {
+          "key": "removePowderSnowInteraction",
+          "display_name": "removePowderSnowInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the interaction for the given item from a powdered snow filled Cauldron."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to remove the interaction for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeWaterInteraction": {
+      "key": "removeWaterInteraction",
+      "members": [
+        {
+          "key": "removeWaterInteraction",
+          "display_name": "removeWaterInteraction",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the interaction for the given item from a water filled Cauldron."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item to remove the interaction for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

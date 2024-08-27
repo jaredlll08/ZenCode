@@ -1,0 +1,210 @@
+{
+  "key": "vanilla/api/loot/NumberProvider",
+  "display_name": "NumberProvider",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.providers.number.NumberProvider",
+    "display_name": "NumberProvider",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot.providers.number",
+    "class_name": "NumberProvider",
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.storage.loot.LootContextUser",
+        "display_name": "LootContextUser",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage.loot",
+        "class_name": "LootContextUser"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.NumberProvider",
+  "member_groups": {
+    "between": {
+      "key": "between",
+      "members": [
+        {
+          "key": "between",
+          "display_name": "between",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "min",
+              "display_name": "min",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "max",
+              "display_name": "max",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.providers.number.NumberProvider",
+            "display_name": "NumberProvider",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.providers.number",
+            "class_name": "NumberProvider"
+          }
+        }
+      ]
+    },
+    "binomial": {
+      "key": "binomial",
+      "members": [
+        {
+          "key": "binomial",
+          "display_name": "binomial",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "n",
+              "display_name": "n",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "p",
+              "display_name": "p",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.providers.number.NumberProvider",
+            "display_name": "NumberProvider",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.providers.number",
+            "class_name": "NumberProvider"
+          }
+        }
+      ]
+    },
+    "exactly": {
+      "key": "exactly",
+      "members": [
+        {
+          "key": "exactly",
+          "display_name": "exactly",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.providers.number.NumberProvider",
+            "display_name": "NumberProvider",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.providers.number",
+            "class_name": "NumberProvider"
+          }
+        }
+      ]
+    },
+    "scoreboard": {
+      "key": "scoreboard",
+      "members": [
+        {
+          "key": "scoreboard",
+          "display_name": "scoreboard",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "target",
+              "display_name": "target",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootContext.EntityTarget",
+                "display_name": "EntityTarget",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "EntityTarget"
+              },
+              "optional": false
+            },
+            {
+              "key": "score",
+              "display_name": "score",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "scale",
+              "display_name": "scale",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "1.0"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.providers.number.NumberProvider",
+            "display_name": "NumberProvider",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.providers.number",
+            "class_name": "NumberProvider"
+          }
+        }
+      ]
+    }
+  }
+}

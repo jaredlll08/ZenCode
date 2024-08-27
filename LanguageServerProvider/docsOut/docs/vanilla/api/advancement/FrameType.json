@@ -1,0 +1,275 @@
+{
+  "key": "vanilla/api/advancement/FrameType",
+  "display_name": "FrameType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:advancement/frametype"
+  },
+  "type": {
+    "key": "net.minecraft.advancements.FrameType",
+    "display_name": "FrameType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements",
+    "class_name": "FrameType",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cFrameType\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.advancements.FrameType",
+          "display_name": "FrameType",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.advancements",
+          "class_name": "FrameType"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.advancement.FrameType",
+  "member_groups": {
+    "CHALLENGE": {
+      "key": "CHALLENGE",
+      "members": [
+        {
+          "key": "CHALLENGE",
+          "display_name": "CHALLENGE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.advancements.FrameType",
+            "display_name": "FrameType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "FrameType"
+          }
+        }
+      ]
+    },
+    "GOAL": {
+      "key": "GOAL",
+      "members": [
+        {
+          "key": "GOAL",
+          "display_name": "GOAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.advancements.FrameType",
+            "display_name": "FrameType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "FrameType"
+          }
+        }
+      ]
+    },
+    "TASK": {
+      "key": "TASK",
+      "members": [
+        {
+          "key": "TASK",
+          "display_name": "TASK",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.advancements.FrameType",
+            "display_name": "FrameType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "FrameType"
+          }
+        }
+      ]
+    },
+    "chatColor": {
+      "key": "chatColor",
+      "members": [
+        {
+          "key": "getChatColor",
+          "display_name": "getChatColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        },
+        {
+          "key": "chatColor",
+          "display_name": "chatColor",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "displayName": {
+      "key": "displayName",
+      "members": [
+        {
+          "key": "getDisplayName",
+          "display_name": "getDisplayName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "displayName",
+          "display_name": "displayName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "texture": {
+      "key": "texture",
+      "members": [
+        {
+          "key": "getTexture",
+          "display_name": "getTexture",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "texture",
+          "display_name": "texture",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

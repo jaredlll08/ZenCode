@@ -1,0 +1,1668 @@
+{
+  "key": "vanilla/api/recipe/replacement/Replacer",
+  "display_name": "Replacer",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    },
+    "examples": {
+      "this": [
+        "Replacer.create()"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Handles the replacement of "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IRecipeComponent"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s for "
+    },
+    {
+      "type": "link",
+      "to": "net.minecraft.world.item.crafting.Recipe",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "net.minecraft.world.item.crafting.Recipe"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Due to the expensive nature of the replacing process, once the replacer is created, it is not immediately executed\r\n like with other calls, but rather the user needs to determine when the execution should occur with the"
+    },
+    {
+      "type": "link",
+      "to": "#execute()",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "#execute()"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "method. It is suggested to chain as many replacements as possible in a single invocation to avoid\r\n too big performance hits."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "A replacer instance can be created through"
+    },
+    {
+      "type": "link",
+      "to": "#create()",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "#create()"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " and various filters specified through\r\n "
+    },
+    {
+      "type": "link",
+      "to": "#filter(IFilteringRule)",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "#filter(IFilteringRule)"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ". Note that all filters are \u003cstrong\u003epositive\u003c/strong\u003e, meaning that they specify the\r\n set of recipes the replacer should target. Replacements can then be specified with the various "
+    },
+    {
+      "type": "code",
+      "content": "replace"
+    },
+    {
+      "type": "plaintext",
+      "content": "\r\n methods. Refer to their documentation for more information.\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+    "display_name": "Replacer",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+    "class_name": "Replacer",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.Replacer",
+  "member_groups": {
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new replacer instance."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+            "display_name": "Replacer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "Replacer"
+          }
+        }
+      ]
+    },
+    "execute": {
+      "key": "execute",
+      "members": [
+        {
+          "key": "execute",
+          "display_name": "execute",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Executes the replacer, carrying out all replacements determined up until now."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "After this method is called, the replacer will be exhausted, meaning that a new replacer will be needed to\r\n carry out additional replacements."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "filter": {
+      "key": "filter",
+      "members": [
+        {
+          "key": "filter",
+          "display_name": "filter",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Specifies an "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IFilteringRule"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "that the replacer must follow."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Note that the rules are \u003cstrong\u003epositive\u003c/strong\u003e, meaning that they specify the recipes that the replacer\r\n should act upon."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "You can specify as many filters as you want. Note that they will all be applied at the same time. For example,\r\n filtering for mod"
+            },
+            {
+              "type": "code",
+              "content": "\"crafttweaker\""
+            },
+            {
+              "type": "plaintext",
+              "content": " and with recipe type "
+            },
+            {
+              "type": "code",
+              "content": "\u003crecipetype:minecraft:crafting\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "will\r\n indicate that only recipes added by you to the crafting table will be targeted."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A replacer cannot be modified after execution."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "rule",
+              "display_name": "rule",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+                "display_name": "IFilteringRule",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+                "class_name": "IFilteringRule"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The rule that should be applied."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+            "display_name": "Replacer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "Replacer"
+          }
+        }
+      ]
+    },
+    "replace": {
+      "key": "replace",
+      "members": [
+        {
+          "key": "replace",
+          "display_name": "replace",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Specifies a replacement that should be carried out by this replacer."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In particular, the given"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " will be used to query the recipe and alter exactly what has\r\n been specified. The first element is then used to determine what needs to be replaced and the second element\r\n indicates what the element should be replaced by. In other words, any instance of "
+            },
+            {
+              "type": "code",
+              "content": "toReplace"
+            },
+            {
+              "type": "plaintext",
+              "content": " will be\r\n replaced by "
+            },
+            {
+              "type": "code",
+              "content": "with"
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The replacement strategy used will be default one, so the components will be checked directly, without\r\n examining the various elements in detail. For example, a"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.api.ingredient.IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " like\r\n "
+            },
+            {
+              "type": "code",
+              "content": "\u003citem:minecraft:dirt\u003e | \u003citem:minecraft:diamond\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "will be considered like a single entity. Attempting to\r\n replace only dirt, for example, won\u0027t work."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A replacer cannot be modified after execution."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "toReplace",
+              "display_name": "toReplace",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The oracle representing the element that needs to be replaced."
+                }
+              ]
+            },
+            {
+              "key": "with",
+              "display_name": "with",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The element which will replace the oracle as needed."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+            "display_name": "Replacer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "Replacer"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "replace",
+          "display_name": "replace",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Specifies a replacement that should be carried out by this replacer."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In particular, the given"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " will be used to query the recipe and alter exactly what has\r\n been specified. The first element is then used to determine what needs to be replaced and the second element\r\n indicates what the element should be replaced by. In other words, any instance of "
+            },
+            {
+              "type": "code",
+              "content": "toReplace"
+            },
+            {
+              "type": "plaintext",
+              "content": " will be\r\n replaced by "
+            },
+            {
+              "type": "code",
+              "content": "with"
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The strategy used can be determined by you, allowing for example to consider each element in detail instead of\r\n directly. For example, a"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.api.ingredient.IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " like\r\n "
+            },
+            {
+              "type": "code",
+              "content": "\u003citem:minecraft:dirt\u003e | \u003citem:minecraft:diamond\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "can also be considered as two separate ingredients and\r\n thus replacing only dirt can happen."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A replacer cannot be modified after execution."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "strategy",
+              "display_name": "strategy",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+                "display_name": "ITargetingStrategy",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+                "class_name": "ITargetingStrategy"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The "
+                },
+                {
+                  "type": "link",
+                  "to": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "ITargetingStrategy"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " that will be used to target components."
+                }
+              ]
+            },
+            {
+              "key": "toReplace",
+              "display_name": "toReplace",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The oracle representing the element that needs to be replaced."
+                }
+              ]
+            },
+            {
+              "key": "with",
+              "display_name": "with",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The element which will replace the oracle as needed."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+            "display_name": "Replacer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "Replacer"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "replace",
+          "display_name": "replace",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Specifies a replacement that should be carried out by this replacer."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In particular, the given"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " will be used to query the recipe and alter exactly what has\r\n been specified. The first element is then used to determine what needs to be replaced and the second element\r\n will determine what the element should be replaced by. In other words, any instance of "
+            },
+            {
+              "type": "code",
+              "content": "toReplace"
+            },
+            {
+              "type": "plaintext",
+              "content": " will be\r\n replaced by the result of the execution of "
+            },
+            {
+              "type": "code",
+              "content": "with"
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The strategy used can be determined by you, allowing for example to consider each element in detail instead of\r\n directly. For example, a"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.api.ingredient.IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " like\r\n "
+            },
+            {
+              "type": "code",
+              "content": "\u003citem:minecraft:dirt\u003e | \u003citem:minecraft:diamond\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "can also be considered as two separate ingredients and\r\n thus replacing only dirt can happen."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A replacer cannot be modified after execution."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "strategy",
+              "display_name": "strategy",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+                "display_name": "ITargetingStrategy",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+                "class_name": "ITargetingStrategy"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The "
+                },
+                {
+                  "type": "link",
+                  "to": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "ITargetingStrategy"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " that will be used to target components."
+                }
+              ]
+            },
+            {
+              "key": "toReplace",
+              "display_name": "toReplace",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The oracle representing the element that needs to be replaced."
+                }
+              ]
+            },
+            {
+              "key": "with",
+              "display_name": "with",
+              "type": {
+                "key": "java.util.function.Function",
+                "display_name": "Function\u003cT, T\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "R": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Function"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A "
+                },
+                {
+                  "type": "link",
+                  "to": "java.util.function.Function",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "Function"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " that determines the replacement for "
+                },
+                {
+                  "type": "code",
+                  "content": "toReplace"
+                },
+                {
+                  "type": "plaintext",
+                  "content": ". The argument given to\r\n                  the function is the target that needs to be replaced. The function can then determine freely how\r\n                  the replacement should be carried out."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+            "display_name": "Replacer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "Replacer"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "replace",
+          "display_name": "replace",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Specifies a replacement that should be carried out by this replacer."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In particular, the given"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " will be used to query the recipe and alter exactly what has\r\n been specified. The predicate will be used to determine whether a specific target needs to be replaced, whereas\r\n the function will determine what the element should be replaced by. In other words, any instance that makes\r\n "
+            },
+            {
+              "type": "code",
+              "content": "toReplace"
+            },
+            {
+              "type": "plaintext",
+              "content": " return "
+            },
+            {
+              "type": "code",
+              "content": "true"
+            },
+            {
+              "type": "plaintext",
+              "content": " will be replaced by the result of the execution of "
+            },
+            {
+              "type": "code",
+              "content": "with"
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The strategy used can be determined by you, allowing for example to consider each element in detail instead of\r\n directly. For example, a"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.api.ingredient.IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " like\r\n "
+            },
+            {
+              "type": "code",
+              "content": "\u003citem:minecraft:dirt\u003e | \u003citem:minecraft:diamond\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "can also be considered as two separate ingredients and\r\n thus replacing only dirt can happen."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A replacer cannot be modified after execution."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "strategy",
+              "display_name": "strategy",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+                "display_name": "ITargetingStrategy",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+                "class_name": "ITargetingStrategy"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The "
+                },
+                {
+                  "type": "link",
+                  "to": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "ITargetingStrategy"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " that will be used to target components."
+                }
+              ]
+            },
+            {
+              "key": "toReplace",
+              "display_name": "toReplace",
+              "type": {
+                "key": "java.util.function.Predicate",
+                "display_name": "Predicate\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Predicate"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A "
+                },
+                {
+                  "type": "link",
+                  "to": "java.util.function.Predicate",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "Predicate"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " determining whether a specific element should be replaced or not. The\r\n                  argument given to it is the target that might have to be replaced."
+                }
+              ]
+            },
+            {
+              "key": "with",
+              "display_name": "with",
+              "type": {
+                "key": "java.util.function.Function",
+                "display_name": "Function\u003cT, T\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "R": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Function"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A "
+                },
+                {
+                  "type": "link",
+                  "to": "java.util.function.Function",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "Function"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " that determines the replacement for elements that "
+                },
+                {
+                  "type": "code",
+                  "content": "toReplace"
+                },
+                {
+                  "type": "plaintext",
+                  "content": " deems\r\n                  necessary of replacement. The argument given to the function is the target that needs to be\r\n                  replaced. The function can then determine freely how the replacement should be carried out."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+            "display_name": "Replacer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "Replacer"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "replace",
+          "display_name": "replace",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Specifies a replacement that should be carried out by this replacer."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In particular, the given"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " will be used to query the recipe and alter exactly what has\r\n been specified. The predicate will be used to determine whether a specific target needs to be replaced, whereas\r\n the function will determine what the element should be replaced by. In other words, any instance that makes\r\n "
+            },
+            {
+              "type": "code",
+              "content": "toReplace"
+            },
+            {
+              "type": "plaintext",
+              "content": " return "
+            },
+            {
+              "type": "code",
+              "content": "true"
+            },
+            {
+              "type": "plaintext",
+              "content": " will be replaced by the result of the execution of "
+            },
+            {
+              "type": "code",
+              "content": "with"
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The replacement strategy used will be default one, so the components will be checked directly, without\r\n examining the various elements in detail. For example, a"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.api.ingredient.IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " like\r\n "
+            },
+            {
+              "type": "code",
+              "content": "\u003citem:minecraft:dirt\u003e | \u003citem:minecraft:diamond\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "will be considered like a single entity. Attempting to\r\n replace only dirt, for example, won\u0027t work."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A replacer cannot be modified after execution."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "toReplace",
+              "display_name": "toReplace",
+              "type": {
+                "key": "java.util.function.Predicate",
+                "display_name": "Predicate\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Predicate"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A "
+                },
+                {
+                  "type": "link",
+                  "to": "java.util.function.Predicate",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "Predicate"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " determining whether a specific element should be replaced or not. The\r\n                  argument given to it is the target that might have to be replaced."
+                }
+              ]
+            },
+            {
+              "key": "with",
+              "display_name": "with",
+              "type": {
+                "key": "java.util.function.Function",
+                "display_name": "Function\u003cT, T\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "R": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Function"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A "
+                },
+                {
+                  "type": "link",
+                  "to": "java.util.function.Function",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "Function"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " that determines the replacement for elements that "
+                },
+                {
+                  "type": "code",
+                  "content": "toReplace"
+                },
+                {
+                  "type": "plaintext",
+                  "content": " deems\r\n                  necessary of replacement. The argument given to the function is the target that needs to be\r\n                  replaced. The function can then determine freely how the replacement should be carried out."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+            "display_name": "Replacer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "Replacer"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "replace",
+          "display_name": "replace",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Specifies a replacement that should be carried out by this replacer."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In particular, the given"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "will be used to query the recipe and alter exactly what has\r\n been specified. The function can be used to modify all elements."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The replacement strategy used will be default one, so the components will be checked directly, without\r\n examining the various elements in detail. For example, a"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.api.ingredient.IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " like\r\n "
+            },
+            {
+              "type": "code",
+              "content": "\u003citem:minecraft:dirt\u003e | \u003citem:minecraft:diamond\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "will be considered like a single entity. Attempting to\r\n replace only dirt, for example, won\u0027t work."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A replacer cannot be modified after execution."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "with",
+              "display_name": "with",
+              "type": {
+                "key": "java.util.function.Function",
+                "display_name": "Function\u003cT, T\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "R": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Function"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A "
+                },
+                {
+                  "type": "link",
+                  "to": "java.util.function.Function",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "Function"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " that determines the replacement for elements that "
+                },
+                {
+                  "type": "code",
+                  "content": "toReplace"
+                },
+                {
+                  "type": "plaintext",
+                  "content": " deems\r\n                  necessary of replacement. The argument given to the function is the target that needs to be\r\n                  replaced. The function can then determine freely how the replacement should be carried out."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+            "display_name": "Replacer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "Replacer"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

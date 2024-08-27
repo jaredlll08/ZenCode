@@ -1,0 +1,214 @@
+{
+  "key": "vanilla/api/entity/RemovalReason",
+  "display_name": "RemovalReason",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:entity/removalreason"
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.Entity.RemovalReason",
+    "display_name": "RemovalReason",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity",
+    "class_name": "RemovalReason",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cRemovalReason\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.entity.Entity.RemovalReason",
+          "display_name": "RemovalReason",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.entity",
+          "class_name": "RemovalReason"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.RemovalReason",
+  "member_groups": {
+    "CHANGED_DIMENSION": {
+      "key": "CHANGED_DIMENSION",
+      "members": [
+        {
+          "key": "CHANGED_DIMENSION",
+          "display_name": "CHANGED_DIMENSION",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.Entity.RemovalReason",
+            "display_name": "RemovalReason",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "RemovalReason"
+          }
+        }
+      ]
+    },
+    "DISCARDED": {
+      "key": "DISCARDED",
+      "members": [
+        {
+          "key": "DISCARDED",
+          "display_name": "DISCARDED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.Entity.RemovalReason",
+            "display_name": "RemovalReason",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "RemovalReason"
+          }
+        }
+      ]
+    },
+    "KILLED": {
+      "key": "KILLED",
+      "members": [
+        {
+          "key": "KILLED",
+          "display_name": "KILLED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.Entity.RemovalReason",
+            "display_name": "RemovalReason",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "RemovalReason"
+          }
+        }
+      ]
+    },
+    "UNLOADED_TO_CHUNK": {
+      "key": "UNLOADED_TO_CHUNK",
+      "members": [
+        {
+          "key": "UNLOADED_TO_CHUNK",
+          "display_name": "UNLOADED_TO_CHUNK",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.Entity.RemovalReason",
+            "display_name": "RemovalReason",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "RemovalReason"
+          }
+        }
+      ]
+    },
+    "UNLOADED_WITH_PLAYER": {
+      "key": "UNLOADED_WITH_PLAYER",
+      "members": [
+        {
+          "key": "UNLOADED_WITH_PLAYER",
+          "display_name": "UNLOADED_WITH_PLAYER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.Entity.RemovalReason",
+            "display_name": "RemovalReason",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "RemovalReason"
+          }
+        }
+      ]
+    },
+    "shouldDestroy": {
+      "key": "shouldDestroy",
+      "members": [
+        {
+          "key": "shouldDestroy",
+          "display_name": "shouldDestroy",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "shouldDestroy",
+          "display_name": "shouldDestroy",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

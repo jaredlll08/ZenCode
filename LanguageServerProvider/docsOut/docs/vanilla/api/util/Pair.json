@@ -1,0 +1,239 @@
+{
+  "key": "vanilla/api/util/Pair",
+  "display_name": "Pair",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.mojang.datafixers.util.Pair",
+    "display_name": "Pair",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "F": {
+        "key": "F",
+        "display_name": "F",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      },
+      "S": {
+        "key": "S",
+        "display_name": "S",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "com.mojang.datafixers.util",
+    "class_name": "Pair",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.mojang.datafixers.kinds.App",
+        "display_name": "App\u003cMu, F\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "F": {
+            "key": "com.mojang.datafixers.util.Pair.Mu",
+            "display_name": "Mu\u003cS\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "S": {
+                "key": "S",
+                "display_name": "S",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.mojang.datafixers.util",
+            "class_name": "Mu"
+          },
+          "A": {
+            "key": "F",
+            "display_name": "F",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        "package_name": "com.mojang.datafixers.kinds",
+        "class_name": "App"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.Pair",
+  "member_groups": {
+    "of": {
+      "key": "of",
+      "members": [
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "first",
+              "display_name": "first",
+              "type": {
+                "key": "F",
+                "display_name": "F",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false
+            },
+            {
+              "key": "second",
+              "display_name": "second",
+              "type": {
+                "key": "S",
+                "display_name": "S",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.mojang.datafixers.util.Pair",
+            "display_name": "Pair\u003cF, S\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "F": {
+                "key": "F",
+                "display_name": "F",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "S": {
+                "key": "S",
+                "display_name": "S",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.mojang.datafixers.util",
+            "class_name": "Pair"
+          },
+          "type_parameters": {
+            "F": {
+              "key": "F",
+              "display_name": "F",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            },
+            "S": {
+              "key": "S",
+              "display_name": "S",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

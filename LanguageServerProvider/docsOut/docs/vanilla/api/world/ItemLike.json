@@ -1,0 +1,57 @@
+{
+  "key": "vanilla/api/world/ItemLike",
+  "display_name": "ItemLike",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.ItemLike",
+    "display_name": "ItemLike",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "ItemLike"
+  },
+  "zen_code_name": "crafttweaker.api.world.ItemLike",
+  "member_groups": {
+    "asItem": {
+      "key": "asItem",
+      "members": [
+        {
+          "key": "asItem",
+          "display_name": "asItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.Item",
+            "display_name": "Item",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Item"
+          }
+        },
+        {
+          "key": "asItem",
+          "display_name": "asItem",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.Item",
+            "display_name": "Item",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Item"
+          },
+          "implicit": false
+        }
+      ]
+    }
+  }
+}

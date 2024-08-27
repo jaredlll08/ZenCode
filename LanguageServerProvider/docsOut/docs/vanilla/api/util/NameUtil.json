@@ -1,0 +1,484 @@
+{
+  "key": "vanilla/api/util/NameUtil",
+  "display_name": "NameUtil",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Set of utility methods related to names and naming in general."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.util.NameUtil",
+    "display_name": "NameUtil",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.util",
+    "class_name": "NameUtil",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.util.NameUtil",
+  "member_groups": {
+    "fixing": {
+      "key": "fixing",
+      "members": [
+        {
+          "key": "fixing",
+          "display_name": "fixing",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Attempts to automatically fix the given "
+            },
+            {
+              "type": "code",
+              "content": "input"
+            },
+            {
+              "type": "plaintext",
+              "content": " string, if possible, so that it can be used to build a\r\n well-formed "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The string that should be fixed to a "
+                },
+                {
+                  "type": "link",
+                  "to": "net.minecraft.resources.ResourceLocation",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "ResourceLocation"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": "-compatible format."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "fixing",
+          "display_name": "fixing",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Attempts to automatically fix the given "
+            },
+            {
+              "type": "code",
+              "content": "input"
+            },
+            {
+              "type": "plaintext",
+              "content": " string, if possible, so that it can be used to build a\r\n well-formed "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The string that should be fixed to a "
+                },
+                {
+                  "type": "link",
+                  "to": "net.minecraft.resources.ResourceLocation",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "ResourceLocation"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": "-compatible format."
+                }
+              ]
+            },
+            {
+              "key": "mistakeHandler",
+              "display_name": "mistakeHandler",
+              "type": {
+                "key": "java.util.function.BiConsumer",
+                "display_name": "BiConsumer\u003cString, List\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "java.lang.String",
+                    "display_name": "string",
+                    "type_type": "basic",
+                    "nullable": false
+                  },
+                  "U": {
+                    "key": "java.util.List",
+                    "display_name": "List\u003cString\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "E": {
+                        "key": "java.lang.String",
+                        "display_name": "string",
+                        "type_type": "basic",
+                        "nullable": false
+                      }
+                    },
+                    "package_name": "java.util",
+                    "class_name": "List"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "BiConsumer"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A bi-consumer that gets called if there were any mistakes in the original string. The first\r\n                       element is the fixed string, and the second is a list of strings containing explanations\r\n                       for all the identified mistakes."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "fromFixedName": {
+      "key": "fromFixedName",
+      "members": [
+        {
+          "key": "fromFixedName",
+          "display_name": "fromFixedName",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " from the given "
+            },
+            {
+              "type": "code",
+              "content": "input"
+            },
+            {
+              "type": "plaintext",
+              "content": ", if possible, while fixing mistakes that\r\n may be present in the string."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The string that should be fixed and converted to a "
+                },
+                {
+                  "type": "link",
+                  "to": "net.minecraft.resources.ResourceLocation",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "ResourceLocation"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "fromFixedName",
+          "display_name": "fromFixedName",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " from the given "
+            },
+            {
+              "type": "code",
+              "content": "input"
+            },
+            {
+              "type": "plaintext",
+              "content": ", if possible, while fixing mistakes that\r\n may be present in the string."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The string that should be fixed and converted to a "
+                },
+                {
+                  "type": "link",
+                  "to": "net.minecraft.resources.ResourceLocation",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "ResourceLocation"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "key": "mistakeHandler",
+              "display_name": "mistakeHandler",
+              "type": {
+                "key": "java.util.function.BiConsumer",
+                "display_name": "BiConsumer\u003cString, List\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "java.lang.String",
+                    "display_name": "string",
+                    "type_type": "basic",
+                    "nullable": false
+                  },
+                  "U": {
+                    "key": "java.util.List",
+                    "display_name": "List\u003cString\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "E": {
+                        "key": "java.lang.String",
+                        "display_name": "string",
+                        "type_type": "basic",
+                        "nullable": false
+                      }
+                    },
+                    "package_name": "java.util",
+                    "class_name": "List"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "BiConsumer"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A bi-consumer that gets called if there were any mistakes in the original string. The first\r\n                       element is the fixed string, and the second is a list of strings containing explanations\r\n                       for all the identified mistakes."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "isAutogeneratedName": {
+      "key": "isAutogeneratedName",
+      "members": [
+        {
+          "key": "isAutogeneratedName",
+          "display_name": "isAutogeneratedName",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Verifies whether the given name has been autogenerated by CraftTweaker."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name to verify."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

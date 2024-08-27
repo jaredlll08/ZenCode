@@ -1,0 +1,224 @@
+{
+  "key": "vanilla/api/predicate/builder/DamageSourcePredicateBuilder",
+  "display_name": "DamageSourcePredicateBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.DamageSourcePredicate.Builder",
+    "display_name": "Builder",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "Builder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.builder.DamageSourcePredicateBuilder",
+  "member_groups": {
+    "build": {
+      "key": "build",
+      "members": [
+        {
+          "key": "build",
+          "display_name": "build",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DamageSourcePredicate",
+            "display_name": "DamageSourcePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "DamageSourcePredicate"
+          }
+        }
+      ]
+    },
+    "direct": {
+      "key": "direct",
+      "members": [
+        {
+          "key": "direct",
+          "display_name": "direct",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entityPredicate",
+              "display_name": "entityPredicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate",
+                "display_name": "EntityPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DamageSourcePredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "direct",
+          "display_name": "direct",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entityPredicate",
+              "display_name": "entityPredicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DamageSourcePredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "source": {
+      "key": "source",
+      "members": [
+        {
+          "key": "source",
+          "display_name": "source",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entityPredicate",
+              "display_name": "entityPredicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate",
+                "display_name": "EntityPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DamageSourcePredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "source",
+          "display_name": "source",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entityPredicate",
+              "display_name": "entityPredicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DamageSourcePredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "tag": {
+      "key": "tag",
+      "members": [
+        {
+          "key": "tag",
+          "display_name": "tag",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.TagPredicate",
+                "display_name": "TagPredicate\u003cDamageType\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.damagesource.DamageType",
+                    "display_name": "DamageType",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.damagesource",
+                    "class_name": "DamageType"
+                  }
+                },
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "TagPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DamageSourcePredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

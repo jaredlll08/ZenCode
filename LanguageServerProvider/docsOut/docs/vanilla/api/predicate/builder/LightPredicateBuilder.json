@@ -1,0 +1,84 @@
+{
+  "key": "vanilla/api/predicate/builder/LightPredicateBuilder",
+  "display_name": "LightPredicateBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.LightPredicate.Builder",
+    "display_name": "Builder",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "Builder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.builder.LightPredicateBuilder",
+  "member_groups": {
+    "build": {
+      "key": "build",
+      "members": [
+        {
+          "key": "build",
+          "display_name": "build",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.LightPredicate",
+            "display_name": "LightPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "LightPredicate"
+          }
+        }
+      ]
+    },
+    "composite": {
+      "key": "composite",
+      "members": [
+        {
+          "key": "composite",
+          "display_name": "composite",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "composite",
+              "display_name": "composite",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.LightPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

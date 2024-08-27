@@ -1,0 +1,543 @@
+{
+  "key": "forge/api/recipe/brewing/Brewing",
+  "display_name": "Brewing",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "brewing"
+      ]
+    }
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.CTBrewing",
+    "display_name": "CTBrewing",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe",
+    "class_name": "CTBrewing",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.recipe.Brewing",
+  "member_groups": {
+    "addRecipe": {
+      "key": "addRecipe",
+      "members": [
+        {
+          "key": "addRecipe",
+          "display_name": "addRecipe",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a new brewing recipe to the Brewing Stand."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "output": [
+                    "\u003citem:minecraft:dirt\u003e",
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item that the recipe outputs."
+                }
+              ]
+            },
+            {
+              "key": "reagent",
+              "display_name": "reagent",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "reagent": [
+                    "\u003citem:minecraft:apple\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The reagent that is put in the top slot of the Brewing Stand."
+                }
+              ]
+            },
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "input": [
+                    "\u003citem:minecraft:arrow\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeRecipe": {
+      "key": "removeRecipe",
+      "members": [
+        {
+          "key": "removeRecipe",
+          "display_name": "removeRecipe",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Potion to Potion recipe from the Brewing Stand. These are mainly the default vanilla recipes."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "net.minecraft.world.item.alchemy.Potion",
+                "display_name": "Potion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.alchemy",
+                "class_name": "Potion"
+              },
+              "extra": {
+                "examples": {
+                  "output": [
+                    "\u003cpotion:minecraft:thick\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The Potion that the recipe outputs."
+                }
+              ]
+            },
+            {
+              "key": "reagent",
+              "display_name": "reagent",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "reagent": [
+                    "\u003citem:minecraft:glowstone_dust\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The reagent that is put in the top slot of the Brewing Stand."
+                }
+              ]
+            },
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "net.minecraft.world.item.alchemy.Potion",
+                "display_name": "Potion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.alchemy",
+                "class_name": "Potion"
+              },
+              "extra": {
+                "examples": {
+                  "input": [
+                    "\u003cpotion:minecraft:water\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The Potion ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "removeRecipe",
+          "display_name": "removeRecipe",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes an ItemStack to ItemStack recipe from the Brewing Stand. These are mainly potions added by mods."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "output": [
+                    "\u003citem:minecraft:glass\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The ItemStack that the recipe outputs."
+                }
+              ]
+            },
+            {
+              "key": "reagent",
+              "display_name": "reagent",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "reagent": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The reagent that is put in the top slot of the Brewing Stand."
+                }
+              ]
+            },
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "input": [
+                    "\u003citem:minecraft:stick\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeRecipeByInput": {
+      "key": "removeRecipeByInput",
+      "members": [
+        {
+          "key": "removeRecipeByInput",
+          "display_name": "removeRecipeByInput",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes recipes from the Brewing Stand based on their Input (The ItemStack that goes in the bottom 3 slots). E.G. A water bottle in Vanilla brewing recipes"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "input": [
+                    "\u003citem:minecraft:glass\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The input of the recipes to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeRecipeByInputPotion": {
+      "key": "removeRecipeByInputPotion",
+      "members": [
+        {
+          "key": "removeRecipeByInputPotion",
+          "display_name": "removeRecipeByInputPotion",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes recipes from the Brewing Stand based on their input Potion. These are mainly the default vanilla recipes.\r\n The input potion is the potion that is in the top slot of the Brewing Stand."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "net.minecraft.world.item.alchemy.Potion",
+                "display_name": "Potion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.alchemy",
+                "class_name": "Potion"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The input potion of the recipes to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeRecipeByOutputPotion": {
+      "key": "removeRecipeByOutputPotion",
+      "members": [
+        {
+          "key": "removeRecipeByOutputPotion",
+          "display_name": "removeRecipeByOutputPotion",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes recipes from the Brewing Stand based on their output Potion. These are mainly the default vanilla recipes."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "net.minecraft.world.item.alchemy.Potion",
+                "display_name": "Potion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.alchemy",
+                "class_name": "Potion"
+              },
+              "extra": {
+                "examples": {
+                  "output": [
+                    "\u003cpotion:minecraft:swiftness\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The potion of the recipes to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeRecipeByReagent": {
+      "key": "removeRecipeByReagent",
+      "members": [
+        {
+          "key": "removeRecipeByReagent",
+          "display_name": "removeRecipeByReagent",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes recipes from the Brewing Stand based on their Reagent (The item in the top slot)."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "reagent",
+              "display_name": "reagent",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "reagent": [
+                    "\u003citem:minecraft:golden_carrot\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The reagent of the recipes to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

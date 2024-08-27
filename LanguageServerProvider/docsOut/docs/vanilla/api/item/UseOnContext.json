@@ -1,0 +1,402 @@
+{
+  "key": "vanilla/api/item/UseOnContext",
+  "display_name": "UseOnContext",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.context.UseOnContext",
+    "display_name": "UseOnContext",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item.context",
+    "class_name": "UseOnContext",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.item.UseOnContext",
+  "member_groups": {
+    "clickLocation": {
+      "key": "clickLocation",
+      "members": [
+        {
+          "key": "getClickLocation",
+          "display_name": "getClickLocation",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        },
+        {
+          "key": "clickLocation",
+          "display_name": "clickLocation",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "clickedFace": {
+      "key": "clickedFace",
+      "members": [
+        {
+          "key": "getClickedFace",
+          "display_name": "getClickedFace",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "clickedFace",
+          "display_name": "clickedFace",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "clickedPos": {
+      "key": "clickedPos",
+      "members": [
+        {
+          "key": "getClickedPos",
+          "display_name": "getClickedPos",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        },
+        {
+          "key": "clickedPos",
+          "display_name": "clickedPos",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        }
+      ]
+    },
+    "hand": {
+      "key": "hand",
+      "members": [
+        {
+          "key": "getHand",
+          "display_name": "getHand",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.InteractionHand",
+            "display_name": "InteractionHand",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionHand"
+          }
+        },
+        {
+          "key": "hand",
+          "display_name": "hand",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.InteractionHand",
+            "display_name": "InteractionHand",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionHand"
+          }
+        }
+      ]
+    },
+    "horizontalDirection": {
+      "key": "horizontalDirection",
+      "members": [
+        {
+          "key": "getHorizontalDirection",
+          "display_name": "getHorizontalDirection",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "horizontalDirection",
+          "display_name": "horizontalDirection",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "isInside": {
+      "key": "isInside",
+      "members": [
+        {
+          "key": "isInside",
+          "display_name": "isInside",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isInside",
+          "display_name": "isInside",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isSecondaryUseActive": {
+      "key": "isSecondaryUseActive",
+      "members": [
+        {
+          "key": "isSecondaryUseActive",
+          "display_name": "isSecondaryUseActive",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isSecondaryUseActive",
+          "display_name": "isSecondaryUseActive",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "itemInHand": {
+      "key": "itemInHand",
+      "members": [
+        {
+          "key": "getItemInHand",
+          "display_name": "getItemInHand",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        },
+        {
+          "key": "itemInHand",
+          "display_name": "itemInHand",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "level": {
+      "key": "level",
+      "members": [
+        {
+          "key": "getLevel",
+          "display_name": "getLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.Level",
+            "display_name": "Level",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Level"
+          }
+        },
+        {
+          "key": "level",
+          "display_name": "level",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.Level",
+            "display_name": "Level",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Level"
+          }
+        }
+      ]
+    },
+    "player": {
+      "key": "player",
+      "members": [
+        {
+          "key": "getPlayer",
+          "display_name": "getPlayer",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.player.Player",
+            "display_name": "Player",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "Player"
+          }
+        },
+        {
+          "key": "player",
+          "display_name": "player",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.player.Player",
+            "display_name": "Player",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "Player"
+          }
+        }
+      ]
+    },
+    "rotation": {
+      "key": "rotation",
+      "members": [
+        {
+          "key": "getRotation",
+          "display_name": "getRotation",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "rotation",
+          "display_name": "rotation",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

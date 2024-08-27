@@ -1,0 +1,113 @@
+{
+  "key": "vanilla/api/recipe/replacement/IFilteringRule",
+  "display_name": "IFilteringRule",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Represents an "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "ITargetingFilter"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " that can be applied by the user onto a "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Replacer"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Much like a targeting filter, a filtering rule can remove a set of recipes from being able to be inspected by a"
+    },
+    {
+      "type": "code",
+      "content": "Replacer"
+    },
+    {
+      "type": "plaintext",
+      "content": ". The same condition apply, meaning that the filter is \u003cstrong\u003epositive\u003c/strong\u003e: it specifies which\r\n recipes the replacer is \u003cstrong\u003eallowed\u003c/strong\u003e to inspect."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "For example, using a"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.replacement.type.ModsFilteringRule",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "com.blamejared.crafttweaker.api.recipe.replacement.type.ModsFilteringRule"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " indicates\r\n that \u003cstrong\u003eonly the specified mods\u003c/strong\u003e will be targeted by the replacer.\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+    "display_name": "IFilteringRule",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+    "class_name": "IFilteringRule",
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+        "display_name": "ITargetingFilter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "ITargetingFilter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.IFilteringRule"
+}

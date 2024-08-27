@@ -1,0 +1,121 @@
+{
+  "key": "vanilla/api/text/content/type/ScoreContents",
+  "display_name": "ScoreContents",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.network.chat.contents.ScoreContents",
+    "display_name": "ScoreContents",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.network.chat.contents",
+    "class_name": "ScoreContents",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.network.chat.ComponentContents",
+        "display_name": "ComponentContents",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.network.chat",
+        "class_name": "ComponentContents"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.text.content.type.ScoreContents",
+  "member_groups": {
+    "empty": {
+      "key": "empty",
+      "members": [
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.network.chat.ComponentContents",
+            "display_name": "ComponentContents",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "ComponentContents"
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "objective": {
+      "key": "objective",
+      "members": [
+        {
+          "key": "getObjective",
+          "display_name": "getObjective",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "objective",
+          "display_name": "objective",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

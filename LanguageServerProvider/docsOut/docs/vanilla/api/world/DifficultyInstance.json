@@ -1,0 +1,134 @@
+{
+  "key": "vanilla/api/world/DifficultyInstance",
+  "display_name": "DifficultyInstance",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.DifficultyInstance",
+    "display_name": "DifficultyInstance",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world",
+    "class_name": "DifficultyInstance",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.DifficultyInstance",
+  "member_groups": {
+    "difficulty": {
+      "key": "difficulty",
+      "members": [
+        {
+          "key": "difficulty",
+          "display_name": "difficulty",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.Difficulty",
+            "display_name": "Difficulty",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "Difficulty"
+          }
+        }
+      ]
+    },
+    "effectiveDifficulty": {
+      "key": "effectiveDifficulty",
+      "members": [
+        {
+          "key": "effectiveDifficulty",
+          "display_name": "effectiveDifficulty",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isHard": {
+      "key": "isHard",
+      "members": [
+        {
+          "key": "isHard",
+          "display_name": "isHard",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isHarderThan": {
+      "key": "isHarderThan",
+      "members": [
+        {
+          "key": "isHarderThan",
+          "display_name": "isHarderThan",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "difficulty",
+              "display_name": "difficulty",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "specialMultiplier": {
+      "key": "specialMultiplier",
+      "members": [
+        {
+          "key": "specialMultiplier",
+          "display_name": "specialMultiplier",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

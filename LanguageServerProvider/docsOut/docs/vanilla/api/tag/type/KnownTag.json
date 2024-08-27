@@ -1,0 +1,1315 @@
+{
+  "key": "vanilla/api/tag/type/KnownTag",
+  "display_name": "KnownTag",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "A known tag is a tag whose element is known and has been registered as Taggable."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Known tags let you use the actual element to interact with the tag instead of using the registry key of the element"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+    "display_name": "KnownTag\u003cT\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.tag.type",
+    "class_name": "KnownTag",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+        "display_name": "MCTag",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.tag",
+        "class_name": "MCTag"
+      },
+      {
+        "key": "java.lang.Iterable",
+        "display_name": "Iterable\u003cT\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Iterable"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cMCTag\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+            "display_name": "MCTag",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.tag",
+            "class_name": "MCTag"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.tag.type.KnownTag",
+  "member_groups": {
+    "add": {
+      "key": "add",
+      "members": [
+        {
+          "key": "add",
+          "display_name": "add",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "elements",
+              "display_name": "elements",
+              "type": {
+                "key": "T[]",
+                "display_name": "T[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "T",
+                  "display_name": "T",
+                  "type_type": "generic",
+                  "nullable": false,
+                  "type": {
+                    "key": "java.lang.Object",
+                    "display_name": "Object",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "java.lang",
+                    "class_name": "Object"
+                  },
+                  "bound": "specific"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "add",
+          "display_name": "add",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given tags to this tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tags",
+              "display_name": "tags",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.MCTag[]",
+                "display_name": "MCTag[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "tags": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tags to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addId": {
+      "key": "addId",
+      "members": [
+        {
+          "key": "addId",
+          "display_name": "addId",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the elements that correspond to the given "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " to this tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "elements",
+              "display_name": "elements",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation[]",
+                "display_name": "ResourceLocation[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.resources.ResourceLocation",
+                  "display_name": "ResourceLocation",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.resources",
+                  "class_name": "ResourceLocation"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "elements": [
+                    "\u003cresource:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The registry key of the elements to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "asTagWithAmount": {
+      "key": "asTagWithAmount",
+      "members": [
+        {
+          "key": "asTagWithAmount",
+          "display_name": "asTagWithAmount",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.Many",
+            "display_name": "Many\u003cKnownTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util",
+            "class_name": "Many"
+          }
+        },
+        {
+          "key": "asTagWithAmount",
+          "display_name": "asTagWithAmount",
+          "member_type": "caster",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.Many",
+            "display_name": "Many\u003cKnownTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util",
+            "class_name": "Many"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "clear": {
+      "key": "clear",
+      "members": [
+        {
+          "key": "clear",
+          "display_name": "clear",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all elements in this tag."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "contains": {
+      "key": "contains",
+      "members": [
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "element",
+              "display_name": "element",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "element",
+              "display_name": "element",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        },
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this tag contains an element with the given id"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "extra": {
+                "examples": {
+                  "id": [
+                    "\u003cresource:minecraft:white_wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The ID of the element to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this tag contains an element with the given id"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "extra": {
+                "examples": {
+                  "id": [
+                    "\u003cresource:minecraft:white_wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The ID of the element to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        }
+      ]
+    },
+    "elements": {
+      "key": "elements",
+      "members": [
+        {
+          "key": "elements",
+          "display_name": "elements",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "elements",
+          "display_name": "elements",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "equals": {
+      "key": "equals",
+      "members": [
+        {
+          "key": "equals",
+          "display_name": "equals",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this tag equals the other tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                "display_name": "MCTag",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.tag",
+                "class_name": "MCTag"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to check against."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "equals",
+          "display_name": "equals",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this tag equals the other tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                "display_name": "MCTag",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.tag",
+                "class_name": "MCTag"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to check against."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "equals"
+        }
+      ]
+    },
+    "exists": {
+      "key": "exists",
+      "members": [
+        {
+          "key": "exists",
+          "display_name": "exists",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this tag exists."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "exists",
+          "display_name": "exists",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this tag exists."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "id": {
+      "key": "id",
+      "members": [
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "idElements": {
+      "key": "idElements",
+      "members": [
+        {
+          "key": "idElements",
+          "display_name": "idElements",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the id\u0027s of the elements in this tag."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "idElements",
+          "display_name": "idElements",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the id\u0027s of the elements in this tag."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "manager": {
+      "key": "manager",
+      "members": [
+        {
+          "key": "manager",
+          "display_name": "manager",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.tag.manager.type.KnownTagManager",
+            "display_name": "KnownTagManager\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.tag.manager.type",
+            "class_name": "KnownTagManager"
+          }
+        },
+        {
+          "key": "manager",
+          "display_name": "manager",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.tag.manager.type.KnownTagManager",
+            "display_name": "KnownTagManager\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.tag.manager.type",
+            "class_name": "KnownTagManager"
+          }
+        }
+      ]
+    },
+    "mul": {
+      "key": "mul",
+      "members": [
+        {
+          "key": "withAmount",
+          "display_name": "withAmount",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.Many",
+            "display_name": "Many\u003cKnownTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util",
+            "class_name": "Many"
+          },
+          "operator_type": "mul"
+        }
+      ]
+    },
+    "remove": {
+      "key": "remove",
+      "members": [
+        {
+          "key": "remove",
+          "display_name": "remove",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "elements",
+              "display_name": "elements",
+              "type": {
+                "key": "T[]",
+                "display_name": "T[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "T",
+                  "display_name": "T",
+                  "type_type": "generic",
+                  "nullable": false,
+                  "type": {
+                    "key": "java.lang.Object",
+                    "display_name": "Object",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "java.lang",
+                    "class_name": "Object"
+                  },
+                  "bound": "specific"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "remove",
+          "display_name": "remove",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the given tags from this tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tags",
+              "display_name": "tags",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.MCTag[]",
+                "display_name": "MCTag[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.tag.MCTag",
+                  "display_name": "MCTag",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.tag",
+                  "class_name": "MCTag"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "tags": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tags to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeId": {
+      "key": "removeId",
+      "members": [
+        {
+          "key": "removeId",
+          "display_name": "removeId",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the elements that correspond to the given "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " from this tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "elements",
+              "display_name": "elements",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation[]",
+                "display_name": "ResourceLocation[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.resources.ResourceLocation",
+                  "display_name": "ResourceLocation",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.resources",
+                  "class_name": "ResourceLocation"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "elements": [
+                    "\u003cresource:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The registry key of the elements to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "toString": {
+      "key": "toString",
+      "members": [
+        {
+          "key": "toString",
+          "display_name": "toString",
+          "member_type": "caster",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "withAmount": {
+      "key": "withAmount",
+      "members": [
+        {
+          "key": "withAmount",
+          "display_name": "withAmount",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.Many",
+            "display_name": "Many\u003cKnownTag\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util",
+            "class_name": "Many"
+          }
+        }
+      ]
+    }
+  }
+}

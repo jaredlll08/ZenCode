@@ -1,0 +1,2982 @@
+{
+  "key": "vanilla/api/villager/VillagerTrades",
+  "display_name": "VillagerTrades",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "villagerTrades"
+      ]
+    }
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.villager.CTVillagerTrades",
+    "display_name": "CTVillagerTrades",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.villager",
+    "class_name": "CTVillagerTrades",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.villagers.VillagerTrades",
+  "member_groups": {
+    "addTrade": {
+      "key": "addTrade",
+      "members": [
+        {
+          "key": "addTrade",
+          "display_name": "addTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a new custom trade with the selling and buying items determined by the custom MerchantOffer generator."
+            },
+            {
+              "type": "plaintext",
+              "content": "The function will only run when the villager resolves the trade."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "offerGenerator",
+              "display_name": "offerGenerator",
+              "type": {
+                "key": "java.util.function.BiFunction",
+                "display_name": "BiFunction\u003cEntity, RandomSource, MerchantOffer\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.entity.Entity",
+                    "display_name": "Entity",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.entity",
+                    "class_name": "Entity"
+                  },
+                  "U": {
+                    "key": "net.minecraft.util.RandomSource",
+                    "display_name": "RandomSource",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.util",
+                    "class_name": "RandomSource"
+                  },
+                  "R": {
+                    "key": "net.minecraft.world.item.trading.MerchantOffer",
+                    "display_name": "MerchantOffer",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.item.trading",
+                    "class_name": "MerchantOffer"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "BiFunction"
+              },
+              "extra": {
+                "examples": {
+                  "offerGenerator": [
+                    "(entity, random) \u003d\u003e {\r\n return new MerchantOffer(\u003citem:minecraft:dirt\u003e, \u003citem:minecraft:diamond\u003e, 16, 0, 5);\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A generator method to make a new MerchantOffer."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addTrade",
+          "display_name": "addTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a Villager Trade for emeralds for an Item. An example being, giving a villager 2 emeralds for an arrow."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "emeralds",
+              "display_name": "emeralds",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "emeralds": [
+                    "16"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The amount of Emeralds."
+                }
+              ]
+            },
+            {
+              "key": "forSale",
+              "display_name": "forSale",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "forSale": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being sold (by the Villager)."
+                }
+              ]
+            },
+            {
+              "key": "maxTrades",
+              "display_name": "maxTrades",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxTrades": [
+                    "5"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many times can this trade be done."
+                }
+              ]
+            },
+            {
+              "key": "xp",
+              "display_name": "xp",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "xp": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much Experience is given by trading."
+                }
+              ]
+            },
+            {
+              "key": "priceMult",
+              "display_name": "priceMult",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "priceMult": [
+                    "0.05"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "1.0",
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "When this trade is discounted, how much should it be discounted by."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addTrade",
+          "display_name": "addTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a Villager Trade for an Item for an Item. An example being, giving a villager 2 diamonds for an arrow."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "input1",
+              "display_name": "input1",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "input1": [
+                    "\u003citem:minecraft:dirt\u003e * 16"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The ItemStack that is being given to the Villager."
+                }
+              ]
+            },
+            {
+              "key": "forSale",
+              "display_name": "forSale",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "forSale": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being sold (by the Villager)."
+                }
+              ]
+            },
+            {
+              "key": "maxTrades",
+              "display_name": "maxTrades",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxTrades": [
+                    "5"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many times can this trade be done."
+                }
+              ]
+            },
+            {
+              "key": "xp",
+              "display_name": "xp",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "xp": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much Experience is given by trading."
+                }
+              ]
+            },
+            {
+              "key": "priceMult",
+              "display_name": "priceMult",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "priceMult": [
+                    "0.05"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "1.0",
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "When this trade is discounted, how much should it be discounted by."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addTrade",
+          "display_name": "addTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a Villager Trade for two Items for an Item. An example being, giving a villager 2 diamonds and 2 dirt for an arrow."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "input1",
+              "display_name": "input1",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "input1": [
+                    "\u003citem:minecraft:diamond\u003e * 2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The main ItemStack that is being given to the Villager."
+                }
+              ]
+            },
+            {
+              "key": "input2",
+              "display_name": "input2",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "input2": [
+                    "\u003citem:minecraft:dirt\u003e * 2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The secondary ItemStack that is being given to the Villager."
+                }
+              ]
+            },
+            {
+              "key": "forSale",
+              "display_name": "forSale",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "forSale": [
+                    "\u003citem:minecraft:arrow\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being sold (by the Villager)."
+                }
+              ]
+            },
+            {
+              "key": "maxTrades",
+              "display_name": "maxTrades",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxTrades": [
+                    "5"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many times can this trade be done."
+                }
+              ]
+            },
+            {
+              "key": "xp",
+              "display_name": "xp",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "xp": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much Experience is given by trading."
+                }
+              ]
+            },
+            {
+              "key": "priceMult",
+              "display_name": "priceMult",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "priceMult": [
+                    "0.05"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "1.0",
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "When this trade is discounted, how much should it be discounted by."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addTrade",
+          "display_name": "addTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the specified "
+            },
+            {
+              "type": "link",
+              "to": "VillagerTrades.ItemListing",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "VillagerTrades.ItemListing"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " trade."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "trade",
+              "display_name": "trade",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerTrades.ItemListing",
+                "display_name": "ItemListing",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "ItemListing"
+              },
+              "extra": {
+                "examples": {
+                  "trade": [
+                    "TreasureMapForEmeralds.create(1, \u003cresource:minecraft:ruined_portal\u003e, \"display Name\", \u003cconstant:minecraft:world/map/decorationtype:mansion\u003e, 16, 8)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The trade to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addWanderingTrade": {
+      "key": "addWanderingTrade",
+      "members": [
+        {
+          "key": "addWanderingTrade",
+          "display_name": "addWanderingTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the specific "
+            },
+            {
+              "type": "link",
+              "to": "VillagerTrades.ItemListing",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "VillagerTrades.ItemListing"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " trade to the Wandering Trader"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "rarity",
+              "display_name": "rarity",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "rarity": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`."
+                }
+              ]
+            },
+            {
+              "key": "trade",
+              "display_name": "trade",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerTrades.ItemListing",
+                "display_name": "ItemListing",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "ItemListing"
+              },
+              "extra": {
+                "examples": {
+                  "trade": [
+                    "TreasureMapForEmeralds.create(1, \u003cresource:minecraft:ruined_portal\u003e, \"display Name\", \u003cconstant:minecraft:world/map/decorationtype:mansion\u003e, 16, 8)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The trade to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addWanderingTrade",
+          "display_name": "addWanderingTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving a Wandering Trader 2 emeralds for an arrow."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "rarity",
+              "display_name": "rarity",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "rarity": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`."
+                }
+              ]
+            },
+            {
+              "key": "emeralds",
+              "display_name": "emeralds",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "emeralds": [
+                    "16"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The amount of Emeralds."
+                }
+              ]
+            },
+            {
+              "key": "forSale",
+              "display_name": "forSale",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "forSale": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being sold (by the Wandering Trader)."
+                }
+              ]
+            },
+            {
+              "key": "maxTrades",
+              "display_name": "maxTrades",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxTrades": [
+                    "16"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many times can this trade be done."
+                }
+              ]
+            },
+            {
+              "key": "xp",
+              "display_name": "xp",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "xp": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much Experience is given by trading."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addWanderingTrade",
+          "display_name": "addWanderingTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving a Wandering Trader 2 emeralds for an arrow."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "rarity",
+              "display_name": "rarity",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "rarity": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`."
+                }
+              ]
+            },
+            {
+              "key": "price",
+              "display_name": "price",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "price": [
+                    "\u003citem:minecraft:dirt\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The ItemStack being given to the Wandering Trader."
+                }
+              ]
+            },
+            {
+              "key": "forSale",
+              "display_name": "forSale",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "forSale": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being sold (by the Wandering Trader)."
+                }
+              ]
+            },
+            {
+              "key": "maxTrades",
+              "display_name": "maxTrades",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxTrades": [
+                    "16"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many times can this trade be done."
+                }
+              ]
+            },
+            {
+              "key": "xp",
+              "display_name": "xp",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "xp": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much Experience is given by trading."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeAllTrades": {
+      "key": "removeAllTrades",
+      "members": [
+        {
+          "key": "removeAllTrades",
+          "display_name": "removeAllTrades",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all the trades for the given profession and villagerLevel"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "hat profession to remove from."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeAllWanderingTrades": {
+      "key": "removeAllWanderingTrades",
+      "members": [
+        {
+          "key": "removeAllWanderingTrades",
+          "display_name": "removeAllWanderingTrades",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all wandering trades of the given rarity"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "rarity",
+              "display_name": "rarity",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeBasicTrade": {
+      "key": "removeBasicTrade",
+      "members": [
+        {
+          "key": "removeBasicTrade",
+          "display_name": "removeBasicTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a `BasicTrade` Villager trade. `BasicTrades` are trades that allow any item, to any other item. It is only really used for mod recipes and is not used for any vanilla villager trade."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "forSale",
+              "display_name": "forSale",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "forSale": [
+                    "\u003citem:minecraft:arrow\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being sold (by the Villager)."
+                }
+              ]
+            },
+            {
+              "key": "price",
+              "display_name": "price",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "price": [
+                    "\u003citem:minecraft:stick\u003e"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "\u003citem:minecraft:air\u003e"
+            },
+            {
+              "key": "price2",
+              "display_name": "price2",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "price2": [
+                    "\u003citem:minecraft:emerald\u003e"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "\u003citem:minecraft:air\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeDyedArmorForEmeraldsTrade": {
+      "key": "removeDyedArmorForEmeraldsTrade",
+      "members": [
+        {
+          "key": "removeDyedArmorForEmeraldsTrade",
+          "display_name": "removeDyedArmorForEmeraldsTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for Items for Dyed leather armor. An example being, giving a villager Leather Leggings and 3 Emeralds and getting a Blue Dyed Leather Leggings."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:leatherworker\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "buyingItem",
+              "display_name": "buyingItem",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "buyingItem": [
+                    "\u003citem:minecraft:leather_chestplate\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The base ItemStack that a random Dye colour will be applied to. E.G. A leather chestplate with no effect applied."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeEmeraldForItemsTrade": {
+      "key": "removeEmeraldForItemsTrade",
+      "members": [
+        {
+          "key": "removeEmeraldForItemsTrade",
+          "display_name": "removeEmeraldForItemsTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for Emeralds for Items. An example being, giving a villager 20 Wheat and getting an Emerald from the villager."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "tradeFor",
+              "display_name": "tradeFor",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "tradeFor": [
+                    "\u003citem:minecraft:potato\u003e.definition"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being sold (by the Villager)."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeEnchantBookForEmeraldsTrade": {
+      "key": "removeEnchantBookForEmeraldsTrade",
+      "members": [
+        {
+          "key": "removeEnchantBookForEmeraldsTrade",
+          "display_name": "removeEnchantBookForEmeraldsTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for an Enchanted Book. An example being, giving a villager Emeralds and getting an Enchanted Book with a random Enchantment."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:librarian\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeEnchantedItemForEmeraldsTrade": {
+      "key": "removeEnchantedItemForEmeraldsTrade",
+      "members": [
+        {
+          "key": "removeEnchantedItemForEmeraldsTrade",
+          "display_name": "removeEnchantedItemForEmeraldsTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for an Enchanted Item. An example being, giving a villager 3 Emeralds and getting an Enchanted Pickaxe."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:armorer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "buyingItem",
+              "display_name": "buyingItem",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "buyingItem": [
+                    "\u003citem:minecraft:diamond_boots\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The ItemStack that the Villager is selling (including any NBT)."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeItemsAndEmeraldsToItemsTrade": {
+      "key": "removeItemsAndEmeraldsToItemsTrade",
+      "members": [
+        {
+          "key": "removeItemsAndEmeraldsToItemsTrade",
+          "display_name": "removeItemsAndEmeraldsToItemsTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for Emeralds and Items for Items. An example being, giving a villager 6 uncooked Cod and an Emerald and getting back 6 Cooked Cod."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:fisherman\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "sellingItem",
+              "display_name": "sellingItem",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "sellingItem": [
+                    "\u003citem:minecraft:cooked_cod\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being given to the Villager."
+                }
+              ]
+            },
+            {
+              "key": "buyingItem",
+              "display_name": "buyingItem",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "buyingItem": [
+                    "\u003citem:minecraft:cod\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item that the Villager is selling."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeItemsForEmeraldsTrade": {
+      "key": "removeItemsForEmeraldsTrade",
+      "members": [
+        {
+          "key": "removeItemsForEmeraldsTrade",
+          "display_name": "removeItemsForEmeraldsTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for Items for Emeralds. An example being, giving a villager an Emerald and getting 4 Pumpkin Pies from the villager."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "sellingItem",
+              "display_name": "sellingItem",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "sellingItem": [
+                    "\u003citem:minecraft:apple\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being given to the Villager."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeSuspiciousStewForEmeraldTrade": {
+      "key": "removeSuspiciousStewForEmeraldTrade",
+      "members": [
+        {
+          "key": "removeSuspiciousStewForEmeraldTrade",
+          "display_name": "removeSuspiciousStewForEmeraldTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for Suspicious Stew. An example being, giving a villager an Emerald and getting a bowl of Suspicious Stew back."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeTippedArrowForItemsAndEmeraldsTrade": {
+      "key": "removeTippedArrowForItemsAndEmeraldsTrade",
+      "members": [
+        {
+          "key": "removeTippedArrowForItemsAndEmeraldsTrade",
+          "display_name": "removeTippedArrowForItemsAndEmeraldsTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for Items for an Item with a PotionEffect. An example being, giving a villager an Arrow and an Emerald and getting a Tipped Arrow with night vision."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:fletcher\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "potionStack",
+              "display_name": "potionStack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "potionStack": [
+                    "\u003citem:minecraft:tipped_arrow\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The base ItemStack that a random potion effect will be applied to. E.G. A tipped Arrow with no effect applied."
+                }
+              ]
+            },
+            {
+              "key": "sellingItem",
+              "display_name": "sellingItem",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "extra": {
+                "examples": {
+                  "sellingItem": [
+                    "\u003citem:minecraft:arrow\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being given to the Villager."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeTrade": {
+      "key": "removeTrade",
+      "members": [
+        {
+          "key": "removeTrade",
+          "display_name": "removeTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the specified trade for the given profession and villagerLevel."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "That profession to remove from."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "buying",
+              "display_name": "buying",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "buying": [
+                    "\u003citem:minecraft:potato\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The first item that you are giving to the villager."
+                }
+              ]
+            },
+            {
+              "key": "selling",
+              "display_name": "selling",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "selling": [
+                    "\u003citem:minecraft:emerald\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item that the villager is selling to you."
+                }
+              ]
+            },
+            {
+              "key": "secondBuying",
+              "display_name": "secondBuying",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "secondBuying": [
+                    "\u003citem:minecraft:air\u003e"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "\u003citem:minecraft:air\u003e",
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The second item that you are giving to the villager. Will default to air if not provided."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeTradesBuying": {
+      "key": "removeTradesBuying",
+      "members": [
+        {
+          "key": "removeTradesBuying",
+          "display_name": "removeTradesBuying",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all trades that have the specified item as the buying item for the given profession and villagerLevel."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "That profession to remove from."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "buying",
+              "display_name": "buying",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "buying": [
+                    "\u003citem:minecraft:potato\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The first item that you are giving to the villager."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "removeTradesBuying",
+          "display_name": "removeTradesBuying",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all trades that have the specified items as the buying items for the given profession and villagerLevel."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "That profession to remove from."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "buying",
+              "display_name": "buying",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "buying": [
+                    "\u003citem:minecraft:potato\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The first item that you are giving to the villager."
+                }
+              ]
+            },
+            {
+              "key": "secondBuying",
+              "display_name": "secondBuying",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "secondBuying": [
+                    "\u003citem:minecraft:air\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The second item that you are giving to the villager. Will default to air if not provided."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeTradesSelling": {
+      "key": "removeTradesSelling",
+      "members": [
+        {
+          "key": "removeTradesSelling",
+          "display_name": "removeTradesSelling",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all trades that sell the specified item for the given profession and villagerLevel."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:farmer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "That profession to remove from."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            },
+            {
+              "key": "selling",
+              "display_name": "selling",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "selling": [
+                    "\u003citem:minecraft:emerald\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item that the villager is selling to you."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeTreasureMapForEmeraldsTrade": {
+      "key": "removeTreasureMapForEmeraldsTrade",
+      "members": [
+        {
+          "key": "removeTreasureMapForEmeraldsTrade",
+          "display_name": "removeTreasureMapForEmeraldsTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Villager trade for a Map. An example being, giving a villager 13 Emeralds and getting a Map to a structure."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "profession",
+              "display_name": "profession",
+              "type": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              },
+              "extra": {
+                "examples": {
+                  "profession": [
+                    "\u003cprofession:minecraft:cartographer\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What profession this trade should be for."
+                }
+              ]
+            },
+            {
+              "key": "villagerLevel",
+              "display_name": "villagerLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerLevel": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The level the Villager needs to be."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeWanderingTrade": {
+      "key": "removeWanderingTrade",
+      "members": [
+        {
+          "key": "removeWanderingTrade",
+          "display_name": "removeWanderingTrade",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a Wandering Trader trade for Emeralds for Items. An example being, giving a Wandering Trader 2 Emeralds for an Arrow."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "rarity",
+              "display_name": "rarity",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "rarity": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`."
+                }
+              ]
+            },
+            {
+              "key": "tradeFor",
+              "display_name": "tradeFor",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "tradeFor": [
+                    "\u003citem:minecraft:arrow\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What ItemStack is being sold (by the Villager)."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

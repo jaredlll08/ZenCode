@@ -1,0 +1,494 @@
+{
+  "key": "vanilla/api/loot/param/LootContextParams",
+  "display_name": "LootContextParams",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "These are pre-registered params that are used by vanilla."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "You can also create your own using"
+    },
+    {
+      "type": "code",
+      "content": "getOrCreate"
+    }
+  ],
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParams",
+    "display_name": "LootContextParams",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot.parameters",
+    "class_name": "LootContextParams",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.loot.param.LootContextParams",
+  "member_groups": {
+    "blockEntity": {
+      "key": "blockEntity",
+      "members": [
+        {
+          "key": "blockEntity",
+          "display_name": "blockEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027block_entity\u0027 param."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cBlockEntity\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.level.block.entity.BlockEntity",
+                "display_name": "BlockEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.entity",
+                "class_name": "BlockEntity"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "blockState": {
+      "key": "blockState",
+      "members": [
+        {
+          "key": "blockState",
+          "display_name": "blockState",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027block_state\u0027 param."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cBlockState\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "damageSource": {
+      "key": "damageSource",
+      "members": [
+        {
+          "key": "damageSource",
+          "display_name": "damageSource",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027damage_source\u0027 param."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cDamageSource\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.damagesource.DamageSource",
+                "display_name": "DamageSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.damagesource",
+                "class_name": "DamageSource"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "directKillerEntity": {
+      "key": "directKillerEntity",
+      "members": [
+        {
+          "key": "directKillerEntity",
+          "display_name": "directKillerEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027direct_killer_entity\u0027 param."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cEntity\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "explosionRadius": {
+      "key": "explosionRadius",
+      "members": [
+        {
+          "key": "explosionRadius",
+          "display_name": "explosionRadius",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027explosion_radius\u0027 param."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cFloat\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "java.lang.Float",
+                "display_name": "Float",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Float"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "getOrCreate": {
+      "key": "getOrCreate",
+      "members": [
+        {
+          "key": "getOrCreate",
+          "display_name": "getOrCreate",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets or creates a new parameter with the given name, using the given type."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"height\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the parameter."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    },
+    "killerEntity": {
+      "key": "killerEntity",
+      "members": [
+        {
+          "key": "killerEntity",
+          "display_name": "killerEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027killer_entity\u0027 param."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cEntity\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "lastDamagePlayer": {
+      "key": "lastDamagePlayer",
+      "members": [
+        {
+          "key": "lastDamagePlayer",
+          "display_name": "lastDamagePlayer",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027last_damage_player\u0027 parameter."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cPlayer\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "origin": {
+      "key": "origin",
+      "members": [
+        {
+          "key": "origin",
+          "display_name": "origin",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027origin\u0027 param."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cVec3\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "thisEntity": {
+      "key": "thisEntity",
+      "members": [
+        {
+          "key": "thisEntity",
+          "display_name": "thisEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027this_entity\u0027 parameter."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cEntity\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    },
+    "tool": {
+      "key": "tool",
+      "members": [
+        {
+          "key": "tool",
+          "display_name": "tool",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027tool\u0027 param."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+            "display_name": "LootContextParam\u003cItemStack\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              }
+            },
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParam"
+          }
+        }
+      ]
+    }
+  }
+}

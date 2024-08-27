@@ -1,0 +1,45 @@
+{
+  "key": "vanilla/api/world/Clearable",
+  "display_name": "Clearable",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.Clearable",
+    "display_name": "Clearable",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world",
+    "class_name": "Clearable"
+  },
+  "zen_code_name": "crafttweaker.api.world.Clearable",
+  "member_groups": {
+    "clearContent": {
+      "key": "clearContent",
+      "members": [
+        {
+          "key": "clearContent",
+          "display_name": "clearContent",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Clears the contents of this Clearable."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

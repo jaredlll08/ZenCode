@@ -1,0 +1,212 @@
+{
+  "key": "vanilla/api/util/sequence/SequenceType",
+  "display_name": "SequenceType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "SequenceType.SERVER_THREAD_LEVEL"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Represents the type of \u0027actor\u0027 a "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.util.sequence.Sequence",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Sequence"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " acts on and is used to ensure that "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.util.sequence.Sequence",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Sequence"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s are ticked correctly."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Some examples are a"
+    },
+    {
+      "type": "link",
+      "to": "net.minecraft.world.level.Level",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "net.minecraft.world.level.Level"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " or a "
+    },
+    {
+      "type": "link",
+      "to": "net.minecraft.world.entity.LivingEntity",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "net.minecraft.world.entity.LivingEntity"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "(which is not yet implemented)."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Mods adding custom sequenceable actors (really anything that can be ticked) should make their own SequenceType and expose it to ZenScript."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceType",
+    "display_name": "SequenceType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+    "class_name": "SequenceType",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.util.sequence.SequenceType",
+  "member_groups": {
+    "CLIENT_THREAD_LEVEL": {
+      "key": "CLIENT_THREAD_LEVEL",
+      "members": [
+        {
+          "key": "CLIENT_THREAD_LEVEL",
+          "display_name": "CLIENT_THREAD_LEVEL",
+          "member_type": "field",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "The type of the CLIENT_THREAD_LEVEL sequence which is only ticked on the server thread."
+            }
+          ],
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceType",
+            "display_name": "SequenceType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceType"
+          }
+        }
+      ]
+    },
+    "SERVER_THREAD_LEVEL": {
+      "key": "SERVER_THREAD_LEVEL",
+      "members": [
+        {
+          "key": "SERVER_THREAD_LEVEL",
+          "display_name": "SERVER_THREAD_LEVEL",
+          "member_type": "field",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "The type of the SERVER_THREAD_LEVEL sequence which is only ticked on the server thread."
+            }
+          ],
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceType",
+            "display_name": "SequenceType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceType"
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the name of the sequence type."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the name of the sequence type."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

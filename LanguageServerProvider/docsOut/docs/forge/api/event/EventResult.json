@@ -1,0 +1,143 @@
+{
+  "key": "forge/api/event/EventResult",
+  "display_name": "EventResult",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "forge:event/result"
+  },
+  "type": {
+    "key": "net.minecraftforge.eventbus.api.Event.Result",
+    "display_name": "Result",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.eventbus.api",
+    "class_name": "Result",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cResult\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraftforge.eventbus.api.Event.Result",
+          "display_name": "Result",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraftforge.eventbus.api",
+          "class_name": "Result"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.forge.api.event.EventResult",
+  "member_groups": {
+    "ALLOW": {
+      "key": "ALLOW",
+      "members": [
+        {
+          "key": "ALLOW",
+          "display_name": "ALLOW",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        }
+      ]
+    },
+    "DEFAULT": {
+      "key": "DEFAULT",
+      "members": [
+        {
+          "key": "DEFAULT",
+          "display_name": "DEFAULT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        }
+      ]
+    },
+    "DENY": {
+      "key": "DENY",
+      "members": [
+        {
+          "key": "DENY",
+          "display_name": "DENY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        }
+      ]
+    }
+  }
+}

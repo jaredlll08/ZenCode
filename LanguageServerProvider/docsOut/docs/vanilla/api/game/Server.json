@@ -1,0 +1,1951 @@
+{
+  "key": "vanilla/api/game/Server",
+  "display_name": "Server",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.server.MinecraftServer",
+    "display_name": "MinecraftServer",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.server",
+    "class_name": "MinecraftServer",
+    "super_type": {
+      "key": "net.minecraft.util.thread.ReentrantBlockableEventLoop",
+      "display_name": "ReentrantBlockableEventLoop\u003cTickTask\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "R": {
+          "key": "net.minecraft.server.TickTask",
+          "display_name": "TickTask",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.server",
+          "class_name": "TickTask"
+        }
+      },
+      "package_name": "net.minecraft.util.thread",
+      "class_name": "ReentrantBlockableEventLoop"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.commands.CommandSource",
+        "display_name": "CommandSource",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.commands",
+        "class_name": "CommandSource"
+      },
+      {
+        "key": "java.lang.AutoCloseable",
+        "display_name": "AutoCloseable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang",
+        "class_name": "AutoCloseable"
+      },
+      {
+        "key": "net.minecraft.util.profiling.metrics.ProfilerMeasured",
+        "display_name": "ProfilerMeasured",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util.profiling.metrics",
+        "class_name": "ProfilerMeasured"
+      },
+      {
+        "key": "net.minecraft.util.thread.ProcessorHandle",
+        "display_name": "ProcessorHandle\u003cR : Runnable\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "Msg": {
+            "key": "R",
+            "display_name": "R",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Runnable",
+              "display_name": "Runnable",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Runnable"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "net.minecraft.util.thread",
+        "class_name": "ProcessorHandle"
+      },
+      {
+        "key": "java.util.concurrent.Executor",
+        "display_name": "Executor",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.util.concurrent",
+        "class_name": "Executor"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.game.Server",
+  "member_groups": {
+    "absoluteMaxWorldSize": {
+      "key": "absoluteMaxWorldSize",
+      "members": [
+        {
+          "key": "getAbsoluteMaxWorldSize",
+          "display_name": "getAbsoluteMaxWorldSize",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "absoluteMaxWorldSize",
+          "display_name": "absoluteMaxWorldSize",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "acceptsFailure": {
+      "key": "acceptsFailure",
+      "members": [
+        {
+          "key": "acceptsFailure",
+          "display_name": "acceptsFailure",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "acceptsFailure",
+          "display_name": "acceptsFailure",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "acceptsSuccess": {
+      "key": "acceptsSuccess",
+      "members": [
+        {
+          "key": "acceptsSuccess",
+          "display_name": "acceptsSuccess",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "acceptsSuccess",
+          "display_name": "acceptsSuccess",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "advancements": {
+      "key": "advancements",
+      "members": [
+        {
+          "key": "advancements",
+          "display_name": "advancements",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.server.ServerAdvancementManager",
+            "display_name": "ServerAdvancementManager",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server",
+            "class_name": "ServerAdvancementManager"
+          }
+        }
+      ]
+    },
+    "allLevels": {
+      "key": "allLevels",
+      "members": [
+        {
+          "key": "getAllLevels",
+          "display_name": "getAllLevels",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.Iterable",
+            "display_name": "Iterable\u003cServerLevel\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.server.level.ServerLevel",
+                "display_name": "ServerLevel",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.server.level",
+                "class_name": "ServerLevel"
+              }
+            },
+            "package_name": "java.lang",
+            "class_name": "Iterable"
+          }
+        },
+        {
+          "key": "allLevels",
+          "display_name": "allLevels",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.Iterable",
+            "display_name": "Iterable\u003cServerLevel\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.server.level.ServerLevel",
+                "display_name": "ServerLevel",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.server.level",
+                "class_name": "ServerLevel"
+              }
+            },
+            "package_name": "java.lang",
+            "class_name": "Iterable"
+          }
+        }
+      ]
+    },
+    "alwaysAccepts": {
+      "key": "alwaysAccepts",
+      "members": [
+        {
+          "key": "alwaysAccepts",
+          "display_name": "alwaysAccepts",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "alwaysAccepts",
+          "display_name": "alwaysAccepts",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "areNpcsEnabled": {
+      "key": "areNpcsEnabled",
+      "members": [
+        {
+          "key": "areNpcsEnabled",
+          "display_name": "areNpcsEnabled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "areNpcsEnabled",
+          "display_name": "areNpcsEnabled",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "averageTickTime": {
+      "key": "averageTickTime",
+      "members": [
+        {
+          "key": "getAverageTickTime",
+          "display_name": "getAverageTickTime",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "averageTickTime",
+          "display_name": "averageTickTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "defaultGameTime": {
+      "key": "defaultGameTime",
+      "members": [
+        {
+          "key": "getDefaultGameType",
+          "display_name": "getDefaultGameType",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.GameType",
+            "display_name": "GameType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "GameType"
+          }
+        },
+        {
+          "key": "defaultGameTime",
+          "display_name": "defaultGameTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.GameType",
+            "display_name": "GameType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "GameType"
+          }
+        }
+      ]
+    },
+    "executeCommand": {
+      "key": "executeCommand",
+      "members": [
+        {
+          "key": "executeCommand",
+          "display_name": "executeCommand",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Runs a command, if silent is true, the output is hidden."
+            },
+            {
+              "type": "plaintext",
+              "content": "Returns The success value of the command, or 0 if an exception occurred."
+            },
+            {
+              "type": "plaintext",
+              "content": "Note: Some commands\u0027 success value is 0"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "command",
+              "display_name": "command",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "command": [
+                    "\"time set day\""
+                  ]
+                }
+              },
+              "optional": false
+            },
+            {
+              "key": "silent",
+              "display_name": "silent",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "silent": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "false"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "executeCommand",
+          "display_name": "executeCommand",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "let a player send a command, if silent is true, the output is hidden."
+            },
+            {
+              "type": "plaintext",
+              "content": "Returns The success value of the command, or 0 if an exception occurred."
+            },
+            {
+              "type": "plaintext",
+              "content": "Note: Some commands\u0027 success value is 0"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "command",
+              "display_name": "command",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "command": [
+                    "\"time set day\""
+                  ]
+                }
+              },
+              "optional": false
+            },
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "extra": {
+                "examples": {
+                  "player": [
+                    "player"
+                  ]
+                }
+              },
+              "optional": false
+            },
+            {
+              "key": "silent",
+              "display_name": "silent",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "silent": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "false"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "forcedGameType": {
+      "key": "forcedGameType",
+      "members": [
+        {
+          "key": "getForcedGameType",
+          "display_name": "getForcedGameType",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.GameType",
+            "display_name": "GameType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "GameType"
+          }
+        },
+        {
+          "key": "forcedGameType",
+          "display_name": "forcedGameType",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.GameType",
+            "display_name": "GameType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "GameType"
+          }
+        }
+      ]
+    },
+    "getLevel": {
+      "key": "getLevel",
+      "members": [
+        {
+          "key": "getLevel",
+          "display_name": "getLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "location",
+              "display_name": "location",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.server.level.ServerLevel",
+            "display_name": "ServerLevel",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server.level",
+            "class_name": "ServerLevel"
+          }
+        }
+      ]
+    },
+    "getSpawnRadius": {
+      "key": "getSpawnRadius",
+      "members": [
+        {
+          "key": "getSpawnRadius",
+          "display_name": "getSpawnRadius",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.server.level.ServerLevel",
+                "display_name": "ServerLevel",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.server.level",
+                "class_name": "ServerLevel"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isCommandBlockEnabled": {
+      "key": "isCommandBlockEnabled",
+      "members": [
+        {
+          "key": "isCommandBlockEnabled",
+          "display_name": "isCommandBlockEnabled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isCommandBlockEnabled",
+          "display_name": "isCommandBlockEnabled",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isDedicatedServer": {
+      "key": "isDedicatedServer",
+      "members": [
+        {
+          "key": "isDedicatedServer",
+          "display_name": "isDedicatedServer",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isDedicatedServer",
+          "display_name": "isDedicatedServer",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isEnforceWhitelist": {
+      "key": "isEnforceWhitelist",
+      "members": [
+        {
+          "key": "isEnforceWhitelist",
+          "display_name": "isEnforceWhitelist",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isEnforceWhitelist",
+          "display_name": "isEnforceWhitelist",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isFlightAllowed": {
+      "key": "isFlightAllowed",
+      "members": [
+        {
+          "key": "isFlightAllowed",
+          "display_name": "isFlightAllowed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isFlightAllowed",
+          "display_name": "isFlightAllowed",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isHardcore": {
+      "key": "isHardcore",
+      "members": [
+        {
+          "key": "isHardcore",
+          "display_name": "isHardcore",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isHardcore",
+          "display_name": "isHardcore",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isNetherEnabled": {
+      "key": "isNetherEnabled",
+      "members": [
+        {
+          "key": "isNetherEnabled",
+          "display_name": "isNetherEnabled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isNetherEnabled",
+          "display_name": "isNetherEnabled",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isPvpAllowed": {
+      "key": "isPvpAllowed",
+      "members": [
+        {
+          "key": "isPvpAllowed",
+          "display_name": "isPvpAllowed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isPvpAllowed",
+          "display_name": "isPvpAllowed",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isReady": {
+      "key": "isReady",
+      "members": [
+        {
+          "key": "isReady",
+          "display_name": "isReady",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isReady",
+          "display_name": "isReady",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isRunning": {
+      "key": "isRunning",
+      "members": [
+        {
+          "key": "isRunning",
+          "display_name": "isRunning",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isRunning",
+          "display_name": "isRunning",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isShutdown": {
+      "key": "isShutdown",
+      "members": [
+        {
+          "key": "isShutdown",
+          "display_name": "isShutdown",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isShutdown",
+          "display_name": "isShutdown",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isSingleplayer": {
+      "key": "isSingleplayer",
+      "members": [
+        {
+          "key": "isSingleplayer",
+          "display_name": "isSingleplayer",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isSingleplayer",
+          "display_name": "isSingleplayer",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isSpawningAnimals": {
+      "key": "isSpawningAnimals",
+      "members": [
+        {
+          "key": "isSpawningAnimals",
+          "display_name": "isSpawningAnimals",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isSpawningAnimals",
+          "display_name": "isSpawningAnimals",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isSpawningMonsters": {
+      "key": "isSpawningMonsters",
+      "members": [
+        {
+          "key": "isSpawningMonsters",
+          "display_name": "isSpawningMonsters",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isSpawningMonsters",
+          "display_name": "isSpawningMonsters",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isStopped": {
+      "key": "isStopped",
+      "members": [
+        {
+          "key": "isStopped",
+          "display_name": "isStopped",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isStopped",
+          "display_name": "isStopped",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isUnderSpawnProtection": {
+      "key": "isUnderSpawnProtection",
+      "members": [
+        {
+          "key": "isUnderSpawnProtection",
+          "display_name": "isUnderSpawnProtection",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.server.level.ServerLevel",
+                "display_name": "ServerLevel",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.server.level",
+                "class_name": "ServerLevel"
+              },
+              "optional": false
+            },
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            },
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "levelKeys": {
+      "key": "levelKeys",
+      "members": [
+        {
+          "key": "levelKeys",
+          "display_name": "levelKeys",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "levelKeys",
+          "display_name": "levelKeys",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "maxPlayer": {
+      "key": "maxPlayer",
+      "members": [
+        {
+          "key": "getMaxPlayers",
+          "display_name": "getMaxPlayers",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "maxPlayer",
+          "display_name": "maxPlayer",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "moddeStatus": {
+      "key": "moddeStatus",
+      "members": [
+        {
+          "key": "getModdedStatus",
+          "display_name": "getModdedStatus",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "moddeStatus",
+          "display_name": "moddeStatus",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "motd": {
+      "key": "motd",
+      "members": [
+        {
+          "key": "getMotd",
+          "display_name": "getMotd",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "motd",
+          "display_name": "motd",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "operatorUserPermissionLevel": {
+      "key": "operatorUserPermissionLevel",
+      "members": [
+        {
+          "key": "getOperatorUserPermissionLevel",
+          "display_name": "getOperatorUserPermissionLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "operatorUserPermissionLevel",
+          "display_name": "operatorUserPermissionLevel",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "overworld": {
+      "key": "overworld",
+      "members": [
+        {
+          "key": "overworld",
+          "display_name": "overworld",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.server.level.ServerLevel",
+            "display_name": "ServerLevel",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server.level",
+            "class_name": "ServerLevel"
+          }
+        },
+        {
+          "key": "overworld",
+          "display_name": "overworld",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.server.level.ServerLevel",
+            "display_name": "ServerLevel",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server.level",
+            "class_name": "ServerLevel"
+          }
+        }
+      ]
+    },
+    "overworldData": {
+      "key": "overworldData",
+      "members": [
+        {
+          "key": "getOverworldData",
+          "display_name": "getOverworldData",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the custom data of the overworld."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The overworld is always loaded, so this can be used to store and access data no matter what level a player may be in."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.level.CraftTweakerSavedData",
+            "display_name": "CraftTweakerSavedData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.level",
+            "class_name": "CraftTweakerSavedData"
+          }
+        },
+        {
+          "key": "overworldData",
+          "display_name": "overworldData",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the custom data of the overworld."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The overworld is always loaded, so this can be used to store and access data no matter what level a player may be in."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.level.CraftTweakerSavedData",
+            "display_name": "CraftTweakerSavedData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.level",
+            "class_name": "CraftTweakerSavedData"
+          }
+        }
+      ]
+    },
+    "playerCount": {
+      "key": "playerCount",
+      "members": [
+        {
+          "key": "getPlayerCount",
+          "display_name": "getPlayerCount",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "playerCount",
+          "display_name": "playerCount",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "playerList": {
+      "key": "playerList",
+      "members": [
+        {
+          "key": "getPlayerList",
+          "display_name": "getPlayerList",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.server.players.PlayerList",
+            "display_name": "PlayerList",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server.players",
+            "class_name": "PlayerList"
+          }
+        },
+        {
+          "key": "playerList",
+          "display_name": "playerList",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.server.players.PlayerList",
+            "display_name": "PlayerList",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server.players",
+            "class_name": "PlayerList"
+          }
+        }
+      ]
+    },
+    "playerNames": {
+      "key": "playerNames",
+      "members": [
+        {
+          "key": "getPlayerNames",
+          "display_name": "getPlayerNames",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String[]",
+            "display_name": "String[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.String",
+              "display_name": "string",
+              "type_type": "basic",
+              "nullable": false
+            }
+          }
+        },
+        {
+          "key": "playerNames",
+          "display_name": "playerNames",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String[]",
+            "display_name": "String[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.String",
+              "display_name": "string",
+              "type_type": "basic",
+              "nullable": false
+            }
+          }
+        }
+      ]
+    },
+    "sendMessage": {
+      "key": "sendMessage",
+      "members": [
+        {
+          "key": "sendMessage",
+          "display_name": "sendMessage",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "component",
+              "display_name": "component",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "serverModName": {
+      "key": "serverModName",
+      "members": [
+        {
+          "key": "getServerModName",
+          "display_name": "getServerModName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serverModName",
+          "display_name": "serverModName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "serverVersion": {
+      "key": "serverVersion",
+      "members": [
+        {
+          "key": "getServerVersion",
+          "display_name": "getServerVersion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serverVersion",
+          "display_name": "serverVersion",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDefaultGameType": {
+      "key": "setDefaultGameType",
+      "members": [
+        {
+          "key": "setDefaultGameType",
+          "display_name": "setDefaultGameType",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "gameType",
+              "display_name": "gameType",
+              "type": {
+                "key": "net.minecraft.world.level.GameType",
+                "display_name": "GameType",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "GameType"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDifficulty": {
+      "key": "setDifficulty",
+      "members": [
+        {
+          "key": "setDifficulty",
+          "display_name": "setDifficulty",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "difficulty",
+              "display_name": "difficulty",
+              "type": {
+                "key": "net.minecraft.world.Difficulty",
+                "display_name": "Difficulty",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world",
+                "class_name": "Difficulty"
+              },
+              "optional": false
+            },
+            {
+              "key": "force",
+              "display_name": "force",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDifficultyLocked": {
+      "key": "setDifficultyLocked",
+      "members": [
+        {
+          "key": "setDifficultyLocked",
+          "display_name": "setDifficultyLocked",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "locked",
+              "display_name": "locked",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setEnforceWhitelist": {
+      "key": "setEnforceWhitelist",
+      "members": [
+        {
+          "key": "setEnforceWhitelist",
+          "display_name": "setEnforceWhitelist",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "enforceWhitelist",
+              "display_name": "enforceWhitelist",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setFlightAllowed": {
+      "key": "setFlightAllowed",
+      "members": [
+        {
+          "key": "setFlightAllowed",
+          "display_name": "setFlightAllowed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "flightAllowed",
+              "display_name": "flightAllowed",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setMotd": {
+      "key": "setMotd",
+      "members": [
+        {
+          "key": "setMotd",
+          "display_name": "setMotd",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "motd",
+              "display_name": "motd",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setPvpAllowed": {
+      "key": "setPvpAllowed",
+      "members": [
+        {
+          "key": "setPvpAllowed",
+          "display_name": "setPvpAllowed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pvpAllowed",
+              "display_name": "pvpAllowed",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "shouldInformAdmins": {
+      "key": "shouldInformAdmins",
+      "members": [
+        {
+          "key": "shouldInformAdmins",
+          "display_name": "shouldInformAdmins",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "shouldInformAdmins",
+          "display_name": "shouldInformAdmins",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "spawnProtectionRadius": {
+      "key": "spawnProtectionRadius",
+      "members": [
+        {
+          "key": "getSpawnProtectionRadius",
+          "display_name": "getSpawnProtectionRadius",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "spawnProtectionRadius",
+          "display_name": "spawnProtectionRadius",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "tickCount": {
+      "key": "tickCount",
+      "members": [
+        {
+          "key": "getTickCount",
+          "display_name": "getTickCount",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "tickCount",
+          "display_name": "tickCount",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

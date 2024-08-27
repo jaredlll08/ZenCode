@@ -1,0 +1,99 @@
+{
+  "key": "vanilla/api/world/clip/ClipContext",
+  "display_name": "ClipContext",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.ClipContext",
+    "display_name": "ClipContext",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "ClipContext",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.clip.ClipContext",
+  "member_groups": {
+    "from": {
+      "key": "from",
+      "members": [
+        {
+          "key": "getFrom",
+          "display_name": "getFrom",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        },
+        {
+          "key": "from",
+          "display_name": "from",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "to": {
+      "key": "to",
+      "members": [
+        {
+          "key": "getTo",
+          "display_name": "getTo",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        },
+        {
+          "key": "to",
+          "display_name": "to",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    }
+  }
+}

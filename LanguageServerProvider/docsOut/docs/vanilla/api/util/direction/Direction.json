@@ -1,0 +1,777 @@
+{
+  "key": "vanilla/api/util/direction/Direction",
+  "display_name": "Direction",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:direction"
+  },
+  "type": {
+    "key": "net.minecraft.core.Direction",
+    "display_name": "Direction",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.core",
+    "class_name": "Direction",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cDirection\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.core.Direction",
+          "display_name": "Direction",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.core",
+          "class_name": "Direction"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.Direction",
+  "member_groups": {
+    "DOWN": {
+      "key": "DOWN",
+      "members": [
+        {
+          "key": "DOWN",
+          "display_name": "DOWN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "EAST": {
+      "key": "EAST",
+      "members": [
+        {
+          "key": "EAST",
+          "display_name": "EAST",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "NORTH": {
+      "key": "NORTH",
+      "members": [
+        {
+          "key": "NORTH",
+          "display_name": "NORTH",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "SOUTH": {
+      "key": "SOUTH",
+      "members": [
+        {
+          "key": "SOUTH",
+          "display_name": "SOUTH",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "UP": {
+      "key": "UP",
+      "members": [
+        {
+          "key": "UP",
+          "display_name": "UP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "WEST": {
+      "key": "WEST",
+      "members": [
+        {
+          "key": "WEST",
+          "display_name": "WEST",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "axis": {
+      "key": "axis",
+      "members": [
+        {
+          "key": "getAxis",
+          "display_name": "getAxis",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction.Axis",
+            "display_name": "Axis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Axis"
+          }
+        },
+        {
+          "key": "axis",
+          "display_name": "axis",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction.Axis",
+            "display_name": "Axis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Axis"
+          }
+        }
+      ]
+    },
+    "axisDirection": {
+      "key": "axisDirection",
+      "members": [
+        {
+          "key": "getAxisDirection",
+          "display_name": "getAxisDirection",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction.AxisDirection",
+            "display_name": "AxisDirection",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "AxisDirection"
+          }
+        },
+        {
+          "key": "axisDirection",
+          "display_name": "axisDirection",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction.AxisDirection",
+            "display_name": "AxisDirection",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "AxisDirection"
+          }
+        }
+      ]
+    },
+    "clockWise": {
+      "key": "clockWise",
+      "members": [
+        {
+          "key": "getClockWise",
+          "display_name": "getClockWise",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "clockWise",
+          "display_name": "clockWise",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "counterClockWise": {
+      "key": "counterClockWise",
+      "members": [
+        {
+          "key": "getCounterClockWise",
+          "display_name": "getCounterClockWise",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "counterClockWise",
+          "display_name": "counterClockWise",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "getClockWise": {
+      "key": "getClockWise",
+      "members": [
+        {
+          "key": "getClockWise",
+          "display_name": "getClockWise",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "axis",
+              "display_name": "axis",
+              "type": {
+                "key": "net.minecraft.core.Direction.Axis",
+                "display_name": "Axis",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Axis"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "getCounterClockWise": {
+      "key": "getCounterClockWise",
+      "members": [
+        {
+          "key": "getCounterClockWise",
+          "display_name": "getCounterClockWise",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "axis",
+              "display_name": "axis",
+              "type": {
+                "key": "net.minecraft.core.Direction.Axis",
+                "display_name": "Axis",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Axis"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "getName": {
+      "key": "getName",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isFacingAngle": {
+      "key": "isFacingAngle",
+      "members": [
+        {
+          "key": "isFacingAngle",
+          "display_name": "isFacingAngle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "degrees",
+              "display_name": "degrees",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "normal": {
+      "key": "normal",
+      "members": [
+        {
+          "key": "getNormal",
+          "display_name": "getNormal",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Vec3i",
+            "display_name": "Vec3i",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Vec3i"
+          }
+        },
+        {
+          "key": "normal",
+          "display_name": "normal",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Vec3i",
+            "display_name": "Vec3i",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Vec3i"
+          }
+        }
+      ]
+    },
+    "opposite": {
+      "key": "opposite",
+      "members": [
+        {
+          "key": "getOpposite",
+          "display_name": "getOpposite",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "opposite",
+          "display_name": "opposite",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "rotation": {
+      "key": "rotation",
+      "members": [
+        {
+          "key": "getRotation",
+          "display_name": "getRotation",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "org.joml.Quaternionf",
+            "display_name": "Quaternionf",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "org.joml",
+            "class_name": "Quaternionf"
+          }
+        },
+        {
+          "key": "rotation",
+          "display_name": "rotation",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "org.joml.Quaternionf",
+            "display_name": "Quaternionf",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "org.joml",
+            "class_name": "Quaternionf"
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "step": {
+      "key": "step",
+      "members": [
+        {
+          "key": "step",
+          "display_name": "step",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "org.joml.Vector3f",
+            "display_name": "Vector3f",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "org.joml",
+            "class_name": "Vector3f"
+          }
+        },
+        {
+          "key": "step",
+          "display_name": "step",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "org.joml.Vector3f",
+            "display_name": "Vector3f",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "org.joml",
+            "class_name": "Vector3f"
+          }
+        }
+      ]
+    },
+    "stepX": {
+      "key": "stepX",
+      "members": [
+        {
+          "key": "getStepX",
+          "display_name": "getStepX",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "stepX",
+          "display_name": "stepX",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "stepY": {
+      "key": "stepY",
+      "members": [
+        {
+          "key": "getStepY",
+          "display_name": "getStepY",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "stepY",
+          "display_name": "stepY",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "stepZ": {
+      "key": "stepZ",
+      "members": [
+        {
+          "key": "getStepZ",
+          "display_name": "getStepZ",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "stepZ",
+          "display_name": "stepZ",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "toYRot": {
+      "key": "toYRot",
+      "members": [
+        {
+          "key": "toYRot",
+          "display_name": "toYRot",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "toYRot",
+          "display_name": "toYRot",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

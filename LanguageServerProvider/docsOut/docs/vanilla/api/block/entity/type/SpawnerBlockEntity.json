@@ -1,0 +1,721 @@
+{
+  "key": "vanilla/api/block/entity/type/SpawnerBlockEntity",
+  "display_name": "SpawnerBlockEntity",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.block.entity.SpawnerBlockEntity",
+    "display_name": "SpawnerBlockEntity",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.block.entity",
+    "class_name": "SpawnerBlockEntity",
+    "super_type": {
+      "key": "net.minecraft.world.level.block.entity.BlockEntity",
+      "display_name": "BlockEntity",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.world.level.block.entity",
+      "class_name": "BlockEntity"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeBlockEntity",
+        "display_name": "IForgeBlockEntity",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeBlockEntity"
+      },
+      {
+        "key": "net.minecraftforge.common.capabilities.ICapabilityProviderImpl",
+        "display_name": "ICapabilityProviderImpl\u003cB : ICapabilityProviderImpl\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "B": {
+            "key": "B",
+            "display_name": "B",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "net.minecraftforge.common.capabilities.ICapabilityProviderImpl",
+              "display_name": "ICapabilityProviderImpl\u003cB : ICapabilityProviderImpl\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraftforge.common.capabilities",
+              "class_name": "ICapabilityProviderImpl"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "net.minecraftforge.common.capabilities",
+        "class_name": "ICapabilityProviderImpl"
+      },
+      {
+        "key": "net.minecraftforge.common.capabilities.ICapabilityProvider",
+        "display_name": "ICapabilityProvider",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.capabilities",
+        "class_name": "ICapabilityProvider"
+      },
+      {
+        "key": "net.minecraftforge.common.capabilities.ICapabilitySerializable",
+        "display_name": "ICapabilitySerializable\u003cCompoundTag\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.nbt.CompoundTag",
+            "display_name": "CompoundTag",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.nbt",
+            "class_name": "CompoundTag"
+          }
+        },
+        "package_name": "net.minecraftforge.common.capabilities",
+        "class_name": "ICapabilitySerializable"
+      },
+      {
+        "key": "net.minecraftforge.common.util.INBTSerializable",
+        "display_name": "INBTSerializable\u003cT : Tag\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "net.minecraft.nbt.Tag",
+              "display_name": "Tag",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraft.nbt",
+              "class_name": "Tag"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "net.minecraftforge.common.util",
+        "class_name": "INBTSerializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.block.entity.type.SpawnerBlockEntity",
+  "member_groups": {
+    "blockPos": {
+      "key": "blockPos",
+      "members": [
+        {
+          "key": "getBlockPos",
+          "display_name": "getBlockPos",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        },
+        {
+          "key": "blockPos",
+          "display_name": "blockPos",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        }
+      ]
+    },
+    "blockState": {
+      "key": "blockState",
+      "members": [
+        {
+          "key": "getBlockState",
+          "display_name": "getBlockState",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        },
+        {
+          "key": "blockState",
+          "display_name": "blockState",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    },
+    "data": {
+      "key": "data",
+      "members": [
+        {
+          "key": "data",
+          "display_name": "data",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        },
+        {
+          "key": "setData",
+          "display_name": "setData",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "data",
+              "display_name": "data",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "data",
+          "display_name": "data",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.block.entity.BlockEntity",
+                "display_name": "BlockEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.entity",
+                "class_name": "BlockEntity"
+              },
+              "optional": false
+            },
+            {
+              "key": "data",
+              "display_name": "data",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "getCapability": {
+      "key": "getCapability",
+      "members": [
+        {
+          "key": "getCapability",
+          "display_name": "getCapability",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the capability for the given side."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cap",
+              "display_name": "cap",
+              "type": {
+                "key": "net.minecraftforge.common.capabilities.Capability",
+                "display_name": "Capability\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "net.minecraftforge.common.capabilities",
+                "class_name": "Capability"
+              },
+              "extra": {
+                "examples": {
+                  "cap": [
+                    "Capabilities.ENERGY"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The capability to get."
+                }
+              ]
+            },
+            {
+              "key": "side",
+              "display_name": "side",
+              "type": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              },
+              "extra": {
+                "examples": {
+                  "side": [
+                    "\u003cconstant:minecraft:direction:north\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The side to get the capability from, can be null."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": true,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "extra": {
+                "examples": {
+                  "T": [
+                    "IEnergyStorage"
+                  ]
+                }
+              },
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "getCapability",
+          "display_name": "getCapability",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the capability."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cap",
+              "display_name": "cap",
+              "type": {
+                "key": "net.minecraftforge.common.capabilities.Capability",
+                "display_name": "Capability\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "net.minecraftforge.common.capabilities",
+                "class_name": "Capability"
+              },
+              "extra": {
+                "examples": {
+                  "cap": [
+                    "Capabilities.ENERGY"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The capability to get."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": true,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "extra": {
+                "examples": {
+                  "T": [
+                    "IEnergyStorage"
+                  ]
+                }
+              },
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    },
+    "hasLevel": {
+      "key": "hasLevel",
+      "members": [
+        {
+          "key": "hasLevel",
+          "display_name": "hasLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasLevel",
+          "display_name": "hasLevel",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "level": {
+      "key": "level",
+      "members": [
+        {
+          "key": "getLevel",
+          "display_name": "getLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.Level",
+            "display_name": "Level",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Level"
+          }
+        },
+        {
+          "key": "level",
+          "display_name": "level",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.Level",
+            "display_name": "Level",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Level"
+          }
+        }
+      ]
+    },
+    "onlyOpCanSetNbt": {
+      "key": "onlyOpCanSetNbt",
+      "members": [
+        {
+          "key": "onlyOpCanSetNbt",
+          "display_name": "onlyOpCanSetNbt",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "registryName": {
+      "key": "registryName",
+      "members": [
+        {
+          "key": "getRegistryName",
+          "display_name": "getRegistryName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "registryName",
+          "display_name": "registryName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "setEntityId": {
+      "key": "setEntityId",
+      "members": [
+        {
+          "key": "setEntityId",
+          "display_name": "setEntityId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "$$0",
+              "display_name": "$$0",
+              "type": {
+                "key": "net.minecraft.world.entity.EntityType",
+                "display_name": "EntityType\u003cEntity\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.entity.Entity",
+                    "display_name": "Entity",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.entity",
+                    "class_name": "Entity"
+                  }
+                },
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "EntityType"
+              },
+              "optional": false
+            },
+            {
+              "key": "$$1",
+              "display_name": "$$1",
+              "type": {
+                "key": "net.minecraft.util.RandomSource",
+                "display_name": "RandomSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.util",
+                "class_name": "RandomSource"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "spawner": {
+      "key": "spawner",
+      "members": [
+        {
+          "key": "spawner",
+          "display_name": "spawner",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.BaseSpawner",
+            "display_name": "BaseSpawner",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "BaseSpawner"
+          }
+        }
+      ]
+    },
+    "updateData": {
+      "key": "updateData",
+      "members": [
+        {
+          "key": "updateData",
+          "display_name": "updateData",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "data",
+              "display_name": "data",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

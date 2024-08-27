@@ -1,0 +1,311 @@
+{
+  "key": "vanilla/api/world/Difficulty",
+  "display_name": "Difficulty",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:world/difficulty"
+  },
+  "type": {
+    "key": "net.minecraft.world.Difficulty",
+    "display_name": "Difficulty",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world",
+    "class_name": "Difficulty",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cDifficulty\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.Difficulty",
+          "display_name": "Difficulty",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world",
+          "class_name": "Difficulty"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.Difficulty",
+  "member_groups": {
+    "EASY": {
+      "key": "EASY",
+      "members": [
+        {
+          "key": "EASY",
+          "display_name": "EASY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.Difficulty",
+            "display_name": "Difficulty",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "Difficulty"
+          }
+        }
+      ]
+    },
+    "HARD": {
+      "key": "HARD",
+      "members": [
+        {
+          "key": "HARD",
+          "display_name": "HARD",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.Difficulty",
+            "display_name": "Difficulty",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "Difficulty"
+          }
+        }
+      ]
+    },
+    "NORMAL": {
+      "key": "NORMAL",
+      "members": [
+        {
+          "key": "NORMAL",
+          "display_name": "NORMAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.Difficulty",
+            "display_name": "Difficulty",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "Difficulty"
+          }
+        }
+      ]
+    },
+    "PEACEFUL": {
+      "key": "PEACEFUL",
+      "members": [
+        {
+          "key": "PEACEFUL",
+          "display_name": "PEACEFUL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.Difficulty",
+            "display_name": "Difficulty",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "Difficulty"
+          }
+        }
+      ]
+    },
+    "displayName": {
+      "key": "displayName",
+      "members": [
+        {
+          "key": "getDisplayName",
+          "display_name": "getDisplayName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "displayName",
+          "display_name": "displayName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "id": {
+      "key": "id",
+      "members": [
+        {
+          "key": "getId",
+          "display_name": "getId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "key": {
+      "key": "key",
+      "members": [
+        {
+          "key": "getKey",
+          "display_name": "getKey",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "key",
+          "display_name": "key",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

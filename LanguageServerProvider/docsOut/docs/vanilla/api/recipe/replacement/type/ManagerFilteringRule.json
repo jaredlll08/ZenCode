@@ -1,0 +1,146 @@
+{
+  "key": "vanilla/api/recipe/replacement/type/ManagerFilteringRule",
+  "display_name": "ManagerFilteringRule",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Filters recipes based on their "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IRecipeManager"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.TypeFilteringRule",
+    "display_name": "TypeFilteringRule",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+    "class_name": "TypeFilteringRule",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+        "display_name": "IFilteringRule",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "IFilteringRule"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+        "display_name": "ITargetingFilter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "ITargetingFilter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.type.ManagerFilteringRule",
+  "member_groups": {
+    "of": {
+      "key": "of",
+      "members": [
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule filtering recipes based on the given managers."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "managers",
+              "display_name": "managers",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager[]",
+                "display_name": "IRecipeManager\u003c?\u003e[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager",
+                  "display_name": "IRecipeManager\u003c?\u003e",
+                  "type_type": "java",
+                  "nullable": false,
+                  "type_parameters": {
+                    "T": {
+                      "key": "?",
+                      "display_name": "?",
+                      "type_type": "generic",
+                      "nullable": false,
+                      "type": {
+                        "key": "java.lang.Object",
+                        "display_name": "Object",
+                        "type_type": "java",
+                        "nullable": false,
+                        "package_name": "java.lang",
+                        "class_name": "Object"
+                      },
+                      "bound": "specific"
+                    }
+                  },
+                  "package_name": "com.blamejared.crafttweaker.api.recipe.manager.base",
+                  "class_name": "IRecipeManager"
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The managers that should be filtered."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+            "display_name": "IFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "IFilteringRule"
+          }
+        }
+      ]
+    }
+  }
+}

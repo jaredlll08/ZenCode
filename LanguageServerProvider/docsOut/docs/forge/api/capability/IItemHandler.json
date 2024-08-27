@@ -1,0 +1,494 @@
+{
+  "key": "forge/api/capability/IItemHandler",
+  "display_name": "IItemHandler",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraftforge.items.IItemHandler",
+    "display_name": "IItemHandler",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.items",
+    "class_name": "IItemHandler"
+  },
+  "zen_code_name": "crafttweaker.api.capability.IItemHandler",
+  "member_groups": {
+    "extractItem": {
+      "key": "extractItem",
+      "members": [
+        {
+          "key": "extractItem",
+          "display_name": "extractItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Extract from the given slot."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "slot",
+              "display_name": "slot",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "slot": [
+                    "0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot to extract from."
+                }
+              ]
+            },
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "amount": [
+                    "5"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much to extract from the slot."
+                }
+              ]
+            },
+            {
+              "key": "simulate",
+              "display_name": "simulate",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "simulate": [
+                    "false"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "If the extraction should actually happen, if true, no changes will be made."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "getSlotLimit": {
+      "key": "getSlotLimit",
+      "members": [
+        {
+          "key": "getSlotLimit",
+          "display_name": "getSlotLimit",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets how much of a stack can fit into the given slot."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "slot",
+              "display_name": "slot",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "slot": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getStackInSlot": {
+      "key": "getStackInSlot",
+      "members": [
+        {
+          "key": "getStackInSlot",
+          "display_name": "getStackInSlot",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the stack in the given slot."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "slot",
+              "display_name": "slot",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "slot": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot to get the stack of."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "indexget": {
+      "key": "indexget",
+      "members": [
+        {
+          "key": "getStackInSlot",
+          "display_name": "getStackInSlot",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the stack in the given slot."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "slot",
+              "display_name": "slot",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "slot": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot to get the stack of."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          },
+          "operator_type": "indexget"
+        }
+      ]
+    },
+    "insertItem": {
+      "key": "insertItem",
+      "members": [
+        {
+          "key": "insertItem",
+          "display_name": "insertItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Inserts the stack into the given slot and returns the remainder."
+            },
+            {
+              "type": "plaintext",
+              "content": "The remainder returned is how much was not inserted."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "For example if slot `0` had `63` dirt, and you tried to insert `5` dirt, you will get a remainder of `4` dirt."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "slot",
+              "display_name": "slot",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "slot": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot to insert into."
+                }
+              ]
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:dirt\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to insert."
+                }
+              ]
+            },
+            {
+              "key": "simulate",
+              "display_name": "simulate",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "simulate": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "If the insert should actually happen, if true, will be made."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "isItemValid": {
+      "key": "isItemValid",
+      "members": [
+        {
+          "key": "isItemValid",
+          "display_name": "isItemValid",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if the given stack is valid for the given slot."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "slot",
+              "display_name": "slot",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot to check."
+                }
+              ]
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "slots": {
+      "key": "slots",
+      "members": [
+        {
+          "key": "getSlots",
+          "display_name": "getSlots",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of slots in the handler."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "slots",
+          "display_name": "slots",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of slots in the handler."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

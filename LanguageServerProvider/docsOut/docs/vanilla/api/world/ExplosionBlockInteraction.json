@@ -1,0 +1,143 @@
+{
+  "key": "vanilla/api/world/ExplosionBlockInteraction",
+  "display_name": "ExplosionBlockInteraction",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:explosion/blockinteraction"
+  },
+  "type": {
+    "key": "net.minecraft.world.level.Explosion.BlockInteraction",
+    "display_name": "BlockInteraction",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "BlockInteraction",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cBlockInteraction\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.level.Explosion.BlockInteraction",
+          "display_name": "BlockInteraction",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.level",
+          "class_name": "BlockInteraction"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.ExplosionBlockInteraction",
+  "member_groups": {
+    "DESTROY": {
+      "key": "DESTROY",
+      "members": [
+        {
+          "key": "DESTROY",
+          "display_name": "DESTROY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.Explosion.BlockInteraction",
+            "display_name": "BlockInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "BlockInteraction"
+          }
+        }
+      ]
+    },
+    "DESTROY_WITH_DECAY": {
+      "key": "DESTROY_WITH_DECAY",
+      "members": [
+        {
+          "key": "DESTROY_WITH_DECAY",
+          "display_name": "DESTROY_WITH_DECAY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.Explosion.BlockInteraction",
+            "display_name": "BlockInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "BlockInteraction"
+          }
+        }
+      ]
+    },
+    "KEEP": {
+      "key": "KEEP",
+      "members": [
+        {
+          "key": "KEEP",
+          "display_name": "KEEP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.Explosion.BlockInteraction",
+            "display_name": "BlockInteraction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "BlockInteraction"
+          }
+        }
+      ]
+    }
+  }
+}

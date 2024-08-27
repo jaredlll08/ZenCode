@@ -1,0 +1,263 @@
+{
+  "key": "vanilla/api/villager/trade/type/TreasureMapForEmeralds",
+  "display_name": "TreasureMapForEmeralds",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.npc.VillagerTrades.TreasureMapForEmeralds",
+    "display_name": "TreasureMapForEmeralds",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.npc",
+    "class_name": "TreasureMapForEmeralds",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.entity.npc.VillagerTrades.ItemListing",
+        "display_name": "ItemListing",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.entity.npc",
+        "class_name": "ItemListing"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.villager.trade.type.TreasureMapForEmeralds",
+  "member_groups": {
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new TreasureMapForEmeralds trade"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "emeraldCost",
+              "display_name": "emeraldCost",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "emeraldCost": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many emeralds should the map cost"
+                }
+              ]
+            },
+            {
+              "key": "destination",
+              "display_name": "destination",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "extra": {
+                "examples": {
+                  "destination": [
+                    "\u003cresource:minecraft:ruined_portal\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What should the map lead the player to"
+                }
+              ]
+            },
+            {
+              "key": "displayName",
+              "display_name": "displayName",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "displayName": [
+                    "\"Ruined Portal\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the map"
+                }
+              ]
+            },
+            {
+              "key": "destinationType",
+              "display_name": "destinationType",
+              "type": {
+                "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+                "display_name": "Type",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.saveddata.maps",
+                "class_name": "Type"
+              },
+              "extra": {
+                "examples": {
+                  "destinationType": [
+                    "\u003cconstant:minecraft:world/map/decorationtype:mansion\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The type of destination t"
+                }
+              ]
+            },
+            {
+              "key": "maxUses",
+              "display_name": "maxUses",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxUses": [
+                    "16"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many times this trade can be used"
+                }
+              ]
+            },
+            {
+              "key": "villagerXp",
+              "display_name": "villagerXp",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerXp": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much experience does this trade reward the villager"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.npc.VillagerTrades.TreasureMapForEmeralds",
+            "display_name": "TreasureMapForEmeralds",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.npc",
+            "class_name": "TreasureMapForEmeralds"
+          }
+        }
+      ]
+    },
+    "getOffer": {
+      "key": "getOffer",
+      "members": [
+        {
+          "key": "getOffer",
+          "display_name": "getOffer",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "traderEntity",
+              "display_name": "traderEntity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": false
+            },
+            {
+              "key": "random",
+              "display_name": "random",
+              "type": {
+                "key": "net.minecraft.util.RandomSource",
+                "display_name": "RandomSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.util",
+                "class_name": "RandomSource"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.trading.MerchantOffer",
+            "display_name": "MerchantOffer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.trading",
+            "class_name": "MerchantOffer"
+          }
+        }
+      ]
+    }
+  }
+}

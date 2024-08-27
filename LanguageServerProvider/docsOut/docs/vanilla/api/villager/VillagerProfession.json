@@ -1,0 +1,258 @@
+{
+  "key": "vanilla/api/villager/VillagerProfession",
+  "display_name": "VillagerProfession",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.npc.VillagerProfession",
+    "display_name": "VillagerProfession",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.npc",
+    "class_name": "VillagerProfession",
+    "super_type": {
+      "key": "java.lang.Record",
+      "display_name": "Record",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Record"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.villager.VillagerProfession",
+  "member_groups": {
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "registryName": {
+      "key": "registryName",
+      "members": [
+        {
+          "key": "getRegistryName",
+          "display_name": "getRegistryName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "registryName",
+          "display_name": "registryName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "requestedItems": {
+      "key": "requestedItems",
+      "members": [
+        {
+          "key": "requestedItems",
+          "display_name": "requestedItems",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Set",
+            "display_name": "Set\u003cItem\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Set"
+          }
+        },
+        {
+          "key": "requestedItems",
+          "display_name": "requestedItems",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Set",
+            "display_name": "Set\u003cItem\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Set"
+          }
+        }
+      ]
+    },
+    "secondaryPoi": {
+      "key": "secondaryPoi",
+      "members": [
+        {
+          "key": "secondaryPoi",
+          "display_name": "secondaryPoi",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Set",
+            "display_name": "Set\u003cBlock\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Set"
+          }
+        },
+        {
+          "key": "secondaryPoi",
+          "display_name": "secondaryPoi",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Set",
+            "display_name": "Set\u003cBlock\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Set"
+          }
+        }
+      ]
+    },
+    "workSound": {
+      "key": "workSound",
+      "members": [
+        {
+          "key": "workSound",
+          "display_name": "workSound",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        },
+        {
+          "key": "workSound",
+          "display_name": "workSound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    }
+  }
+}

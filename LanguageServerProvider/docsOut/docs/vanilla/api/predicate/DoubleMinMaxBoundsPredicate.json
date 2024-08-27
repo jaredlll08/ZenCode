@@ -1,0 +1,202 @@
+{
+  "key": "vanilla/api/predicate/DoubleMinMaxBoundsPredicate",
+  "display_name": "DoubleMinMaxBoundsPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+    "display_name": "Doubles",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "Doubles",
+    "super_type": {
+      "key": "net.minecraft.advancements.critereon.MinMaxBounds",
+      "display_name": "MinMaxBounds\u003cDouble\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "T": {
+          "key": "java.lang.Double",
+          "display_name": "Double",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Double"
+        }
+      },
+      "package_name": "net.minecraft.advancements.critereon",
+      "class_name": "MinMaxBounds"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.DoubleMinMaxBoundsPredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+            "display_name": "Doubles",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Doubles"
+          }
+        }
+      ]
+    },
+    "atLeast": {
+      "key": "atLeast",
+      "members": [
+        {
+          "key": "atLeast",
+          "display_name": "atLeast",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "min",
+              "display_name": "min",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+            "display_name": "Doubles",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Doubles"
+          }
+        }
+      ]
+    },
+    "atMost": {
+      "key": "atMost",
+      "members": [
+        {
+          "key": "atMost",
+          "display_name": "atMost",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "max",
+              "display_name": "max",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+            "display_name": "Doubles",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Doubles"
+          }
+        }
+      ]
+    },
+    "between": {
+      "key": "between",
+      "members": [
+        {
+          "key": "between",
+          "display_name": "between",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "min",
+              "display_name": "min",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "max",
+              "display_name": "max",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+            "display_name": "Doubles",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Doubles"
+          }
+        }
+      ]
+    },
+    "exactly": {
+      "key": "exactly",
+      "members": [
+        {
+          "key": "exactly",
+          "display_name": "exactly",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+            "display_name": "Doubles",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Doubles"
+          }
+        }
+      ]
+    }
+  }
+}

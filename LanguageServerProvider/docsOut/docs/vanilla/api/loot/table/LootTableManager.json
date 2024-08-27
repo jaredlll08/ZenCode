@@ -1,0 +1,289 @@
+{
+  "key": "vanilla/api/loot/table/LootTableManager",
+  "display_name": "LootTableManager",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "loot.tables"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Manager for loot tables."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "An instance of this manager can be obtained via the"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.loot.LootManager",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "com.blamejared.crafttweaker.api.loot.LootManager"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "These methods can only be called from the server side, so ensure that all calls are inside a"
+    },
+    {
+      "type": "code",
+      "content": "level.isClientSide"
+    },
+    {
+      "type": "plaintext",
+      "content": " check or a "
+    },
+    {
+      "type": "code",
+      "content": "#onlyIf side server"
+    },
+    {
+      "type": "plaintext",
+      "content": " preprocessor!\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.loot.table.LootTableManager",
+    "display_name": "LootTableManager",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.loot.table",
+    "class_name": "LootTableManager",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cLootTableManager\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "com.blamejared.crafttweaker.api.loot.table.LootTableManager",
+          "display_name": "LootTableManager",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.blamejared.crafttweaker.api.loot.table",
+          "class_name": "LootTableManager"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.table.LootTableManager",
+  "member_groups": {
+    "INSTANCE": {
+      "key": "INSTANCE",
+      "members": [
+        {
+          "key": "INSTANCE",
+          "display_name": "INSTANCE",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.loot.table.LootTableManager",
+            "display_name": "LootTableManager",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.table",
+            "class_name": "LootTableManager"
+          }
+        }
+      ]
+    },
+    "getTable": {
+      "key": "getTable",
+      "members": [
+        {
+          "key": "getTable",
+          "display_name": "getTable",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a table with the given name."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "If no table is registered with the name, an empty table will be returned."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\u003cresource:minecraft:gameplay/cat_morning_gift\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the table to get."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.LootTable",
+            "display_name": "LootTable",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "LootTable"
+          }
+        }
+      ]
+    },
+    "ids": {
+      "key": "ids",
+      "members": [
+        {
+          "key": "getIds",
+          "display_name": "getIds",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the ids of all registered loot tables."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Set",
+            "display_name": "Set\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Set"
+          }
+        },
+        {
+          "key": "ids",
+          "display_name": "ids",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the ids of all registered loot tables."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Set",
+            "display_name": "Set\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Set"
+          }
+        }
+      ]
+    }
+  }
+}

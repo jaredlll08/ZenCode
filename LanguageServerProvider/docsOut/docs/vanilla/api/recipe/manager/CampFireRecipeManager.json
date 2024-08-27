@@ -1,0 +1,1303 @@
+{
+  "key": "vanilla/api/recipe/manager/CampFireRecipeManager",
+  "display_name": "CampFireRecipeManager",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "campfire"
+      ]
+    }
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.manager.CampFireRecipeManager",
+    "display_name": "CampFireRecipeManager",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.manager",
+    "class_name": "CampFireRecipeManager",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cCampFireRecipeManager\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "com.blamejared.crafttweaker.api.recipe.manager.CampFireRecipeManager",
+          "display_name": "CampFireRecipeManager",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.blamejared.crafttweaker.api.recipe.manager",
+          "class_name": "CampFireRecipeManager"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.manager.base.ICookingRecipeManager",
+        "display_name": "ICookingRecipeManager\u003cCampfireCookingRecipe\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.world.item.crafting.CampfireCookingRecipe",
+            "display_name": "CampfireCookingRecipe",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.crafting",
+            "class_name": "CampfireCookingRecipe"
+          }
+        },
+        "package_name": "com.blamejared.crafttweaker.api.recipe.manager.base",
+        "class_name": "ICookingRecipeManager"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager",
+        "display_name": "IRecipeManager\u003cT : AbstractCookingRecipe\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "net.minecraft.world.item.crafting.AbstractCookingRecipe",
+              "display_name": "AbstractCookingRecipe",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraft.world.item.crafting",
+              "class_name": "AbstractCookingRecipe"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "com.blamejared.crafttweaker.api.recipe.manager.base",
+        "class_name": "IRecipeManager"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      },
+      {
+        "key": "java.lang.Iterable",
+        "display_name": "Iterable\u003cT : Recipe\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "net.minecraft.world.item.crafting.Recipe",
+              "display_name": "Recipe\u003c?\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraft.world.item.crafting",
+              "class_name": "Recipe"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Iterable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.CampFireRecipeManager",
+  "member_groups": {
+    "INSTANCE": {
+      "key": "INSTANCE",
+      "members": [
+        {
+          "key": "INSTANCE",
+          "display_name": "INSTANCE",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.manager.CampFireRecipeManager",
+            "display_name": "CampFireRecipeManager",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.manager",
+            "class_name": "CampFireRecipeManager"
+          }
+        }
+      ]
+    },
+    "addJsonRecipe": {
+      "key": "addJsonRecipe",
+      "members": [
+        {
+          "key": "addJsonRecipe",
+          "display_name": "addJsonRecipe",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a recipe based on a provided IData. The provided IData should represent a DataPack json, this effectively allows you to register recipes for any DataPack supporting RecipeType systems."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"recipe_name\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "name of the recipe"
+                }
+              ]
+            },
+            {
+              "key": "mapData",
+              "display_name": "mapData",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.MapData",
+                "display_name": "MapData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "MapData"
+              },
+              "extra": {
+                "examples": {
+                  "mapData": [
+                    "{\r\n ingredient: \u003citem:minecraft:gold_ore\u003e,\r\n result: \u003citem:minecraft:cooked_porkchop\u003e.registryName,\r\n experience: 0.35 as float,\r\n cookingtime:100\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "data representing the json file"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addRecipe": {
+      "key": "addRecipe",
+      "members": [
+        {
+          "key": "addRecipe",
+          "display_name": "addRecipe",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a recipe based on given params."
+            },
+            {
+              "type": "plaintext",
+              "content": "Note: A `cookTime` of `0` will cause the recipe to never complete, it will burn and use fuel, but no progress will be made on the recipe, it needs to be at-least `1` or more."
+            },
+            {
+              "type": "plaintext",
+              "content": "Saying that, if you would like to make a recipe that will never complete\r\n (for example being able to give the player an infinitely burning furnace for whatever reason), you can\r\n still use a `cookTime` of `0`."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"wool2diamond\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Name of the new recipe"
+                }
+              ]
+            },
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "output": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack output of the recipe"
+                }
+              ]
+            },
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "input": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "IIngredient input of the recipe"
+                }
+              ]
+            },
+            {
+              "key": "xp",
+              "display_name": "xp",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "xp": [
+                    "1.0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "how much xp the player gets"
+                }
+              ]
+            },
+            {
+              "key": "cookTime",
+              "display_name": "cookTime",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "cookTime": [
+                    "30"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "how long it takes to cook"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addRecipe",
+          "display_name": "addRecipe",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a recipe based on given params."
+            },
+            {
+              "type": "plaintext",
+              "content": "Note: A `cookTime` of `0` will cause the recipe to never complete, it will burn and use fuel, but no progress will be made on the recipe, it needs to be at-least `1` or more."
+            },
+            {
+              "type": "plaintext",
+              "content": "Saying that, if you would like to make a recipe that will never complete\r\n (for example being able to give the player an infinitely burning furnace for whatever reason), you can\r\n still use a `cookTime` of `0`."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"wool2diamond\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Name of the new recipe"
+                }
+              ]
+            },
+            {
+              "key": "category",
+              "display_name": "category",
+              "type": {
+                "key": "net.minecraft.world.item.crafting.CookingBookCategory",
+                "display_name": "CookingBookCategory",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.crafting",
+                "class_name": "CookingBookCategory"
+              },
+              "extra": {
+                "examples": {
+                  "category": [
+                    "\u003cconstant:minecraft:cookingbookcategory:misc\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The category of the recipe in the recipe book"
+                }
+              ]
+            },
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "output": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack output of the recipe"
+                }
+              ]
+            },
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "input": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "IIngredient input of the recipe"
+                }
+              ]
+            },
+            {
+              "key": "xp",
+              "display_name": "xp",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "xp": [
+                    "1.0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "how much xp the player gets"
+                }
+              ]
+            },
+            {
+              "key": "cookTime",
+              "display_name": "cookTime",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "cookTime": [
+                    "30"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "how long it takes to cook"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "allRecipes": {
+      "key": "allRecipes",
+      "members": [
+        {
+          "key": "getAllRecipes",
+          "display_name": "getAllRecipes",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cT : Recipe\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.item.crafting.Recipe",
+                  "display_name": "Recipe\u003c?\u003e",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.item.crafting",
+                  "class_name": "Recipe"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "allRecipes",
+          "display_name": "allRecipes",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cT : Recipe\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.item.crafting.Recipe",
+                  "display_name": "Recipe\u003c?\u003e",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.item.crafting",
+                  "class_name": "Recipe"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getRecipeByName": {
+      "key": "getRecipeByName",
+      "members": [
+        {
+          "key": "getRecipeByName",
+          "display_name": "getRecipeByName",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": true,
+            "type": {
+              "key": "net.minecraft.world.item.crafting.Recipe",
+              "display_name": "Recipe\u003c?\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraft.world.item.crafting",
+              "class_name": "Recipe"
+            },
+            "bound": "upper"
+          }
+        }
+      ]
+    },
+    "getRecipesByOutput": {
+      "key": "getRecipesByOutput",
+      "members": [
+        {
+          "key": "getRecipesByOutput",
+          "display_name": "getRecipesByOutput",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cT : Recipe\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.item.crafting.Recipe",
+                  "display_name": "Recipe\u003c?\u003e",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.item.crafting",
+                  "class_name": "Recipe"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "recipeMap": {
+      "key": "recipeMap",
+      "members": [
+        {
+          "key": "getRecipeMap",
+          "display_name": "getRecipeMap",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns a map of all known recipes."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cResourceLocation, T : Recipe\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "V": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.item.crafting.Recipe",
+                  "display_name": "Recipe\u003c?\u003e",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.item.crafting",
+                  "class_name": "Recipe"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        },
+        {
+          "key": "recipeMap",
+          "display_name": "recipeMap",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns a map of all known recipes."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cResourceLocation, T : Recipe\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "V": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.item.crafting.Recipe",
+                  "display_name": "Recipe\u003c?\u003e",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.item.crafting",
+                  "class_name": "Recipe"
+                },
+                "bound": "upper"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        }
+      ]
+    },
+    "remove": {
+      "key": "remove",
+      "members": [
+        {
+          "key": "remove",
+          "display_name": "remove",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Remove a recipe based on it\u0027s output."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "output": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "output of the recipe"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeAll": {
+      "key": "removeAll",
+      "members": [
+        {
+          "key": "removeAll",
+          "display_name": "removeAll",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Remove all recipes in this registry"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeByInput": {
+      "key": "removeByInput",
+      "members": [
+        {
+          "key": "removeByInput",
+          "display_name": "removeByInput",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all recipes where the input contains the given IItemStack."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "input": [
+                    "\u003citem:minecraft:iron_ingot\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The input IItemStack."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeByModid": {
+      "key": "removeByModid",
+      "members": [
+        {
+          "key": "removeByModid",
+          "display_name": "removeByModid",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Remove recipe based on Registry name modid"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "modid",
+              "display_name": "modid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "modid": [
+                    "\"minecraft\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "modid of the recipes to remove"
+                }
+              ]
+            },
+            {
+              "key": "exclude",
+              "display_name": "exclude",
+              "type": {
+                "key": "java.util.function.Predicate",
+                "display_name": "Predicate\u003cString\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "java.lang.String",
+                    "display_name": "string",
+                    "type_type": "basic",
+                    "nullable": false
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Predicate"
+              },
+              "optional": true,
+              "default_value": "(name as string) as bool \u003d\u003e false"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeByName": {
+      "key": "removeByName",
+      "members": [
+        {
+          "key": "removeByName",
+          "display_name": "removeByName",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Remove recipes based on Registry names"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "names",
+              "display_name": "names",
+              "type": {
+                "key": "java.lang.String[]",
+                "display_name": "String[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.String",
+                  "display_name": "string",
+                  "type_type": "basic",
+                  "nullable": false
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "registry names of recipes to remove"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeByRegex": {
+      "key": "removeByRegex",
+      "members": [
+        {
+          "key": "removeByRegex",
+          "display_name": "removeByRegex",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "regex",
+              "display_name": "regex",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "regex": [
+                    "\"\\\\d_\\\\d\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "regex to match against"
+                }
+              ]
+            },
+            {
+              "key": "exclude",
+              "display_name": "exclude",
+              "type": {
+                "key": "java.util.function.Predicate",
+                "display_name": "Predicate\u003cString\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "java.lang.String",
+                    "display_name": "string",
+                    "type_type": "basic",
+                    "nullable": false
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Predicate"
+              },
+              "extra": {
+                "examples": {
+                  "exclude": [
+                    "(name as string) \u003d\u003e {return name \u003d\u003d \"orange_wool\";}"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "(name as string) as bool \u003d\u003e false"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeRecipe": {
+      "key": "removeRecipe",
+      "members": [
+        {
+          "key": "removeRecipe",
+          "display_name": "removeRecipe",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes a recipe based on it\u0027s output and input."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "output",
+              "display_name": "output",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "output": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack output of the recipe."
+                }
+              ]
+            },
+            {
+              "key": "input",
+              "display_name": "input",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "input": [
+                    "\u003ctag:items:minecraft:wool\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "IIngredient of the recipe to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

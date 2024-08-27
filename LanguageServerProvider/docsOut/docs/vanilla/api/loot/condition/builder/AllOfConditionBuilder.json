@@ -1,0 +1,149 @@
+{
+  "key": "vanilla/api/loot/condition/builder/AllOfConditionBuilder",
+  "display_name": "AllOfConditionBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.predicates.AllOfCondition.Builder",
+    "display_name": "Builder",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot.predicates",
+    "class_name": "Builder",
+    "super_type": {
+      "key": "net.minecraft.world.level.storage.loot.predicates.CompositeLootItemCondition.Builder",
+      "display_name": "Builder",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.world.level.storage.loot.predicates",
+      "class_name": "Builder"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+        "display_name": "Builder",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage.loot.predicates",
+        "class_name": "Builder"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.condition.builder.AllOfConditionBuilder",
+  "member_groups": {
+    "and": {
+      "key": "and",
+      "members": [
+        {
+          "key": "and",
+          "display_name": "and",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "condition",
+              "display_name": "condition",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.predicates.AllOfCondition.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.predicates",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "build": {
+      "key": "build",
+      "members": [
+        {
+          "key": "build",
+          "display_name": "build",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+            "display_name": "LootItemCondition",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.predicates",
+            "class_name": "LootItemCondition"
+          }
+        }
+      ]
+    },
+    "invert": {
+      "key": "invert",
+      "members": [
+        {
+          "key": "invert",
+          "display_name": "invert",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.predicates",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "or": {
+      "key": "or",
+      "members": [
+        {
+          "key": "or",
+          "display_name": "or",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.predicates.AnyOfCondition.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.predicates",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

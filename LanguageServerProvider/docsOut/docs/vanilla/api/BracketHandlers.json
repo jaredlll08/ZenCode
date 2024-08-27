@@ -1,0 +1,850 @@
+{
+  "key": "vanilla/api/BracketHandlers",
+  "display_name": "BracketHandlers",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "This class contains the \"simple\" Bracket handlers from CraftTweaker.\r\n However, some Bracket handlers, like for recipeTypes, tags, tagManagers, won\u0027t be shown here as\r\n they use a different internal structure."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.bracket.BracketHandlers",
+    "display_name": "BracketHandlers",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.bracket",
+    "class_name": "BracketHandlers",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.bracket.BracketHandlers",
+  "member_groups": {
+    "getAttribute": {
+      "key": "getAttribute",
+      "members": [
+        {
+          "key": "getAttribute",
+          "display_name": "getAttribute",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.ai.attributes.Attribute",
+            "display_name": "Attribute",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.ai.attributes",
+            "class_name": "Attribute"
+          }
+        }
+      ]
+    },
+    "getBlock": {
+      "key": "getBlock",
+      "members": [
+        {
+          "key": "getBlock",
+          "display_name": "getBlock",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the give "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.Block",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Block"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ". Throws an Exception if not found"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:dirt\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What you would write in the BEP call."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.Block",
+            "display_name": "Block",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "Block"
+          }
+        }
+      ]
+    },
+    "getBlockState": {
+      "key": "getBlockState",
+      "members": [
+        {
+          "key": "getBlockState",
+          "display_name": "getBlockState",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a Blockstate based on the given inputs.\r\n Returns `null` if it cannot find the block, ignored invalid variants"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:acacia_planks\"",
+                    "\"minecraft:furnace:facing\u003dnorth,lit\u003dfalse\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The block\u0027s resource location and variants"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    },
+    "getEnchantment": {
+      "key": "getEnchantment",
+      "members": [
+        {
+          "key": "getEnchantment",
+          "display_name": "getEnchantment",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the enchantment based on registry name. Throws an error if it can\u0027t find the enchantment."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:riptide\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The enchantment\u0027s registry name"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.enchantment.Enchantment",
+            "display_name": "Enchantment",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "Enchantment"
+          }
+        }
+      ]
+    },
+    "getEntityType": {
+      "key": "getEntityType",
+      "members": [
+        {
+          "key": "getEntityType",
+          "display_name": "getEntityType",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the entityType based on registry name. Throws an exception if it can\u0027t find the entityType."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:pig\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The entityType\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.EntityType",
+            "display_name": "EntityType\u003cEntity\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              }
+            },
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EntityType"
+          }
+        }
+      ]
+    },
+    "getFluidStack": {
+      "key": "getFluidStack",
+      "members": [
+        {
+          "key": "getFluidStack",
+          "display_name": "getFluidStack",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the fluid Stack based on registry name. Throws an error if it can\u0027t find the fluid."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:water\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The Fluid\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    },
+    "getItem": {
+      "key": "getItem",
+      "members": [
+        {
+          "key": "getItem",
+          "display_name": "getItem",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the item based on registry name. Throws an error if it can\u0027t find the item."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:dirt\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The item\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "getMobEffect": {
+      "key": "getMobEffect",
+      "members": [
+        {
+          "key": "getMobEffect",
+          "display_name": "getMobEffect",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the mobeffect based on registry name. Throws an error if it can\u0027t find the mobeffect."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:haste\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The mobeffect\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.effect.MobEffect",
+            "display_name": "MobEffect",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.effect",
+            "class_name": "MobEffect"
+          }
+        }
+      ]
+    },
+    "getPotion": {
+      "key": "getPotion",
+      "members": [
+        {
+          "key": "getPotion",
+          "display_name": "getPotion",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.alchemy.Potion",
+            "display_name": "Potion",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.alchemy",
+            "class_name": "Potion"
+          }
+        }
+      ]
+    },
+    "getProfession": {
+      "key": "getProfession",
+      "members": [
+        {
+          "key": "getProfession",
+          "display_name": "getProfession",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the villager profession based on registry name. Throws an exception if it can\u0027t find the profession."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:armorer\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The profession\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.npc.VillagerProfession",
+            "display_name": "VillagerProfession",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.npc",
+            "class_name": "VillagerProfession"
+          }
+        }
+      ]
+    },
+    "getRecipeManager": {
+      "key": "getRecipeManager",
+      "members": [
+        {
+          "key": "getRecipeManager",
+          "display_name": "getRecipeManager",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the recipeManager based on registry name. Throws an error if it can\u0027t find the recipeManager.\r\n Throws an exception if the given recipeType is not found."
+            },
+            {
+              "type": "plaintext",
+              "content": "This will always return IRecipeManager."
+            },
+            {
+              "type": "plaintext",
+              "content": "There is also a BEP for that but that works differently so it can\u0027t be automatically added to the docs here.\r\n But the BEP looks the same as the other ones: `\u003crecipetype:minecraft:crafting\u003e`"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:crafting\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The recipeManager\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager",
+            "display_name": "IRecipeManager\u003c?\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "?",
+                "display_name": "?",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.recipe.manager.base",
+            "class_name": "IRecipeManager"
+          }
+        }
+      ]
+    },
+    "getResourceLocation": {
+      "key": "getResourceLocation",
+      "members": [
+        {
+          "key": "getResourceLocation",
+          "display_name": "getResourceLocation",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a Resource location based on the tokens.\r\n Throws an error if the tokens are not a valid location."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:dirt\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "getSoundEvent": {
+      "key": "getSoundEvent",
+      "members": [
+        {
+          "key": "getSoundEvent",
+          "display_name": "getSoundEvent",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a sound event based on registry name. Throws an exception if it can\u0027t find the sound event."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:ambient.cave\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The sound event\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    },
+    "getTargetingStrategy": {
+      "key": "getTargetingStrategy",
+      "members": [
+        {
+          "key": "getTargetingStrategy",
+          "display_name": "getTargetingStrategy",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets an "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ITargetingStrategy"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "based on its name."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Throws an exception if the strategy doesn\u0027t exist."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"crafttweaker:default\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The strategy\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+            "display_name": "ITargetingStrategy",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "ITargetingStrategy"
+          }
+        }
+      ]
+    },
+    "getVillagerType": {
+      "key": "getVillagerType",
+      "members": [
+        {
+          "key": "getVillagerType",
+          "display_name": "getVillagerType",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the villager profession based on registry name. Throws an exception if it can\u0027t find the profession."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:armorer\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The profession\u0027s resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.npc.VillagerType",
+            "display_name": "VillagerType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.npc",
+            "class_name": "VillagerType"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,742 @@
+{
+  "key": "vanilla/api/predicate/builder/EntityPredicateBuilder",
+  "display_name": "EntityPredicateBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+    "display_name": "Builder",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "Builder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.builder.EntityPredicateBuilder",
+  "member_groups": {
+    "build": {
+      "key": "build",
+      "members": [
+        {
+          "key": "build",
+          "display_name": "build",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate",
+            "display_name": "EntityPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntityPredicate"
+          }
+        }
+      ]
+    },
+    "distance": {
+      "key": "distance",
+      "members": [
+        {
+          "key": "distance",
+          "display_name": "distance",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.DistancePredicate",
+                "display_name": "DistancePredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "DistancePredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "effects": {
+      "key": "effects",
+      "members": [
+        {
+          "key": "effects",
+          "display_name": "effects",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MobEffectsPredicate",
+                "display_name": "MobEffectsPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "MobEffectsPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "entityType": {
+      "key": "entityType",
+      "members": [
+        {
+          "key": "entityType",
+          "display_name": "entityType",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityTypePredicate",
+                "display_name": "EntityTypePredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityTypePredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "equipment": {
+      "key": "equipment",
+      "members": [
+        {
+          "key": "equipment",
+          "display_name": "equipment",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityEquipmentPredicate",
+                "display_name": "EntityEquipmentPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityEquipmentPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "equipment",
+          "display_name": "equipment",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityEquipmentPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "flags": {
+      "key": "flags",
+      "members": [
+        {
+          "key": "flags",
+          "display_name": "flags",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate",
+                "display_name": "EntityFlagsPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityFlagsPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "flags",
+          "display_name": "flags",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "located": {
+      "key": "located",
+      "members": [
+        {
+          "key": "located",
+          "display_name": "located",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.LocationPredicate",
+                "display_name": "LocationPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "LocationPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "located",
+          "display_name": "located",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.LocationPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "nbt": {
+      "key": "nbt",
+      "members": [
+        {
+          "key": "nbt",
+          "display_name": "nbt",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.NbtPredicate",
+                "display_name": "NbtPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "NbtPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "passenger": {
+      "key": "passenger",
+      "members": [
+        {
+          "key": "passenger",
+          "display_name": "passenger",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate",
+                "display_name": "EntityPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "passenger",
+          "display_name": "passenger",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "steppingOn": {
+      "key": "steppingOn",
+      "members": [
+        {
+          "key": "steppingOn",
+          "display_name": "steppingOn",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.LocationPredicate",
+                "display_name": "LocationPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "LocationPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "steppingOn",
+          "display_name": "steppingOn",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.LocationPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "subPredicate": {
+      "key": "subPredicate",
+      "members": [
+        {
+          "key": "subPredicate",
+          "display_name": "subPredicate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+                "display_name": "EntitySubPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntitySubPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "subPredicate",
+          "display_name": "subPredicate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "target": {
+      "key": "target",
+      "members": [
+        {
+          "key": "target",
+          "display_name": "target",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate",
+                "display_name": "EntityPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "target",
+          "display_name": "target",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "team": {
+      "key": "team",
+      "members": [
+        {
+          "key": "team",
+          "display_name": "team",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "team",
+              "display_name": "team",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "vehicle": {
+      "key": "vehicle",
+      "members": [
+        {
+          "key": "vehicle",
+          "display_name": "vehicle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate",
+                "display_name": "EntityPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "vehicle",
+          "display_name": "vehicle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

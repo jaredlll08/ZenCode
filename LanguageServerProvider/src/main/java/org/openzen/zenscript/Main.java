@@ -10,26 +10,19 @@ import java.util.Optional;
 
 public final class Main {
 
-	public static final String PATH = "X:\\LSP\\ZenCode\\LanguageServerProvider\\";
 
 	private Main() {
 	}
 
 	public static Optional<Exception> launch(InputStream in, OutputStream out) {
-		try (BufferedWriter writer = new BufferedWriter(new FileWriter(PATH + "test.log"))) {
-			ZCLSPServer server = new ZCLSPServer();
-			Launcher<LanguageClient> launcher = LSPLauncher.createServerLauncher(server, in, out, false, new PrintWriter(writer));
-			LanguageClient client = launcher.getRemoteProxy();
-
-			server.connect(client);
-			try {
-				launcher.startListening().get();
-				return Optional.empty();
-			} catch (Exception e) {
-				return Optional.of(e);
-			}
-		} catch (IOException e) {
-			throw new RuntimeException(e);
+		Launcher<LanguageClient> launcher = LSPLauncher.createServerLauncher(ZCLSPServer.INSTANCE, in, out, false, new PrintWriter(out));
+		LanguageClient client = launcher.getRemoteProxy();
+		ZCLSPServer.INSTANCE.connect(client);
+		try {
+			launcher.startListening().get();
+			return Optional.empty();
+		} catch (Exception e) {
+			return Optional.of(e);
 		}
 
 	}
@@ -40,11 +33,6 @@ public final class Main {
 	 *             for communication
 	 */
 	public static void main(String[] args) {
-		try {
-			System.setErr(new PrintStream(PATH + "err.log"));
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
 		Socket socket = null;
 		InputStream in;
 		OutputStream out;

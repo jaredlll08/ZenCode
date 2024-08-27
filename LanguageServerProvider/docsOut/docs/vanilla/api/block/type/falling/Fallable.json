@@ -1,0 +1,211 @@
+{
+  "key": "vanilla/api/block/type/falling/Fallable",
+  "display_name": "Fallable",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "(\u003cblock:minecraft:sand\u003e as Fallable)"
+      ]
+    }
+  },
+  "type": {
+    "key": "net.minecraft.world.level.block.Fallable",
+    "display_name": "Fallable",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.block",
+    "class_name": "Fallable"
+  },
+  "zen_code_name": "crafttweaker.api.block.type.falling.Fallable",
+  "member_groups": {
+    "getFallDamageSource": {
+      "key": "getFallDamageSource",
+      "members": [
+        {
+          "key": "getFallDamageSource",
+          "display_name": "getFallDamageSource",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the damage source used when this block falls on an entity."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageSource",
+            "display_name": "DamageSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageSource"
+          }
+        }
+      ]
+    },
+    "onBrokenAfterFall": {
+      "key": "onBrokenAfterFall",
+      "members": [
+        {
+          "key": "onBrokenAfterFall",
+          "display_name": "onBrokenAfterFall",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.world.level.Level",
+                "display_name": "Level",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "Level"
+              },
+              "optional": false
+            },
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            },
+            {
+              "key": "fallingEntity",
+              "display_name": "fallingEntity",
+              "type": {
+                "key": "net.minecraft.world.entity.item.FallingBlockEntity",
+                "display_name": "FallingBlockEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.item",
+                "class_name": "FallingBlockEntity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "onLand": {
+      "key": "onLand",
+      "members": [
+        {
+          "key": "onLand",
+          "display_name": "onLand",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.world.level.Level",
+                "display_name": "Level",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "Level"
+              },
+              "optional": false
+            },
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            },
+            {
+              "key": "fallingState",
+              "display_name": "fallingState",
+              "type": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              },
+              "optional": false
+            },
+            {
+              "key": "placeState",
+              "display_name": "placeState",
+              "type": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              },
+              "optional": false
+            },
+            {
+              "key": "fallingEntity",
+              "display_name": "fallingEntity",
+              "type": {
+                "key": "net.minecraft.world.entity.item.FallingBlockEntity",
+                "display_name": "FallingBlockEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.item",
+                "class_name": "FallingBlockEntity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

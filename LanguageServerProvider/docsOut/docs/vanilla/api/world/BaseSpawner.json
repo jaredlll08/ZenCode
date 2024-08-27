@@ -1,0 +1,234 @@
+{
+  "key": "vanilla/api/world/BaseSpawner",
+  "display_name": "BaseSpawner",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.BaseSpawner",
+    "display_name": "BaseSpawner",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "BaseSpawner",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.BaseSpawner",
+  "member_groups": {
+    "getOrCreateDisplayEntity": {
+      "key": "getOrCreateDisplayEntity",
+      "members": [
+        {
+          "key": "getOrCreateDisplayEntity",
+          "display_name": "getOrCreateDisplayEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.world.level.Level",
+                "display_name": "Level",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "Level"
+              },
+              "optional": false
+            },
+            {
+              "key": "random",
+              "display_name": "random",
+              "type": {
+                "key": "net.minecraft.util.RandomSource",
+                "display_name": "RandomSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.util",
+                "class_name": "RandomSource"
+              },
+              "optional": false
+            },
+            {
+              "key": "position",
+              "display_name": "position",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.Entity",
+            "display_name": "Entity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Entity"
+          }
+        }
+      ]
+    },
+    "oSpin": {
+      "key": "oSpin",
+      "members": [
+        {
+          "key": "getoSpin",
+          "display_name": "getoSpin",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "oSpin",
+          "display_name": "oSpin",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setEntityId": {
+      "key": "setEntityId",
+      "members": [
+        {
+          "key": "setEntityId",
+          "display_name": "setEntityId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "net.minecraft.world.entity.EntityType",
+                "display_name": "EntityType\u003cEntity\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.entity.Entity",
+                    "display_name": "Entity",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.entity",
+                    "class_name": "Entity"
+                  }
+                },
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "EntityType"
+              },
+              "optional": false
+            },
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.world.level.Level",
+                "display_name": "Level",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "Level"
+              },
+              "optional": false
+            },
+            {
+              "key": "random",
+              "display_name": "random",
+              "type": {
+                "key": "net.minecraft.util.RandomSource",
+                "display_name": "RandomSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.util",
+                "class_name": "RandomSource"
+              },
+              "optional": false
+            },
+            {
+              "key": "position",
+              "display_name": "position",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "spin": {
+      "key": "spin",
+      "members": [
+        {
+          "key": "getSpin",
+          "display_name": "getSpin",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "spin",
+          "display_name": "spin",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

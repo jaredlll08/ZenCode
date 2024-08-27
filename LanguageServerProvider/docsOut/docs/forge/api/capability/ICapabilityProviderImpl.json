@@ -1,0 +1,273 @@
+{
+  "key": "forge/api/capability/ICapabilityProviderImpl",
+  "display_name": "ICapabilityProviderImpl",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraftforge.common.capabilities.ICapabilityProviderImpl",
+    "display_name": "ICapabilityProviderImpl",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "B": {
+        "key": "B",
+        "display_name": "B",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "net.minecraftforge.common.capabilities.ICapabilityProviderImpl",
+          "display_name": "ICapabilityProviderImpl\u003cB : ICapabilityProviderImpl\u003e",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraftforge.common.capabilities",
+          "class_name": "ICapabilityProviderImpl"
+        },
+        "bound": "upper"
+      }
+    },
+    "package_name": "net.minecraftforge.common.capabilities",
+    "class_name": "ICapabilityProviderImpl",
+    "interfaces": [
+      {
+        "key": "net.minecraftforge.common.capabilities.ICapabilityProvider",
+        "display_name": "ICapabilityProvider",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.capabilities",
+        "class_name": "ICapabilityProvider"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.capability.ICapabilityProviderImpl",
+  "member_groups": {
+    "getCapability": {
+      "key": "getCapability",
+      "members": [
+        {
+          "key": "getCapability",
+          "display_name": "getCapability",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the capability for the given side."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cap",
+              "display_name": "cap",
+              "type": {
+                "key": "net.minecraftforge.common.capabilities.Capability",
+                "display_name": "Capability\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "net.minecraftforge.common.capabilities",
+                "class_name": "Capability"
+              },
+              "extra": {
+                "examples": {
+                  "cap": [
+                    "Capabilities.ENERGY"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The capability to get."
+                }
+              ]
+            },
+            {
+              "key": "side",
+              "display_name": "side",
+              "type": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              },
+              "extra": {
+                "examples": {
+                  "side": [
+                    "\u003cconstant:minecraft:direction:north\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The side to get the capability from, can be null."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": true,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "extra": {
+                "examples": {
+                  "T": [
+                    "IEnergyStorage"
+                  ]
+                }
+              },
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "getCapability",
+          "display_name": "getCapability",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the capability."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cap",
+              "display_name": "cap",
+              "type": {
+                "key": "net.minecraftforge.common.capabilities.Capability",
+                "display_name": "Capability\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "net.minecraftforge.common.capabilities",
+                "class_name": "Capability"
+              },
+              "extra": {
+                "examples": {
+                  "cap": [
+                    "Capabilities.ENERGY"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The capability to get."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": true,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "extra": {
+                "examples": {
+                  "T": [
+                    "IEnergyStorage"
+                  ]
+                }
+              },
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "key": "vanilla/api/command/CommandSource",
+  "display_name": "CommandSource",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.commands.CommandSource",
+    "display_name": "CommandSource",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.commands",
+    "class_name": "CommandSource"
+  },
+  "zen_code_name": "crafttweaker.api.command.CommandSource",
+  "member_groups": {
+    "acceptsFailure": {
+      "key": "acceptsFailure",
+      "members": [
+        {
+          "key": "acceptsFailure",
+          "display_name": "acceptsFailure",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "acceptsFailure",
+          "display_name": "acceptsFailure",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "acceptsSuccess": {
+      "key": "acceptsSuccess",
+      "members": [
+        {
+          "key": "acceptsSuccess",
+          "display_name": "acceptsSuccess",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "acceptsSuccess",
+          "display_name": "acceptsSuccess",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "alwaysAccepts": {
+      "key": "alwaysAccepts",
+      "members": [
+        {
+          "key": "alwaysAccepts",
+          "display_name": "alwaysAccepts",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "alwaysAccepts",
+          "display_name": "alwaysAccepts",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "sendMessage": {
+      "key": "sendMessage",
+      "members": [
+        {
+          "key": "sendMessage",
+          "display_name": "sendMessage",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "component",
+              "display_name": "component",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "shouldInformAdmins": {
+      "key": "shouldInformAdmins",
+      "members": [
+        {
+          "key": "shouldInformAdmins",
+          "display_name": "shouldInformAdmins",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "shouldInformAdmins",
+          "display_name": "shouldInformAdmins",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

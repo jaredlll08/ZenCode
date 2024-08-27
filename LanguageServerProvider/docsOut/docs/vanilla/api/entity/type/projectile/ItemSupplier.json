@@ -1,0 +1,56 @@
+{
+  "key": "vanilla/api/entity/type/projectile/ItemSupplier",
+  "display_name": "ItemSupplier",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.projectile.ItemSupplier",
+    "display_name": "ItemSupplier",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.projectile",
+    "class_name": "ItemSupplier"
+  },
+  "zen_code_name": "crafttweaker.api.entity.type.projectile.ItemSupplier",
+  "member_groups": {
+    "item": {
+      "key": "item",
+      "members": [
+        {
+          "key": "getItem",
+          "display_name": "getItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        },
+        {
+          "key": "item",
+          "display_name": "item",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    }
+  }
+}

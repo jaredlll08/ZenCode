@@ -1,0 +1,532 @@
+{
+  "key": "vanilla/api/world/InteractionResultHolder",
+  "display_name": "InteractionResultHolder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "T": [
+        "string"
+      ]
+    }
+  },
+  "type": {
+    "key": "net.minecraft.world.InteractionResultHolder",
+    "display_name": "InteractionResultHolder",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "net.minecraft.world",
+    "class_name": "InteractionResultHolder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.InteractionResultHolder",
+  "member_groups": {
+    "consume": {
+      "key": "consume",
+      "members": [
+        {
+          "key": "consume",
+          "display_name": "consume",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Create a consume interaction with the given object."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "object",
+              "display_name": "object",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "extra": {
+                "examples": {
+                  "object": [
+                    "\"value\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The object that is held."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.InteractionResultHolder",
+            "display_name": "InteractionResultHolder\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResultHolder"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "extra": {
+                "examples": {
+                  "T": [
+                    "string"
+                  ]
+                }
+              },
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    },
+    "fail": {
+      "key": "fail",
+      "members": [
+        {
+          "key": "fail",
+          "display_name": "fail",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "object",
+              "display_name": "object",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.InteractionResultHolder",
+            "display_name": "InteractionResultHolder\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResultHolder"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    },
+    "getObject": {
+      "key": "getObject",
+      "members": [
+        {
+          "key": "getObject",
+          "display_name": "getObject",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    },
+    "pass": {
+      "key": "pass",
+      "members": [
+        {
+          "key": "pass",
+          "display_name": "pass",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "object",
+              "display_name": "object",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.InteractionResultHolder",
+            "display_name": "InteractionResultHolder\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResultHolder"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    },
+    "result": {
+      "key": "result",
+      "members": [
+        {
+          "key": "result",
+          "display_name": "result",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.InteractionResult",
+            "display_name": "InteractionResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResult"
+          }
+        }
+      ]
+    },
+    "sidedSuccess": {
+      "key": "sidedSuccess",
+      "members": [
+        {
+          "key": "sidedSuccess",
+          "display_name": "sidedSuccess",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "object",
+              "display_name": "object",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false
+            },
+            {
+              "key": "success",
+              "display_name": "success",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.InteractionResultHolder",
+            "display_name": "InteractionResultHolder\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResultHolder"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    },
+    "success": {
+      "key": "success",
+      "members": [
+        {
+          "key": "success",
+          "display_name": "success",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "object",
+              "display_name": "object",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.InteractionResultHolder",
+            "display_name": "InteractionResultHolder\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResultHolder"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "key": "vanilla/api/world/clip/BlockClipContext",
+  "display_name": "BlockClipContext",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:world/clip/blockcontext"
+  },
+  "type": {
+    "key": "net.minecraft.world.level.ClipContext.Block",
+    "display_name": "Block",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "Block",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cBlock\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.level.ClipContext.Block",
+          "display_name": "Block",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.level",
+          "class_name": "Block"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.ClipContext.ShapeGetter",
+        "display_name": "ShapeGetter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "ShapeGetter"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.BlockClipContext",
+  "member_groups": {
+    "COLLIDER": {
+      "key": "COLLIDER",
+      "members": [
+        {
+          "key": "COLLIDER",
+          "display_name": "COLLIDER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.ClipContext.Block",
+            "display_name": "Block",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Block"
+          }
+        }
+      ]
+    },
+    "FALLDAMAGE_RESETTING": {
+      "key": "FALLDAMAGE_RESETTING",
+      "members": [
+        {
+          "key": "FALLDAMAGE_RESETTING",
+          "display_name": "FALLDAMAGE_RESETTING",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.ClipContext.Block",
+            "display_name": "Block",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Block"
+          }
+        }
+      ]
+    },
+    "OUTLINE": {
+      "key": "OUTLINE",
+      "members": [
+        {
+          "key": "OUTLINE",
+          "display_name": "OUTLINE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.ClipContext.Block",
+            "display_name": "Block",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Block"
+          }
+        }
+      ]
+    },
+    "VISUAL": {
+      "key": "VISUAL",
+      "members": [
+        {
+          "key": "VISUAL",
+          "display_name": "VISUAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.ClipContext.Block",
+            "display_name": "Block",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Block"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "key": "vanilla/api/advancement/Criterion",
+  "display_name": "Criterion",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.Criterion",
+    "display_name": "Criterion",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements",
+    "class_name": "Criterion",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.advancement.Criterion"
+}

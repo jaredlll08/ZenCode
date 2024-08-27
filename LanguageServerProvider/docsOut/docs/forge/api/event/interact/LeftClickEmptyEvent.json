@@ -1,0 +1,625 @@
+{
+  "key": "forge/api/event/interact/LeftClickEmptyEvent",
+  "display_name": "LeftClickEmptyEvent",
+  "page_type": "event",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "This event is fired when a player left clicks while targeting a block.\r\n This event controls which of "
+    },
+    {
+      "type": "link",
+      "to": "net.minecraft.world.level.block.Block#attack(BlockState,",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Level, BlockPos, Player)"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "and/or the item harvesting methods will be called."
+    },
+    {
+      "type": "plaintext",
+      "content": "Note that if the event is canceled and the player holds down left mouse, the event will continue to fire.\r\n This is due to how vanilla calls the left click handler methods."
+    },
+    {
+      "type": "plaintext",
+      "content": "Also note that creative mode directly breaks the block without running any other logic."
+    }
+  ],
+  "type": {
+    "key": "net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickEmpty",
+    "display_name": "LeftClickEmpty",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.event.entity.player",
+    "class_name": "LeftClickEmpty",
+    "super_type": {
+      "key": "net.minecraftforge.event.entity.player.PlayerInteractEvent",
+      "display_name": "PlayerInteractEvent",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraftforge.event.entity.player",
+      "class_name": "PlayerInteractEvent"
+    }
+  },
+  "zen_code_name": "crafttweaker.forge.api.event.interact.LeftClickEmptyEvent",
+  "member_groups": {
+    "blockPos": {
+      "key": "blockPos",
+      "members": [
+        {
+          "key": "blockPos",
+          "display_name": "blockPos",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "If the interaction was on an entity, will be a BlockPos centered on the entity.\r\n If the interaction was on a block, will be the position of that block.\r\n Otherwise, will be a BlockPos centered on the player."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        }
+      ]
+    },
+    "cancel": {
+      "key": "cancel",
+      "members": [
+        {
+          "key": "cancel",
+          "display_name": "cancel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Cancels the event. Same as `setCanceled(true)`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "cancelable": {
+      "key": "cancelable",
+      "members": [
+        {
+          "key": "isCancelable",
+          "display_name": "isCancelable",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "cancelable",
+          "display_name": "cancelable",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "canceled": {
+      "key": "canceled",
+      "members": [
+        {
+          "key": "isCanceled",
+          "display_name": "isCanceled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canceled",
+          "display_name": "canceled",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setCanceled",
+          "display_name": "setCanceled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "cancel",
+              "display_name": "cancel",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canceled",
+          "display_name": "canceled",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event",
+                "display_name": "Event",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Event"
+              },
+              "optional": false
+            },
+            {
+              "key": "cancel",
+              "display_name": "cancel",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "cancellationResult": {
+      "key": "cancellationResult",
+      "members": [
+        {
+          "key": "cancellationResult",
+          "display_name": "cancellationResult",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.InteractionResult",
+            "display_name": "InteractionResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResult"
+          }
+        },
+        {
+          "key": "cancellationResult",
+          "display_name": "cancellationResult",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Set the EnumActionResult that will be returned to vanilla if the event is cancelled, instead of calling the relevant method of the event."
+            },
+            {
+              "type": "plaintext",
+              "content": "Note that this only has an effect on RightClickBlockEvent, RightClickItemEvent, EntityInteractEvent."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.event.entity.player.PlayerInteractEvent",
+                "display_name": "PlayerInteractEvent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.event.entity.player",
+                "class_name": "PlayerInteractEvent"
+              },
+              "optional": false
+            },
+            {
+              "key": "result",
+              "display_name": "result",
+              "type": {
+                "key": "net.minecraft.world.InteractionResult",
+                "display_name": "InteractionResult",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world",
+                "class_name": "InteractionResult"
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "entity": {
+      "key": "entity",
+      "members": [
+        {
+          "key": "entity",
+          "display_name": "entity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.player.Player",
+            "display_name": "Player",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "Player"
+          }
+        },
+        {
+          "key": "entity",
+          "display_name": "entity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.LivingEntity",
+            "display_name": "LivingEntity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "LivingEntity"
+          }
+        },
+        {
+          "key": "entity",
+          "display_name": "entity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.Entity",
+            "display_name": "Entity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Entity"
+          }
+        }
+      ]
+    },
+    "face": {
+      "key": "face",
+      "members": [
+        {
+          "key": "face",
+          "display_name": "face",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "The face involved in this interaction.\r\n For all non-block interactions, this will return null"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "hand": {
+      "key": "hand",
+      "members": [
+        {
+          "key": "hand",
+          "display_name": "hand",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.InteractionHand",
+            "display_name": "InteractionHand",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionHand"
+          }
+        }
+      ]
+    },
+    "hasResult": {
+      "key": "hasResult",
+      "members": [
+        {
+          "key": "hasResult",
+          "display_name": "hasResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasResult",
+          "display_name": "hasResult",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "itemStack": {
+      "key": "itemStack",
+      "members": [
+        {
+          "key": "itemStack",
+          "display_name": "itemStack",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "The stack involved in this interaction.\r\n May be empty, but will never be null."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "result": {
+      "key": "result",
+      "members": [
+        {
+          "key": "getResult",
+          "display_name": "getResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        },
+        {
+          "key": "result",
+          "display_name": "result",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        },
+        {
+          "key": "setResult",
+          "display_name": "setResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "result",
+              "display_name": "result",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event.Result",
+                "display_name": "Result",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Result"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "result",
+          "display_name": "result",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event",
+                "display_name": "Event",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Event"
+              },
+              "optional": false
+            },
+            {
+              "key": "result",
+              "display_name": "result",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event.Result",
+                "display_name": "Result",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Result"
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "setAllow": {
+      "key": "setAllow",
+      "members": [
+        {
+          "key": "setAllow",
+          "display_name": "setAllow",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `allow`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDefault": {
+      "key": "setDefault",
+      "members": [
+        {
+          "key": "setDefault",
+          "display_name": "setDefault",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `default`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDeny": {
+      "key": "setDeny",
+      "members": [
+        {
+          "key": "setDeny",
+          "display_name": "setDeny",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `deny`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  },
+  "canceled_info": [
+    {
+      "type": "plaintext",
+      "content": "none of the above noted methods to be called."
+    }
+  ],
+  "has_result": false,
+  "cancelable": false
+}

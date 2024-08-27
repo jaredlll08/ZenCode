@@ -1,0 +1,181 @@
+{
+  "key": "vanilla/api/util/sequence/SequenceContext",
+  "display_name": "SequenceContext",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "A SequenceContext provides more data to "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.util.sequence.Sequence",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Sequence"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s and allows a sequence to be stopped from inside a task."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceContext",
+    "display_name": "SequenceContext\u003cT, U\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      },
+      "U": {
+        "key": "U",
+        "display_name": "U",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+    "class_name": "SequenceContext",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.util.sequence.SequenceContext",
+  "member_groups": {
+    "data": {
+      "key": "data",
+      "members": [
+        {
+          "key": "getData",
+          "display_name": "getData",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the data provided to the sequence."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Note, this can never return null, if the data is null then it will throw an error."
+            }
+          ],
+          "return_type": {
+            "key": "U",
+            "display_name": "U",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        {
+          "key": "data",
+          "display_name": "data",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the data provided to the sequence."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Note, this can never return null, if the data is null then it will throw an error."
+            }
+          ],
+          "return_type": {
+            "key": "U",
+            "display_name": "U",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        }
+      ]
+    },
+    "stop": {
+      "key": "stop",
+      "members": [
+        {
+          "key": "stop",
+          "display_name": "stop",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Stop the sequence."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

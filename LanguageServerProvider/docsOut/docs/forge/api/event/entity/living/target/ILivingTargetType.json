@@ -1,0 +1,19 @@
+{
+  "key": "forge/api/event/entity/living/target/ILivingTargetType",
+  "display_name": "ILivingTargetType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraftforge.event.entity.living.LivingChangeTargetEvent.ILivingTargetType",
+    "display_name": "ILivingTargetType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.event.entity.living",
+    "class_name": "ILivingTargetType"
+  },
+  "zen_code_name": "crafttweaker.forge.api.event.entity.living.target.ILivingTargetType"
+}

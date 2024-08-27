@@ -1,0 +1,579 @@
+{
+  "key": "vanilla/api/loot/modifier/LootModifierManager",
+  "display_name": "LootModifierManager",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "loot.modifiers"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Manager for loot modifiers."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "An instance of this manager can be obtained via the"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.loot.LootManager",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "com.blamejared.crafttweaker.api.loot.LootManager"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "The main usage of this manager is for registering \"global loot modifiers\", also known as \"loot modifiers\" for\r\n short. A global loot modifier runs on the loot drop of every loot table (unless otherwise specified by conditions)\r\n and is as such able to modify it according either to predetermined parameters (e.g. replacing items) or via\r\n completely customized code that leverages the dropping context."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "For more information, refer to"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "ILootModifier"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ".\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.loot.modifier.LootModifierManager",
+    "display_name": "LootModifierManager",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+    "class_name": "LootModifierManager",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cLootModifierManager\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "com.blamejared.crafttweaker.api.loot.modifier.LootModifierManager",
+          "display_name": "LootModifierManager",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+          "class_name": "LootModifierManager"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.modifier.LootModifierManager",
+  "member_groups": {
+    "INSTANCE": {
+      "key": "INSTANCE",
+      "members": [
+        {
+          "key": "INSTANCE",
+          "display_name": "INSTANCE",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.LootModifierManager",
+            "display_name": "LootModifierManager",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "LootModifierManager"
+          }
+        }
+      ]
+    },
+    "getAll": {
+      "key": "getAll",
+      "members": [
+        {
+          "key": "getAll",
+          "display_name": "getAll",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a list containing all currently registered loot modifiers."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cILootModifier\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+                "display_name": "ILootModifier",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+                "class_name": "ILootModifier"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "getAllNames": {
+      "key": "getAllNames",
+      "members": [
+        {
+          "key": "getAllNames",
+          "display_name": "getAllNames",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a list of all the names of the currently registered loot modifiers."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cResourceLocation\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "getByName": {
+      "key": "getByName",
+      "members": [
+        {
+          "key": "getByName",
+          "display_name": "getByName",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the loot modifier with the given name, if it exists."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "If no loot modifier with that name exists, a default no-op instance is returned."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the loot modifier."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "register": {
+      "key": "register",
+      "members": [
+        {
+          "key": "register",
+          "display_name": "register",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Registers a new global loot modifier with the given name."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The loot modifier will be run only when the given set of conditions is satisfied."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and\r\n                   colons."
+                }
+              ]
+            },
+            {
+              "key": "conditions",
+              "display_name": "conditions",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+                "display_name": "LootConditions",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+                "class_name": "LootConditions"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A set of conditions that restrict the context in which the loot modifier applies."
+                }
+              ]
+            },
+            {
+              "key": "modifier",
+              "display_name": "modifier",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+                "display_name": "ILootModifier",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+                "class_name": "ILootModifier"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The loot modifier itself. It may be created via "
+                },
+                {
+                  "type": "link",
+                  "to": "com.blamejared.crafttweaker.api.loot.modifier.CommonLootModifiers",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "CommonLootModifiers"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeAll": {
+      "key": "removeAll",
+      "members": [
+        {
+          "key": "removeAll",
+          "display_name": "removeAll",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all loot modifiers that have been registered up to this point."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeByModId": {
+      "key": "removeByModId",
+      "members": [
+        {
+          "key": "removeByModId",
+          "display_name": "removeByModId",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all loot modifiers that have been registered by the mod with the given ID."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "modId",
+              "display_name": "modId",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The mod ID."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeByName": {
+      "key": "removeByName",
+      "members": [
+        {
+          "key": "removeByName",
+          "display_name": "removeByName",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the loot modifier with the given name."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The name may either contain a colon or not. If no colon is present, it is assumed that the loot modifier name\r\n is one of the modifiers that have been already registered in a script."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the loot modifier to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeByRegex": {
+      "key": "removeByRegex",
+      "members": [
+        {
+          "key": "removeByRegex",
+          "display_name": "removeByRegex",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all loot modifiers whose name matches the given regular expression."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The entire name is taken into consideration for the match, effectively matching the format of a"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.resources.ResourceLocation",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ResourceLocation"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ".\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "regex",
+              "display_name": "regex",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The regular expression to match."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

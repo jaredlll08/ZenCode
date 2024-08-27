@@ -1,6 +1,7 @@
 package org.openzen.zenscript.scripting.visitor;
 
 import org.openzen.zencode.shared.CodePosition;
+import org.openzen.zenscript.ZCLSPServer;
 import org.openzen.zenscript.codemodel.expression.Expression;
 import org.openzen.zenscript.codemodel.statement.*;
 
@@ -13,7 +14,6 @@ import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 public class ExpressionFindingStatementVisitor implements StatementVisitor<Optional<Expression>> {
-	private static final Logger LOG = Logger.getGlobal();
 
 	/**
 	 * The found expression should contain this position
@@ -115,7 +115,7 @@ public class ExpressionFindingStatementVisitor implements StatementVisitor<Optio
 
 	@Override
 	public Optional<Expression> visitInvalid(InvalidStatement statement) {
-		LOG.log(Level.WARNING, "Invalid Statement", statement.error.code);
+		ZCLSPServer.log(Level.WARNING, "Invalid Statement", statement.error.code);
 		return Optional.empty();
 	}
 

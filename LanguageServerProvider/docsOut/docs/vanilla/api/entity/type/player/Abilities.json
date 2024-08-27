@@ -1,0 +1,209 @@
+{
+  "key": "vanilla/api/entity/type/player/Abilities",
+  "display_name": "Abilities",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.player.Abilities",
+    "display_name": "Abilities",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.player",
+    "class_name": "Abilities",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.entity.type.player.Abilities",
+  "member_groups": {
+    "flyingSpeed": {
+      "key": "flyingSpeed",
+      "members": [
+        {
+          "key": "getFlyingSpeed",
+          "display_name": "getFlyingSpeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "flyingSpeed",
+          "display_name": "flyingSpeed",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setFlyingSpeed",
+          "display_name": "setFlyingSpeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "param0",
+              "display_name": "param0",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "flyingSpeed",
+          "display_name": "flyingSpeed",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Abilities",
+                "display_name": "Abilities",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Abilities"
+              },
+              "optional": false
+            },
+            {
+              "key": "param0",
+              "display_name": "param0",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "walkingSpeed": {
+      "key": "walkingSpeed",
+      "members": [
+        {
+          "key": "getWalkingSpeed",
+          "display_name": "getWalkingSpeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "walkingSpeed",
+          "display_name": "walkingSpeed",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setWalkingSpeed",
+          "display_name": "setWalkingSpeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "param0",
+              "display_name": "param0",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "walkingSpeed",
+          "display_name": "walkingSpeed",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Abilities",
+                "display_name": "Abilities",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Abilities"
+              },
+              "optional": false
+            },
+            {
+              "key": "param0",
+              "display_name": "param0",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

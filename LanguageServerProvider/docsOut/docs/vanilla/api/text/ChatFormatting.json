@@ -1,0 +1,791 @@
+{
+  "key": "vanilla/api/text/ChatFormatting",
+  "display_name": "ChatFormatting",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:formatting"
+  },
+  "type": {
+    "key": "net.minecraft.ChatFormatting",
+    "display_name": "ChatFormatting",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft",
+    "class_name": "ChatFormatting",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cChatFormatting\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.ChatFormatting",
+          "display_name": "ChatFormatting",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft",
+          "class_name": "ChatFormatting"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.text.ChatFormatting",
+  "member_groups": {
+    "AQUA": {
+      "key": "AQUA",
+      "members": [
+        {
+          "key": "AQUA",
+          "display_name": "AQUA",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "BLACK": {
+      "key": "BLACK",
+      "members": [
+        {
+          "key": "BLACK",
+          "display_name": "BLACK",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "BLUE": {
+      "key": "BLUE",
+      "members": [
+        {
+          "key": "BLUE",
+          "display_name": "BLUE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "BOLD": {
+      "key": "BOLD",
+      "members": [
+        {
+          "key": "BOLD",
+          "display_name": "BOLD",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "DARK_AQUA": {
+      "key": "DARK_AQUA",
+      "members": [
+        {
+          "key": "DARK_AQUA",
+          "display_name": "DARK_AQUA",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "DARK_BLUE": {
+      "key": "DARK_BLUE",
+      "members": [
+        {
+          "key": "DARK_BLUE",
+          "display_name": "DARK_BLUE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "DARK_GRAY": {
+      "key": "DARK_GRAY",
+      "members": [
+        {
+          "key": "DARK_GRAY",
+          "display_name": "DARK_GRAY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "DARK_GREEN": {
+      "key": "DARK_GREEN",
+      "members": [
+        {
+          "key": "DARK_GREEN",
+          "display_name": "DARK_GREEN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "DARK_PURPLE": {
+      "key": "DARK_PURPLE",
+      "members": [
+        {
+          "key": "DARK_PURPLE",
+          "display_name": "DARK_PURPLE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "DARK_RED": {
+      "key": "DARK_RED",
+      "members": [
+        {
+          "key": "DARK_RED",
+          "display_name": "DARK_RED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "GOLD": {
+      "key": "GOLD",
+      "members": [
+        {
+          "key": "GOLD",
+          "display_name": "GOLD",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "GRAY": {
+      "key": "GRAY",
+      "members": [
+        {
+          "key": "GRAY",
+          "display_name": "GRAY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "GREEN": {
+      "key": "GREEN",
+      "members": [
+        {
+          "key": "GREEN",
+          "display_name": "GREEN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "ITALIC": {
+      "key": "ITALIC",
+      "members": [
+        {
+          "key": "ITALIC",
+          "display_name": "ITALIC",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "LIGHT_PURPLE": {
+      "key": "LIGHT_PURPLE",
+      "members": [
+        {
+          "key": "LIGHT_PURPLE",
+          "display_name": "LIGHT_PURPLE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "OBFUSCATED": {
+      "key": "OBFUSCATED",
+      "members": [
+        {
+          "key": "OBFUSCATED",
+          "display_name": "OBFUSCATED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "RED": {
+      "key": "RED",
+      "members": [
+        {
+          "key": "RED",
+          "display_name": "RED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "RESET": {
+      "key": "RESET",
+      "members": [
+        {
+          "key": "RESET",
+          "display_name": "RESET",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "STRIKETHROUGH": {
+      "key": "STRIKETHROUGH",
+      "members": [
+        {
+          "key": "STRIKETHROUGH",
+          "display_name": "STRIKETHROUGH",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "UNDERLINE": {
+      "key": "UNDERLINE",
+      "members": [
+        {
+          "key": "UNDERLINE",
+          "display_name": "UNDERLINE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "WHITE": {
+      "key": "WHITE",
+      "members": [
+        {
+          "key": "WHITE",
+          "display_name": "WHITE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "YELLOW": {
+      "key": "YELLOW",
+      "members": [
+        {
+          "key": "YELLOW",
+          "display_name": "YELLOW",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    },
+    "asStyle": {
+      "key": "asStyle",
+      "members": [
+        {
+          "key": "asStyle",
+          "display_name": "asStyle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        },
+        {
+          "key": "asStyle",
+          "display_name": "asStyle",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "color": {
+      "key": "color",
+      "members": [
+        {
+          "key": "getColor",
+          "display_name": "getColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.Integer",
+            "display_name": "Integer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "java.lang",
+            "class_name": "Integer"
+          }
+        }
+      ]
+    },
+    "getChar": {
+      "key": "getChar",
+      "members": [
+        {
+          "key": "getChar",
+          "display_name": "getChar",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "char",
+            "display_name": "char",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getName": {
+      "key": "getName",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "id": {
+      "key": "id",
+      "members": [
+        {
+          "key": "getId",
+          "display_name": "getId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isColor": {
+      "key": "isColor",
+      "members": [
+        {
+          "key": "isColor",
+          "display_name": "isColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isColor",
+          "display_name": "isColor",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isFormat": {
+      "key": "isFormat",
+      "members": [
+        {
+          "key": "isFormat",
+          "display_name": "isFormat",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isFormat",
+          "display_name": "isFormat",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "toString": {
+      "key": "toString",
+      "members": [
+        {
+          "key": "toString",
+          "display_name": "toString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "toString",
+          "display_name": "toString",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "key": "vanilla/api/loot/DynamicDrop",
+  "display_name": "DynamicDrop",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.LootParams.DynamicDrop",
+    "display_name": "DynamicDrop",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot",
+    "class_name": "DynamicDrop"
+  },
+  "zen_code_name": "crafttweaker.api.loot.DynamicDrop",
+  "member_groups": {
+    "add": {
+      "key": "add",
+      "members": [
+        {
+          "key": "add",
+          "display_name": "add",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "drop",
+              "display_name": "drop",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.item.ItemStack",
+                    "display_name": "ItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.item",
+                    "class_name": "ItemStack"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

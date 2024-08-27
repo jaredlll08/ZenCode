@@ -1,0 +1,160 @@
+{
+  "key": "vanilla/api/villager/MerchantOffers",
+  "display_name": "MerchantOffers",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.trading.MerchantOffers",
+    "display_name": "MerchantOffers",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item.trading",
+    "class_name": "MerchantOffers",
+    "super_type": {
+      "key": "java.util.ArrayList",
+      "display_name": "ArrayList\u003cMerchantOffer\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.item.trading.MerchantOffer",
+          "display_name": "MerchantOffer",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.item.trading",
+          "class_name": "MerchantOffer"
+        }
+      },
+      "package_name": "java.util",
+      "class_name": "ArrayList"
+    },
+    "interfaces": [
+      {
+        "key": "java.util.List",
+        "display_name": "List\u003cE\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "E": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        "package_name": "java.util",
+        "class_name": "List"
+      },
+      {
+        "key": "java.util.RandomAccess",
+        "display_name": "RandomAccess",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.util",
+        "class_name": "RandomAccess"
+      },
+      {
+        "key": "java.lang.Cloneable",
+        "display_name": "Cloneable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang",
+        "class_name": "Cloneable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      },
+      {
+        "key": "java.util.Collection",
+        "display_name": "Collection\u003cE\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "E": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        "package_name": "java.util",
+        "class_name": "Collection"
+      },
+      {
+        "key": "java.lang.Iterable",
+        "display_name": "Iterable\u003cE\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Iterable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.villager.MerchantOffers",
+  "member_groups": {
+    "createTag": {
+      "key": "createTag",
+      "members": [
+        {
+          "key": "createTag",
+          "display_name": "createTag",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    }
+  }
+}

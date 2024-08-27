@@ -1,0 +1,447 @@
+{
+  "key": "vanilla/api/item/ItemStack",
+  "display_name": "ItemStack",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "This is the vanilla ItemStack.\r\n It is recommended that you use "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IItemStack"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "whenever possible"
+    },
+    {
+      "type": "plaintext",
+      "content": "They can be cast from each other, though."
+    }
+  ],
+  "type": {
+    "key": "net.minecraft.world.item.ItemStack",
+    "display_name": "ItemStack",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item",
+    "class_name": "ItemStack",
+    "super_type": {
+      "key": "net.minecraftforge.common.capabilities.CapabilityProvider",
+      "display_name": "CapabilityProvider\u003cItemStack\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "B": {
+          "key": "net.minecraft.world.item.ItemStack",
+          "display_name": "ItemStack",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.item",
+          "class_name": "ItemStack"
+        }
+      },
+      "package_name": "net.minecraftforge.common.capabilities",
+      "class_name": "CapabilityProvider"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeItemStack",
+        "display_name": "IForgeItemStack",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeItemStack"
+      },
+      {
+        "key": "net.minecraftforge.common.capabilities.ICapabilityProviderImpl",
+        "display_name": "ICapabilityProviderImpl\u003cB : ICapabilityProviderImpl\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "B": {
+            "key": "B",
+            "display_name": "B",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "net.minecraftforge.common.capabilities.ICapabilityProviderImpl",
+              "display_name": "ICapabilityProviderImpl\u003cB : ICapabilityProviderImpl\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraftforge.common.capabilities",
+              "class_name": "ICapabilityProviderImpl"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "net.minecraftforge.common.capabilities",
+        "class_name": "ICapabilityProviderImpl"
+      },
+      {
+        "key": "net.minecraftforge.common.capabilities.ICapabilityProvider",
+        "display_name": "ICapabilityProvider",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.capabilities",
+        "class_name": "ICapabilityProvider"
+      },
+      {
+        "key": "net.minecraftforge.common.capabilities.ICapabilitySerializable",
+        "display_name": "ICapabilitySerializable\u003cCompoundTag\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.nbt.CompoundTag",
+            "display_name": "CompoundTag",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.nbt",
+            "class_name": "CompoundTag"
+          }
+        },
+        "package_name": "net.minecraftforge.common.capabilities",
+        "class_name": "ICapabilitySerializable"
+      },
+      {
+        "key": "net.minecraftforge.common.util.INBTSerializable",
+        "display_name": "INBTSerializable\u003cT : Tag\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "net.minecraft.nbt.Tag",
+              "display_name": "Tag",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "net.minecraft.nbt",
+              "class_name": "Tag"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "net.minecraftforge.common.util",
+        "class_name": "INBTSerializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.item.ItemStack",
+  "member_groups": {
+    "asIIngredient": {
+      "key": "asIIngredient",
+      "members": [
+        {
+          "key": "asIIngredient",
+          "display_name": "asIIngredient",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+            "display_name": "IIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredient"
+          }
+        },
+        {
+          "key": "asIIngredient",
+          "display_name": "asIIngredient",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+            "display_name": "IIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredient"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "asIItemStack": {
+      "key": "asIItemStack",
+      "members": [
+        {
+          "key": "asIItemStack",
+          "display_name": "asIItemStack",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        },
+        {
+          "key": "asIItemStack",
+          "display_name": "asIItemStack",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "getCapability": {
+      "key": "getCapability",
+      "members": [
+        {
+          "key": "getCapability",
+          "display_name": "getCapability",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the capability for the given side."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cap",
+              "display_name": "cap",
+              "type": {
+                "key": "net.minecraftforge.common.capabilities.Capability",
+                "display_name": "Capability\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "net.minecraftforge.common.capabilities",
+                "class_name": "Capability"
+              },
+              "extra": {
+                "examples": {
+                  "cap": [
+                    "Capabilities.ENERGY"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The capability to get."
+                }
+              ]
+            },
+            {
+              "key": "side",
+              "display_name": "side",
+              "type": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              },
+              "extra": {
+                "examples": {
+                  "side": [
+                    "\u003cconstant:minecraft:direction:north\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The side to get the capability from, can be null."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": true,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "extra": {
+                "examples": {
+                  "T": [
+                    "IEnergyStorage"
+                  ]
+                }
+              },
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "getCapability",
+          "display_name": "getCapability",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the capability."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cap",
+              "display_name": "cap",
+              "type": {
+                "key": "net.minecraftforge.common.capabilities.Capability",
+                "display_name": "Capability\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "net.minecraftforge.common.capabilities",
+                "class_name": "Capability"
+              },
+              "extra": {
+                "examples": {
+                  "cap": [
+                    "Capabilities.ENERGY"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The capability to get."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": true,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "extra": {
+                "examples": {
+                  "T": [
+                    "IEnergyStorage"
+                  ]
+                }
+              },
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

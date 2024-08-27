@@ -1,0 +1,63 @@
+{
+  "key": "vanilla/api/util/collection/Collection",
+  "display_name": "Collection",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "java.util.Collection",
+    "display_name": "Collection",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "E": {
+        "key": "E",
+        "display_name": "E",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "java.util",
+    "class_name": "Collection",
+    "interfaces": [
+      {
+        "key": "java.lang.Iterable",
+        "display_name": "Iterable\u003cE\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Iterable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.collection.Collection"
+}

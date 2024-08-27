@@ -1,0 +1,317 @@
+{
+  "key": "vanilla/api/util/direction/Plane",
+  "display_name": "Plane",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:direction/plane"
+  },
+  "type": {
+    "key": "net.minecraft.core.Direction.Plane",
+    "display_name": "Plane",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.core",
+    "class_name": "Plane",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cPlane\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.core.Direction.Plane",
+          "display_name": "Plane",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.core",
+          "class_name": "Plane"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.Iterable",
+        "display_name": "Iterable\u003cDirection\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Iterable"
+      },
+      {
+        "key": "java.util.function.Predicate",
+        "display_name": "Predicate\u003cDirection\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        "package_name": "java.util.function",
+        "class_name": "Predicate"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.direction.Plane",
+  "member_groups": {
+    "HORIZONTAL": {
+      "key": "HORIZONTAL",
+      "members": [
+        {
+          "key": "HORIZONTAL",
+          "display_name": "HORIZONTAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.Direction.Plane",
+            "display_name": "Plane",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Plane"
+          }
+        }
+      ]
+    },
+    "VERTICAL": {
+      "key": "VERTICAL",
+      "members": [
+        {
+          "key": "VERTICAL",
+          "display_name": "VERTICAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.Direction.Plane",
+            "display_name": "Plane",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Plane"
+          }
+        }
+      ]
+    },
+    "getRandomAxis": {
+      "key": "getRandomAxis",
+      "members": [
+        {
+          "key": "getRandomAxis",
+          "display_name": "getRandomAxis",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "random",
+              "display_name": "random",
+              "type": {
+                "key": "net.minecraft.util.RandomSource",
+                "display_name": "RandomSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.util",
+                "class_name": "RandomSource"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction.Axis",
+            "display_name": "Axis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Axis"
+          }
+        }
+      ]
+    },
+    "getRandomDirection": {
+      "key": "getRandomDirection",
+      "members": [
+        {
+          "key": "getRandomDirection",
+          "display_name": "getRandomDirection",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "random",
+              "display_name": "random",
+              "type": {
+                "key": "net.minecraft.util.RandomSource",
+                "display_name": "RandomSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.util",
+                "class_name": "RandomSource"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "iterator": {
+      "key": "iterator",
+      "members": [
+        {
+          "key": "iterator",
+          "display_name": "iterator",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Iterator",
+            "display_name": "Iterator\u003cDirection\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Iterator"
+          }
+        },
+        {
+          "key": "iterator",
+          "display_name": "iterator",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Iterator",
+            "display_name": "Iterator\u003cDirection\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Iterator"
+          }
+        }
+      ]
+    },
+    "test": {
+      "key": "test",
+      "members": [
+        {
+          "key": "test",
+          "display_name": "test",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "direction",
+              "display_name": "direction",
+              "type": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "key": "vanilla/api/entity/attribute/AttributeModifier",
+  "display_name": "AttributeModifier",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier",
+    "display_name": "AttributeModifier",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.ai.attributes",
+    "class_name": "AttributeModifier",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.entity.attribute.AttributeModifier",
+  "member_groups": {
+    "amount": {
+      "key": "amount",
+      "members": [
+        {
+          "key": "getAmount",
+          "display_name": "getAmount",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of this AttributeModifier."
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "amount",
+          "display_name": "amount",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of this AttributeModifier."
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new AttributeModifier"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"My New Attribute Modifier\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the name of this attribute modifier"
+                }
+              ]
+            },
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "amount": [
+                    "11.4"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the amount of this attribute modifier"
+                }
+              ]
+            },
+            {
+              "key": "operation",
+              "display_name": "operation",
+              "type": {
+                "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+                "display_name": "Operation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Operation"
+              },
+              "extra": {
+                "examples": {
+                  "operation": [
+                    "AttributeOperation.ADDITION"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the operation of this attribute modifier."
+                }
+              ]
+            },
+            {
+              "key": "uuid",
+              "display_name": "uuid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "uuid": [
+                    "\"6d79f9c1-a4ab-4e72-a0ab-71870b89b4c6\""
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "",
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the uuid of this attribute modifier, if omitted, it will use a random one."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier",
+            "display_name": "AttributeModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.ai.attributes",
+            "class_name": "AttributeModifier"
+          }
+        }
+      ]
+    },
+    "id": {
+      "key": "id",
+      "members": [
+        {
+          "key": "getId",
+          "display_name": "getId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the ID of this AttributeModifier."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the ID of this AttributeModifier."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the name of this AttributeModifier."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the name of this AttributeModifier."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "operation": {
+      "key": "operation",
+      "members": [
+        {
+          "key": "getOperation",
+          "display_name": "getOperation",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the operation of this AttributeModifier."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+            "display_name": "Operation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.ai.attributes",
+            "class_name": "Operation"
+          }
+        },
+        {
+          "key": "operation",
+          "display_name": "operation",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the operation of this AttributeModifier."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+            "display_name": "Operation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.ai.attributes",
+            "class_name": "Operation"
+          }
+        }
+      ]
+    }
+  }
+}

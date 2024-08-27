@@ -1,0 +1,158 @@
+{
+  "key": "vanilla/api/predicate/EntityTypePredicate",
+  "display_name": "EntityTypePredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.EntityTypePredicate",
+    "display_name": "EntityTypePredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "EntityTypePredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.EntityTypePredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityTypePredicate",
+            "display_name": "EntityTypePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntityTypePredicate"
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "net.minecraft.world.entity.EntityType",
+                "display_name": "EntityType\u003c?\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "?",
+                    "display_name": "?",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "EntityType"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityTypePredicate",
+            "display_name": "EntityTypePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntityTypePredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cEntityType\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.entity.EntityType",
+                    "display_name": "EntityType\u003c?\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "T": {
+                        "key": "?",
+                        "display_name": "?",
+                        "type_type": "generic",
+                        "nullable": false,
+                        "type": {
+                          "key": "java.lang.Object",
+                          "display_name": "Object",
+                          "type_type": "java",
+                          "nullable": false,
+                          "package_name": "java.lang",
+                          "class_name": "Object"
+                        },
+                        "bound": "specific"
+                      }
+                    },
+                    "package_name": "net.minecraft.world.entity",
+                    "class_name": "EntityType"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityTypePredicate",
+            "display_name": "EntityTypePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntityTypePredicate"
+          }
+        }
+      ]
+    }
+  }
+}

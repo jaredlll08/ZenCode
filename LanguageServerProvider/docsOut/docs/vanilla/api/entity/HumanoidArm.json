@@ -1,0 +1,184 @@
+{
+  "key": "vanilla/api/entity/HumanoidArm",
+  "display_name": "HumanoidArm",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:entity/humanoidarm"
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.HumanoidArm",
+    "display_name": "HumanoidArm",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity",
+    "class_name": "HumanoidArm",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cHumanoidArm\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.entity.HumanoidArm",
+          "display_name": "HumanoidArm",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.entity",
+          "class_name": "HumanoidArm"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.OptionEnum",
+        "display_name": "OptionEnum",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "OptionEnum"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.HumanoidArm",
+  "member_groups": {
+    "LEFT": {
+      "key": "LEFT",
+      "members": [
+        {
+          "key": "LEFT",
+          "display_name": "LEFT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.HumanoidArm",
+            "display_name": "HumanoidArm",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "HumanoidArm"
+          }
+        }
+      ]
+    },
+    "RIGHT": {
+      "key": "RIGHT",
+      "members": [
+        {
+          "key": "RIGHT",
+          "display_name": "RIGHT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.HumanoidArm",
+            "display_name": "HumanoidArm",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "HumanoidArm"
+          }
+        }
+      ]
+    },
+    "key": {
+      "key": "key",
+      "members": [
+        {
+          "key": "getKey",
+          "display_name": "getKey",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "opposite": {
+      "key": "opposite",
+      "members": [
+        {
+          "key": "getOpposite",
+          "display_name": "getOpposite",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.HumanoidArm",
+            "display_name": "HumanoidArm",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "HumanoidArm"
+          }
+        },
+        {
+          "key": "opposite",
+          "display_name": "opposite",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.HumanoidArm",
+            "display_name": "HumanoidArm",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "HumanoidArm"
+          }
+        }
+      ]
+    }
+  }
+}

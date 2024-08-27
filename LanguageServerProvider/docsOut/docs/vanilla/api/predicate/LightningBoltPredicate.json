@@ -1,0 +1,210 @@
+{
+  "key": "vanilla/api/predicate/LightningBoltPredicate",
+  "display_name": "LightningBoltPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.LighthingBoltPredicate",
+    "display_name": "LighthingBoltPredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "LighthingBoltPredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+        "display_name": "EntitySubPredicate",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.advancements.critereon",
+        "class_name": "EntitySubPredicate"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.predicate.LightningBoltPredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+            "display_name": "EntitySubPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntitySubPredicate"
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "blocksSetOnFire",
+              "display_name": "blocksSetOnFire",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.LighthingBoltPredicate",
+            "display_name": "LighthingBoltPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "LighthingBoltPredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "struckEntity",
+              "display_name": "struckEntity",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate",
+                "display_name": "EntityPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.LighthingBoltPredicate",
+            "display_name": "LighthingBoltPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "LighthingBoltPredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "blocksSetOnFire",
+              "display_name": "blocksSetOnFire",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            },
+            {
+              "key": "struckEntity",
+              "display_name": "struckEntity",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate",
+                "display_name": "EntityPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.LighthingBoltPredicate",
+            "display_name": "LighthingBoltPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "LighthingBoltPredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "blockSetOnFire",
+              "display_name": "blockSetOnFire",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            },
+            {
+              "key": "struckEntity",
+              "display_name": "struckEntity",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.LighthingBoltPredicate",
+            "display_name": "LighthingBoltPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "LighthingBoltPredicate"
+          }
+        }
+      ]
+    }
+  }
+}

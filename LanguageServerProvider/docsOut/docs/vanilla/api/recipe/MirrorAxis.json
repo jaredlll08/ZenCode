@@ -1,0 +1,219 @@
+{
+  "key": "vanilla/api/recipe/MirrorAxis",
+  "display_name": "MirrorAxis",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:mirroraxis"
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Defines how a recipe should be mirrored."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.MirrorAxis",
+    "display_name": "MirrorAxis",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe",
+    "class_name": "MirrorAxis",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cMirrorAxis\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "com.blamejared.crafttweaker.api.recipe.MirrorAxis",
+          "display_name": "MirrorAxis",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.blamejared.crafttweaker.api.recipe",
+          "class_name": "MirrorAxis"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.MirrorAxis",
+  "member_groups": {
+    "ALL": {
+      "key": "ALL",
+      "members": [
+        {
+          "key": "ALL",
+          "display_name": "ALL",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Mirror the recipe on all axes."
+            }
+          ],
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.MirrorAxis",
+            "display_name": "MirrorAxis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe",
+            "class_name": "MirrorAxis"
+          }
+        }
+      ]
+    },
+    "DIAGONAL": {
+      "key": "DIAGONAL",
+      "members": [
+        {
+          "key": "DIAGONAL",
+          "display_name": "DIAGONAL",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Mirror the recipe diagonally."
+            }
+          ],
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.MirrorAxis",
+            "display_name": "MirrorAxis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe",
+            "class_name": "MirrorAxis"
+          }
+        }
+      ]
+    },
+    "HORIZONTAL": {
+      "key": "HORIZONTAL",
+      "members": [
+        {
+          "key": "HORIZONTAL",
+          "display_name": "HORIZONTAL",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Mirror the recipe horizontally."
+            }
+          ],
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.MirrorAxis",
+            "display_name": "MirrorAxis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe",
+            "class_name": "MirrorAxis"
+          }
+        }
+      ]
+    },
+    "NONE": {
+      "key": "NONE",
+      "members": [
+        {
+          "key": "NONE",
+          "display_name": "NONE",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Do not mirror the recipe."
+            }
+          ],
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.MirrorAxis",
+            "display_name": "MirrorAxis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe",
+            "class_name": "MirrorAxis"
+          }
+        }
+      ]
+    },
+    "VERTICAL": {
+      "key": "VERTICAL",
+      "members": [
+        {
+          "key": "VERTICAL",
+          "display_name": "VERTICAL",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Mirror the recipe vertically."
+            }
+          ],
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.MirrorAxis",
+            "display_name": "MirrorAxis",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe",
+            "class_name": "MirrorAxis"
+          }
+        }
+      ]
+    }
+  }
+}

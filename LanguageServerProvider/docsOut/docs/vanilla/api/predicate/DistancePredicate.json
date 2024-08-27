@@ -1,0 +1,302 @@
+{
+  "key": "vanilla/api/predicate/DistancePredicate",
+  "display_name": "DistancePredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.DistancePredicate",
+    "display_name": "DistancePredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "DistancePredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.DistancePredicate",
+  "member_groups": {
+    "absoluteDistance": {
+      "key": "absoluteDistance",
+      "members": [
+        {
+          "key": "absoluteDistance",
+          "display_name": "absoluteDistance",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "bounds",
+              "display_name": "bounds",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DistancePredicate",
+            "display_name": "DistancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "DistancePredicate"
+          }
+        }
+      ]
+    },
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DistancePredicate",
+            "display_name": "DistancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "DistancePredicate"
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            },
+            {
+              "key": "horizontal",
+              "display_name": "horizontal",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            },
+            {
+              "key": "absolute",
+              "display_name": "absolute",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DistancePredicate",
+            "display_name": "DistancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "DistancePredicate"
+          }
+        }
+      ]
+    },
+    "horizontalDistance": {
+      "key": "horizontalDistance",
+      "members": [
+        {
+          "key": "horizontalDistance",
+          "display_name": "horizontalDistance",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "bounds",
+              "display_name": "bounds",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DistancePredicate",
+            "display_name": "DistancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "DistancePredicate"
+          }
+        }
+      ]
+    },
+    "verticalDistance": {
+      "key": "verticalDistance",
+      "members": [
+        {
+          "key": "verticalDistance",
+          "display_name": "verticalDistance",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "bounds",
+              "display_name": "bounds",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DistancePredicate",
+            "display_name": "DistancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "DistancePredicate"
+          }
+        }
+      ]
+    },
+    "xyz": {
+      "key": "xyz",
+      "members": [
+        {
+          "key": "xyz",
+          "display_name": "xyz",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Doubles",
+                "display_name": "Doubles",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Doubles"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.DistancePredicate",
+            "display_name": "DistancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "DistancePredicate"
+          }
+        }
+      ]
+    }
+  }
+}

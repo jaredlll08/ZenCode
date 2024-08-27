@@ -1,0 +1,248 @@
+{
+  "key": "vanilla/api/block/type/piston/PistonStructureResolver",
+  "display_name": "PistonStructureResolver",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.block.piston.PistonStructureResolver",
+    "display_name": "PistonStructureResolver",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.block.piston",
+    "class_name": "PistonStructureResolver",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.block.type.piston.PistonStructureResolver",
+  "member_groups": {
+    "pushDirection": {
+      "key": "pushDirection",
+      "members": [
+        {
+          "key": "getPushDirection",
+          "display_name": "getPushDirection",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the direction that the piston is moving."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "This is usually the direction that the piston block is facing, however if the piston is retracting, the direction is the opposite."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "pushDirection",
+          "display_name": "pushDirection",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the direction that the piston is moving."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "This is usually the direction that the piston block is facing, however if the piston is retracting, the direction is the opposite."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "resolve": {
+      "key": "resolve",
+      "members": [
+        {
+          "key": "resolve",
+          "display_name": "resolve",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Calculates and caches the blocks to push and the blocks to destroy."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "toDestroy": {
+      "key": "toDestroy",
+      "members": [
+        {
+          "key": "getToDestroy",
+          "display_name": "getToDestroy",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blocks that will be destroyed by pushing the piston."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cBlockPos\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "toDestroy",
+          "display_name": "toDestroy",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blocks that will be destroyed by pushing the piston."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cBlockPos\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "toPush": {
+      "key": "toPush",
+      "members": [
+        {
+          "key": "getToPush",
+          "display_name": "getToPush",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blocks that will be pushed."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cBlockPos\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "toPush",
+          "display_name": "toPush",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blocks that will be pushed."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cBlockPos\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    }
+  }
+}

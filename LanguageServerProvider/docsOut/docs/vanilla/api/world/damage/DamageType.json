@@ -1,0 +1,125 @@
+{
+  "key": "vanilla/api/world/damage/DamageType",
+  "display_name": "DamageType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.damagesource.DamageType",
+    "display_name": "DamageType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.damagesource",
+    "class_name": "DamageType",
+    "super_type": {
+      "key": "java.lang.Record",
+      "display_name": "Record",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Record"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.damage.DamageType",
+  "member_groups": {
+    "deathMessageType": {
+      "key": "deathMessageType",
+      "members": [
+        {
+          "key": "deathMessageType",
+          "display_name": "deathMessageType",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DeathMessageType",
+            "display_name": "DeathMessageType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DeathMessageType"
+          }
+        }
+      ]
+    },
+    "effects": {
+      "key": "effects",
+      "members": [
+        {
+          "key": "effects",
+          "display_name": "effects",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageEffects",
+            "display_name": "DamageEffects",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageEffects"
+          }
+        }
+      ]
+    },
+    "exhaustion": {
+      "key": "exhaustion",
+      "members": [
+        {
+          "key": "exhaustion",
+          "display_name": "exhaustion",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "msgId": {
+      "key": "msgId",
+      "members": [
+        {
+          "key": "msgId",
+          "display_name": "msgId",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "scaling": {
+      "key": "scaling",
+      "members": [
+        {
+          "key": "scaling",
+          "display_name": "scaling",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageScaling",
+            "display_name": "DamageScaling",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageScaling"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "key": "vanilla/api/recipe/replacement/type/ComponentFilteringRule",
+  "display_name": "ComponentFilteringRule",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Filters recipes that have the specified "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IRecipeComponent"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ", optionally with a check on its value."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "In other words, to be able to be processed by the replacer, the target recipe must have the specified"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IRecipeComponent"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ". Optionally, the value of the component must match a specific value or a "
+    },
+    {
+      "type": "link",
+      "to": "java.util.function.Predicate",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Predicate"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "\r\n to match, for more custom filtering. The value of the recipe component can be checked with any\r\n "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "ITargetingStrategy"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ".\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.ComponentFilteringRule",
+    "display_name": "ComponentFilteringRule\u003cT\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+    "class_name": "ComponentFilteringRule",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+        "display_name": "IFilteringRule",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "IFilteringRule"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+        "display_name": "ITargetingFilter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "ITargetingFilter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.type.ComponentFilteringRule",
+  "member_groups": {
+    "of": {
+      "key": "of",
+      "members": [
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule that filters recipes that have the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The value of the component is not checked, merely its presence."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.ComponentFilteringRule",
+            "display_name": "ComponentFilteringRule\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "ComponentFilteringRule"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule that filters recipes that have the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " and whose value matches the\r\n given "
+            },
+            {
+              "type": "code",
+              "content": "content"
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The strategy used is the default one, so components will be checked directly."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The oracle that represents the element to check for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.ComponentFilteringRule",
+            "display_name": "ComponentFilteringRule\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "ComponentFilteringRule"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule that filters recipes that have the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " and whose value matches the\r\n given "
+            },
+            {
+              "type": "code",
+              "content": "content"
+            },
+            {
+              "type": "plaintext",
+              "content": " according to the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ITargetingStrategy"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The oracle that represents the element to check for."
+                }
+              ]
+            },
+            {
+              "key": "checkStrategy",
+              "display_name": "checkStrategy",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+                "display_name": "ITargetingStrategy",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+                "class_name": "ITargetingStrategy"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The strategy that needs to be used to compare the component\u0027s value."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.ComponentFilteringRule",
+            "display_name": "ComponentFilteringRule\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "ComponentFilteringRule"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule that filters recipes that have the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeComponent"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " and whose value matches\r\n the given "
+            },
+            {
+              "type": "link",
+              "to": "java.util.function.Predicate",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Predicate"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " according to the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ITargetingStrategy"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.util.function.Predicate",
+                "display_name": "Predicate\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Predicate"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A "
+                },
+                {
+                  "type": "link",
+                  "to": "java.util.function.Predicate",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "Predicate"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " that determines whether an element is wanted or not. Its argument\r\n                      represents the object to check for."
+                }
+              ]
+            },
+            {
+              "key": "checkStrategy",
+              "display_name": "checkStrategy",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+                "display_name": "ITargetingStrategy",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+                "class_name": "ITargetingStrategy"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The strategy that needs to be used to compare the component\u0027s value."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.ComponentFilteringRule",
+            "display_name": "ComponentFilteringRule\u003cT\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "ComponentFilteringRule"
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

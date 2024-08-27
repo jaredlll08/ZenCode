@@ -1,0 +1,185 @@
+{
+  "key": "vanilla/api/util/random/Percentaged",
+  "display_name": "Percentaged",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Used to represent data with an attached percentage (think an ItemStack with a 50% chance of being outputted)."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.util.random.Percentaged",
+    "display_name": "Percentaged\u003cT\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.util.random",
+    "class_name": "Percentaged",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.random.Percentaged",
+  "member_groups": {
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "data": {
+      "key": "data",
+      "members": [
+        {
+          "key": "getData",
+          "display_name": "getData",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        {
+          "key": "data",
+          "display_name": "data",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        }
+      ]
+    },
+    "percentage": {
+      "key": "percentage",
+      "members": [
+        {
+          "key": "getPercentage",
+          "display_name": "getPercentage",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "percentage",
+          "display_name": "percentage",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

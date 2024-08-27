@@ -1,0 +1,149 @@
+{
+  "key": "forge/api/capability/Capabilities",
+  "display_name": "Capabilities",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.capability.Capabilities",
+    "display_name": "Capabilities",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.capability",
+    "class_name": "Capabilities",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.capability.Capabilities",
+  "member_groups": {
+    "ENERGY": {
+      "key": "ENERGY",
+      "members": [
+        {
+          "key": "ENERGY",
+          "display_name": "ENERGY",
+          "member_type": "field",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.common.capabilities.Capability",
+            "display_name": "Capability\u003cIEnergyStorage\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraftforge.energy.IEnergyStorage",
+                "display_name": "IEnergyStorage",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.energy",
+                "class_name": "IEnergyStorage"
+              }
+            },
+            "package_name": "net.minecraftforge.common.capabilities",
+            "class_name": "Capability"
+          }
+        }
+      ]
+    },
+    "FLUID": {
+      "key": "FLUID",
+      "members": [
+        {
+          "key": "FLUID",
+          "display_name": "FLUID",
+          "member_type": "field",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.common.capabilities.Capability",
+            "display_name": "Capability\u003cIFluidHandler\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraftforge.fluids.capability.IFluidHandler",
+                "display_name": "IFluidHandler",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.fluids.capability",
+                "class_name": "IFluidHandler"
+              }
+            },
+            "package_name": "net.minecraftforge.common.capabilities",
+            "class_name": "Capability"
+          }
+        }
+      ]
+    },
+    "FLUID_ITEM": {
+      "key": "FLUID_ITEM",
+      "members": [
+        {
+          "key": "FLUID_ITEM",
+          "display_name": "FLUID_ITEM",
+          "member_type": "field",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.common.capabilities.Capability",
+            "display_name": "Capability\u003cIFluidHandlerItem\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraftforge.fluids.capability.IFluidHandlerItem",
+                "display_name": "IFluidHandlerItem",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.fluids.capability",
+                "class_name": "IFluidHandlerItem"
+              }
+            },
+            "package_name": "net.minecraftforge.common.capabilities",
+            "class_name": "Capability"
+          }
+        }
+      ]
+    },
+    "ITEM": {
+      "key": "ITEM",
+      "members": [
+        {
+          "key": "ITEM",
+          "display_name": "ITEM",
+          "member_type": "field",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.common.capabilities.Capability",
+            "display_name": "Capability\u003cIItemHandler\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraftforge.items.IItemHandler",
+                "display_name": "IItemHandler",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.items",
+                "class_name": "IItemHandler"
+              }
+            },
+            "package_name": "net.minecraftforge.common.capabilities",
+            "class_name": "Capability"
+          }
+        }
+      ]
+    }
+  }
+}

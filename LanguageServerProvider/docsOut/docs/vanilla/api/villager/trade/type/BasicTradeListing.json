@@ -1,0 +1,245 @@
+{
+  "key": "vanilla/api/villager/trade/type/BasicTradeListing",
+  "display_name": "BasicTradeListing",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.villager.trade.type.BasicTradeListing",
+    "display_name": "BasicTradeListing",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.villager.trade.type",
+    "class_name": "BasicTradeListing",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.entity.npc.VillagerTrades.ItemListing",
+        "display_name": "ItemListing",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.entity.npc",
+        "class_name": "ItemListing"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.villager.trade.type.IBasicItemListing",
+        "display_name": "IBasicItemListing",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.villager.trade.type",
+        "class_name": "IBasicItemListing"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.villager.trade.type.BasicTradeListing",
+  "member_groups": {
+    "forSale": {
+      "key": "forSale",
+      "members": [
+        {
+          "key": "getForSale",
+          "display_name": "getForSale",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        },
+        {
+          "key": "forSale",
+          "display_name": "forSale",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "maxTrades": {
+      "key": "maxTrades",
+      "members": [
+        {
+          "key": "getMaxTrades",
+          "display_name": "getMaxTrades",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "maxTrades",
+          "display_name": "maxTrades",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "price": {
+      "key": "price",
+      "members": [
+        {
+          "key": "getPrice",
+          "display_name": "getPrice",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        },
+        {
+          "key": "price",
+          "display_name": "price",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "price2": {
+      "key": "price2",
+      "members": [
+        {
+          "key": "getPrice2",
+          "display_name": "getPrice2",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        },
+        {
+          "key": "price2",
+          "display_name": "price2",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "priceMult": {
+      "key": "priceMult",
+      "members": [
+        {
+          "key": "getPriceMult",
+          "display_name": "getPriceMult",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "priceMult",
+          "display_name": "priceMult",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "xp": {
+      "key": "xp",
+      "members": [
+        {
+          "key": "getXp",
+          "display_name": "getXp",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "xp",
+          "display_name": "xp",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

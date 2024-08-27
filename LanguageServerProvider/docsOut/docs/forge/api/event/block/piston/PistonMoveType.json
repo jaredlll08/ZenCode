@@ -1,0 +1,141 @@
+{
+  "key": "forge/api/event/block/piston/PistonMoveType",
+  "display_name": "PistonMoveType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "forge:event/piston/move_type"
+  },
+  "type": {
+    "key": "net.minecraftforge.event.level.PistonEvent.PistonMoveType",
+    "display_name": "PistonMoveType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.event.level",
+    "class_name": "PistonMoveType",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cPistonMoveType\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraftforge.event.level.PistonEvent.PistonMoveType",
+          "display_name": "PistonMoveType",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraftforge.event.level",
+          "class_name": "PistonMoveType"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.forge.api.event.block.piston.PistonMoveType",
+  "member_groups": {
+    "EXTEND": {
+      "key": "EXTEND",
+      "members": [
+        {
+          "key": "EXTEND",
+          "display_name": "EXTEND",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.event.level.PistonEvent.PistonMoveType",
+            "display_name": "PistonMoveType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.event.level",
+            "class_name": "PistonMoveType"
+          }
+        }
+      ]
+    },
+    "RETRACT": {
+      "key": "RETRACT",
+      "members": [
+        {
+          "key": "RETRACT",
+          "display_name": "RETRACT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.event.level.PistonEvent.PistonMoveType",
+            "display_name": "PistonMoveType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.event.level",
+            "class_name": "PistonMoveType"
+          }
+        }
+      ]
+    },
+    "extend": {
+      "key": "extend",
+      "members": [
+        {
+          "key": "extend",
+          "display_name": "extend",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

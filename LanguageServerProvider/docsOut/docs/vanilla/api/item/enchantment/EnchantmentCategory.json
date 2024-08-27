@@ -1,0 +1,404 @@
+{
+  "key": "vanilla/api/item/enchantment/EnchantmentCategory",
+  "display_name": "EnchantmentCategory",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:enchantment/category"
+  },
+  "type": {
+    "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+    "display_name": "EnchantmentCategory",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item.enchantment",
+    "class_name": "EnchantmentCategory",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cEnchantmentCategory\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+          "display_name": "EnchantmentCategory",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.item.enchantment",
+          "class_name": "EnchantmentCategory"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraftforge.common.IExtensibleEnum",
+        "display_name": "IExtensibleEnum",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common",
+        "class_name": "IExtensibleEnum"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.item.enchantment.EnchantmentCategory",
+  "member_groups": {
+    "ARMOR": {
+      "key": "ARMOR",
+      "members": [
+        {
+          "key": "ARMOR",
+          "display_name": "ARMOR",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "ARMOR_CHEST": {
+      "key": "ARMOR_CHEST",
+      "members": [
+        {
+          "key": "ARMOR_CHEST",
+          "display_name": "ARMOR_CHEST",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "ARMOR_FEET": {
+      "key": "ARMOR_FEET",
+      "members": [
+        {
+          "key": "ARMOR_FEET",
+          "display_name": "ARMOR_FEET",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "ARMOR_HEAD": {
+      "key": "ARMOR_HEAD",
+      "members": [
+        {
+          "key": "ARMOR_HEAD",
+          "display_name": "ARMOR_HEAD",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "ARMOR_LEGS": {
+      "key": "ARMOR_LEGS",
+      "members": [
+        {
+          "key": "ARMOR_LEGS",
+          "display_name": "ARMOR_LEGS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "BOW": {
+      "key": "BOW",
+      "members": [
+        {
+          "key": "BOW",
+          "display_name": "BOW",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "BREAKABLE": {
+      "key": "BREAKABLE",
+      "members": [
+        {
+          "key": "BREAKABLE",
+          "display_name": "BREAKABLE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "CROSSBOW": {
+      "key": "CROSSBOW",
+      "members": [
+        {
+          "key": "CROSSBOW",
+          "display_name": "CROSSBOW",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "DIGGER": {
+      "key": "DIGGER",
+      "members": [
+        {
+          "key": "DIGGER",
+          "display_name": "DIGGER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "FISHING_ROD": {
+      "key": "FISHING_ROD",
+      "members": [
+        {
+          "key": "FISHING_ROD",
+          "display_name": "FISHING_ROD",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "TRIDENT": {
+      "key": "TRIDENT",
+      "members": [
+        {
+          "key": "TRIDENT",
+          "display_name": "TRIDENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "VANISHABLE": {
+      "key": "VANISHABLE",
+      "members": [
+        {
+          "key": "VANISHABLE",
+          "display_name": "VANISHABLE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "WEAPON": {
+      "key": "WEAPON",
+      "members": [
+        {
+          "key": "WEAPON",
+          "display_name": "WEAPON",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "WEARABLE": {
+      "key": "WEARABLE",
+      "members": [
+        {
+          "key": "WEARABLE",
+          "display_name": "WEARABLE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.enchantment.EnchantmentCategory",
+            "display_name": "EnchantmentCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.enchantment",
+            "class_name": "EnchantmentCategory"
+          }
+        }
+      ]
+    },
+    "canEnchant": {
+      "key": "canEnchant",
+      "members": [
+        {
+          "key": "canEnchant",
+          "display_name": "canEnchant",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "key": "vanilla/api/loot/modifier/ILootModifier",
+  "display_name": "ILootModifier",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Represents a modifier that gets applied to the loot dropped by a loot table."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "A modifier is something that can act on and change the loot dropped by a loot table, represented as a list of"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IItemStack"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ", leveraging the original "
+    },
+    {
+      "type": "link",
+      "to": "net.minecraft.world.level.storage.loot.LootContext",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "LootContext"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " that caused the loot drop.\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+    "display_name": "ILootModifier",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+    "class_name": "ILootModifier"
+  },
+  "zen_code_name": "crafttweaker.api.loot.modifier.ILootModifier",
+  "member_groups": {
+    "modify": {
+      "key": "modify",
+      "members": [
+        {
+          "key": "modify",
+          "display_name": "modify",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Applies the modifier to the drops of a loot table."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "loot",
+              "display_name": "loot",
+              "type": {
+                "key": "java.util.List",
+                "display_name": "List\u003cIItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "E": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "List"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The loot dropped by a loot table."
+                }
+              ]
+            },
+            {
+              "key": "context",
+              "display_name": "context",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootContext",
+                "display_name": "LootContext",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "LootContext"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The context that caused the loot table to drop the loot."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cIItemStack\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    }
+  }
+}

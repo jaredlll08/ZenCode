@@ -1,0 +1,778 @@
+{
+  "key": "vanilla/api/world/map/MapDecorationType",
+  "display_name": "MapDecorationType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:world/map/decorationtype"
+  },
+  "type": {
+    "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+    "display_name": "Type",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.saveddata.maps",
+    "class_name": "Type",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cType\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+          "display_name": "Type",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.level.saveddata.maps",
+          "class_name": "Type"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.map.MapDecorationType",
+  "member_groups": {
+    "BANNER_BLACK": {
+      "key": "BANNER_BLACK",
+      "members": [
+        {
+          "key": "BANNER_BLACK",
+          "display_name": "BANNER_BLACK",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_BLUE": {
+      "key": "BANNER_BLUE",
+      "members": [
+        {
+          "key": "BANNER_BLUE",
+          "display_name": "BANNER_BLUE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_BROWN": {
+      "key": "BANNER_BROWN",
+      "members": [
+        {
+          "key": "BANNER_BROWN",
+          "display_name": "BANNER_BROWN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_CYAN": {
+      "key": "BANNER_CYAN",
+      "members": [
+        {
+          "key": "BANNER_CYAN",
+          "display_name": "BANNER_CYAN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_GRAY": {
+      "key": "BANNER_GRAY",
+      "members": [
+        {
+          "key": "BANNER_GRAY",
+          "display_name": "BANNER_GRAY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_GREEN": {
+      "key": "BANNER_GREEN",
+      "members": [
+        {
+          "key": "BANNER_GREEN",
+          "display_name": "BANNER_GREEN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_LIGHT_BLUE": {
+      "key": "BANNER_LIGHT_BLUE",
+      "members": [
+        {
+          "key": "BANNER_LIGHT_BLUE",
+          "display_name": "BANNER_LIGHT_BLUE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_LIGHT_GRAY": {
+      "key": "BANNER_LIGHT_GRAY",
+      "members": [
+        {
+          "key": "BANNER_LIGHT_GRAY",
+          "display_name": "BANNER_LIGHT_GRAY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_LIME": {
+      "key": "BANNER_LIME",
+      "members": [
+        {
+          "key": "BANNER_LIME",
+          "display_name": "BANNER_LIME",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_MAGENTA": {
+      "key": "BANNER_MAGENTA",
+      "members": [
+        {
+          "key": "BANNER_MAGENTA",
+          "display_name": "BANNER_MAGENTA",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_ORANGE": {
+      "key": "BANNER_ORANGE",
+      "members": [
+        {
+          "key": "BANNER_ORANGE",
+          "display_name": "BANNER_ORANGE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_PINK": {
+      "key": "BANNER_PINK",
+      "members": [
+        {
+          "key": "BANNER_PINK",
+          "display_name": "BANNER_PINK",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_PURPLE": {
+      "key": "BANNER_PURPLE",
+      "members": [
+        {
+          "key": "BANNER_PURPLE",
+          "display_name": "BANNER_PURPLE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_RED": {
+      "key": "BANNER_RED",
+      "members": [
+        {
+          "key": "BANNER_RED",
+          "display_name": "BANNER_RED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_WHITE": {
+      "key": "BANNER_WHITE",
+      "members": [
+        {
+          "key": "BANNER_WHITE",
+          "display_name": "BANNER_WHITE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BANNER_YELLOW": {
+      "key": "BANNER_YELLOW",
+      "members": [
+        {
+          "key": "BANNER_YELLOW",
+          "display_name": "BANNER_YELLOW",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "BLUE_MARKER": {
+      "key": "BLUE_MARKER",
+      "members": [
+        {
+          "key": "BLUE_MARKER",
+          "display_name": "BLUE_MARKER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "FRAME": {
+      "key": "FRAME",
+      "members": [
+        {
+          "key": "FRAME",
+          "display_name": "FRAME",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "MANSION": {
+      "key": "MANSION",
+      "members": [
+        {
+          "key": "MANSION",
+          "display_name": "MANSION",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "MONUMENT": {
+      "key": "MONUMENT",
+      "members": [
+        {
+          "key": "MONUMENT",
+          "display_name": "MONUMENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "PLAYER": {
+      "key": "PLAYER",
+      "members": [
+        {
+          "key": "PLAYER",
+          "display_name": "PLAYER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "PLAYER_OFF_LIMITS": {
+      "key": "PLAYER_OFF_LIMITS",
+      "members": [
+        {
+          "key": "PLAYER_OFF_LIMITS",
+          "display_name": "PLAYER_OFF_LIMITS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "PLAYER_OFF_MAP": {
+      "key": "PLAYER_OFF_MAP",
+      "members": [
+        {
+          "key": "PLAYER_OFF_MAP",
+          "display_name": "PLAYER_OFF_MAP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "RED_MARKER": {
+      "key": "RED_MARKER",
+      "members": [
+        {
+          "key": "RED_MARKER",
+          "display_name": "RED_MARKER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "RED_X": {
+      "key": "RED_X",
+      "members": [
+        {
+          "key": "RED_X",
+          "display_name": "RED_X",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "TARGET_POINT": {
+      "key": "TARGET_POINT",
+      "members": [
+        {
+          "key": "TARGET_POINT",
+          "display_name": "TARGET_POINT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "TARGET_X": {
+      "key": "TARGET_X",
+      "members": [
+        {
+          "key": "TARGET_X",
+          "display_name": "TARGET_X",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.saveddata.maps.MapDecoration.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.saveddata.maps",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "getMapColor": {
+      "key": "getMapColor",
+      "members": [
+        {
+          "key": "getMapColor",
+          "display_name": "getMapColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "getMapColor",
+          "display_name": "getMapColor",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasMapColor": {
+      "key": "hasMapColor",
+      "members": [
+        {
+          "key": "hasMapColor",
+          "display_name": "hasMapColor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasMapColor",
+          "display_name": "hasMapColor",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "icon": {
+      "key": "icon",
+      "members": [
+        {
+          "key": "getIcon",
+          "display_name": "getIcon",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "byte",
+            "display_name": "byte",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "icon",
+          "display_name": "icon",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "byte",
+            "display_name": "byte",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isRenderedOnFrame": {
+      "key": "isRenderedOnFrame",
+      "members": [
+        {
+          "key": "isRenderedOnFrame",
+          "display_name": "isRenderedOnFrame",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isRenderedOnFrame",
+          "display_name": "isRenderedOnFrame",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "shouldTrackCount": {
+      "key": "shouldTrackCount",
+      "members": [
+        {
+          "key": "shouldTrackCount",
+          "display_name": "shouldTrackCount",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "shouldTrackCount",
+          "display_name": "shouldTrackCount",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

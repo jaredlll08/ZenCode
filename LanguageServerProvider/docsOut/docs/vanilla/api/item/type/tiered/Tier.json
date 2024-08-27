@@ -1,0 +1,211 @@
+{
+  "key": "vanilla/api/item/type/tiered/Tier",
+  "display_name": "Tier",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.Tier",
+    "display_name": "Tier",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item",
+    "class_name": "Tier"
+  },
+  "zen_code_name": "crafttweaker.api.item.type.tiered.Tier",
+  "member_groups": {
+    "attackDamageBonus": {
+      "key": "attackDamageBonus",
+      "members": [
+        {
+          "key": "getAttackDamageBonus",
+          "display_name": "getAttackDamageBonus",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "attackDamageBonus",
+          "display_name": "attackDamageBonus",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "enchantmentValue": {
+      "key": "enchantmentValue",
+      "members": [
+        {
+          "key": "getEnchantmentValue",
+          "display_name": "getEnchantmentValue",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "enchantmentValue",
+          "display_name": "enchantmentValue",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "level": {
+      "key": "level",
+      "members": [
+        {
+          "key": "getLevel",
+          "display_name": "getLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "level",
+          "display_name": "level",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "repairIngredient": {
+      "key": "repairIngredient",
+      "members": [
+        {
+          "key": "getRepairIngredient",
+          "display_name": "getRepairIngredient",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+            "display_name": "IIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredient"
+          }
+        },
+        {
+          "key": "repairIngredient",
+          "display_name": "repairIngredient",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+            "display_name": "IIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredient"
+          }
+        }
+      ]
+    },
+    "speed": {
+      "key": "speed",
+      "members": [
+        {
+          "key": "getSpeed",
+          "display_name": "getSpeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "speed",
+          "display_name": "speed",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "uses": {
+      "key": "uses",
+      "members": [
+        {
+          "key": "getUses",
+          "display_name": "getUses",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "uses",
+          "display_name": "uses",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "key": "vanilla/api/predicate/MobEffectPredicate",
+  "display_name": "MobEffectPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+    "display_name": "MobEffectInstancePredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "MobEffectInstancePredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.MobEffectPredicate",
+  "member_groups": {
+    "ambient": {
+      "key": "ambient",
+      "members": [
+        {
+          "key": "ambient",
+          "display_name": "ambient",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+            "display_name": "MobEffectInstancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectInstancePredicate"
+          }
+        }
+      ]
+    },
+    "amplifier": {
+      "key": "amplifier",
+      "members": [
+        {
+          "key": "amplifier",
+          "display_name": "amplifier",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "amplifier",
+              "display_name": "amplifier",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+            "display_name": "MobEffectInstancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectInstancePredicate"
+          }
+        }
+      ]
+    },
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+            "display_name": "MobEffectInstancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectInstancePredicate"
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "amplifier",
+              "display_name": "amplifier",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            },
+            {
+              "key": "duration",
+              "display_name": "duration",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            },
+            {
+              "key": "ambient",
+              "display_name": "ambient",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": false
+            },
+            {
+              "key": "visible",
+              "display_name": "visible",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+            "display_name": "MobEffectInstancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectInstancePredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "amplifier",
+              "display_name": "amplifier",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            },
+            {
+              "key": "duration",
+              "display_name": "duration",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            },
+            {
+              "key": "ambient",
+              "display_name": "ambient",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+            "display_name": "MobEffectInstancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectInstancePredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "amplifier",
+              "display_name": "amplifier",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            },
+            {
+              "key": "duration",
+              "display_name": "duration",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+            "display_name": "MobEffectInstancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectInstancePredicate"
+          }
+        }
+      ]
+    },
+    "duration": {
+      "key": "duration",
+      "members": [
+        {
+          "key": "duration",
+          "display_name": "duration",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "duration",
+              "display_name": "duration",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+            "display_name": "MobEffectInstancePredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectInstancePredicate"
+          }
+        }
+      ]
+    }
+  }
+}

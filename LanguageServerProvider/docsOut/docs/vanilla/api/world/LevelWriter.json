@@ -1,0 +1,233 @@
+{
+  "key": "vanilla/api/world/LevelWriter",
+  "display_name": "LevelWriter",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.LevelWriter",
+    "display_name": "LevelWriter",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "LevelWriter"
+  },
+  "zen_code_name": "crafttweaker.api.world.LevelWriter",
+  "member_groups": {
+    "addFreshEntity": {
+      "key": "addFreshEntity",
+      "members": [
+        {
+          "key": "addFreshEntity",
+          "display_name": "addFreshEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "add an entity to the world, return if the entity is added successfully."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "destroyBlock": {
+      "key": "destroyBlock",
+      "members": [
+        {
+          "key": "destroyBlock",
+          "display_name": "destroyBlock",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Destroys a block within the world."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "extra": {
+                "examples": {
+                  "pos": [
+                    "new BlockPos(0, 1, 2)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The position of the block."
+                }
+              ]
+            },
+            {
+              "key": "doDrops",
+              "display_name": "doDrops",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "doDrops": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Whether the block drops itself and it\u0027s loot."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "destroyBlock",
+          "display_name": "destroyBlock",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Destroys a block within the world."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "extra": {
+                "examples": {
+                  "pos": [
+                    "new BlockPos(0, 1, 2)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The position of the block."
+                }
+              ]
+            },
+            {
+              "key": "doDrops",
+              "display_name": "doDrops",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "doDrops": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Whether the block drops itself and it\u0027s loot."
+                }
+              ]
+            },
+            {
+              "key": "breaker",
+              "display_name": "breaker",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "extra": {
+                "examples": {
+                  "breaker": [
+                    "player"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The entity to break the block."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

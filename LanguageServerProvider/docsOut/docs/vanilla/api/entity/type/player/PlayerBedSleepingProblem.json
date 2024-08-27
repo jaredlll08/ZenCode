@@ -1,0 +1,223 @@
+{
+  "key": "vanilla/api/entity/type/player/PlayerBedSleepingProblem",
+  "display_name": "PlayerBedSleepingProblem",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:player/bed_sleeping_problem"
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.player.Player.BedSleepingProblem",
+    "display_name": "BedSleepingProblem",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.player",
+    "class_name": "BedSleepingProblem",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cBedSleepingProblem\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.entity.player.Player.BedSleepingProblem",
+          "display_name": "BedSleepingProblem",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.entity.player",
+          "class_name": "BedSleepingProblem"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.type.player.PlayerBedSleepingProblem",
+  "member_groups": {
+    "NOT_POSSIBLE_HERE": {
+      "key": "NOT_POSSIBLE_HERE",
+      "members": [
+        {
+          "key": "NOT_POSSIBLE_HERE",
+          "display_name": "NOT_POSSIBLE_HERE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.player.Player.BedSleepingProblem",
+            "display_name": "BedSleepingProblem",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "BedSleepingProblem"
+          }
+        }
+      ]
+    },
+    "NOT_POSSIBLE_NOW": {
+      "key": "NOT_POSSIBLE_NOW",
+      "members": [
+        {
+          "key": "NOT_POSSIBLE_NOW",
+          "display_name": "NOT_POSSIBLE_NOW",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.player.Player.BedSleepingProblem",
+            "display_name": "BedSleepingProblem",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "BedSleepingProblem"
+          }
+        }
+      ]
+    },
+    "NOT_SAFE": {
+      "key": "NOT_SAFE",
+      "members": [
+        {
+          "key": "NOT_SAFE",
+          "display_name": "NOT_SAFE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.player.Player.BedSleepingProblem",
+            "display_name": "BedSleepingProblem",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "BedSleepingProblem"
+          }
+        }
+      ]
+    },
+    "OBSTRUCTED": {
+      "key": "OBSTRUCTED",
+      "members": [
+        {
+          "key": "OBSTRUCTED",
+          "display_name": "OBSTRUCTED",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.player.Player.BedSleepingProblem",
+            "display_name": "BedSleepingProblem",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "BedSleepingProblem"
+          }
+        }
+      ]
+    },
+    "OTHER_PROBLEM": {
+      "key": "OTHER_PROBLEM",
+      "members": [
+        {
+          "key": "OTHER_PROBLEM",
+          "display_name": "OTHER_PROBLEM",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.player.Player.BedSleepingProblem",
+            "display_name": "BedSleepingProblem",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "BedSleepingProblem"
+          }
+        }
+      ]
+    },
+    "TOO_FAR_AWAY": {
+      "key": "TOO_FAR_AWAY",
+      "members": [
+        {
+          "key": "TOO_FAR_AWAY",
+          "display_name": "TOO_FAR_AWAY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.player.Player.BedSleepingProblem",
+            "display_name": "BedSleepingProblem",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "BedSleepingProblem"
+          }
+        }
+      ]
+    },
+    "message": {
+      "key": "message",
+      "members": [
+        {
+          "key": "message",
+          "display_name": "message",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    }
+  }
+}

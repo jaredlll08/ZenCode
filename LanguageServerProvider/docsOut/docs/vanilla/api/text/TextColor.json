@@ -1,0 +1,78 @@
+{
+  "key": "vanilla/api/text/TextColor",
+  "display_name": "TextColor",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.network.chat.TextColor",
+    "display_name": "TextColor",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.network.chat",
+    "class_name": "TextColor",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.text.TextColor",
+  "member_groups": {
+    "serialize": {
+      "key": "serialize",
+      "members": [
+        {
+          "key": "serialize",
+          "display_name": "serialize",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "value": {
+      "key": "value",
+      "members": [
+        {
+          "key": "getValue",
+          "display_name": "getValue",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "value",
+          "display_name": "value",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

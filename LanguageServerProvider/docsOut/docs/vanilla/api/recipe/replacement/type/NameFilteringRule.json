@@ -1,0 +1,269 @@
+{
+  "key": "vanilla/api/recipe/replacement/type/NameFilteringRule",
+  "display_name": "NameFilteringRule",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Filters recipes that match a specific pattern on their name."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "This acts as a less specialized version of"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.replacement.type.ModsFilteringRule",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "ModsFilteringRule"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " as it allows custom matching on the entirety\r\n of a recipe\u0027s name as determined by "
+    },
+    {
+      "type": "link",
+      "to": "Recipe#getId()",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Recipe#getId()"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ", at the cost of some efficiency.\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.NameFilteringRule",
+    "display_name": "NameFilteringRule",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+    "class_name": "NameFilteringRule",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+        "display_name": "IFilteringRule",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "IFilteringRule"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+        "display_name": "ITargetingFilter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "ITargetingFilter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.type.NameFilteringRule",
+  "member_groups": {
+    "anyOf": {
+      "key": "anyOf",
+      "members": [
+        {
+          "key": "anyOf",
+          "display_name": "anyOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a rule that filters only recipes with the specific given names."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The names are matched exactly, in both namespace and path."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "exactNames",
+              "display_name": "exactNames",
+              "type": {
+                "key": "java.lang.String[]",
+                "display_name": "String[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.String",
+                  "display_name": "string",
+                  "type_type": "basic",
+                  "nullable": false
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The exact names to look for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.NameFilteringRule",
+            "display_name": "NameFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "NameFilteringRule"
+          }
+        }
+      ]
+    },
+    "containing": {
+      "key": "containing",
+      "members": [
+        {
+          "key": "containing",
+          "display_name": "containing",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a rule filtering recipes that have the given word in their name."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The word is not matched exactly and word boundaries aren\u0027t considered. This means that if a recipe is called"
+            },
+            {
+              "type": "code",
+              "content": "\"minecraft:pumpkin_pie\""
+            },
+            {
+              "type": "plaintext",
+              "content": " and the rule is set up to check "
+            },
+            {
+              "type": "code",
+              "content": "\"pump\""
+            },
+            {
+              "type": "plaintext",
+              "content": ", that recipe will pass the check\r\n instead of failing it.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "contents",
+              "display_name": "contents",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The contents to look for in the recipe\u0027s name."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.NameFilteringRule",
+            "display_name": "NameFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "NameFilteringRule"
+          }
+        }
+      ]
+    },
+    "regex": {
+      "key": "regex",
+      "members": [
+        {
+          "key": "regex",
+          "display_name": "regex",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a rule filtering recipes based on the given regular expression."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "regex",
+              "display_name": "regex",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The regular expression to use."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.NameFilteringRule",
+            "display_name": "NameFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "NameFilteringRule"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "key": "vanilla/api/loot/condition/AnyOfCondition",
+  "display_name": "AnyOfCondition",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.predicates.AnyOfCondition",
+    "display_name": "AnyOfCondition",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot.predicates",
+    "class_name": "AnyOfCondition",
+    "super_type": {
+      "key": "net.minecraft.world.level.storage.loot.predicates.CompositeLootItemCondition",
+      "display_name": "CompositeLootItemCondition",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.world.level.storage.loot.predicates",
+      "class_name": "CompositeLootItemCondition"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+        "display_name": "LootItemCondition",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage.loot.predicates",
+        "class_name": "LootItemCondition"
+      },
+      {
+        "key": "net.minecraft.world.level.storage.loot.LootContextUser",
+        "display_name": "LootContextUser",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage.loot",
+        "class_name": "LootContextUser"
+      },
+      {
+        "key": "java.util.function.Predicate",
+        "display_name": "Predicate\u003cLootContext\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext",
+            "display_name": "LootContext",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "LootContext"
+          }
+        },
+        "package_name": "java.util.function",
+        "class_name": "Predicate"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.condition.AnyOfCondition",
+  "member_groups": {
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.predicates.AnyOfCondition.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.predicates",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

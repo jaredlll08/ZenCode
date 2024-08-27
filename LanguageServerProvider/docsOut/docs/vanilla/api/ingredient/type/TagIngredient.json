@@ -1,0 +1,2305 @@
+{
+  "key": "vanilla/api/ingredient/type/TagIngredient",
+  "display_name": "TagIngredient",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.ingredient.type.TagIngredient",
+    "display_name": "TagIngredient",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+    "class_name": "TagIngredient",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+        "display_name": "IIngredient",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.ingredient",
+        "class_name": "IIngredient"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.ingredient.type.TagIngredient",
+  "member_groups": {
+    "addGlobalAttributeModifier": {
+      "key": "addGlobalAttributeModifier",
+      "members": [
+        {
+          "key": "addGlobalAttributeModifier",
+          "display_name": "addGlobalAttributeModifier",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds an AttributeModifier to this IIngredient."
+            },
+            {
+              "type": "plaintext",
+              "content": "Attributes added with this method appear on all ItemStacks that match this IIngredient,\r\n regardless of how or when the ItemStack was made, if you want to have the attribute on a\r\n single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use\r\n IItemStack#withAttributeModifier"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "attribute",
+              "display_name": "attribute",
+              "type": {
+                "key": "net.minecraft.world.entity.ai.attributes.Attribute",
+                "display_name": "Attribute",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Attribute"
+              },
+              "extra": {
+                "examples": {
+                  "attribute": [
+                    "\u003cattribute:minecraft:generic.attack_damage\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The Attribute of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"Extra Power\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "value": [
+                    "10"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The value of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "operation",
+              "display_name": "operation",
+              "type": {
+                "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+                "display_name": "Operation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Operation"
+              },
+              "extra": {
+                "examples": {
+                  "operation": [
+                    "AttributeOperation.ADDITION"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The operation of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "slotTypes",
+              "display_name": "slotTypes",
+              "type": {
+                "key": "net.minecraft.world.entity.EquipmentSlot[]",
+                "display_name": "EquipmentSlot[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.entity.EquipmentSlot",
+                  "display_name": "EquipmentSlot",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.entity",
+                  "class_name": "EquipmentSlot"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "slotTypes": [
+                    "[\u003cconstant:minecraft:equipmentslot:chest\u003e]"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What slots the modifier is valid for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addGlobalAttributeModifier",
+          "display_name": "addGlobalAttributeModifier",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds an AttributeModifier to this IIngredient using a specific UUID."
+            },
+            {
+              "type": "plaintext",
+              "content": "The UUID can be used to override an existing attribute on an ItemStack with this new modifier.\r\n You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack."
+            },
+            {
+              "type": "plaintext",
+              "content": "Attributes added with this method appear on all ItemStacks that match this IIngredient,\r\n regardless of how or when the ItemStack was made, if you want to have the attribute on a\r\n single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use\r\n IItemStack#withAttributeModifier"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "attribute",
+              "display_name": "attribute",
+              "type": {
+                "key": "net.minecraft.world.entity.ai.attributes.Attribute",
+                "display_name": "Attribute",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Attribute"
+              },
+              "extra": {
+                "examples": {
+                  "attribute": [
+                    "\u003cattribute:minecraft:generic.attack_damage\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The Attribute of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "uuid",
+              "display_name": "uuid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "uuid": [
+                    "\"8c1b5535-9f79-448b-87ae-52d81480aaa3\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The unique identifier of the modifier to replace."
+                }
+              ]
+            },
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"Extra Power\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "value": [
+                    "10"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The value of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "operation",
+              "display_name": "operation",
+              "type": {
+                "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+                "display_name": "Operation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Operation"
+              },
+              "extra": {
+                "examples": {
+                  "operation": [
+                    "AttributeOperation.ADDITION"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The operation of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "slotTypes",
+              "display_name": "slotTypes",
+              "type": {
+                "key": "net.minecraft.world.entity.EquipmentSlot[]",
+                "display_name": "EquipmentSlot[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.entity.EquipmentSlot",
+                  "display_name": "EquipmentSlot",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.entity",
+                  "class_name": "EquipmentSlot"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "slotTypes": [
+                    "[\u003cconstant:minecraft:equipmentslot:chest\u003e]"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What slots the modifier is valid for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "addGlobalAttributeModifier",
+          "display_name": "addGlobalAttributeModifier",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds an AttributeModifier to this IIngredient using a specific UUID."
+            },
+            {
+              "type": "plaintext",
+              "content": "The UUID can be used to override an existing attribute on an ItemStack with this new modifier.\r\n You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack."
+            },
+            {
+              "type": "plaintext",
+              "content": "Attributes added with this method appear on all ItemStacks that match this IIngredient,\r\n regardless of how or when the ItemStack was made, if you want to have the attribute on a\r\n single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use\r\n IItemStack#withAttributeModifier"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "attribute",
+              "display_name": "attribute",
+              "type": {
+                "key": "net.minecraft.world.entity.ai.attributes.Attribute",
+                "display_name": "Attribute",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Attribute"
+              },
+              "extra": {
+                "examples": {
+                  "attribute": [
+                    "\u003cattribute:minecraft:generic.attack_damage\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The Attribute of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "uuid",
+              "display_name": "uuid",
+              "type": {
+                "key": "java.util.UUID",
+                "display_name": "UUID",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.util",
+                "class_name": "UUID"
+              },
+              "extra": {
+                "examples": {
+                  "uuid": [
+                    "IItemStack.BASE_ATTACK_DAMAGE_UUID"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The unique identifier of the modifier to replace."
+                }
+              ]
+            },
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"Extra Power\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "value": [
+                    "10"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The value of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "operation",
+              "display_name": "operation",
+              "type": {
+                "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+                "display_name": "Operation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Operation"
+              },
+              "extra": {
+                "examples": {
+                  "operation": [
+                    "AttributeOperation.ADDITION"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The operation of the modifier."
+                }
+              ]
+            },
+            {
+              "key": "slotTypes",
+              "display_name": "slotTypes",
+              "type": {
+                "key": "net.minecraft.world.entity.EquipmentSlot[]",
+                "display_name": "EquipmentSlot[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.entity.EquipmentSlot",
+                  "display_name": "EquipmentSlot",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.entity",
+                  "class_name": "EquipmentSlot"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "slotTypes": [
+                    "[\u003cconstant:minecraft:equipmentslot:chest\u003e]"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "What slots the modifier is valid for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addShiftTooltip": {
+      "key": "addShiftTooltip",
+      "members": [
+        {
+          "key": "addShiftTooltip",
+          "display_name": "addShiftTooltip",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            },
+            {
+              "key": "showMessage",
+              "display_name": "showMessage",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "addTooltip": {
+      "key": "addTooltip",
+      "members": [
+        {
+          "key": "addTooltip",
+          "display_name": "addTooltip",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "anyDamage": {
+      "key": "anyDamage",
+      "members": [
+        {
+          "key": "anyDamage",
+          "display_name": "anyDamage",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientConditioned",
+            "display_name": "IIngredientConditioned\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientConditioned"
+          }
+        }
+      ]
+    },
+    "asIData": {
+      "key": "asIData",
+      "members": [
+        {
+          "key": "asIData",
+          "display_name": "asIData",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "asIIngredientWithAmount": {
+      "key": "asIIngredientWithAmount",
+      "members": [
+        {
+          "key": "asIIngredientWithAmount",
+          "display_name": "asIIngredientWithAmount",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Used implicitly when a machine can accept more than one item but you only provide one."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredientWithAmount",
+            "display_name": "IIngredientWithAmount",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredientWithAmount"
+          }
+        },
+        {
+          "key": "asIIngredientWithAmount",
+          "display_name": "asIIngredientWithAmount",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Used implicitly when a machine can accept more than one item but you only provide one."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredientWithAmount",
+            "display_name": "IIngredientWithAmount",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredientWithAmount"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "asMapData": {
+      "key": "asMapData",
+      "members": [
+        {
+          "key": "asMapData",
+          "display_name": "asMapData",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.MapData",
+            "display_name": "MapData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "MapData"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "asVanillaIngredient": {
+      "key": "asVanillaIngredient",
+      "members": [
+        {
+          "key": "asVanillaIngredient",
+          "display_name": "asVanillaIngredient",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Create a Vanilla ingredient matching this one."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.crafting.Ingredient",
+            "display_name": "Ingredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.crafting",
+            "class_name": "Ingredient"
+          }
+        },
+        {
+          "key": "asVanillaIngredient",
+          "display_name": "asVanillaIngredient",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Create a Vanilla ingredient matching this one."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.crafting.Ingredient",
+            "display_name": "Ingredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.crafting",
+            "class_name": "Ingredient"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "burnTime": {
+      "key": "burnTime",
+      "members": [
+        {
+          "key": "setBurnTime",
+          "display_name": "setBurnTime",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the burn time of this ingredient, for use in the furnace and other machines"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "time",
+              "display_name": "time",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "time": [
+                    "500"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the new burn time"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "burnTime",
+          "display_name": "burnTime",
+          "member_type": "setter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the burn time of this ingredient, for use in the furnace and other machines"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "time",
+              "display_name": "time",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "time": [
+                    "500"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the new burn time"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "clearTooltip": {
+      "key": "clearTooltip",
+      "members": [
+        {
+          "key": "clearTooltip",
+          "display_name": "clearTooltip",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "leaveName",
+              "display_name": "leaveName",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "false"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this stack"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "contains": {
+      "key": "contains",
+      "members": [
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Does the ingredient contain the given ingredient?"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "ingredient",
+              "display_name": "ingredient",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "ingredient": [
+                    "(\u003citem:minecraft:iron_ingot\u003e | \u003citem:minecraft:gold_ingot\u003e)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The ingredient to check"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Does the ingredient contain the given ingredient?"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "ingredient",
+              "display_name": "ingredient",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "ingredient": [
+                    "(\u003citem:minecraft:iron_ingot\u003e | \u003citem:minecraft:gold_ingot\u003e)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The ingredient to check"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        }
+      ]
+    },
+    "empty": {
+      "key": "empty",
+      "members": [
+        {
+          "key": "isEmpty",
+          "display_name": "isEmpty",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this ingredient is empty."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this ingredient is empty."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getRemainingItem": {
+      "key": "getRemainingItem",
+      "members": [
+        {
+          "key": "getRemainingItem",
+          "display_name": "getRemainingItem",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "When this ingredient stack is crafted, what will remain in the grid?\r\n Does not check if the stack matches though!\r\n Used e.g. in Crafting Table recipes."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:iron_ingot\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to provide for this ingredient."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "items": {
+      "key": "items",
+      "members": [
+        {
+          "key": "items",
+          "display_name": "items",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack[]",
+            "display_name": "IItemStack[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "display_name": "IItemStack",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "com.blamejared.crafttweaker.api.item",
+              "class_name": "IItemStack"
+            }
+          }
+        }
+      ]
+    },
+    "matches": {
+      "key": "matches",
+      "members": [
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Does the given stack match the ingredient?"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:iron_ingot\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to check"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Does the given stack match the ingredient?"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:iron_ingot\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to check"
+                }
+              ]
+            },
+            {
+              "key": "ignoreDamage",
+              "display_name": "ignoreDamage",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Should damage be checked?"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "modifyShiftTooltip": {
+      "key": "modifyShiftTooltip",
+      "members": [
+        {
+          "key": "modifyShiftTooltip",
+          "display_name": "modifyShiftTooltip",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "shiftedFunction",
+              "display_name": "shiftedFunction",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.tooltip.ITooltipFunction",
+                "display_name": "ITooltipFunction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item.tooltip",
+                "class_name": "ITooltipFunction"
+              },
+              "optional": false
+            },
+            {
+              "key": "unshiftedFunction",
+              "display_name": "unshiftedFunction",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.tooltip.ITooltipFunction",
+                "display_name": "ITooltipFunction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item.tooltip",
+                "class_name": "ITooltipFunction"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "modifyTooltip": {
+      "key": "modifyTooltip",
+      "members": [
+        {
+          "key": "modifyTooltip",
+          "display_name": "modifyTooltip",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "function",
+              "display_name": "function",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.tooltip.ITooltipFunction",
+                "display_name": "ITooltipFunction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item.tooltip",
+                "class_name": "ITooltipFunction"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "mul": {
+      "key": "mul",
+      "members": [
+        {
+          "key": "mul",
+          "display_name": "mul",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Use this in contexts where machines accept more than one item to state that fact."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredientWithAmount",
+            "display_name": "IIngredientWithAmount",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredientWithAmount"
+          }
+        },
+        {
+          "key": "mul",
+          "display_name": "mul",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Use this in contexts where machines accept more than one item to state that fact."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredientWithAmount",
+            "display_name": "IIngredientWithAmount",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredientWithAmount"
+          },
+          "operator_type": "mul"
+        }
+      ]
+    },
+    "only": {
+      "key": "only",
+      "members": [
+        {
+          "key": "only",
+          "display_name": "only",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Use this if you already have the condition from another ingredient"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "condition",
+              "display_name": "condition",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.condition.IIngredientCondition",
+                "display_name": "IIngredientCondition\u003cIIngredient\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                    "display_name": "IIngredient",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                    "class_name": "IIngredient"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.ingredient.condition",
+                "class_name": "IIngredientCondition"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientConditioned",
+            "display_name": "IIngredientConditioned\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientConditioned"
+          }
+        }
+      ]
+    },
+    "onlyDamaged": {
+      "key": "onlyDamaged",
+      "members": [
+        {
+          "key": "onlyDamaged",
+          "display_name": "onlyDamaged",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientConditioned",
+            "display_name": "IIngredientConditioned\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientConditioned"
+          }
+        }
+      ]
+    },
+    "onlyDamagedAtLeast": {
+      "key": "onlyDamagedAtLeast",
+      "members": [
+        {
+          "key": "onlyDamagedAtLeast",
+          "display_name": "onlyDamagedAtLeast",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "minDamage",
+              "display_name": "minDamage",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientConditioned",
+            "display_name": "IIngredientConditioned\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientConditioned"
+          }
+        }
+      ]
+    },
+    "onlyDamagedAtMost": {
+      "key": "onlyDamagedAtMost",
+      "members": [
+        {
+          "key": "onlyDamagedAtMost",
+          "display_name": "onlyDamagedAtMost",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "maxDamage",
+              "display_name": "maxDamage",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientConditioned",
+            "display_name": "IIngredientConditioned\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientConditioned"
+          }
+        }
+      ]
+    },
+    "onlyIf": {
+      "key": "onlyIf",
+      "members": [
+        {
+          "key": "onlyIf",
+          "display_name": "onlyIf",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "uid",
+              "display_name": "uid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "function",
+              "display_name": "function",
+              "type": {
+                "key": "java.util.function.Predicate",
+                "display_name": "Predicate\u003cIItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Predicate"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientConditioned",
+            "display_name": "IIngredientConditioned\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientConditioned"
+          }
+        }
+      ]
+    },
+    "or": {
+      "key": "or",
+      "members": [
+        {
+          "key": "or",
+          "display_name": "or",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientList",
+            "display_name": "IIngredientList",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientList"
+          },
+          "operator_type": "or"
+        }
+      ]
+    },
+    "removeGlobalAttribute": {
+      "key": "removeGlobalAttribute",
+      "members": [
+        {
+          "key": "removeGlobalAttribute",
+          "display_name": "removeGlobalAttribute",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all AttributeModifiers that use the given Attribute from this IIngredient."
+            },
+            {
+              "type": "plaintext",
+              "content": "Attributes removed with this method are removed from ItemStacks that match this IIngredient,\r\n regardless of how or when the ItemStack was made, if you want to remove the attribute on a\r\n single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use\r\n IItemStack#withoutAttribute."
+            },
+            {
+              "type": "plaintext",
+              "content": "This method can only remove default Attributes from an ItemStack, it is still possible that\r\n an ItemStack can override it."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "attribute",
+              "display_name": "attribute",
+              "type": {
+                "key": "net.minecraft.world.entity.ai.attributes.Attribute",
+                "display_name": "Attribute",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Attribute"
+              },
+              "extra": {
+                "examples": {
+                  "attribute": [
+                    "\u003cattribute:minecraft:generic.attack_damage\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The attribute to remove."
+                }
+              ]
+            },
+            {
+              "key": "slotTypes",
+              "display_name": "slotTypes",
+              "type": {
+                "key": "net.minecraft.world.entity.EquipmentSlot[]",
+                "display_name": "EquipmentSlot[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.entity.EquipmentSlot",
+                  "display_name": "EquipmentSlot",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.entity",
+                  "class_name": "EquipmentSlot"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "slotTypes": [
+                    "[\u003cconstant:minecraft:equipmentslot:chest\u003e]"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot types to remove it from."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeGlobalAttributeModifier": {
+      "key": "removeGlobalAttributeModifier",
+      "members": [
+        {
+          "key": "removeGlobalAttributeModifier",
+          "display_name": "removeGlobalAttributeModifier",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all AttributeModifiers who\u0027s ID is the same as the given uuid from this IIngredient."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "uuid",
+              "display_name": "uuid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "uuid": [
+                    "\"8c1b5535-9f79-448b-87ae-52d81480aaa3\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The unique id of the AttributeModifier to remove."
+                }
+              ]
+            },
+            {
+              "key": "slotTypes",
+              "display_name": "slotTypes",
+              "type": {
+                "key": "net.minecraft.world.entity.EquipmentSlot[]",
+                "display_name": "EquipmentSlot[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.entity.EquipmentSlot",
+                  "display_name": "EquipmentSlot",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.entity",
+                  "class_name": "EquipmentSlot"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "slotTypes": [
+                    "[\u003cconstant:minecraft:equipmentslot:chest\u003e]"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot types to remove it from."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "removeGlobalAttributeModifier",
+          "display_name": "removeGlobalAttributeModifier",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes all AttributeModifiers who\u0027s ID is the same as the given uuid from this IIngredient."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "uuid",
+              "display_name": "uuid",
+              "type": {
+                "key": "java.util.UUID",
+                "display_name": "UUID",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.util",
+                "class_name": "UUID"
+              },
+              "extra": {
+                "examples": {
+                  "uuid": [
+                    "IItemStack.BASE_ATTACK_DAMAGE_UUID"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The unique id of the AttributeModifier to remove."
+                }
+              ]
+            },
+            {
+              "key": "slotTypes",
+              "display_name": "slotTypes",
+              "type": {
+                "key": "net.minecraft.world.entity.EquipmentSlot[]",
+                "display_name": "EquipmentSlot[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.entity.EquipmentSlot",
+                  "display_name": "EquipmentSlot",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.entity",
+                  "class_name": "EquipmentSlot"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "slotTypes": [
+                    "[\u003cconstant:minecraft:equipmentslot:chest\u003e]"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot types to remove it from."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeTooltip": {
+      "key": "removeTooltip",
+      "members": [
+        {
+          "key": "removeTooltip",
+          "display_name": "removeTooltip",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "regex",
+              "display_name": "regex",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "reuse": {
+      "key": "reuse",
+      "members": [
+        {
+          "key": "reuse",
+          "display_name": "reuse",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientTransformed",
+            "display_name": "IIngredientTransformed\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientTransformed"
+          }
+        }
+      ]
+    },
+    "transform": {
+      "key": "transform",
+      "members": [
+        {
+          "key": "transform",
+          "display_name": "transform",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Use this if you already have the transformer from another ingredient"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "transformer",
+              "display_name": "transformer",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.transform.IIngredientTransformer",
+                "display_name": "IIngredientTransformer\u003cIIngredient\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                    "display_name": "IIngredient",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                    "class_name": "IIngredient"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.ingredient.transform",
+                "class_name": "IIngredientTransformer"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientTransformed",
+            "display_name": "IIngredientTransformed\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientTransformed"
+          }
+        }
+      ]
+    },
+    "transformCustom": {
+      "key": "transformCustom",
+      "members": [
+        {
+          "key": "transformCustom",
+          "display_name": "transformCustom",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "uid",
+              "display_name": "uid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "function",
+              "display_name": "function",
+              "type": {
+                "key": "java.util.function.Function",
+                "display_name": "Function\u003cIItemStack, IItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  },
+                  "R": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Function"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientTransformed",
+            "display_name": "IIngredientTransformed\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientTransformed"
+          }
+        }
+      ]
+    },
+    "transformDamage": {
+      "key": "transformDamage",
+      "members": [
+        {
+          "key": "transformDamage",
+          "display_name": "transformDamage",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "1"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientTransformed",
+            "display_name": "IIngredientTransformed\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientTransformed"
+          }
+        }
+      ]
+    },
+    "transformReplace": {
+      "key": "transformReplace",
+      "members": [
+        {
+          "key": "transformReplace",
+          "display_name": "transformReplace",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "replaceWith",
+              "display_name": "replaceWith",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.type.IIngredientTransformed",
+            "display_name": "IIngredientTransformed\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.ingredient.type",
+            "class_name": "IIngredientTransformed"
+          }
+        }
+      ]
+    }
+  }
+}

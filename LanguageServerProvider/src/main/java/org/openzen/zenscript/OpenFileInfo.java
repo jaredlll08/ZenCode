@@ -54,7 +54,7 @@ public class OpenFileInfo {
 		result.tokensAtPosition.putAll(getTokensAtPositions(text, uri));
 		result.uri = uri;
 
-		Logger.getGlobal().log(Level.FINEST, "Collected Tokens", result.tokensAtPosition);
+//		ZCLSPServer.log("Collected Tokens", result.tokensAtPosition);
 
 		return result;
 	}
@@ -65,7 +65,7 @@ public class OpenFileInfo {
 			final ZSTokenParser tokens = ZSTokenParser.create(sourceFile, null);
 			return getTokens(tokens).collect(Collectors.toMap(Pair::first, Pair::second));
 		} catch (IOException | ParseException exception) {
-			Logger.getGlobal().log(Level.SEVERE, "Could not read tokenStream", exception);
+			ZCLSPServer.log("Could not read tokenStream", exception);
 			return Collections.emptyMap();
 		}
 	}
@@ -81,7 +81,7 @@ public class OpenFileInfo {
 			}
 
 
-			Logger.getGlobal().log(Level.FINEST, "Got Exception! (message, position)", new Object[]{error.message, error.position});
+			ZCLSPServer.log("Got Exception! (message, position)", new Object[]{error.message, error.position});
 
 			final Range range = new Range(rangeStart, rangeEnd);
 
@@ -103,7 +103,7 @@ public class OpenFileInfo {
 			parsedFile = ParsedFile.parse(compilingPackage, tokens);
 			parseExceptions.addAll(tokens.getErrors());
 		} catch (ParseException | IOException e) {
-			Logger.getGlobal().log(Level.WARNING, "Got exception while opening", e);
+			ZCLSPServer.log(Level.WARNING, "Got exception while opening", e);
 			parsedFile = new ParsedFile(compilingPackage, new VirtualSourceFile(uri));
 			if (e instanceof ParseException) {
 				parseExceptions.add((ParseException) e);
@@ -131,7 +131,7 @@ public class OpenFileInfo {
 					this.next = new Pair<>(tokenPosition, next);
 					return true;
 				} catch (ParseException e) {
-					Logger.getGlobal().log(Level.WARNING, "Could not move to next token: ", e);
+					ZCLSPServer.log(Level.WARNING, "Could not move to next token: ", e);
 					return false;
 				}
 			}
@@ -184,7 +184,7 @@ public class OpenFileInfo {
 		try {
 			return ZSTokenParser.create(this.parsedFile.file, null);
 		} catch (Exception exception) {
-			Logger.getGlobal().log(Level.SEVERE, "Could not read tokenStream", exception);
+			ZCLSPServer.log(Level.SEVERE, "Could not read tokenStream", exception);
 			return null; // TODO something
 		}
 	}
@@ -398,7 +398,6 @@ public class OpenFileInfo {
 				PositionedToken<ZSTokenType, ZSToken> next = raw.next();
 				tokens.add(next);
 			}
-			System.out.println(tokens);
 		} catch (IOException | ParseException ignored) {
 		}
 		return tokens;

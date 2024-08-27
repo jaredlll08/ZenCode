@@ -1,0 +1,1491 @@
+{
+  "key": "vanilla/api/block/Block",
+  "display_name": "Block",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "\u003cblock:minecraft:grass_block\u003e"
+      ]
+    }
+  },
+  "type": {
+    "key": "net.minecraft.world.level.block.Block",
+    "display_name": "Block",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.block",
+    "class_name": "Block",
+    "super_type": {
+      "key": "net.minecraft.world.level.block.state.BlockBehaviour",
+      "display_name": "BlockBehaviour",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.world.level.block.state",
+      "class_name": "BlockBehaviour"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.ItemLike",
+        "display_name": "ItemLike",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "ItemLike"
+      },
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeBlock",
+        "display_name": "IForgeBlock",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeBlock"
+      },
+      {
+        "key": "net.minecraft.world.flag.FeatureElement",
+        "display_name": "FeatureElement",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.flag",
+        "class_name": "FeatureElement"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.block.Block",
+  "member_groups": {
+    "asBlockIngredient": {
+      "key": "asBlockIngredient",
+      "members": [
+        {
+          "key": "asBlockIngredient",
+          "display_name": "asBlockIngredient",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.block.CTBlockIngredient",
+            "display_name": "CTBlockIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.block",
+            "class_name": "CTBlockIngredient"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "asItem": {
+      "key": "asItem",
+      "members": [
+        {
+          "key": "asItem",
+          "display_name": "asItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the Item representation of this Block."
+            },
+            {
+              "type": "plaintext",
+              "content": "**NOTE:*** Not all Blocks have Items, for instance, a Lit Redstone Lamp does not have an Item."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.Item",
+            "display_name": "Item",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Item"
+          }
+        },
+        {
+          "key": "asItem",
+          "display_name": "asItem",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the Item representation of this Block."
+            },
+            {
+              "type": "plaintext",
+              "content": "**NOTE:*** Not all Blocks have Items, for instance, a Lit Redstone Lamp does not have an Item."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.Item",
+            "display_name": "Item",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Item"
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the block bracket handler syntax for this Block."
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G."
+            },
+            {
+              "type": "code",
+              "content": "\u003cblock:minecraft:dirt\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the block bracket handler syntax for this Block."
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G."
+            },
+            {
+              "type": "code",
+              "content": "\u003cblock:minecraft:dirt\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the block bracket handler syntax for this Block."
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G."
+            },
+            {
+              "type": "code",
+              "content": "\u003cblock:minecraft:dirt\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "defaultState": {
+      "key": "defaultState",
+      "members": [
+        {
+          "key": "getDefaultState",
+          "display_name": "getDefaultState",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the default "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.state.BlockState",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "BlockState"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        },
+        {
+          "key": "defaultState",
+          "display_name": "defaultState",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the default "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.state.BlockState",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "BlockState"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    },
+    "descriptionId": {
+      "key": "descriptionId",
+      "members": [
+        {
+          "key": "getDescriptionId",
+          "display_name": "getDescriptionId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the translation key that is used to localize this Block."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "descriptionId",
+          "display_name": "descriptionId",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the translation key that is used to localize this Block."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "dynamicShape": {
+      "key": "dynamicShape",
+      "members": [
+        {
+          "key": "hasDynamicShape",
+          "display_name": "hasDynamicShape",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if the opacity of this block is different in different areas of the Block."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "dynamicShape",
+          "display_name": "dynamicShape",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if the opacity of this block is different in different areas of the Block."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "equals": {
+      "key": "equals",
+      "members": [
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this Block matches another Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The other Block to check if this Block matches."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "equals"
+        }
+      ]
+    },
+    "explosionResistance": {
+      "key": "explosionResistance",
+      "members": [
+        {
+          "key": "getExplosionResistance",
+          "display_name": "getExplosionResistance",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blast resistance of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "explosionResistance",
+          "display_name": "explosionResistance",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blast resistance of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setExplosionResistance",
+          "display_name": "setExplosionResistance",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the blast resistance of this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "resistance",
+              "display_name": "resistance",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "resistance": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new blast resistance of this Block."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "explosionResistance",
+          "display_name": "explosionResistance",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the blast resistance of this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "optional": false
+            },
+            {
+              "key": "resistance",
+              "display_name": "resistance",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "resistance": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new blast resistance of this Block."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "friction": {
+      "key": "friction",
+      "members": [
+        {
+          "key": "getFriction",
+          "display_name": "getFriction",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the friction of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "friction",
+          "display_name": "friction",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the friction of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setFriction",
+          "display_name": "setFriction",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the friction of this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "friction",
+              "display_name": "friction",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "friction": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new friction of this Block."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "friction",
+          "display_name": "friction",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the friction of this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "optional": false
+            },
+            {
+              "key": "friction",
+              "display_name": "friction",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "friction": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new friction of this Block."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hasCollision": {
+      "key": "hasCollision",
+      "members": [
+        {
+          "key": "hasCollision",
+          "display_name": "hasCollision",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if entities can collide with this Block."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasCollision",
+          "display_name": "hasCollision",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if entities can collide with this Block."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setHasCollision",
+          "display_name": "setHasCollision",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets whether entities can collide with this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "canCollide",
+              "display_name": "canCollide",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "canCollide": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Can entities collide with this Block."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasCollision",
+          "display_name": "hasCollision",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets whether entities can collide with this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "optional": false
+            },
+            {
+              "key": "canCollide",
+              "display_name": "canCollide",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "canCollide": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Can entities collide with this Block."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "isPossibleToRespawnInThis": {
+      "key": "isPossibleToRespawnInThis",
+      "members": [
+        {
+          "key": "isPossibleToRespawnInThis",
+          "display_name": "isPossibleToRespawnInThis",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if an entity can be spawned inside this Block."
+            },
+            {
+              "type": "plaintext",
+              "content": "This is used to find valid spawn locations for players."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "state",
+              "display_name": "state",
+              "type": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "jumpFactor": {
+      "key": "jumpFactor",
+      "members": [
+        {
+          "key": "getJumpFactor",
+          "display_name": "getJumpFactor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the jump factor of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "jumpFactor",
+          "display_name": "jumpFactor",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the jump factor of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setJumpFactor",
+          "display_name": "setJumpFactor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the jump factor of this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "jumpFactor",
+              "display_name": "jumpFactor",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "jumpFactor": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new jump factor of this Block."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "jumpFactor",
+          "display_name": "jumpFactor",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the jump factor of this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "optional": false
+            },
+            {
+              "key": "jumpFactor",
+              "display_name": "jumpFactor",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "jumpFactor": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new jump factor of this Block."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "lootTable": {
+      "key": "lootTable",
+      "members": [
+        {
+          "key": "getLootTable",
+          "display_name": "getLootTable",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the loot table id for this Block."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "lootTable",
+          "display_name": "lootTable",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the loot table id for this Block."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "matches": {
+      "key": "matches",
+      "members": [
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this Block matches another Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The other Block to check if this Block matches."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the name of this Block"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the name of this Block"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "or": {
+      "key": "or",
+      "members": [
+        {
+          "key": "asList",
+          "display_name": "asList",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.block.CTBlockIngredient",
+                "display_name": "CTBlockIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.block",
+                "class_name": "CTBlockIngredient"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.block.CTBlockIngredient",
+            "display_name": "CTBlockIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.block",
+            "class_name": "CTBlockIngredient"
+          },
+          "operator_type": "or"
+        }
+      ]
+    },
+    "possibleStates": {
+      "key": "possibleStates",
+      "members": [
+        {
+          "key": "getPossibleStates",
+          "display_name": "getPossibleStates",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a list of valid "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.state.BlockState",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "BlockState"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s for this Block."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cBlockState\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "possibleStates",
+          "display_name": "possibleStates",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a list of valid "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.state.BlockState",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "BlockState"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s for this Block."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cBlockState\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "registryName": {
+      "key": "registryName",
+      "members": [
+        {
+          "key": "getRegistryName",
+          "display_name": "getRegistryName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the registry name of this block."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "registryName",
+          "display_name": "registryName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the registry name of this block."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "speedFactor": {
+      "key": "speedFactor",
+      "members": [
+        {
+          "key": "getSpeedFactor",
+          "display_name": "getSpeedFactor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the speed factor of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "speedFactor",
+          "display_name": "speedFactor",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the speed factor of this Block."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setSpeedFactor",
+          "display_name": "setSpeedFactor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the speed factor of this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "speedFactor",
+              "display_name": "speedFactor",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "speedFactor": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new speed factor of this Block."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "speedFactor",
+          "display_name": "speedFactor",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the speed factor of this Block."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              },
+              "optional": false
+            },
+            {
+              "key": "speedFactor",
+              "display_name": "speedFactor",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "speedFactor": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new speed factor of this Block."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

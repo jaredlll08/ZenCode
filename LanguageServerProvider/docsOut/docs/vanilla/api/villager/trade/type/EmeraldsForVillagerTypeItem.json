@@ -1,0 +1,261 @@
+{
+  "key": "vanilla/api/villager/trade/type/EmeraldsForVillagerTypeItem",
+  "display_name": "EmeraldsForVillagerTypeItem",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.npc.VillagerTrades.EmeraldsForVillagerTypeItem",
+    "display_name": "EmeraldsForVillagerTypeItem",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.npc",
+    "class_name": "EmeraldsForVillagerTypeItem",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.entity.npc.VillagerTrades.ItemListing",
+        "display_name": "ItemListing",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.entity.npc",
+        "class_name": "ItemListing"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.villager.trade.type.EmeraldsForVillagerTypeItem",
+  "member_groups": {
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new EmeraldsForVillagerTypeItem trade"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "cost",
+              "display_name": "cost",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "cost": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many emeralds should the map cost"
+                }
+              ]
+            },
+            {
+              "key": "maxUses",
+              "display_name": "maxUses",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxUses": [
+                    "16"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How many times this trade can be used"
+                }
+              ]
+            },
+            {
+              "key": "villagerXp",
+              "display_name": "villagerXp",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "villagerXp": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much experience does this trade reward the villager"
+                }
+              ]
+            },
+            {
+              "key": "trades",
+              "display_name": "trades",
+              "type": {
+                "key": "java.util.Map",
+                "display_name": "Map\u003cVillagerType, IItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "K": {
+                    "key": "net.minecraft.world.entity.npc.VillagerType",
+                    "display_name": "VillagerType",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.entity.npc",
+                    "class_name": "VillagerType"
+                  },
+                  "V": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "Map"
+              },
+              "extra": {
+                "examples": {
+                  "trades": [
+                    "{\u003cvillagertype:minecraft:desert\u003e: \u003citem:minecraft:sand\u003e, \u003cvillagertype:minecraft:plains\u003e: \u003citem:minecraft:dirt\u003e}"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A map of "
+                },
+                {
+                  "type": "link",
+                  "to": "net.minecraft.world.entity.npc.VillagerType",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "VillagerType"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " to "
+                },
+                {
+                  "type": "link",
+                  "to": "net.minecraft.world.item.Item",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "Item"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " trades"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.npc.VillagerTrades.EmeraldsForVillagerTypeItem",
+            "display_name": "EmeraldsForVillagerTypeItem",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.npc",
+            "class_name": "EmeraldsForVillagerTypeItem"
+          }
+        }
+      ]
+    },
+    "getOffer": {
+      "key": "getOffer",
+      "members": [
+        {
+          "key": "getOffer",
+          "display_name": "getOffer",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "traderEntity",
+              "display_name": "traderEntity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": false
+            },
+            {
+              "key": "random",
+              "display_name": "random",
+              "type": {
+                "key": "net.minecraft.util.RandomSource",
+                "display_name": "RandomSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.util",
+                "class_name": "RandomSource"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.trading.MerchantOffer",
+            "display_name": "MerchantOffer",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.trading",
+            "class_name": "MerchantOffer"
+          }
+        }
+      ]
+    }
+  }
+}

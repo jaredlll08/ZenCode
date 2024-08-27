@@ -1,0 +1,809 @@
+{
+  "key": "vanilla/api/predicate/builder/PlayerPredicateBuilder",
+  "display_name": "PlayerPredicateBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+    "display_name": "Builder",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "Builder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.builder.PlayerPredicateBuilder",
+  "member_groups": {
+    "advancement": {
+      "key": "advancement",
+      "members": [
+        {
+          "key": "advancement",
+          "display_name": "advancement",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            },
+            {
+              "key": "completed",
+              "display_name": "completed",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "advancement",
+          "display_name": "advancement",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "completed",
+              "display_name": "completed",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "advancementCriteria": {
+      "key": "advancementCriteria",
+      "members": [
+        {
+          "key": "advancementCriteria",
+          "display_name": "advancementCriteria",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            },
+            {
+              "key": "criteria",
+              "display_name": "criteria",
+              "type": {
+                "key": "java.util.Map",
+                "display_name": "Map\u003cString, Boolean\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "K": {
+                    "key": "java.lang.String",
+                    "display_name": "string",
+                    "type_type": "basic",
+                    "nullable": false
+                  },
+                  "V": {
+                    "key": "java.lang.Boolean",
+                    "display_name": "Boolean",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "java.lang",
+                    "class_name": "Boolean"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "Map"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "advancementCriteria",
+          "display_name": "advancementCriteria",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "criteria",
+              "display_name": "criteria",
+              "type": {
+                "key": "java.util.Map",
+                "display_name": "Map\u003cString, Boolean\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "K": {
+                    "key": "java.lang.String",
+                    "display_name": "string",
+                    "type_type": "basic",
+                    "nullable": false
+                  },
+                  "V": {
+                    "key": "java.lang.Boolean",
+                    "display_name": "Boolean",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "java.lang",
+                    "class_name": "Boolean"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "Map"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "advancementCriterion": {
+      "key": "advancementCriterion",
+      "members": [
+        {
+          "key": "advancementCriterion",
+          "display_name": "advancementCriterion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            },
+            {
+              "key": "criterion",
+              "display_name": "criterion",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "completed",
+              "display_name": "completed",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "advancementCriterion",
+          "display_name": "advancementCriterion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "criterion",
+              "display_name": "criterion",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "completed",
+              "display_name": "completed",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "build": {
+      "key": "build",
+      "members": [
+        {
+          "key": "build",
+          "display_name": "build",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate",
+            "display_name": "PlayerPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "PlayerPredicate"
+          }
+        }
+      ]
+    },
+    "gameType": {
+      "key": "gameType",
+      "members": [
+        {
+          "key": "gameType",
+          "display_name": "gameType",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "net.minecraft.world.level.GameType",
+                "display_name": "GameType",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "GameType"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "level": {
+      "key": "level",
+      "members": [
+        {
+          "key": "level",
+          "display_name": "level",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "lookingAt": {
+      "key": "lookingAt",
+      "members": [
+        {
+          "key": "lookingAt",
+          "display_name": "lookingAt",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate",
+                "display_name": "EntityPredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "EntityPredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "lookingAt",
+          "display_name": "lookingAt",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.EntityPredicate.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "recipe": {
+      "key": "recipe",
+      "members": [
+        {
+          "key": "recipe",
+          "display_name": "recipe",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            },
+            {
+              "key": "unlocked",
+              "display_name": "unlocked",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "recipe",
+          "display_name": "recipe",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "unlocked",
+              "display_name": "unlocked",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "statistic": {
+      "key": "statistic",
+      "members": [
+        {
+          "key": "statistic",
+          "display_name": "statistic",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            },
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "statistic",
+          "display_name": "statistic",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            },
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "statistic",
+          "display_name": "statistic",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "statistic",
+          "display_name": "statistic",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "type",
+              "display_name": "type",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.PlayerPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

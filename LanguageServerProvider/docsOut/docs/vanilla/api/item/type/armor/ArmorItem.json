@@ -1,0 +1,320 @@
+{
+  "key": "vanilla/api/item/type/armor/ArmorItem",
+  "display_name": "ArmorItem",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.ArmorItem",
+    "display_name": "ArmorItem",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item",
+    "class_name": "ArmorItem",
+    "super_type": {
+      "key": "net.minecraft.world.item.Item",
+      "display_name": "Item",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.world.item",
+      "class_name": "Item"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.item.Equipable",
+        "display_name": "Equipable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.item",
+        "class_name": "Equipable"
+      },
+      {
+        "key": "net.minecraft.world.flag.FeatureElement",
+        "display_name": "FeatureElement",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.flag",
+        "class_name": "FeatureElement"
+      },
+      {
+        "key": "net.minecraft.world.level.ItemLike",
+        "display_name": "ItemLike",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "ItemLike"
+      },
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeItem",
+        "display_name": "IForgeItem",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeItem"
+      },
+      {
+        "key": "net.minecraft.world.item.Vanishable",
+        "display_name": "Vanishable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.item",
+        "class_name": "Vanishable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.item.type.armor.ArmorItem",
+  "member_groups": {
+    "asItem": {
+      "key": "asItem",
+      "members": [
+        {
+          "key": "asItem",
+          "display_name": "asItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.Item",
+            "display_name": "Item",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Item"
+          }
+        },
+        {
+          "key": "asItem",
+          "display_name": "asItem",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.Item",
+            "display_name": "Item",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Item"
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "defaultInstance": {
+      "key": "defaultInstance",
+      "members": [
+        {
+          "key": "getDefaultInstance",
+          "display_name": "getDefaultInstance",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        },
+        {
+          "key": "defaultInstance",
+          "display_name": "defaultInstance",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        },
+        {
+          "key": "defaultInstance",
+          "display_name": "defaultInstance",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "defense": {
+      "key": "defense",
+      "members": [
+        {
+          "key": "defense",
+          "display_name": "defense",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "equipSound": {
+      "key": "equipSound",
+      "members": [
+        {
+          "key": "equipSound",
+          "display_name": "equipSound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    },
+    "equipmentSlot": {
+      "key": "equipmentSlot",
+      "members": [
+        {
+          "key": "equipmentSlot",
+          "display_name": "equipmentSlot",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot",
+            "display_name": "EquipmentSlot",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EquipmentSlot"
+          }
+        }
+      ]
+    },
+    "material": {
+      "key": "material",
+      "members": [
+        {
+          "key": "material",
+          "display_name": "material",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ArmorMaterial",
+            "display_name": "ArmorMaterial",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ArmorMaterial"
+          }
+        }
+      ]
+    },
+    "registryName": {
+      "key": "registryName",
+      "members": [
+        {
+          "key": "getRegistryName",
+          "display_name": "getRegistryName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "registryName",
+          "display_name": "registryName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "toughness": {
+      "key": "toughness",
+      "members": [
+        {
+          "key": "toughness",
+          "display_name": "toughness",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

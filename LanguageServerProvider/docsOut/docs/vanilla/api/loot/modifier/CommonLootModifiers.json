@@ -1,0 +1,2608 @@
+{
+  "key": "vanilla/api/loot/modifier/CommonLootModifiers",
+  "display_name": "CommonLootModifiers",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Holds a set of implementations of "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "ILootModifier"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "of common usage."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "These can be used freely instead of rewriting the same code more than once. They are also guaranteed to behave\r\n correctly."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.loot.modifier.CommonLootModifiers",
+    "display_name": "CommonLootModifiers",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+    "class_name": "CommonLootModifiers",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.loot.modifier.CommonLootModifiers",
+  "member_groups": {
+    "add": {
+      "key": "add",
+      "members": [
+        {
+          "key": "add",
+          "display_name": "add",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " to the drops."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:cobblestone\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to add"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addAll": {
+      "key": "addAll",
+      "members": [
+        {
+          "key": "addAll",
+          "display_name": "addAll",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds all the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " to the drops."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stacks",
+              "display_name": "stacks",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack[]",
+                "display_name": "IItemStack[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                  "display_name": "IItemStack",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.item",
+                  "class_name": "IItemStack"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "stacks": [
+                    "\u003citem:minecraft:iron_ingot\u003e, \u003citem:minecraft:iron_nugget\u003e * 5"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stacks to add"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addAllWithBinomialBonus": {
+      "key": "addAllWithBinomialBonus",
+      "members": [
+        {
+          "key": "addAllWithBinomialBonus",
+          "display_name": "addAllWithBinomialBonus",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s to the drops, modifying their count based on the level of the given\r\n "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.item.enchantment.Enchantment",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Enchantment"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "on the tool used, if available."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In case no tool is used to obtain the stack, then this loot modifier behaves exactly like"
+            },
+            {
+              "type": "link",
+              "to": "#addAll(IItemStack...)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "#addAll(IItemStack...)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The fortune modifier is applied separately for each"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The formula used is based on the"
+            },
+            {
+              "type": "code",
+              "content": "binomial_with_bonus_count"
+            },
+            {
+              "type": "plaintext",
+              "content": " formula used by vanilla. In this case, the\r\n value of "
+            },
+            {
+              "type": "code",
+              "content": "extra"
+            },
+            {
+              "type": "plaintext",
+              "content": " is added to the current tool\u0027s enchantment level; that determines the amount of times the\r\n randomness will roll. Every roll that is higher than "
+            },
+            {
+              "type": "code",
+              "content": "p"
+            },
+            {
+              "type": "plaintext",
+              "content": " will add one element to the stack. This is the\r\n formula used by potatoes and carrots to determine their drop count.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "extra": {
+                "examples": {
+                  "enchantment": [
+                    "\u003cenchantment:minecraft:fortune\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The enchantment to check for."
+                }
+              ]
+            },
+            {
+              "key": "extra",
+              "display_name": "extra",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "extra": [
+                    "3"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "An extra value that will be added to the tool\u0027s enchantment level."
+                }
+              ]
+            },
+            {
+              "key": "p",
+              "display_name": "p",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "p": [
+                    "0.5714286"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The probability of the binomial distribution, between 0.0 and 1.0 (both exclusive)."
+                }
+              ]
+            },
+            {
+              "key": "stacks",
+              "display_name": "stacks",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack[]",
+                "display_name": "IItemStack[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                  "display_name": "IItemStack",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.item",
+                  "class_name": "IItemStack"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "stacks": [
+                    "\u003citem:minecraft:wheat_seeds\u003e, \u003citem:minecraft:carrot\u003e * 9"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stacks to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addAllWithChance": {
+      "key": "addAllWithChance",
+      "members": [
+        {
+          "key": "addAllWithChance",
+          "display_name": "addAllWithChance",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.util.random.Percentaged",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Percentaged"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s to the drops, according to the specified chances."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The chance will be computed on each modifier roll, and independently for each of the given stacks."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stacks",
+              "display_name": "stacks",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.util.random.Percentaged[]",
+                "display_name": "Percentaged\u003cIItemStack\u003e[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.util.random.Percentaged",
+                  "display_name": "Percentaged\u003cIItemStack\u003e",
+                  "type_type": "java",
+                  "nullable": false,
+                  "type_parameters": {
+                    "T": {
+                      "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                      "display_name": "IItemStack",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "com.blamejared.crafttweaker.api.item",
+                      "class_name": "IItemStack"
+                    }
+                  },
+                  "package_name": "com.blamejared.crafttweaker.api.util.random",
+                  "class_name": "Percentaged"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "stacks": [
+                    "\u003citem:minecraft:honey_bottle\u003e % 50, \u003citem:minecraft:dried_kelp\u003e % 13"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stacks to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addAllWithOreDropsBonus": {
+      "key": "addAllWithOreDropsBonus",
+      "members": [
+        {
+          "key": "addAllWithOreDropsBonus",
+          "display_name": "addAllWithOreDropsBonus",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s to the drops, modifying their count based on the level of the given\r\n "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.item.enchantment.Enchantment",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Enchantment"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "on the tool used, if available."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In case no tool is used to obtain the stack, then this loot modifier behaves exactly like"
+            },
+            {
+              "type": "link",
+              "to": "#addAll(IItemStack...)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "#addAll(IItemStack...)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The fortune modifier is applied separately for each"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The formula used is based on the"
+            },
+            {
+              "type": "code",
+              "content": "ore_drops"
+            },
+            {
+              "type": "plaintext",
+              "content": " formula used by vanilla, which multiplies the stack\u0027s\r\n original count by a random number between 1 and the tool\u0027s enchantment level + 1. This is the formula used by\r\n all vanilla ores to determine their drop count.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "extra": {
+                "examples": {
+                  "enchantment": [
+                    "\u003cenchantment:minecraft:fortune\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The enchantment to check for."
+                }
+              ]
+            },
+            {
+              "key": "stacks",
+              "display_name": "stacks",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack[]",
+                "display_name": "IItemStack[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                  "display_name": "IItemStack",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.item",
+                  "class_name": "IItemStack"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "stacks": [
+                    "\u003citem:minecraft:coal\u003e, \u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stacks to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addAllWithUniformBonus": {
+      "key": "addAllWithUniformBonus",
+      "members": [
+        {
+          "key": "addAllWithUniformBonus",
+          "display_name": "addAllWithUniformBonus",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s to the drops, modifying their count based on the level of the given\r\n "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.item.enchantment.Enchantment",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Enchantment"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "on the tool used, if available."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In case no tool is used to obtain the stack, then this loot modifier behaves exactly like"
+            },
+            {
+              "type": "link",
+              "to": "#addAll(IItemStack...)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "#addAll(IItemStack...)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The fortune modifier is applied separately for each"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The formula used is based on the"
+            },
+            {
+              "type": "code",
+              "content": "uniform_bonus_count"
+            },
+            {
+              "type": "plaintext",
+              "content": " formula used by vanilla. In this case, the\r\n enchantment level is multiplied by "
+            },
+            {
+              "type": "code",
+              "content": "multiplier"
+            },
+            {
+              "type": "plaintext",
+              "content": " and a random number is extracted between 0 and the result.\r\n This number is then added to the original\u0027s stack count. This is the formula used by redstone ore and glowstone\r\n to determine their drop count.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "extra": {
+                "examples": {
+                  "enchantment": [
+                    "\u003cenchantment:minecraft:fortune\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The enchantment to check for."
+                }
+              ]
+            },
+            {
+              "key": "multiplier",
+              "display_name": "multiplier",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "multiplier": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A multiplier that will be used in conjunction with the enchantment\u0027s level."
+                }
+              ]
+            },
+            {
+              "key": "stacks",
+              "display_name": "stacks",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack[]",
+                "display_name": "IItemStack[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                  "display_name": "IItemStack",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.item",
+                  "class_name": "IItemStack"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "stacks": [
+                    "\u003citem:minecraft:glowstone_dust\u003e, \u003citem:minecraft:prismarine_crystals\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stacks to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addWithBinomialBonus": {
+      "key": "addWithBinomialBonus",
+      "members": [
+        {
+          "key": "addWithBinomialBonus",
+          "display_name": "addWithBinomialBonus",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " to the drops, modifying its count based on the level of the given\r\n "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.item.enchantment.Enchantment",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Enchantment"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "on the tool used, if available."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In case no tool is used to obtain the stack, then this loot modifier behaves exactly like"
+            },
+            {
+              "type": "link",
+              "to": "#add(IItemStack)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "#add(IItemStack)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The formula used is based on the"
+            },
+            {
+              "type": "code",
+              "content": "binomial_with_bonus_count"
+            },
+            {
+              "type": "plaintext",
+              "content": " formula used by vanilla. In this case, the\r\n value of "
+            },
+            {
+              "type": "code",
+              "content": "extra"
+            },
+            {
+              "type": "plaintext",
+              "content": " is added to the current tool\u0027s enchantment level; that determines the amount of times the\r\n randomness will roll. Every roll that is higher than "
+            },
+            {
+              "type": "code",
+              "content": "p"
+            },
+            {
+              "type": "plaintext",
+              "content": " will add one element to the stack. This is the\r\n formula used by potatoes and carrots to determine their drop count.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "extra": {
+                "examples": {
+                  "enchantment": [
+                    "\u003cenchantment:minecraft:fortune\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The enchantment to check for."
+                }
+              ]
+            },
+            {
+              "key": "extra",
+              "display_name": "extra",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "extra": [
+                    "3"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "An extra value that will be added to the tool\u0027s enchantment level."
+                }
+              ]
+            },
+            {
+              "key": "p",
+              "display_name": "p",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "p": [
+                    "0.5714286"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The probability of the binomial distribution, between 0.0 and 1.0 (both exclusive)."
+                }
+              ]
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:wheat_seeds\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addWithChance": {
+      "key": "addWithChance",
+      "members": [
+        {
+          "key": "addWithChance",
+          "display_name": "addWithChance",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.util.random.Percentaged",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Percentaged"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "to the drops, according to the specified chances."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The chance will be computed on each modifier roll."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.util.random.Percentaged",
+                "display_name": "Percentaged\u003cIItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.util.random",
+                "class_name": "Percentaged"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:gilded_blackstone\u003e % 50"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addWithOreDropsBonus": {
+      "key": "addWithOreDropsBonus",
+      "members": [
+        {
+          "key": "addWithOreDropsBonus",
+          "display_name": "addWithOreDropsBonus",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " to the drops, modifying its count based on the level of the given\r\n "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.item.enchantment.Enchantment",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Enchantment"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "on the tool used, if available."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In case no tool is used to obtain the stack, then this loot modifier behaves exactly like"
+            },
+            {
+              "type": "link",
+              "to": "#add(IItemStack)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "#add(IItemStack)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The formula used is based on the"
+            },
+            {
+              "type": "code",
+              "content": "ore_drops"
+            },
+            {
+              "type": "plaintext",
+              "content": " formula used by vanilla, which multiplies the stack\u0027s\r\n original count by a random number between 1 and the tool\u0027s enchantment level + 1. This is the formula used by\r\n all vanilla ores to determine their drop count.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "extra": {
+                "examples": {
+                  "enchantment": [
+                    "\u003cenchantment:minecraft:fortune\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The enchantment to check for."
+                }
+              ]
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:coal\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addWithRandomAmount": {
+      "key": "addWithRandomAmount",
+      "members": [
+        {
+          "key": "addWithRandomAmount",
+          "display_name": "addWithRandomAmount",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "to the drops, with an amount chosen randomly between the given bounds."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Any original stack size given to this method is ignored; if an addition behavior is desired (as in random\r\n chance \u003cem\u003eon top\u003c/em\u003e of the original stack size), a combining loot modifier should be used instead."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:conduit\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to add."
+                }
+              ]
+            },
+            {
+              "key": "min",
+              "display_name": "min",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "min": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The minimum amount that this stack can be."
+                }
+              ]
+            },
+            {
+              "key": "max",
+              "display_name": "max",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "max": [
+                    "9"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The maximum amount that this stack can be."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "addWithUniformBonus": {
+      "key": "addWithUniformBonus",
+      "members": [
+        {
+          "key": "addWithUniformBonus",
+          "display_name": "addWithUniformBonus",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " to the drops, modifying its count based on the level of the given\r\n "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.item.enchantment.Enchantment",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Enchantment"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "on the tool used, if available."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "In case no tool is used to obtain the stack, then this loot modifier behaves exactly like"
+            },
+            {
+              "type": "link",
+              "to": "#add(IItemStack)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "#add(IItemStack)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The formula used is based on the"
+            },
+            {
+              "type": "code",
+              "content": "uniform_bonus_count"
+            },
+            {
+              "type": "plaintext",
+              "content": " formula used by vanilla. In this case, the\r\n enchantment level is multiplied by "
+            },
+            {
+              "type": "code",
+              "content": "multiplier"
+            },
+            {
+              "type": "plaintext",
+              "content": " and a random number is extracted between 0 and the result.\r\n This number is then added to the original\u0027s stack count. This is the formula used by redstone ore and glowstone\r\n to determine their drop count.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "extra": {
+                "examples": {
+                  "enchantment": [
+                    "\u003cenchantment:minecraft:fortune\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The enchantment to check for."
+                }
+              ]
+            },
+            {
+              "key": "multiplier",
+              "display_name": "multiplier",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "multiplier": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A multiplier that will be used in conjunction with the enchantment\u0027s level."
+                }
+              ]
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:glowstone_dust\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "chaining": {
+      "key": "chaining",
+      "members": [
+        {
+          "key": "chaining",
+          "display_name": "chaining",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Chains the given list of "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ILootModifier"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s to be executed one after the other."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "modifiers",
+              "display_name": "modifiers",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier[]",
+                "display_name": "ILootModifier[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+                  "display_name": "ILootModifier",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+                  "class_name": "ILootModifier"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "modifiers": [
+                    "CommonLootModifiers.clearLoot(), CommonLootModifiers.add(\u003citem:minecraft:warped_hyphae\u003e)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The modifier list."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "clearLoot": {
+      "key": "clearLoot",
+      "members": [
+        {
+          "key": "clearLoot",
+          "display_name": "clearLoot",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Clears the entire drop list."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "clearing": {
+      "key": "clearing",
+      "members": [
+        {
+          "key": "clearing",
+          "display_name": "clearing",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Chains the given list of "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ILootModifier"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s together after having cleaned the original loot."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "modifiers",
+              "display_name": "modifiers",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier[]",
+                "display_name": "ILootModifier[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+                  "display_name": "ILootModifier",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+                  "class_name": "ILootModifier"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "modifiers": [
+                    "CommonLootModifiers.add(\u003citem:minecraft:warped_hyphae\u003e)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The modifier list."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "remove": {
+      "key": "remove",
+      "members": [
+        {
+          "key": "remove",
+          "display_name": "remove",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes every instance of the targeted "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " from the drops."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "target",
+              "display_name": "target",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "target": [
+                    "\u003ctag:items:minecraft:creeper_drop_music_discs\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The "
+                },
+                {
+                  "type": "link",
+                  "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "IIngredient"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": " to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "removeAll": {
+      "key": "removeAll",
+      "members": [
+        {
+          "key": "removeAll",
+          "display_name": "removeAll",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes every instance of all the targeted "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s from the drops."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "targets",
+              "display_name": "targets",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient[]",
+                "display_name": "IIngredient[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                  "display_name": "IIngredient",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                  "class_name": "IIngredient"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "targets": [
+                    "\u003citem:minecraft:bell\u003e, \u003ctag:items:minecraft:rails\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The "
+                },
+                {
+                  "type": "link",
+                  "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                  "content": [
+                    {
+                      "type": "plaintext",
+                      "content": "IIngredient"
+                    }
+                  ],
+                  "plain": false
+                },
+                {
+                  "type": "plaintext",
+                  "content": "s to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "replaceAllStacksWith": {
+      "key": "replaceAllStacksWith",
+      "members": [
+        {
+          "key": "replaceAllStacksWith",
+          "display_name": "replaceAllStacksWith",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Replaces every instance of the targeted "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s with the replacement "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s,\r\n proportionally."
+            },
+            {
+              "type": "plaintext",
+              "content": "As an example, if the loot drops 5 carrots and this loot modifier runs with 2 carrots as the key of a pair and 1\r\n potato as the corresponding value, the loot will be modified to 2 potatoes and 1 carrot. This happens because\r\n every 2-carrot stack will be actively replaced by a 1-potato stack, without exceptions."
+            },
+            {
+              "type": "plaintext",
+              "content": "This loot modifier acts differently than"
+            },
+            {
+              "type": "link",
+              "to": "#replaceAllWith(Map)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "#replaceAllWith(Map)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ", where a simpler approach is used."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "replacementMap",
+              "display_name": "replacementMap",
+              "type": {
+                "key": "java.util.Map",
+                "display_name": "Map\u003cIIngredientWithAmount, IItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "K": {
+                    "key": "com.blamejared.crafttweaker.api.ingredient.IIngredientWithAmount",
+                    "display_name": "IIngredientWithAmount",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                    "class_name": "IIngredientWithAmount"
+                  },
+                  "V": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "Map"
+              },
+              "extra": {
+                "examples": {
+                  "replacementMap": [
+                    "{ \u003citem:minecraft:carrots\u003e * 2 : \u003citem:minecraft:potatoes\u003e }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A map of key-value pairs dictating the target to replace along with their replacement."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "replaceAllWith": {
+      "key": "replaceAllWith",
+      "members": [
+        {
+          "key": "replaceAllWith",
+          "display_name": "replaceAllWith",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Replaces every instance of the targeted "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s with their corresponding replacement\r\n "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "plaintext",
+              "content": "In this case, a simple matching procedure is used, where every stack that matches the key of the pair is replaced\r\n by the corresponding value, without considering stack size. If stack size is to be preserved, refer to"
+            },
+            {
+              "type": "link",
+              "to": "#replaceAllStacksWith(Map)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "#replaceAllStacksWith(Map)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "replacementMap",
+              "display_name": "replacementMap",
+              "type": {
+                "key": "java.util.Map",
+                "display_name": "Map\u003cIIngredient, IItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "K": {
+                    "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                    "display_name": "IIngredient",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                    "class_name": "IIngredient"
+                  },
+                  "V": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "Map"
+              },
+              "extra": {
+                "examples": {
+                  "replacementMap": [
+                    "{ \u003ctag:items:forge:gems/emerald\u003e : \u003citem:minecraft:emerald\u003e }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A map of key-value pairs dictating the target to replace along with their replacement."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "replaceStackWith": {
+      "key": "replaceStackWith",
+      "members": [
+        {
+          "key": "replaceStackWith",
+          "display_name": "replaceStackWith",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Replaces every instance of the targeted "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredientWithAmount",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IIngredientWithAmount"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " with the replacement "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ",\r\n proportionally."
+            },
+            {
+              "type": "plaintext",
+              "content": "As an example, if the loot drops 5 carrots and this loot modifier runs with 2 carrots as the"
+            },
+            {
+              "type": "code",
+              "content": "target"
+            },
+            {
+              "type": "plaintext",
+              "content": "\r\n and 1 potato as the "
+            },
+            {
+              "type": "code",
+              "content": "replacement"
+            },
+            {
+              "type": "plaintext",
+              "content": ", the loot will be modified to 2 potatoes and 1 carrot. This happens\r\n because every 2-carrot stack will be actively replaced by a 1-potato stack, without exceptions."
+            },
+            {
+              "type": "plaintext",
+              "content": "This loot modifier acts differently than"
+            },
+            {
+              "type": "link",
+              "to": "#replaceWith(IIngredient,",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ", where a simpler approach\r\n is used."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "target",
+              "display_name": "target",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredientWithAmount",
+                "display_name": "IIngredientWithAmount",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredientWithAmount"
+              },
+              "extra": {
+                "examples": {
+                  "target": [
+                    "\u003citem:minecraft:carrots\u003e * 2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The target to replace."
+                }
+              ]
+            },
+            {
+              "key": "replacement",
+              "display_name": "replacement",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "replacement": [
+                    "\u003citem:minecraft:potatoes\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The replacement to use."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    },
+    "replaceWith": {
+      "key": "replaceWith",
+      "members": [
+        {
+          "key": "replaceWith",
+          "display_name": "replaceWith",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Replaces every instance of the targeted "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IIngredient"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " with the replacement "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.item.IItemStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "plaintext",
+              "content": "In this case, a simple matching procedure is used, where every stack that matches the given"
+            },
+            {
+              "type": "code",
+              "content": "target"
+            },
+            {
+              "type": "plaintext",
+              "content": "\r\n is replaced by the "
+            },
+            {
+              "type": "code",
+              "content": "replacement"
+            },
+            {
+              "type": "plaintext",
+              "content": " without considering stack size. If stack size is to be preserved,\r\n refer to "
+            },
+            {
+              "type": "link",
+              "to": "#replaceStackWith(IIngredientWithAmount,",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IItemStack)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "target",
+              "display_name": "target",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              },
+              "extra": {
+                "examples": {
+                  "target": [
+                    "\u003ctag:items:forge:ingots/iron\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The target to replace."
+                }
+              ]
+            },
+            {
+              "key": "replacement",
+              "display_name": "replacement",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "replacement": [
+                    "\u003citem:minecraft:iron_ingot\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The replacement to use."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.ILootModifier",
+            "display_name": "ILootModifier",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "ILootModifier"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "key": "vanilla/api/entity/EntityAccess",
+  "display_name": "EntityAccess",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.entity.EntityAccess",
+    "display_name": "EntityAccess",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.entity",
+    "class_name": "EntityAccess"
+  },
+  "zen_code_name": "crafttweaker.api.entity.EntityAccess",
+  "member_groups": {
+    "blockPosiion": {
+      "key": "blockPosiion",
+      "members": [
+        {
+          "key": "blockPosition",
+          "display_name": "blockPosition",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        },
+        {
+          "key": "blockPosiion",
+          "display_name": "blockPosiion",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        }
+      ]
+    },
+    "boundingBox": {
+      "key": "boundingBox",
+      "members": [
+        {
+          "key": "getBoundingBox",
+          "display_name": "getBoundingBox",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        },
+        {
+          "key": "boundingBox",
+          "display_name": "boundingBox",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.AABB",
+            "display_name": "AABB",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "AABB"
+          }
+        }
+      ]
+    },
+    "id": {
+      "key": "id",
+      "members": [
+        {
+          "key": "getId",
+          "display_name": "getId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isAlwaysTicking": {
+      "key": "isAlwaysTicking",
+      "members": [
+        {
+          "key": "isAlwaysTicking",
+          "display_name": "isAlwaysTicking",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isAlwaysTicking",
+          "display_name": "isAlwaysTicking",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setRemoved": {
+      "key": "setRemoved",
+      "members": [
+        {
+          "key": "setRemoved",
+          "display_name": "setRemoved",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "var1",
+              "display_name": "var1",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity.RemovalReason",
+                "display_name": "RemovalReason",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "RemovalReason"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "shouldBeSaved": {
+      "key": "shouldBeSaved",
+      "members": [
+        {
+          "key": "shouldBeSaved",
+          "display_name": "shouldBeSaved",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "shouldBeSaved",
+          "display_name": "shouldBeSaved",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "uuid": {
+      "key": "uuid",
+      "members": [
+        {
+          "key": "getUUID",
+          "display_name": "getUUID",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.UUID",
+            "display_name": "UUID",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "java.util",
+            "class_name": "UUID"
+          }
+        },
+        {
+          "key": "uuid",
+          "display_name": "uuid",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.UUID",
+            "display_name": "UUID",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "java.util",
+            "class_name": "UUID"
+          }
+        }
+      ]
+    }
+  }
+}

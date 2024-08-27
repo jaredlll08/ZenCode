@@ -1,0 +1,274 @@
+{
+  "key": "vanilla/api/world/damage/DamageEffects",
+  "display_name": "DamageEffects",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:damage/damage_effects"
+  },
+  "type": {
+    "key": "net.minecraft.world.damagesource.DamageEffects",
+    "display_name": "DamageEffects",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.damagesource",
+    "class_name": "DamageEffects",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cDamageEffects\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.damagesource.DamageEffects",
+          "display_name": "DamageEffects",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.damagesource",
+          "class_name": "DamageEffects"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.damage.DamageEffects",
+  "member_groups": {
+    "BURNING": {
+      "key": "BURNING",
+      "members": [
+        {
+          "key": "BURNING",
+          "display_name": "BURNING",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DamageEffects",
+            "display_name": "DamageEffects",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageEffects"
+          }
+        }
+      ]
+    },
+    "DROWNING": {
+      "key": "DROWNING",
+      "members": [
+        {
+          "key": "DROWNING",
+          "display_name": "DROWNING",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DamageEffects",
+            "display_name": "DamageEffects",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageEffects"
+          }
+        }
+      ]
+    },
+    "FREEZING": {
+      "key": "FREEZING",
+      "members": [
+        {
+          "key": "FREEZING",
+          "display_name": "FREEZING",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DamageEffects",
+            "display_name": "DamageEffects",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageEffects"
+          }
+        }
+      ]
+    },
+    "HURT": {
+      "key": "HURT",
+      "members": [
+        {
+          "key": "HURT",
+          "display_name": "HURT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DamageEffects",
+            "display_name": "DamageEffects",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageEffects"
+          }
+        }
+      ]
+    },
+    "POKING": {
+      "key": "POKING",
+      "members": [
+        {
+          "key": "POKING",
+          "display_name": "POKING",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DamageEffects",
+            "display_name": "DamageEffects",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageEffects"
+          }
+        }
+      ]
+    },
+    "THORNS": {
+      "key": "THORNS",
+      "members": [
+        {
+          "key": "THORNS",
+          "display_name": "THORNS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DamageEffects",
+            "display_name": "DamageEffects",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageEffects"
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "sound": {
+      "key": "sound",
+      "members": [
+        {
+          "key": "sound",
+          "display_name": "sound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    }
+  }
+}

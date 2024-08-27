@@ -1,0 +1,30 @@
+{
+  "key": "vanilla/api/misc/CTCauldronInteraction",
+  "display_name": "CTCauldronInteraction",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "(blockState, level, pos, player, hand, stack) \u003d\u003e \u003cconstant:minecraft:world/interactionresult:success\u003e"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Fired when a Cauldron is interacted with."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.misc.CTCauldronInteraction",
+    "display_name": "CTCauldronInteraction",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.misc",
+    "class_name": "CTCauldronInteraction"
+  },
+  "zen_code_name": "crafttweaker.api.misc.CTCauldronInteraction"
+}

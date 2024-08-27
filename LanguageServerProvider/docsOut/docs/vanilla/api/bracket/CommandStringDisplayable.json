@@ -1,0 +1,76 @@
+{
+  "key": "vanilla/api/bracket/CommandStringDisplayable",
+  "display_name": "CommandStringDisplayable",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker",
+      "tags"
+    ],
+    "examples": {
+      "this": [
+        "null"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "This is a helper interface for every object that is returned by a BEP!"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+    "display_name": "CommandStringDisplayable",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.bracket",
+    "class_name": "CommandStringDisplayable"
+  },
+  "zen_code_name": "crafttweaker.api.bracket.CommandStringDisplayable",
+  "member_groups": {
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

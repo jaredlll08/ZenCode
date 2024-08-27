@@ -1,0 +1,183 @@
+{
+  "key": "vanilla/api/block/material/PushReaction",
+  "display_name": "PushReaction",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:material/pushreaction"
+  },
+  "type": {
+    "key": "net.minecraft.world.level.material.PushReaction",
+    "display_name": "PushReaction",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.material",
+    "class_name": "PushReaction",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cPushReaction\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.level.material.PushReaction",
+          "display_name": "PushReaction",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.level.material",
+          "class_name": "PushReaction"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.block.material.PushReaction",
+  "member_groups": {
+    "BLOCK": {
+      "key": "BLOCK",
+      "members": [
+        {
+          "key": "BLOCK",
+          "display_name": "BLOCK",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.material.PushReaction",
+            "display_name": "PushReaction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.material",
+            "class_name": "PushReaction"
+          }
+        }
+      ]
+    },
+    "DESTROY": {
+      "key": "DESTROY",
+      "members": [
+        {
+          "key": "DESTROY",
+          "display_name": "DESTROY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.material.PushReaction",
+            "display_name": "PushReaction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.material",
+            "class_name": "PushReaction"
+          }
+        }
+      ]
+    },
+    "IGNORE": {
+      "key": "IGNORE",
+      "members": [
+        {
+          "key": "IGNORE",
+          "display_name": "IGNORE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.material.PushReaction",
+            "display_name": "PushReaction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.material",
+            "class_name": "PushReaction"
+          }
+        }
+      ]
+    },
+    "NORMAL": {
+      "key": "NORMAL",
+      "members": [
+        {
+          "key": "NORMAL",
+          "display_name": "NORMAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.material.PushReaction",
+            "display_name": "PushReaction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.material",
+            "class_name": "PushReaction"
+          }
+        }
+      ]
+    },
+    "PUSH_ONLY": {
+      "key": "PUSH_ONLY",
+      "members": [
+        {
+          "key": "PUSH_ONLY",
+          "display_name": "PUSH_ONLY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.material.PushReaction",
+            "display_name": "PushReaction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.material",
+            "class_name": "PushReaction"
+          }
+        }
+      ]
+    }
+  }
+}

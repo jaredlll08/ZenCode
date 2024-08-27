@@ -1,0 +1,355 @@
+{
+  "key": "vanilla/api/loot/LootContextBuilder",
+  "display_name": "LootContextBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "new LootContextBuilder(level)"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Creates a new "
+    },
+    {
+      "type": "link",
+      "to": "net.minecraft.world.level.storage.loot.LootContext",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "LootContext"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " using a builder style pattern."
+    }
+  ],
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.LootContext.Builder",
+    "display_name": "Builder",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot",
+    "class_name": "Builder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.loot.LootContextBuilder",
+  "member_groups": {
+    "copy": {
+      "key": "copy",
+      "members": [
+        {
+          "key": "copy",
+          "display_name": "copy",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "context",
+              "display_name": "context",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootContext",
+                "display_name": "LootContext",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "LootContext"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new builder with the given level."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "params",
+              "display_name": "params",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootParams",
+                "display_name": "LootParams",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "LootParams"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The params the loot will be rolled with."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "Builder"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.storage.loot.LootContext",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootContext"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " with the given "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootContextParamSet"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The given"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootContextParamSet"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " is used to determine what values are required for the context to be used."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "key",
+              "display_name": "key",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": true,
+              "default_value": "null",
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "An optional random key used when no seed is provided."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext",
+            "display_name": "LootContext",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "LootContext"
+          }
+        }
+      ]
+    },
+    "level": {
+      "key": "level",
+      "members": [
+        {
+          "key": "getLevel",
+          "display_name": "getLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the level that this builder uses."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.server.level.ServerLevel",
+            "display_name": "ServerLevel",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server.level",
+            "class_name": "ServerLevel"
+          }
+        },
+        {
+          "key": "level",
+          "display_name": "level",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the level that this builder uses."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.server.level.ServerLevel",
+            "display_name": "ServerLevel",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server.level",
+            "class_name": "ServerLevel"
+          }
+        }
+      ]
+    },
+    "withOptionalRandomSeed": {
+      "key": "withOptionalRandomSeed",
+      "members": [
+        {
+          "key": "withOptionalRandomSeed",
+          "display_name": "withOptionalRandomSeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Supplies a seed to be passed into a new "
+            },
+            {
+              "type": "link",
+              "to": "java.util.Random",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Random"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "seed",
+              "display_name": "seed",
+              "type": {
+                "key": "long",
+                "display_name": "long",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "seed": [
+                    "1"
+                  ]
+                }
+              },
+              "optional": true,
+              "default_value": "0",
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The optional seed to use, defaults to "
+                },
+                {
+                  "type": "code",
+                  "content": "0"
+                },
+                {
+                  "type": "plaintext",
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

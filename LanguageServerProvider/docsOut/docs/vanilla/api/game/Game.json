@@ -1,0 +1,685 @@
+{
+  "key": "vanilla/api/game/Game",
+  "display_name": "Game",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.game.Game",
+    "display_name": "Game",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.game",
+    "class_name": "Game",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.game.Game",
+  "member_groups": {
+    "blockStates": {
+      "key": "blockStates",
+      "members": [
+        {
+          "key": "getBlockStates",
+          "display_name": "getBlockStates",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cBlockState\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "blockStates",
+          "display_name": "blockStates",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cBlockState\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "blocks": {
+      "key": "blocks",
+      "members": [
+        {
+          "key": "getBlocks",
+          "display_name": "getBlocks",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cBlock\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "blocks",
+          "display_name": "blocks",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cBlock\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "effects": {
+      "key": "effects",
+      "members": [
+        {
+          "key": "getMobEffects",
+          "display_name": "getMobEffects",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cMobEffect\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.effect.MobEffect",
+                "display_name": "MobEffect",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffect"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "effects",
+          "display_name": "effects",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cMobEffect\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.effect.MobEffect",
+                "display_name": "MobEffect",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffect"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "enchantments": {
+      "key": "enchantments",
+      "members": [
+        {
+          "key": "getEnchantments",
+          "display_name": "getEnchantments",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cEnchantment\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "enchantments",
+          "display_name": "enchantments",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cEnchantment\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "entityTypes": {
+      "key": "entityTypes",
+      "members": [
+        {
+          "key": "getEntityTypes",
+          "display_name": "getEntityTypes",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cEntityType\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.entity.EntityType",
+                "display_name": "EntityType",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "net.minecraft.world.entity.Entity",
+                      "display_name": "Entity",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "net.minecraft.world.entity",
+                      "class_name": "Entity"
+                    },
+                    "bound": "upper"
+                  }
+                },
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "EntityType"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "entityTypes",
+          "display_name": "entityTypes",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cEntityType\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.entity.EntityType",
+                "display_name": "EntityType",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "net.minecraft.world.entity.Entity",
+                      "display_name": "Entity",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "net.minecraft.world.entity",
+                      "class_name": "Entity"
+                    },
+                    "bound": "upper"
+                  }
+                },
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "EntityType"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "fluids": {
+      "key": "fluids",
+      "members": [
+        {
+          "key": "getFluids",
+          "display_name": "getFluids",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cFluid\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.material.Fluid",
+                "display_name": "Fluid",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.material",
+                "class_name": "Fluid"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "fluids",
+          "display_name": "fluids",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cFluid\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.material.Fluid",
+                "display_name": "Fluid",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.material",
+                "class_name": "Fluid"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "items": {
+      "key": "items",
+      "members": [
+        {
+          "key": "getItemStacks",
+          "display_name": "getItemStacks",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cIItemStack\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "items",
+          "display_name": "items",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cIItemStack\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "localize": {
+      "key": "localize",
+      "members": [
+        {
+          "key": "localize",
+          "display_name": "localize",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "translationKey",
+              "display_name": "translationKey",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "translationKey": [
+                    "\"gui.up\""
+                  ]
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "potions": {
+      "key": "potions",
+      "members": [
+        {
+          "key": "getPotions",
+          "display_name": "getPotions",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cPotion\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.alchemy.Potion",
+                "display_name": "Potion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.alchemy",
+                "class_name": "Potion"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "potions",
+          "display_name": "potions",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cPotion\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.alchemy.Potion",
+                "display_name": "Potion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.alchemy",
+                "class_name": "Potion"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "recipeTypes": {
+      "key": "recipeTypes",
+      "members": [
+        {
+          "key": "getRecipeTypes",
+          "display_name": "getRecipeTypes",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cIRecipeManager\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager",
+                "display_name": "IRecipeManager",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "net.minecraft.world.item.crafting.Recipe",
+                      "display_name": "Recipe\u003c?\u003e",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "net.minecraft.world.item.crafting",
+                      "class_name": "Recipe"
+                    },
+                    "bound": "upper"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.recipe.manager.base",
+                "class_name": "IRecipeManager"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "recipeTypes",
+          "display_name": "recipeTypes",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cIRecipeManager\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager",
+                "display_name": "IRecipeManager",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "net.minecraft.world.item.crafting.Recipe",
+                      "display_name": "Recipe\u003c?\u003e",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "net.minecraft.world.item.crafting",
+                      "class_name": "Recipe"
+                    },
+                    "bound": "upper"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.recipe.manager.base",
+                "class_name": "IRecipeManager"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "villagerProfessions": {
+      "key": "villagerProfessions",
+      "members": [
+        {
+          "key": "getVillagerProfessions",
+          "display_name": "getVillagerProfessions",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cVillagerProfession\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "villagerProfessions",
+          "display_name": "villagerProfessions",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cVillagerProfession\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    }
+  }
+}

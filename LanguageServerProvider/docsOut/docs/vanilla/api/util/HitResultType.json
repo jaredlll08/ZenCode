@@ -1,0 +1,143 @@
+{
+  "key": "vanilla/api/util/HitResultType",
+  "display_name": "HitResultType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:hitresult/type"
+  },
+  "type": {
+    "key": "net.minecraft.world.phys.HitResult.Type",
+    "display_name": "Type",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.phys",
+    "class_name": "Type",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cType\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.phys.HitResult.Type",
+          "display_name": "Type",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.phys",
+          "class_name": "Type"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.HitResultType",
+  "member_groups": {
+    "BLOCK": {
+      "key": "BLOCK",
+      "members": [
+        {
+          "key": "BLOCK",
+          "display_name": "BLOCK",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.phys.HitResult.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "ENTITY": {
+      "key": "ENTITY",
+      "members": [
+        {
+          "key": "ENTITY",
+          "display_name": "ENTITY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.phys.HitResult.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "MISS": {
+      "key": "MISS",
+      "members": [
+        {
+          "key": "MISS",
+          "display_name": "MISS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.phys.HitResult.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Type"
+          }
+        }
+      ]
+    }
+  }
+}

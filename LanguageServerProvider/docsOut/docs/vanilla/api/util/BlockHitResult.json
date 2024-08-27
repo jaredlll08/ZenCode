@@ -1,0 +1,303 @@
+{
+  "key": "vanilla/api/util/BlockHitResult",
+  "display_name": "BlockHitResult",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.phys.BlockHitResult",
+    "display_name": "BlockHitResult",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.phys",
+    "class_name": "BlockHitResult",
+    "super_type": {
+      "key": "net.minecraft.world.phys.HitResult",
+      "display_name": "HitResult",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.world.phys",
+      "class_name": "HitResult"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.util.BlockHitResult",
+  "member_groups": {
+    "blockPos": {
+      "key": "blockPos",
+      "members": [
+        {
+          "key": "getBlockPos",
+          "display_name": "getBlockPos",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        },
+        {
+          "key": "blockPos",
+          "display_name": "blockPos",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        }
+      ]
+    },
+    "direction": {
+      "key": "direction",
+      "members": [
+        {
+          "key": "getDirection",
+          "display_name": "getDirection",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "direction",
+          "display_name": "direction",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "distanceTo": {
+      "key": "distanceTo",
+      "members": [
+        {
+          "key": "distanceTo",
+          "display_name": "distanceTo",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isInside": {
+      "key": "isInside",
+      "members": [
+        {
+          "key": "isInside",
+          "display_name": "isInside",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isInside",
+          "display_name": "isInside",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "location": {
+      "key": "location",
+      "members": [
+        {
+          "key": "getLocation",
+          "display_name": "getLocation",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        },
+        {
+          "key": "location",
+          "display_name": "location",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "type": {
+      "key": "type",
+      "members": [
+        {
+          "key": "getType",
+          "display_name": "getType",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.HitResult.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Type"
+          }
+        },
+        {
+          "key": "type",
+          "display_name": "type",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.HitResult.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "withDirection": {
+      "key": "withDirection",
+      "members": [
+        {
+          "key": "withDirection",
+          "display_name": "withDirection",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "param0",
+              "display_name": "param0",
+              "type": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.BlockHitResult",
+            "display_name": "BlockHitResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "BlockHitResult"
+          }
+        }
+      ]
+    },
+    "withPosition": {
+      "key": "withPosition",
+      "members": [
+        {
+          "key": "withPosition",
+          "display_name": "withPosition",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "param0",
+              "display_name": "param0",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.phys.BlockHitResult",
+            "display_name": "BlockHitResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "BlockHitResult"
+          }
+        }
+      ]
+    }
+  }
+}

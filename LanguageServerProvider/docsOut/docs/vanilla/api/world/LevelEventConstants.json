@@ -1,0 +1,1216 @@
+{
+  "key": "vanilla/api/world/LevelEventConstants",
+  "display_name": "LevelEventConstants",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "This is not an event that you can listen to, this just holds fields for use in "
+    },
+    {
+      "type": "link",
+      "to": "LevelAccessor#levelEvent(int,",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "BlockPos, int)"
+        }
+      ],
+      "plain": false
+    }
+  ],
+  "type": {
+    "key": "net.minecraft.world.level.block.LevelEvent",
+    "display_name": "LevelEvent",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.block",
+    "class_name": "LevelEvent",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.LevelEventConstants",
+  "member_groups": {
+    "ANIMATION_DRAGON_SUMMON_ROAR": {
+      "key": "ANIMATION_DRAGON_SUMMON_ROAR",
+      "members": [
+        {
+          "key": "ANIMATION_DRAGON_SUMMON_ROAR",
+          "display_name": "ANIMATION_DRAGON_SUMMON_ROAR",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "ANIMATION_END_GATEWAY_SPAWN": {
+      "key": "ANIMATION_END_GATEWAY_SPAWN",
+      "members": [
+        {
+          "key": "ANIMATION_END_GATEWAY_SPAWN",
+          "display_name": "ANIMATION_END_GATEWAY_SPAWN",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "COMPOSTER_FILL": {
+      "key": "COMPOSTER_FILL",
+      "members": [
+        {
+          "key": "COMPOSTER_FILL",
+          "display_name": "COMPOSTER_FILL",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "DRIPSTONE_DRIP": {
+      "key": "DRIPSTONE_DRIP",
+      "members": [
+        {
+          "key": "DRIPSTONE_DRIP",
+          "display_name": "DRIPSTONE_DRIP",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "END_PORTAL_FRAME_FILL": {
+      "key": "END_PORTAL_FRAME_FILL",
+      "members": [
+        {
+          "key": "END_PORTAL_FRAME_FILL",
+          "display_name": "END_PORTAL_FRAME_FILL",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "LAVA_FIZZ": {
+      "key": "LAVA_FIZZ",
+      "members": [
+        {
+          "key": "LAVA_FIZZ",
+          "display_name": "LAVA_FIZZ",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_AND_SOUND_BRUSH_BLOCK_COMPLETE": {
+      "key": "PARTICLES_AND_SOUND_BRUSH_BLOCK_COMPLETE",
+      "members": [
+        {
+          "key": "PARTICLES_AND_SOUND_BRUSH_BLOCK_COMPLETE",
+          "display_name": "PARTICLES_AND_SOUND_BRUSH_BLOCK_COMPLETE",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_AND_SOUND_PLANT_GROWTH": {
+      "key": "PARTICLES_AND_SOUND_PLANT_GROWTH",
+      "members": [
+        {
+          "key": "PARTICLES_AND_SOUND_PLANT_GROWTH",
+          "display_name": "PARTICLES_AND_SOUND_PLANT_GROWTH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_AND_SOUND_WAX_ON": {
+      "key": "PARTICLES_AND_SOUND_WAX_ON",
+      "members": [
+        {
+          "key": "PARTICLES_AND_SOUND_WAX_ON",
+          "display_name": "PARTICLES_AND_SOUND_WAX_ON",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_DESTROY_BLOCK": {
+      "key": "PARTICLES_DESTROY_BLOCK",
+      "members": [
+        {
+          "key": "PARTICLES_DESTROY_BLOCK",
+          "display_name": "PARTICLES_DESTROY_BLOCK",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_DRAGON_BLOCK_BREAK": {
+      "key": "PARTICLES_DRAGON_BLOCK_BREAK",
+      "members": [
+        {
+          "key": "PARTICLES_DRAGON_BLOCK_BREAK",
+          "display_name": "PARTICLES_DRAGON_BLOCK_BREAK",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_DRAGON_FIREBALL_SPLASH": {
+      "key": "PARTICLES_DRAGON_FIREBALL_SPLASH",
+      "members": [
+        {
+          "key": "PARTICLES_DRAGON_FIREBALL_SPLASH",
+          "display_name": "PARTICLES_DRAGON_FIREBALL_SPLASH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_ELECTRIC_SPARK": {
+      "key": "PARTICLES_ELECTRIC_SPARK",
+      "members": [
+        {
+          "key": "PARTICLES_ELECTRIC_SPARK",
+          "display_name": "PARTICLES_ELECTRIC_SPARK",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_EYE_OF_ENDER_DEATH": {
+      "key": "PARTICLES_EYE_OF_ENDER_DEATH",
+      "members": [
+        {
+          "key": "PARTICLES_EYE_OF_ENDER_DEATH",
+          "display_name": "PARTICLES_EYE_OF_ENDER_DEATH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_INSTANT_POTION_SPLASH": {
+      "key": "PARTICLES_INSTANT_POTION_SPLASH",
+      "members": [
+        {
+          "key": "PARTICLES_INSTANT_POTION_SPLASH",
+          "display_name": "PARTICLES_INSTANT_POTION_SPLASH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_MOBBLOCK_SPAWN": {
+      "key": "PARTICLES_MOBBLOCK_SPAWN",
+      "members": [
+        {
+          "key": "PARTICLES_MOBBLOCK_SPAWN",
+          "display_name": "PARTICLES_MOBBLOCK_SPAWN",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_PLANT_GROWTH": {
+      "key": "PARTICLES_PLANT_GROWTH",
+      "members": [
+        {
+          "key": "PARTICLES_PLANT_GROWTH",
+          "display_name": "PARTICLES_PLANT_GROWTH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_SCRAPE": {
+      "key": "PARTICLES_SCRAPE",
+      "members": [
+        {
+          "key": "PARTICLES_SCRAPE",
+          "display_name": "PARTICLES_SCRAPE",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_SCULK_CHARGE": {
+      "key": "PARTICLES_SCULK_CHARGE",
+      "members": [
+        {
+          "key": "PARTICLES_SCULK_CHARGE",
+          "display_name": "PARTICLES_SCULK_CHARGE",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_SCULK_SHRIEK": {
+      "key": "PARTICLES_SCULK_SHRIEK",
+      "members": [
+        {
+          "key": "PARTICLES_SCULK_SHRIEK",
+          "display_name": "PARTICLES_SCULK_SHRIEK",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_SHOOT": {
+      "key": "PARTICLES_SHOOT",
+      "members": [
+        {
+          "key": "PARTICLES_SHOOT",
+          "display_name": "PARTICLES_SHOOT",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_SPELL_POTION_SPLASH": {
+      "key": "PARTICLES_SPELL_POTION_SPLASH",
+      "members": [
+        {
+          "key": "PARTICLES_SPELL_POTION_SPLASH",
+          "display_name": "PARTICLES_SPELL_POTION_SPLASH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_WATER_EVAPORATING": {
+      "key": "PARTICLES_WATER_EVAPORATING",
+      "members": [
+        {
+          "key": "PARTICLES_WATER_EVAPORATING",
+          "display_name": "PARTICLES_WATER_EVAPORATING",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "PARTICLES_WAX_OFF": {
+      "key": "PARTICLES_WAX_OFF",
+      "members": [
+        {
+          "key": "PARTICLES_WAX_OFF",
+          "display_name": "PARTICLES_WAX_OFF",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "REDSTONE_TORCH_BURNOUT": {
+      "key": "REDSTONE_TORCH_BURNOUT",
+      "members": [
+        {
+          "key": "REDSTONE_TORCH_BURNOUT",
+          "display_name": "REDSTONE_TORCH_BURNOUT",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ANVIL_BROKEN": {
+      "key": "SOUND_ANVIL_BROKEN",
+      "members": [
+        {
+          "key": "SOUND_ANVIL_BROKEN",
+          "display_name": "SOUND_ANVIL_BROKEN",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ANVIL_LAND": {
+      "key": "SOUND_ANVIL_LAND",
+      "members": [
+        {
+          "key": "SOUND_ANVIL_LAND",
+          "display_name": "SOUND_ANVIL_LAND",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ANVIL_USED": {
+      "key": "SOUND_ANVIL_USED",
+      "members": [
+        {
+          "key": "SOUND_ANVIL_USED",
+          "display_name": "SOUND_ANVIL_USED",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_BAT_LIFTOFF": {
+      "key": "SOUND_BAT_LIFTOFF",
+      "members": [
+        {
+          "key": "SOUND_BAT_LIFTOFF",
+          "display_name": "SOUND_BAT_LIFTOFF",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_BLAZE_FIREBALL": {
+      "key": "SOUND_BLAZE_FIREBALL",
+      "members": [
+        {
+          "key": "SOUND_BLAZE_FIREBALL",
+          "display_name": "SOUND_BLAZE_FIREBALL",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_BREWING_STAND_BREW": {
+      "key": "SOUND_BREWING_STAND_BREW",
+      "members": [
+        {
+          "key": "SOUND_BREWING_STAND_BREW",
+          "display_name": "SOUND_BREWING_STAND_BREW",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_CHORUS_DEATH": {
+      "key": "SOUND_CHORUS_DEATH",
+      "members": [
+        {
+          "key": "SOUND_CHORUS_DEATH",
+          "display_name": "SOUND_CHORUS_DEATH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_CHORUS_GROW": {
+      "key": "SOUND_CHORUS_GROW",
+      "members": [
+        {
+          "key": "SOUND_CHORUS_GROW",
+          "display_name": "SOUND_CHORUS_GROW",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_DISPENSER_DISPENSE": {
+      "key": "SOUND_DISPENSER_DISPENSE",
+      "members": [
+        {
+          "key": "SOUND_DISPENSER_DISPENSE",
+          "display_name": "SOUND_DISPENSER_DISPENSE",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_DISPENSER_FAIL": {
+      "key": "SOUND_DISPENSER_FAIL",
+      "members": [
+        {
+          "key": "SOUND_DISPENSER_FAIL",
+          "display_name": "SOUND_DISPENSER_FAIL",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_DISPENSER_PROJECTILE_LAUNCH": {
+      "key": "SOUND_DISPENSER_PROJECTILE_LAUNCH",
+      "members": [
+        {
+          "key": "SOUND_DISPENSER_PROJECTILE_LAUNCH",
+          "display_name": "SOUND_DISPENSER_PROJECTILE_LAUNCH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_DRAGON_DEATH": {
+      "key": "SOUND_DRAGON_DEATH",
+      "members": [
+        {
+          "key": "SOUND_DRAGON_DEATH",
+          "display_name": "SOUND_DRAGON_DEATH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_DRAGON_FIREBALL": {
+      "key": "SOUND_DRAGON_FIREBALL",
+      "members": [
+        {
+          "key": "SOUND_DRAGON_FIREBALL",
+          "display_name": "SOUND_DRAGON_FIREBALL",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_DRIP_LAVA_INTO_CAULDRON": {
+      "key": "SOUND_DRIP_LAVA_INTO_CAULDRON",
+      "members": [
+        {
+          "key": "SOUND_DRIP_LAVA_INTO_CAULDRON",
+          "display_name": "SOUND_DRIP_LAVA_INTO_CAULDRON",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_DRIP_WATER_INTO_CAULDRON": {
+      "key": "SOUND_DRIP_WATER_INTO_CAULDRON",
+      "members": [
+        {
+          "key": "SOUND_DRIP_WATER_INTO_CAULDRON",
+          "display_name": "SOUND_DRIP_WATER_INTO_CAULDRON",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ENDER_EYE_LAUNCH": {
+      "key": "SOUND_ENDER_EYE_LAUNCH",
+      "members": [
+        {
+          "key": "SOUND_ENDER_EYE_LAUNCH",
+          "display_name": "SOUND_ENDER_EYE_LAUNCH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_END_PORTAL_SPAWN": {
+      "key": "SOUND_END_PORTAL_SPAWN",
+      "members": [
+        {
+          "key": "SOUND_END_PORTAL_SPAWN",
+          "display_name": "SOUND_END_PORTAL_SPAWN",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_EXTINGUISH_FIRE": {
+      "key": "SOUND_EXTINGUISH_FIRE",
+      "members": [
+        {
+          "key": "SOUND_EXTINGUISH_FIRE",
+          "display_name": "SOUND_EXTINGUISH_FIRE",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_FIREWORK_SHOOT": {
+      "key": "SOUND_FIREWORK_SHOOT",
+      "members": [
+        {
+          "key": "SOUND_FIREWORK_SHOOT",
+          "display_name": "SOUND_FIREWORK_SHOOT",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_GHAST_FIREBALL": {
+      "key": "SOUND_GHAST_FIREBALL",
+      "members": [
+        {
+          "key": "SOUND_GHAST_FIREBALL",
+          "display_name": "SOUND_GHAST_FIREBALL",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_GHAST_WARNING": {
+      "key": "SOUND_GHAST_WARNING",
+      "members": [
+        {
+          "key": "SOUND_GHAST_WARNING",
+          "display_name": "SOUND_GHAST_WARNING",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_GRINDSTONE_USED": {
+      "key": "SOUND_GRINDSTONE_USED",
+      "members": [
+        {
+          "key": "SOUND_GRINDSTONE_USED",
+          "display_name": "SOUND_GRINDSTONE_USED",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_HUSK_TO_ZOMBIE": {
+      "key": "SOUND_HUSK_TO_ZOMBIE",
+      "members": [
+        {
+          "key": "SOUND_HUSK_TO_ZOMBIE",
+          "display_name": "SOUND_HUSK_TO_ZOMBIE",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_PAGE_TURN": {
+      "key": "SOUND_PAGE_TURN",
+      "members": [
+        {
+          "key": "SOUND_PAGE_TURN",
+          "display_name": "SOUND_PAGE_TURN",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_PHANTOM_BITE": {
+      "key": "SOUND_PHANTOM_BITE",
+      "members": [
+        {
+          "key": "SOUND_PHANTOM_BITE",
+          "display_name": "SOUND_PHANTOM_BITE",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_PLAY_JUKEBOX_SONG": {
+      "key": "SOUND_PLAY_JUKEBOX_SONG",
+      "members": [
+        {
+          "key": "SOUND_PLAY_JUKEBOX_SONG",
+          "display_name": "SOUND_PLAY_JUKEBOX_SONG",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_POINTED_DRIPSTONE_LAND": {
+      "key": "SOUND_POINTED_DRIPSTONE_LAND",
+      "members": [
+        {
+          "key": "SOUND_POINTED_DRIPSTONE_LAND",
+          "display_name": "SOUND_POINTED_DRIPSTONE_LAND",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_PORTAL_TRAVEL": {
+      "key": "SOUND_PORTAL_TRAVEL",
+      "members": [
+        {
+          "key": "SOUND_PORTAL_TRAVEL",
+          "display_name": "SOUND_PORTAL_TRAVEL",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_SKELETON_TO_STRAY": {
+      "key": "SOUND_SKELETON_TO_STRAY",
+      "members": [
+        {
+          "key": "SOUND_SKELETON_TO_STRAY",
+          "display_name": "SOUND_SKELETON_TO_STRAY",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_SMITHING_TABLE_USED": {
+      "key": "SOUND_SMITHING_TABLE_USED",
+      "members": [
+        {
+          "key": "SOUND_SMITHING_TABLE_USED",
+          "display_name": "SOUND_SMITHING_TABLE_USED",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_STOP_JUKEBOX_SONG": {
+      "key": "SOUND_STOP_JUKEBOX_SONG",
+      "members": [
+        {
+          "key": "SOUND_STOP_JUKEBOX_SONG",
+          "display_name": "SOUND_STOP_JUKEBOX_SONG",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_WITHER_BLOCK_BREAK": {
+      "key": "SOUND_WITHER_BLOCK_BREAK",
+      "members": [
+        {
+          "key": "SOUND_WITHER_BLOCK_BREAK",
+          "display_name": "SOUND_WITHER_BLOCK_BREAK",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_WITHER_BOSS_SHOOT": {
+      "key": "SOUND_WITHER_BOSS_SHOOT",
+      "members": [
+        {
+          "key": "SOUND_WITHER_BOSS_SHOOT",
+          "display_name": "SOUND_WITHER_BOSS_SHOOT",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_WITHER_BOSS_SPAWN": {
+      "key": "SOUND_WITHER_BOSS_SPAWN",
+      "members": [
+        {
+          "key": "SOUND_WITHER_BOSS_SPAWN",
+          "display_name": "SOUND_WITHER_BOSS_SPAWN",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ZOMBIE_CONVERTED": {
+      "key": "SOUND_ZOMBIE_CONVERTED",
+      "members": [
+        {
+          "key": "SOUND_ZOMBIE_CONVERTED",
+          "display_name": "SOUND_ZOMBIE_CONVERTED",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ZOMBIE_DOOR_CRASH": {
+      "key": "SOUND_ZOMBIE_DOOR_CRASH",
+      "members": [
+        {
+          "key": "SOUND_ZOMBIE_DOOR_CRASH",
+          "display_name": "SOUND_ZOMBIE_DOOR_CRASH",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ZOMBIE_INFECTED": {
+      "key": "SOUND_ZOMBIE_INFECTED",
+      "members": [
+        {
+          "key": "SOUND_ZOMBIE_INFECTED",
+          "display_name": "SOUND_ZOMBIE_INFECTED",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ZOMBIE_IRON_DOOR": {
+      "key": "SOUND_ZOMBIE_IRON_DOOR",
+      "members": [
+        {
+          "key": "SOUND_ZOMBIE_IRON_DOOR",
+          "display_name": "SOUND_ZOMBIE_IRON_DOOR",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ZOMBIE_TO_DROWNED": {
+      "key": "SOUND_ZOMBIE_TO_DROWNED",
+      "members": [
+        {
+          "key": "SOUND_ZOMBIE_TO_DROWNED",
+          "display_name": "SOUND_ZOMBIE_TO_DROWNED",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "SOUND_ZOMBIE_WOODEN_DOOR": {
+      "key": "SOUND_ZOMBIE_WOODEN_DOOR",
+      "members": [
+        {
+          "key": "SOUND_ZOMBIE_WOODEN_DOOR",
+          "display_name": "SOUND_ZOMBIE_WOODEN_DOOR",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "key": "vanilla/api/item/ItemCooldowns",
+  "display_name": "ItemCooldowns",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.ItemCooldowns",
+    "display_name": "ItemCooldowns",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item",
+    "class_name": "ItemCooldowns",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.item.ItemCooldowns",
+  "member_groups": {
+    "addCooldown": {
+      "key": "addCooldown",
+      "members": [
+        {
+          "key": "addCooldown",
+          "display_name": "addCooldown",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false
+            },
+            {
+              "key": "ticks",
+              "display_name": "ticks",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "contains": {
+      "key": "contains",
+      "members": [
+        {
+          "key": "isOnCooldown",
+          "display_name": "isOnCooldown",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        }
+      ]
+    },
+    "getCooldownPercent": {
+      "key": "getCooldownPercent",
+      "members": [
+        {
+          "key": "getCooldownPercent",
+          "display_name": "getCooldownPercent",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false
+            },
+            {
+              "key": "partialTicks",
+              "display_name": "partialTicks",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isOnCooldown": {
+      "key": "isOnCooldown",
+      "members": [
+        {
+          "key": "isOnCooldown",
+          "display_name": "isOnCooldown",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeCooldown": {
+      "key": "removeCooldown",
+      "members": [
+        {
+          "key": "removeCooldown",
+          "display_name": "removeCooldown",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

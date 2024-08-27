@@ -1,0 +1,201 @@
+{
+  "key": "vanilla/api/item/type/armor/ArmorItemType",
+  "display_name": "ArmorItemType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:armor/type"
+  },
+  "type": {
+    "key": "net.minecraft.world.item.ArmorItem.Type",
+    "display_name": "Type",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item",
+    "class_name": "Type",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cType\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.item.ArmorItem.Type",
+          "display_name": "Type",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.item",
+          "class_name": "Type"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.item.type.armor.ArmorItem.Type",
+  "member_groups": {
+    "BOOTS": {
+      "key": "BOOTS",
+      "members": [
+        {
+          "key": "BOOTS",
+          "display_name": "BOOTS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.ArmorItem.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "CHESTPLATE": {
+      "key": "CHESTPLATE",
+      "members": [
+        {
+          "key": "CHESTPLATE",
+          "display_name": "CHESTPLATE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.ArmorItem.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "HELMET": {
+      "key": "HELMET",
+      "members": [
+        {
+          "key": "HELMET",
+          "display_name": "HELMET",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.ArmorItem.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "LEGGINGS": {
+      "key": "LEGGINGS",
+      "members": [
+        {
+          "key": "LEGGINGS",
+          "display_name": "LEGGINGS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.ArmorItem.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Type"
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "slot": {
+      "key": "slot",
+      "members": [
+        {
+          "key": "slot",
+          "display_name": "slot",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot",
+            "display_name": "EquipmentSlot",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EquipmentSlot"
+          }
+        }
+      ]
+    }
+  }
+}

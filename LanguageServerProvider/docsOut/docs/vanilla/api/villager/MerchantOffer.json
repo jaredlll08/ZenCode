@@ -1,0 +1,760 @@
+{
+  "key": "vanilla/api/villager/MerchantOffer",
+  "display_name": "MerchantOffer",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.trading.MerchantOffer",
+    "display_name": "MerchantOffer",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item.trading",
+    "class_name": "MerchantOffer",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.villager.MerchantOffer",
+  "member_groups": {
+    "addToSpecialPriceDiff": {
+      "key": "addToSpecialPriceDiff",
+      "members": [
+        {
+          "key": "addToSpecialPriceDiff",
+          "display_name": "addToSpecialPriceDiff",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "specialPriceDiff",
+              "display_name": "specialPriceDiff",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "assemble": {
+      "key": "assemble",
+      "members": [
+        {
+          "key": "assemble",
+          "display_name": "assemble",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "baseCostA": {
+      "key": "baseCostA",
+      "members": [
+        {
+          "key": "getBaseCostA",
+          "display_name": "getBaseCostA",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        },
+        {
+          "key": "baseCostA",
+          "display_name": "baseCostA",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "costA": {
+      "key": "costA",
+      "members": [
+        {
+          "key": "getCostA",
+          "display_name": "getCostA",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        },
+        {
+          "key": "costA",
+          "display_name": "costA",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "costB": {
+      "key": "costB",
+      "members": [
+        {
+          "key": "getCostB",
+          "display_name": "getCostB",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        },
+        {
+          "key": "costB",
+          "display_name": "costB",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "createTag": {
+      "key": "createTag",
+      "members": [
+        {
+          "key": "createTag",
+          "display_name": "createTag",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    },
+    "demand": {
+      "key": "demand",
+      "members": [
+        {
+          "key": "getDemand",
+          "display_name": "getDemand",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "demand",
+          "display_name": "demand",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "increaseUses": {
+      "key": "increaseUses",
+      "members": [
+        {
+          "key": "increaseUses",
+          "display_name": "increaseUses",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "maxUses": {
+      "key": "maxUses",
+      "members": [
+        {
+          "key": "getMaxUses",
+          "display_name": "getMaxUses",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "maxUses",
+          "display_name": "maxUses",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "needsRestock": {
+      "key": "needsRestock",
+      "members": [
+        {
+          "key": "needsRestock",
+          "display_name": "needsRestock",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "needsRestock",
+          "display_name": "needsRestock",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "outOfStock": {
+      "key": "outOfStock",
+      "members": [
+        {
+          "key": "isOutOfStock",
+          "display_name": "isOutOfStock",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "outOfStock",
+          "display_name": "outOfStock",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "priceMultiplier": {
+      "key": "priceMultiplier",
+      "members": [
+        {
+          "key": "getPriceMultiplier",
+          "display_name": "getPriceMultiplier",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "priceMultiplier",
+          "display_name": "priceMultiplier",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "resetSpecialPriceDiff": {
+      "key": "resetSpecialPriceDiff",
+      "members": [
+        {
+          "key": "resetSpecialPriceDiff",
+          "display_name": "resetSpecialPriceDiff",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "resetUses": {
+      "key": "resetUses",
+      "members": [
+        {
+          "key": "resetUses",
+          "display_name": "resetUses",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "result": {
+      "key": "result",
+      "members": [
+        {
+          "key": "getResult",
+          "display_name": "getResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        },
+        {
+          "key": "result",
+          "display_name": "result",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "satisfiedBy": {
+      "key": "satisfiedBy",
+      "members": [
+        {
+          "key": "satisfiedBy",
+          "display_name": "satisfiedBy",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "a",
+              "display_name": "a",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            },
+            {
+              "key": "b",
+              "display_name": "b",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setToOutOfStock": {
+      "key": "setToOutOfStock",
+      "members": [
+        {
+          "key": "setToOutOfStock",
+          "display_name": "setToOutOfStock",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "shouldRewardExp": {
+      "key": "shouldRewardExp",
+      "members": [
+        {
+          "key": "shouldRewardExp",
+          "display_name": "shouldRewardExp",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "shouldRewardExp",
+          "display_name": "shouldRewardExp",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "specialPriceDiff": {
+      "key": "specialPriceDiff",
+      "members": [
+        {
+          "key": "getSpecialPriceDiff",
+          "display_name": "getSpecialPriceDiff",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "specialPriceDiff",
+          "display_name": "specialPriceDiff",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setSpecialPriceDiff",
+          "display_name": "setSpecialPriceDiff",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "specialPriceDiff",
+              "display_name": "specialPriceDiff",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "specialPriceDiff",
+          "display_name": "specialPriceDiff",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.item.trading.MerchantOffer",
+                "display_name": "MerchantOffer",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.trading",
+                "class_name": "MerchantOffer"
+              },
+              "optional": false
+            },
+            {
+              "key": "specialPriceDiff",
+              "display_name": "specialPriceDiff",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "take": {
+      "key": "take",
+      "members": [
+        {
+          "key": "take",
+          "display_name": "take",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "a",
+              "display_name": "a",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            },
+            {
+              "key": "b",
+              "display_name": "b",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "updateDemand": {
+      "key": "updateDemand",
+      "members": [
+        {
+          "key": "updateDemand",
+          "display_name": "updateDemand",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "uses": {
+      "key": "uses",
+      "members": [
+        {
+          "key": "getUses",
+          "display_name": "getUses",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "uses",
+          "display_name": "uses",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "xp": {
+      "key": "xp",
+      "members": [
+        {
+          "key": "getXp",
+          "display_name": "getXp",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "xp",
+          "display_name": "xp",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

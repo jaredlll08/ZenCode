@@ -1,0 +1,218 @@
+{
+  "key": "vanilla/api/item/property/Rarity",
+  "display_name": "Rarity",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:item/rarity"
+  },
+  "type": {
+    "key": "net.minecraft.world.item.Rarity",
+    "display_name": "Rarity",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item",
+    "class_name": "Rarity",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cRarity\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.item.Rarity",
+          "display_name": "Rarity",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.item",
+          "class_name": "Rarity"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraftforge.common.IExtensibleEnum",
+        "display_name": "IExtensibleEnum",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common",
+        "class_name": "IExtensibleEnum"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.item.property.Rarity",
+  "member_groups": {
+    "COMMON": {
+      "key": "COMMON",
+      "members": [
+        {
+          "key": "COMMON",
+          "display_name": "COMMON",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.Rarity",
+            "display_name": "Rarity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Rarity"
+          }
+        }
+      ]
+    },
+    "EPIC": {
+      "key": "EPIC",
+      "members": [
+        {
+          "key": "EPIC",
+          "display_name": "EPIC",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.Rarity",
+            "display_name": "Rarity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Rarity"
+          }
+        }
+      ]
+    },
+    "RARE": {
+      "key": "RARE",
+      "members": [
+        {
+          "key": "RARE",
+          "display_name": "RARE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.Rarity",
+            "display_name": "Rarity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Rarity"
+          }
+        }
+      ]
+    },
+    "UNCOMMON": {
+      "key": "UNCOMMON",
+      "members": [
+        {
+          "key": "UNCOMMON",
+          "display_name": "UNCOMMON",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.item.Rarity",
+            "display_name": "Rarity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Rarity"
+          }
+        }
+      ]
+    },
+    "color": {
+      "key": "color",
+      "members": [
+        {
+          "key": "color",
+          "display_name": "color",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the color of this Rarity"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        },
+        {
+          "key": "color",
+          "display_name": "color",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the color of this Rarity"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    }
+  }
+}

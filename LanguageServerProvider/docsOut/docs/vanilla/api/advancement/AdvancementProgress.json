@@ -1,0 +1,272 @@
+{
+  "key": "vanilla/api/advancement/AdvancementProgress",
+  "display_name": "AdvancementProgress",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.AdvancementProgress",
+    "display_name": "AdvancementProgress",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements",
+    "class_name": "AdvancementProgress",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cAdvancementProgress\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.advancements.AdvancementProgress",
+            "display_name": "AdvancementProgress",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "AdvancementProgress"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.advancement.AdvancementProgress",
+  "member_groups": {
+    "completedCriteria": {
+      "key": "completedCriteria",
+      "members": [
+        {
+          "key": "completedCriteria",
+          "display_name": "completedCriteria",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "done": {
+      "key": "done",
+      "members": [
+        {
+          "key": "done",
+          "display_name": "done",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getCriterion": {
+      "key": "getCriterion",
+      "members": [
+        {
+          "key": "getCriterion",
+          "display_name": "getCriterion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "criterionName",
+              "display_name": "criterionName",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.CriterionProgress",
+            "display_name": "CriterionProgress",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "CriterionProgress"
+          }
+        }
+      ]
+    },
+    "grantProgress": {
+      "key": "grantProgress",
+      "members": [
+        {
+          "key": "grantProgress",
+          "display_name": "grantProgress",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "criterionName",
+              "display_name": "criterionName",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasProgress": {
+      "key": "hasProgress",
+      "members": [
+        {
+          "key": "hasProgress",
+          "display_name": "hasProgress",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "percent": {
+      "key": "percent",
+      "members": [
+        {
+          "key": "percent",
+          "display_name": "percent",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "progressText": {
+      "key": "progressText",
+      "members": [
+        {
+          "key": "progressText",
+          "display_name": "progressText",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "remainingCriteria": {
+      "key": "remainingCriteria",
+      "members": [
+        {
+          "key": "remainingCriteria",
+          "display_name": "remainingCriteria",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "revokeProgress": {
+      "key": "revokeProgress",
+      "members": [
+        {
+          "key": "revokeProgress",
+          "display_name": "revokeProgress",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "criterionName",
+              "display_name": "criterionName",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

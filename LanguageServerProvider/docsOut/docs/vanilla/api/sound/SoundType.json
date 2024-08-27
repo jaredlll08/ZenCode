@@ -1,0 +1,266 @@
+{
+  "key": "vanilla/api/sound/SoundType",
+  "display_name": "SoundType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.block.SoundType",
+    "display_name": "SoundType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.block",
+    "class_name": "SoundType",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.sound.SoundType",
+  "member_groups": {
+    "breakSound": {
+      "key": "breakSound",
+      "members": [
+        {
+          "key": "getBreakSound",
+          "display_name": "getBreakSound",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        },
+        {
+          "key": "breakSound",
+          "display_name": "breakSound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    },
+    "fallSound": {
+      "key": "fallSound",
+      "members": [
+        {
+          "key": "getFallSound",
+          "display_name": "getFallSound",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        },
+        {
+          "key": "fallSound",
+          "display_name": "fallSound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    },
+    "hitSound": {
+      "key": "hitSound",
+      "members": [
+        {
+          "key": "getHitSound",
+          "display_name": "getHitSound",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        },
+        {
+          "key": "hitSound",
+          "display_name": "hitSound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    },
+    "pitch": {
+      "key": "pitch",
+      "members": [
+        {
+          "key": "getPitch",
+          "display_name": "getPitch",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "pitch",
+          "display_name": "pitch",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "placeSound": {
+      "key": "placeSound",
+      "members": [
+        {
+          "key": "getPlaceSound",
+          "display_name": "getPlaceSound",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        },
+        {
+          "key": "placeSound",
+          "display_name": "placeSound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    },
+    "stepSound": {
+      "key": "stepSound",
+      "members": [
+        {
+          "key": "getStepSound",
+          "display_name": "getStepSound",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        },
+        {
+          "key": "stepSound",
+          "display_name": "stepSound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    },
+    "volume": {
+      "key": "volume",
+      "members": [
+        {
+          "key": "getVolume",
+          "display_name": "getVolume",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "volume",
+          "display_name": "volume",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

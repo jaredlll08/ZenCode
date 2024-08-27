@@ -1,0 +1,815 @@
+{
+  "key": "vanilla/api/loot/param/LootContextParamSets",
+  "display_name": "LootContextParamSets",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "These are pre-registered param sets that are used by vanilla."
+    }
+  ],
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSets",
+    "display_name": "LootContextParamSets",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot.parameters",
+    "class_name": "LootContextParamSets",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.loot.param.LootContextParamSets",
+  "member_groups": {
+    "advancementEntity": {
+      "key": "advancementEntity",
+      "members": [
+        {
+          "key": "advancementEntity",
+          "display_name": "advancementEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027advancement_entity\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027advancement_entity\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "advancementLocation": {
+      "key": "advancementLocation",
+      "members": [
+        {
+          "key": "advancementLocation",
+          "display_name": "advancementLocation",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027advancement_entity\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027advancement_entity\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "advancementReward": {
+      "key": "advancementReward",
+      "members": [
+        {
+          "key": "advancementReward",
+          "display_name": "advancementReward",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027advancement_reward\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027advancement_reward\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "allParams": {
+      "key": "allParams",
+      "members": [
+        {
+          "key": "allParams",
+          "display_name": "allParams",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027generic\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027generic\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "last_damage_player"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "damage_source"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "killer_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "direct_killer_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "block_state"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "block_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "tool"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "explosion_radius"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "block": {
+      "key": "block",
+      "members": [
+        {
+          "key": "block",
+          "display_name": "block",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027block\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027block\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "block_state"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "tool"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027block\u0027 param set can optionally use:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "block_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "explosion_radius"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "chest": {
+      "key": "chest",
+      "members": [
+        {
+          "key": "chest",
+          "display_name": "chest",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027chest\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027chest\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027chest\u0027 param set can optionally use:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "command": {
+      "key": "command",
+      "members": [
+        {
+          "key": "command",
+          "display_name": "command",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027command\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027command\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027command\u0027 param set can optionally use:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "empty": {
+      "key": "empty",
+      "members": [
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027empty\u0027 param set."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "entity": {
+      "key": "entity",
+      "members": [
+        {
+          "key": "entity",
+          "display_name": "entity",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027entity\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027entity\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "damage_source"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027entity\u0027 param set can optionally use:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "killer_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "direct_killer_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "last_damage_player"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "fishing": {
+      "key": "fishing",
+      "members": [
+        {
+          "key": "fishing",
+          "display_name": "fishing",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027fishing\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027fishing\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "tool"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027fishing\u0027 param set can optionally use:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "get": {
+      "key": "get",
+      "members": [
+        {
+          "key": "get",
+          "display_name": "get",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a param set from its name."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Will throw an exception if no param set is registered for the given name."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the param."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "gift": {
+      "key": "gift",
+      "members": [
+        {
+          "key": "gift",
+          "display_name": "gift",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027gift\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027gift\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "piglinBarter": {
+      "key": "piglinBarter",
+      "members": [
+        {
+          "key": "piglinBarter",
+          "display_name": "piglinBarter",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027barter\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027barter\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    },
+    "selector": {
+      "key": "selector",
+      "members": [
+        {
+          "key": "selector",
+          "display_name": "selector",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the \u0027selector\u0027 param set."
+            },
+            {
+              "type": "plaintext",
+              "content": "The \u0027selector\u0027 param set requires the following params:\r\n \u003cul\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "origin"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003cli\u003e"
+            },
+            {
+              "type": "code",
+              "content": "this_entity"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003c/li\u003e\r\n \u003c/ul\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    }
+  }
+}

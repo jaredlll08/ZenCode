@@ -1,0 +1,53 @@
+{
+  "key": "vanilla/api/text/Message",
+  "display_name": "Message",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.mojang.brigadier.Message",
+    "display_name": "Message",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.mojang.brigadier",
+    "class_name": "Message"
+  },
+  "zen_code_name": "crafttweaker.api.text.Message",
+  "member_groups": {
+    "getString": {
+      "key": "getString",
+      "members": [
+        {
+          "key": "getString",
+          "display_name": "getString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "getString",
+          "display_name": "getString",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": true
+        }
+      ]
+    }
+  }
+}

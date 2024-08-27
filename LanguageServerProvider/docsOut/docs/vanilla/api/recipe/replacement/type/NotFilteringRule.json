@@ -1,0 +1,115 @@
+{
+  "key": "vanilla/api/recipe/replacement/type/NotFilteringRule",
+  "display_name": "NotFilteringRule",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Inverts a filtering rule."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "This rule should be used sparingly as it incurs a performance loss due to having to loop over all recipes multiple\r\n times to perform the inversion of the rule."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.NotFilteringRule",
+    "display_name": "NotFilteringRule",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+    "class_name": "NotFilteringRule",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+        "display_name": "IFilteringRule",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "IFilteringRule"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+        "display_name": "ITargetingFilter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "ITargetingFilter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.type.NotFilteringRule",
+  "member_groups": {
+    "of": {
+      "key": "of",
+      "members": [
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Inverts the specified rule."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "rule",
+              "display_name": "rule",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+                "display_name": "IFilteringRule",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+                "class_name": "IFilteringRule"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The rule to invert."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.NotFilteringRule",
+            "display_name": "NotFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "NotFilteringRule"
+          }
+        }
+      ]
+    }
+  }
+}

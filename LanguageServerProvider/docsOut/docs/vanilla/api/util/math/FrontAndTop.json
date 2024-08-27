@@ -1,0 +1,444 @@
+{
+  "key": "vanilla/api/util/math/FrontAndTop",
+  "display_name": "FrontAndTop",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:direction/frontandtop"
+  },
+  "type": {
+    "key": "net.minecraft.core.FrontAndTop",
+    "display_name": "FrontAndTop",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.core",
+    "class_name": "FrontAndTop",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cFrontAndTop\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.core.FrontAndTop",
+          "display_name": "FrontAndTop",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.core",
+          "class_name": "FrontAndTop"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.math.FrontAndTop",
+  "member_groups": {
+    "DOWN_EAST": {
+      "key": "DOWN_EAST",
+      "members": [
+        {
+          "key": "DOWN_EAST",
+          "display_name": "DOWN_EAST",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "DOWN_NORTH": {
+      "key": "DOWN_NORTH",
+      "members": [
+        {
+          "key": "DOWN_NORTH",
+          "display_name": "DOWN_NORTH",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "DOWN_SOUTH": {
+      "key": "DOWN_SOUTH",
+      "members": [
+        {
+          "key": "DOWN_SOUTH",
+          "display_name": "DOWN_SOUTH",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "DOWN_WEST": {
+      "key": "DOWN_WEST",
+      "members": [
+        {
+          "key": "DOWN_WEST",
+          "display_name": "DOWN_WEST",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "EAST_UP": {
+      "key": "EAST_UP",
+      "members": [
+        {
+          "key": "EAST_UP",
+          "display_name": "EAST_UP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "NORTH_UP": {
+      "key": "NORTH_UP",
+      "members": [
+        {
+          "key": "NORTH_UP",
+          "display_name": "NORTH_UP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "SOUTH_UP": {
+      "key": "SOUTH_UP",
+      "members": [
+        {
+          "key": "SOUTH_UP",
+          "display_name": "SOUTH_UP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "UP_EAST": {
+      "key": "UP_EAST",
+      "members": [
+        {
+          "key": "UP_EAST",
+          "display_name": "UP_EAST",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "UP_NORTH": {
+      "key": "UP_NORTH",
+      "members": [
+        {
+          "key": "UP_NORTH",
+          "display_name": "UP_NORTH",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "UP_SOUTH": {
+      "key": "UP_SOUTH",
+      "members": [
+        {
+          "key": "UP_SOUTH",
+          "display_name": "UP_SOUTH",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "UP_WEST": {
+      "key": "UP_WEST",
+      "members": [
+        {
+          "key": "UP_WEST",
+          "display_name": "UP_WEST",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "WEST_UP": {
+      "key": "WEST_UP",
+      "members": [
+        {
+          "key": "WEST_UP",
+          "display_name": "WEST_UP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "front": {
+      "key": "front",
+      "members": [
+        {
+          "key": "front",
+          "display_name": "front",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "front",
+          "display_name": "front",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "top": {
+      "key": "top",
+      "members": [
+        {
+          "key": "top",
+          "display_name": "top",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "top",
+          "display_name": "top",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    }
+  }
+}

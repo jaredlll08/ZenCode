@@ -1,0 +1,331 @@
+{
+  "key": "vanilla/api/entity/equipment/EquipmentSlot",
+  "display_name": "EquipmentSlot",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:equipmentslot"
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.EquipmentSlot",
+    "display_name": "EquipmentSlot",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity",
+    "class_name": "EquipmentSlot",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cEquipmentSlot\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.entity.EquipmentSlot",
+          "display_name": "EquipmentSlot",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.entity",
+          "class_name": "EquipmentSlot"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.equipment.EquipmentSlot",
+  "member_groups": {
+    "CHEST": {
+      "key": "CHEST",
+      "members": [
+        {
+          "key": "CHEST",
+          "display_name": "CHEST",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot",
+            "display_name": "EquipmentSlot",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EquipmentSlot"
+          }
+        }
+      ]
+    },
+    "FEET": {
+      "key": "FEET",
+      "members": [
+        {
+          "key": "FEET",
+          "display_name": "FEET",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot",
+            "display_name": "EquipmentSlot",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EquipmentSlot"
+          }
+        }
+      ]
+    },
+    "HEAD": {
+      "key": "HEAD",
+      "members": [
+        {
+          "key": "HEAD",
+          "display_name": "HEAD",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot",
+            "display_name": "EquipmentSlot",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EquipmentSlot"
+          }
+        }
+      ]
+    },
+    "LEGS": {
+      "key": "LEGS",
+      "members": [
+        {
+          "key": "LEGS",
+          "display_name": "LEGS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot",
+            "display_name": "EquipmentSlot",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EquipmentSlot"
+          }
+        }
+      ]
+    },
+    "MAINHAND": {
+      "key": "MAINHAND",
+      "members": [
+        {
+          "key": "MAINHAND",
+          "display_name": "MAINHAND",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot",
+            "display_name": "EquipmentSlot",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EquipmentSlot"
+          }
+        }
+      ]
+    },
+    "OFFHAND": {
+      "key": "OFFHAND",
+      "members": [
+        {
+          "key": "OFFHAND",
+          "display_name": "OFFHAND",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot",
+            "display_name": "EquipmentSlot",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "EquipmentSlot"
+          }
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "index": {
+      "key": "index",
+      "members": [
+        {
+          "key": "getIndex",
+          "display_name": "getIndex",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "index",
+          "display_name": "index",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "type": {
+      "key": "type",
+      "members": [
+        {
+          "key": "getType",
+          "display_name": "getType",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Type"
+          }
+        },
+        {
+          "key": "type",
+          "display_name": "type",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.EquipmentSlot.Type",
+            "display_name": "Type",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Type"
+          }
+        }
+      ]
+    }
+  }
+}

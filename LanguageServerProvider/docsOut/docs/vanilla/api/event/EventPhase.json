@@ -1,0 +1,172 @@
+{
+  "key": "vanilla/api/event/EventPhase",
+  "display_name": "EventPhase",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "eventphase",
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "11.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Represents a phase in which an event is fired and can be listened to."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Various events might have different meanings for phases, so do check the documentation. Usually, you want to use\r\n the"
+    },
+    {
+      "type": "code",
+      "content": "NORMAL"
+    },
+    {
+      "type": "plaintext",
+      "content": " phase (which is specified for you automatically) to catch events occurring in the default\r\n phase.\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+    "display_name": "ZenEventPhase",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.impl.event",
+    "class_name": "ZenEventPhase",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cZenEventPhase\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+          "display_name": "ZenEventPhase",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.blamejared.crafttweaker.impl.event",
+          "class_name": "ZenEventPhase"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.events.EventPhase",
+  "member_groups": {
+    "EARLIEST": {
+      "key": "EARLIEST",
+      "members": [
+        {
+          "key": "EARLIEST",
+          "display_name": "EARLIEST",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+            "display_name": "ZenEventPhase",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.impl.event",
+            "class_name": "ZenEventPhase"
+          }
+        }
+      ]
+    },
+    "LATEST": {
+      "key": "LATEST",
+      "members": [
+        {
+          "key": "LATEST",
+          "display_name": "LATEST",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+            "display_name": "ZenEventPhase",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.impl.event",
+            "class_name": "ZenEventPhase"
+          }
+        }
+      ]
+    },
+    "NORMAL": {
+      "key": "NORMAL",
+      "members": [
+        {
+          "key": "NORMAL",
+          "display_name": "NORMAL",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+            "display_name": "ZenEventPhase",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.impl.event",
+            "class_name": "ZenEventPhase"
+          }
+        }
+      ]
+    }
+  }
+}

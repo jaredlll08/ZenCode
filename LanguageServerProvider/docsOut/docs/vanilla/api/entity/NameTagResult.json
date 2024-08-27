@@ -1,0 +1,269 @@
+{
+  "key": "vanilla/api/entity/NameTagResult",
+  "display_name": "NameTagResult",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.entity.NameTagResult",
+    "display_name": "NameTagResult",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.entity",
+    "class_name": "NameTagResult",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.entity.NameTagResult",
+  "member_groups": {
+    "alwaysRender": {
+      "key": "alwaysRender",
+      "members": [
+        {
+          "key": "alwaysRender",
+          "display_name": "alwaysRender",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Forces the name tag to be visible even when it would otherwise not be."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "content": {
+      "key": "content",
+      "members": [
+        {
+          "key": "getContent",
+          "display_name": "getContent",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the current content of the name tag.\r\n This can be changed by mods."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "content",
+          "display_name": "content",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the current content of the name tag.\r\n This can be changed by mods."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "setContent",
+          "display_name": "setContent",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the new content of the name tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new name tag contents."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "content",
+          "display_name": "content",
+          "member_type": "setter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the new content of the name tag."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new name tag contents."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "noRender": {
+      "key": "noRender",
+      "members": [
+        {
+          "key": "noRender",
+          "display_name": "noRender",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Forces the display name to not render even when it should."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "originalContent": {
+      "key": "originalContent",
+      "members": [
+        {
+          "key": "getOriginalContent",
+          "display_name": "getOriginalContent",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the original content of the name tag.\r\n This can not be changed by mods."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "originalContent",
+          "display_name": "originalContent",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the original content of the name tag.\r\n This can not be changed by mods."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "setDefault": {
+      "key": "setDefault",
+      "members": [
+        {
+          "key": "setDefault",
+          "display_name": "setDefault",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the default vanilla behaviour of rendering name tags."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

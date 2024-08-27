@@ -1,0 +1,1144 @@
+{
+  "key": "vanilla/api/block/BlockState",
+  "display_name": "BlockState",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "\u003cblockstate:minecraft:grass\u003e"
+      ]
+    }
+  },
+  "type": {
+    "key": "net.minecraft.world.level.block.state.BlockState",
+    "display_name": "BlockState",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.block.state",
+    "class_name": "BlockState",
+    "super_type": {
+      "key": "net.minecraft.world.level.block.state.BlockBehaviour.BlockStateBase",
+      "display_name": "BlockStateBase",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.world.level.block.state",
+      "class_name": "BlockStateBase"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeBlockState",
+        "display_name": "IForgeBlockState",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeBlockState"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.block.BlockState",
+  "member_groups": {
+    "asBlockIngredient": {
+      "key": "asBlockIngredient",
+      "members": [
+        {
+          "key": "asBlockIngredient",
+          "display_name": "asBlockIngredient",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.block.CTBlockIngredient",
+            "display_name": "CTBlockIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.block",
+            "class_name": "CTBlockIngredient"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "asString": {
+      "key": "asString",
+      "members": [
+        {
+          "key": "asString",
+          "display_name": "asString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "block": {
+      "key": "block",
+      "members": [
+        {
+          "key": "block",
+          "display_name": "block",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the base "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.Block",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Block"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "of this BlockState."
+            },
+            {
+              "type": "plaintext",
+              "content": "The"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.Block",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Block"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " will not contain any of the properties of this BlockState."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.Block",
+            "display_name": "Block",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "Block"
+          }
+        },
+        {
+          "key": "block",
+          "display_name": "block",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the base "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.Block",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Block"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "of this BlockState."
+            },
+            {
+              "type": "plaintext",
+              "content": "The"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.Block",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Block"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " will not contain any of the properties of this BlockState."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.Block",
+            "display_name": "Block",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "Block"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "canOcclude": {
+      "key": "canOcclude",
+      "members": [
+        {
+          "key": "canOcclude",
+          "display_name": "canOcclude",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState is solid."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canOcclude",
+          "display_name": "canOcclude",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState is solid."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blockstate bracket handler syntax for this BlockState."
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G."
+            },
+            {
+              "type": "code",
+              "content": "\u003cblockstate:minecraft:grass:snowy\u003dtrue\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blockstate bracket handler syntax for this BlockState."
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G."
+            },
+            {
+              "type": "code",
+              "content": "\u003cblockstate:minecraft:grass:snowy\u003dtrue\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blockstate bracket handler syntax for this BlockState."
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G."
+            },
+            {
+              "type": "code",
+              "content": "\u003cblockstate:minecraft:grass:snowy\u003dtrue\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "destroySpeed": {
+      "key": "destroySpeed",
+      "members": [
+        {
+          "key": "getDestroySpeed",
+          "display_name": "getDestroySpeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the hardness of this BlockState."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "destroySpeed",
+          "display_name": "destroySpeed",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the hardness of this BlockState."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setDestroySpeed",
+          "display_name": "setDestroySpeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the destroy speed of this BlockState."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "destroySpeed",
+              "display_name": "destroySpeed",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "destroySpeed": [
+                    "2.4f"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the new destroy speed of this BlockState"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "destroySpeed",
+          "display_name": "destroySpeed",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the destroy speed of this BlockState."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.block.state.BlockState",
+                "display_name": "BlockState",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block.state",
+                "class_name": "BlockState"
+              },
+              "optional": false
+            },
+            {
+              "key": "destroySpeed",
+              "display_name": "destroySpeed",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "destroySpeed": [
+                    "2.4f"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the new destroy speed of this BlockState"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "getAllowedValuesForProperty": {
+      "key": "getAllowedValuesForProperty",
+      "members": [
+        {
+          "key": "getAllowedValuesForProperty",
+          "display_name": "getAllowedValuesForProperty",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a list of allowed values for a given property."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"snowy\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the property to find the allowed values for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "getPropertyValue": {
+      "key": "getPropertyValue",
+      "members": [
+        {
+          "key": "getPropertyValue",
+          "display_name": "getPropertyValue",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the value of the given property."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "\"snowy\""
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasBlockEntity": {
+      "key": "hasBlockEntity",
+      "members": [
+        {
+          "key": "hasBlockEntity",
+          "display_name": "hasBlockEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState has a "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.entity.BlockEntity",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "net.minecraft.world.level.block.entity.BlockEntity"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasBlockEntity",
+          "display_name": "hasBlockEntity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState has a "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.block.entity.BlockEntity",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "net.minecraft.world.level.block.entity.BlockEntity"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasProperty": {
+      "key": "hasProperty",
+      "members": [
+        {
+          "key": "hasProperty",
+          "display_name": "hasProperty",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState has the given property."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"snowy\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the name of the property to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isRandomlyTicking": {
+      "key": "isRandomlyTicking",
+      "members": [
+        {
+          "key": "isRandomlyTicking",
+          "display_name": "isRandomlyTicking",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState ticks randomly."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isRandomlyTicking",
+          "display_name": "isRandomlyTicking",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState ticks randomly."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isSignalSource": {
+      "key": "isSignalSource",
+      "members": [
+        {
+          "key": "isSignalSource",
+          "display_name": "isSignalSource",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState can provide Redstone Power"
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isSignalSource",
+          "display_name": "isSignalSource",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks whether this BlockState can provide Redstone Power"
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "lightEmission": {
+      "key": "lightEmission",
+      "members": [
+        {
+          "key": "getLightEmission",
+          "display_name": "getLightEmission",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the light level of this BlockState"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "lightEmission",
+          "display_name": "lightEmission",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the light level of this BlockState"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "or": {
+      "key": "or",
+      "members": [
+        {
+          "key": "asList",
+          "display_name": "asList",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.block.CTBlockIngredient",
+                "display_name": "CTBlockIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.block",
+                "class_name": "CTBlockIngredient"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.block.CTBlockIngredient",
+            "display_name": "CTBlockIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.block",
+            "class_name": "CTBlockIngredient"
+          },
+          "operator_type": "or"
+        }
+      ]
+    },
+    "properties": {
+      "key": "properties",
+      "members": [
+        {
+          "key": "getProperties",
+          "display_name": "getProperties",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the properties of this BlockState."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cString, String\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "V": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        },
+        {
+          "key": "properties",
+          "display_name": "properties",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the properties of this BlockState."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cString, String\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "V": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        }
+      ]
+    },
+    "propertyNames": {
+      "key": "propertyNames",
+      "members": [
+        {
+          "key": "getPropertyNames",
+          "display_name": "getPropertyNames",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the names of the properties of this BlockState."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "propertyNames",
+          "display_name": "propertyNames",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the names of the properties of this BlockState."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "rotate": {
+      "key": "rotate",
+      "members": [
+        {
+          "key": "rotate",
+          "display_name": "rotate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "rotation",
+              "display_name": "rotation",
+              "type": {
+                "key": "net.minecraft.world.level.block.Rotation",
+                "display_name": "Rotation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Rotation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    },
+    "soundType": {
+      "key": "soundType",
+      "members": [
+        {
+          "key": "getSoundType",
+          "display_name": "getSoundType",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.block.SoundType",
+            "display_name": "SoundType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "SoundType"
+          }
+        },
+        {
+          "key": "soundType",
+          "display_name": "soundType",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.block.SoundType",
+            "display_name": "SoundType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "SoundType"
+          }
+        }
+      ]
+    },
+    "withProperty": {
+      "key": "withProperty",
+      "members": [
+        {
+          "key": "withProperty",
+          "display_name": "withProperty",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets a block property based on it\u0027s name."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "name": [
+                    "\"snowy\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The name of the property to set."
+                }
+              ]
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "value": [
+                    "\"true\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The new value of the property."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    }
+  }
+}

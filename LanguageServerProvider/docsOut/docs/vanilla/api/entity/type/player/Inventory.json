@@ -1,0 +1,1423 @@
+{
+  "key": "vanilla/api/entity/type/player/Inventory",
+  "display_name": "Inventory",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.player.Inventory",
+    "display_name": "Inventory",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.player",
+    "class_name": "Inventory",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.Container",
+        "display_name": "Container",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world",
+        "class_name": "Container"
+      },
+      {
+        "key": "net.minecraft.world.Nameable",
+        "display_name": "Nameable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world",
+        "class_name": "Nameable"
+      },
+      {
+        "key": "net.minecraft.world.Clearable",
+        "display_name": "Clearable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world",
+        "class_name": "Clearable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.type.player.Inventory",
+  "member_groups": {
+    "add": {
+      "key": "add",
+      "members": [
+        {
+          "key": "add",
+          "display_name": "add",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "add",
+          "display_name": "add",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "canPlaceItem": {
+      "key": "canPlaceItem",
+      "members": [
+        {
+          "key": "canPlaceItem",
+          "display_name": "canPlaceItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "changed": {
+      "key": "changed",
+      "members": [
+        {
+          "key": "setChanged",
+          "display_name": "setChanged",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "changed",
+          "display_name": "changed",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "clearContent": {
+      "key": "clearContent",
+      "members": [
+        {
+          "key": "clearContent",
+          "display_name": "clearContent",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Clears the contents of this Clearable."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "containerSize": {
+      "key": "containerSize",
+      "members": [
+        {
+          "key": "getContainerSize",
+          "display_name": "getContainerSize",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the size (how many slots) of this Container"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "containerSize",
+          "display_name": "containerSize",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the size (how many slots) of this Container"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "contains": {
+      "key": "contains",
+      "members": [
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        },
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cItem\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.item.Item",
+                    "display_name": "Item",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.item",
+                    "class_name": "Item"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cItem\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.item.Item",
+                    "display_name": "Item",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.item",
+                    "class_name": "Item"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        }
+      ]
+    },
+    "countItem": {
+      "key": "countItem",
+      "members": [
+        {
+          "key": "countItem",
+          "display_name": "countItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "countStack": {
+      "key": "countStack",
+      "members": [
+        {
+          "key": "countStack",
+          "display_name": "countStack",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "item",
+              "display_name": "item",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "customName": {
+      "key": "customName",
+      "members": [
+        {
+          "key": "getCustomName",
+          "display_name": "getCustomName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "customName",
+          "display_name": "customName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "displayName": {
+      "key": "displayName",
+      "members": [
+        {
+          "key": "getDisplayName",
+          "display_name": "getDisplayName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "displayName",
+          "display_name": "displayName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "dropAll": {
+      "key": "dropAll",
+      "members": [
+        {
+          "key": "dropAll",
+          "display_name": "dropAll",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "findSlotMatchingItem": {
+      "key": "findSlotMatchingItem",
+      "members": [
+        {
+          "key": "findSlotMatchingItem",
+          "display_name": "findSlotMatchingItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "findSlotMatchingUnusedItem": {
+      "key": "findSlotMatchingUnusedItem",
+      "members": [
+        {
+          "key": "findSlotMatchingUnusedItem",
+          "display_name": "findSlotMatchingUnusedItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "freeSlot": {
+      "key": "freeSlot",
+      "members": [
+        {
+          "key": "getFreeSlot",
+          "display_name": "getFreeSlot",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "freeSlot",
+          "display_name": "freeSlot",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getArmor": {
+      "key": "getArmor",
+      "members": [
+        {
+          "key": "getArmor",
+          "display_name": "getArmor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "armorIndex",
+              "display_name": "armorIndex",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "getItem": {
+      "key": "getItem",
+      "members": [
+        {
+          "key": "getItem",
+          "display_name": "getItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the ItemStack in the given slot."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The slot index to get."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "getSlotWithRemainingSpace": {
+      "key": "getSlotWithRemainingSpace",
+      "members": [
+        {
+          "key": "getSlotWithRemainingSpace",
+          "display_name": "getSlotWithRemainingSpace",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasAnyOf": {
+      "key": "hasAnyOf",
+      "members": [
+        {
+          "key": "hasAnyOf",
+          "display_name": "hasAnyOf",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "items",
+              "display_name": "items",
+              "type": {
+                "key": "java.util.Set",
+                "display_name": "Set\u003cItem\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "E": {
+                    "key": "net.minecraft.world.item.Item",
+                    "display_name": "Item",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.item",
+                    "class_name": "Item"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "Set"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasCustomName": {
+      "key": "hasCustomName",
+      "members": [
+        {
+          "key": "hasCustomName",
+          "display_name": "hasCustomName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasCustomName",
+          "display_name": "hasCustomName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hurtArmor": {
+      "key": "hurtArmor",
+      "members": [
+        {
+          "key": "hurtArmor",
+          "display_name": "hurtArmor",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "source",
+              "display_name": "source",
+              "type": {
+                "key": "net.minecraft.world.damagesource.DamageSource",
+                "display_name": "DamageSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.damagesource",
+                "class_name": "DamageSource"
+              },
+              "optional": false
+            },
+            {
+              "key": "damage",
+              "display_name": "damage",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "armorSlots",
+              "display_name": "armorSlots",
+              "type": {
+                "key": "int[]",
+                "display_name": "int[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "int",
+                  "display_name": "int",
+                  "type_type": "basic",
+                  "nullable": false
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isEmpty": {
+      "key": "isEmpty",
+      "members": [
+        {
+          "key": "isEmpty",
+          "display_name": "isEmpty",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this Container is empty."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isEmpty",
+          "display_name": "isEmpty",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this Container is empty."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "maxStackSize": {
+      "key": "maxStackSize",
+      "members": [
+        {
+          "key": "getMaxStackSize",
+          "display_name": "getMaxStackSize",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "maxStackSize",
+          "display_name": "maxStackSize",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "name": {
+      "key": "name",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "name",
+          "display_name": "name",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "pickSlot": {
+      "key": "pickSlot",
+      "members": [
+        {
+          "key": "pickSlot",
+          "display_name": "pickSlot",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "removeItem": {
+      "key": "removeItem",
+      "members": [
+        {
+          "key": "removeItem",
+          "display_name": "removeItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "removeItem",
+          "display_name": "removeItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "var1",
+              "display_name": "var1",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "var2",
+              "display_name": "var2",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "removeItemNoUpdate": {
+      "key": "removeItemNoUpdate",
+      "members": [
+        {
+          "key": "removeItemNoUpdate",
+          "display_name": "removeItemNoUpdate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "selected": {
+      "key": "selected",
+      "members": [
+        {
+          "key": "getSelected",
+          "display_name": "getSelected",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        },
+        {
+          "key": "selected",
+          "display_name": "selected",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    },
+    "setItem": {
+      "key": "setItem",
+      "members": [
+        {
+          "key": "setItem",
+          "display_name": "setItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setPickedItem": {
+      "key": "setPickedItem",
+      "members": [
+        {
+          "key": "setPickedItem",
+          "display_name": "setPickedItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "startOpen": {
+      "key": "startOpen",
+      "members": [
+        {
+          "key": "startOpen",
+          "display_name": "startOpen",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "stillValid": {
+      "key": "stillValid",
+      "members": [
+        {
+          "key": "stillValid",
+          "display_name": "stillValid",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "stopOpen": {
+      "key": "stopOpen",
+      "members": [
+        {
+          "key": "stopOpen",
+          "display_name": "stopOpen",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "suitableHotbarSlot": {
+      "key": "suitableHotbarSlot",
+      "members": [
+        {
+          "key": "getSuitableHotbarSlot",
+          "display_name": "getSuitableHotbarSlot",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "suitableHotbarSlot",
+          "display_name": "suitableHotbarSlot",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "timesChanged": {
+      "key": "timesChanged",
+      "members": [
+        {
+          "key": "getTimesChanged",
+          "display_name": "getTimesChanged",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "timesChanged",
+          "display_name": "timesChanged",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

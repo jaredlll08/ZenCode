@@ -1,0 +1,643 @@
+{
+  "key": "forge/api/event/entity/teleport/EntityTeleportEvent",
+  "display_name": "EntityTeleportEvent",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "event_parent": {}
+  },
+  "type": {
+    "key": "net.minecraftforge.event.entity.EntityTeleportEvent",
+    "display_name": "EntityTeleportEvent",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.event.entity",
+    "class_name": "EntityTeleportEvent",
+    "super_type": {
+      "key": "net.minecraftforge.event.entity.EntityEvent",
+      "display_name": "EntityEvent",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraftforge.event.entity",
+      "class_name": "EntityEvent"
+    }
+  },
+  "zen_code_name": "crafttweaker.forge.api.event.entity.teleport.EntityTeleportEvent",
+  "member_groups": {
+    "cancel": {
+      "key": "cancel",
+      "members": [
+        {
+          "key": "cancel",
+          "display_name": "cancel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Cancels the event. Same as `setCanceled(true)`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "cancelable": {
+      "key": "cancelable",
+      "members": [
+        {
+          "key": "isCancelable",
+          "display_name": "isCancelable",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "cancelable",
+          "display_name": "cancelable",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "canceled": {
+      "key": "canceled",
+      "members": [
+        {
+          "key": "isCanceled",
+          "display_name": "isCanceled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canceled",
+          "display_name": "canceled",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setCanceled",
+          "display_name": "setCanceled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "cancel",
+              "display_name": "cancel",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canceled",
+          "display_name": "canceled",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event",
+                "display_name": "Event",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Event"
+              },
+              "optional": false
+            },
+            {
+              "key": "cancel",
+              "display_name": "cancel",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "entity": {
+      "key": "entity",
+      "members": [
+        {
+          "key": "entity",
+          "display_name": "entity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.Entity",
+            "display_name": "Entity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Entity"
+          }
+        }
+      ]
+    },
+    "hasResult": {
+      "key": "hasResult",
+      "members": [
+        {
+          "key": "hasResult",
+          "display_name": "hasResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasResult",
+          "display_name": "hasResult",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "prev": {
+      "key": "prev",
+      "members": [
+        {
+          "key": "prev",
+          "display_name": "prev",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "prevX": {
+      "key": "prevX",
+      "members": [
+        {
+          "key": "prevX",
+          "display_name": "prevX",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "prevY": {
+      "key": "prevY",
+      "members": [
+        {
+          "key": "prevY",
+          "display_name": "prevY",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "prevZ": {
+      "key": "prevZ",
+      "members": [
+        {
+          "key": "prevZ",
+          "display_name": "prevZ",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "result": {
+      "key": "result",
+      "members": [
+        {
+          "key": "getResult",
+          "display_name": "getResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        },
+        {
+          "key": "result",
+          "display_name": "result",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        },
+        {
+          "key": "setResult",
+          "display_name": "setResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "result",
+              "display_name": "result",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event.Result",
+                "display_name": "Result",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Result"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "result",
+          "display_name": "result",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event",
+                "display_name": "Event",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Event"
+              },
+              "optional": false
+            },
+            {
+              "key": "result",
+              "display_name": "result",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event.Result",
+                "display_name": "Result",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Result"
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "setAllow": {
+      "key": "setAllow",
+      "members": [
+        {
+          "key": "setAllow",
+          "display_name": "setAllow",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `allow`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDefault": {
+      "key": "setDefault",
+      "members": [
+        {
+          "key": "setDefault",
+          "display_name": "setDefault",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `default`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDeny": {
+      "key": "setDeny",
+      "members": [
+        {
+          "key": "setDeny",
+          "display_name": "setDeny",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `deny`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "target": {
+      "key": "target",
+      "members": [
+        {
+          "key": "target",
+          "display_name": "target",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "targetX": {
+      "key": "targetX",
+      "members": [
+        {
+          "key": "targetX",
+          "display_name": "targetX",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "targetX",
+          "display_name": "targetX",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.event.entity.EntityTeleportEvent",
+                "display_name": "EntityTeleportEvent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.event.entity",
+                "class_name": "EntityTeleportEvent"
+              },
+              "optional": false
+            },
+            {
+              "key": "targetX",
+              "display_name": "targetX",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "targetY": {
+      "key": "targetY",
+      "members": [
+        {
+          "key": "targetY",
+          "display_name": "targetY",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "targetY",
+          "display_name": "targetY",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.event.entity.EntityTeleportEvent",
+                "display_name": "EntityTeleportEvent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.event.entity",
+                "class_name": "EntityTeleportEvent"
+              },
+              "optional": false
+            },
+            {
+              "key": "targetY",
+              "display_name": "targetY",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "targetZ": {
+      "key": "targetZ",
+      "members": [
+        {
+          "key": "targetZ",
+          "display_name": "targetZ",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "targetZ",
+          "display_name": "targetZ",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.event.entity.EntityTeleportEvent",
+                "display_name": "EntityTeleportEvent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.event.entity",
+                "class_name": "EntityTeleportEvent"
+              },
+              "optional": false
+            },
+            {
+              "key": "targetZ",
+              "display_name": "targetZ",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "key": "vanilla/api/util/math/Rotation",
+  "display_name": "Rotation",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:direction/rotation"
+  },
+  "type": {
+    "key": "net.minecraft.world.level.block.Rotation",
+    "display_name": "Rotation",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.block",
+    "class_name": "Rotation",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cRotation\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.level.block.Rotation",
+          "display_name": "Rotation",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.level.block",
+          "class_name": "Rotation"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.math.Rotation",
+  "member_groups": {
+    "CLOCKWISE_180": {
+      "key": "CLOCKWISE_180",
+      "members": [
+        {
+          "key": "CLOCKWISE_180",
+          "display_name": "CLOCKWISE_180",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.block.Rotation",
+            "display_name": "Rotation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "Rotation"
+          }
+        }
+      ]
+    },
+    "CLOCKWISE_90": {
+      "key": "CLOCKWISE_90",
+      "members": [
+        {
+          "key": "CLOCKWISE_90",
+          "display_name": "CLOCKWISE_90",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.block.Rotation",
+            "display_name": "Rotation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "Rotation"
+          }
+        }
+      ]
+    },
+    "COUNTERCLOCKWISE_90": {
+      "key": "COUNTERCLOCKWISE_90",
+      "members": [
+        {
+          "key": "COUNTERCLOCKWISE_90",
+          "display_name": "COUNTERCLOCKWISE_90",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.block.Rotation",
+            "display_name": "Rotation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "Rotation"
+          }
+        }
+      ]
+    },
+    "NONE": {
+      "key": "NONE",
+      "members": [
+        {
+          "key": "NONE",
+          "display_name": "NONE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.block.Rotation",
+            "display_name": "Rotation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "Rotation"
+          }
+        }
+      ]
+    },
+    "getRotated": {
+      "key": "getRotated",
+      "members": [
+        {
+          "key": "getRotated",
+          "display_name": "getRotated",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "rotation",
+              "display_name": "rotation",
+              "type": {
+                "key": "net.minecraft.world.level.block.Rotation",
+                "display_name": "Rotation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Rotation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.Rotation",
+            "display_name": "Rotation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block",
+            "class_name": "Rotation"
+          }
+        }
+      ]
+    },
+    "rotate": {
+      "key": "rotate",
+      "members": [
+        {
+          "key": "rotate",
+          "display_name": "rotate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "direction",
+              "display_name": "direction",
+              "type": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "rotate",
+          "display_name": "rotate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "rotation",
+              "display_name": "rotation",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "positionCount",
+              "display_name": "positionCount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "rotation": {
+      "key": "rotation",
+      "members": [
+        {
+          "key": "rotation",
+          "display_name": "rotation",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

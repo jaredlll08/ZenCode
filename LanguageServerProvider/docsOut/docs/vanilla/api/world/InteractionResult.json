@@ -1,0 +1,352 @@
+{
+  "key": "vanilla/api/world/InteractionResult",
+  "display_name": "InteractionResult",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:world/interactionresult"
+  },
+  "type": {
+    "key": "net.minecraft.world.InteractionResult",
+    "display_name": "InteractionResult",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world",
+    "class_name": "InteractionResult",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cInteractionResult\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.InteractionResult",
+          "display_name": "InteractionResult",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world",
+          "class_name": "InteractionResult"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.InteractionResult",
+  "member_groups": {
+    "CONSUME": {
+      "key": "CONSUME",
+      "members": [
+        {
+          "key": "CONSUME",
+          "display_name": "CONSUME",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.InteractionResult",
+            "display_name": "InteractionResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResult"
+          }
+        }
+      ]
+    },
+    "CONSUME_PARTIAL": {
+      "key": "CONSUME_PARTIAL",
+      "members": [
+        {
+          "key": "CONSUME_PARTIAL",
+          "display_name": "CONSUME_PARTIAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.InteractionResult",
+            "display_name": "InteractionResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResult"
+          }
+        }
+      ]
+    },
+    "FAIL": {
+      "key": "FAIL",
+      "members": [
+        {
+          "key": "FAIL",
+          "display_name": "FAIL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.InteractionResult",
+            "display_name": "InteractionResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResult"
+          }
+        }
+      ]
+    },
+    "PASS": {
+      "key": "PASS",
+      "members": [
+        {
+          "key": "PASS",
+          "display_name": "PASS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.InteractionResult",
+            "display_name": "InteractionResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResult"
+          }
+        }
+      ]
+    },
+    "SUCCESS": {
+      "key": "SUCCESS",
+      "members": [
+        {
+          "key": "SUCCESS",
+          "display_name": "SUCCESS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.InteractionResult",
+            "display_name": "InteractionResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResult"
+          }
+        }
+      ]
+    },
+    "consumesAction": {
+      "key": "consumesAction",
+      "members": [
+        {
+          "key": "consumesAction",
+          "display_name": "consumesAction",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "consumesAction",
+          "display_name": "consumesAction",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "shouldAwardStats": {
+      "key": "shouldAwardStats",
+      "members": [
+        {
+          "key": "shouldAwardStats",
+          "display_name": "shouldAwardStats",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "shouldAwardStats",
+          "display_name": "shouldAwardStats",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "shouldSwing": {
+      "key": "shouldSwing",
+      "members": [
+        {
+          "key": "shouldSwing",
+          "display_name": "shouldSwing",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "shouldSwing",
+          "display_name": "shouldSwing",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "sidedSuccess": {
+      "key": "sidedSuccess",
+      "members": [
+        {
+          "key": "sidedSuccess",
+          "display_name": "sidedSuccess",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns true if "
+            },
+            {
+              "type": "code",
+              "content": "successSide"
+            },
+            {
+              "type": "plaintext",
+              "content": " is true, this can be used to return "
+            },
+            {
+              "type": "code",
+              "content": "SUCCESS"
+            },
+            {
+              "type": "plaintext",
+              "content": " on the client, but "
+            },
+            {
+              "type": "code",
+              "content": "CONSUME"
+            },
+            {
+              "type": "plaintext",
+              "content": " on the server."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "successSide",
+              "display_name": "successSide",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "successSide": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Is the current side the success side."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.InteractionResult",
+            "display_name": "InteractionResult",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "InteractionResult"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "key": "vanilla/api/world/clip/FluidClipContext",
+  "display_name": "FluidClipContext",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:world/clip/fluidcontext"
+  },
+  "type": {
+    "key": "net.minecraft.world.level.ClipContext.Fluid",
+    "display_name": "Fluid",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "Fluid",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cFluid\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.level.ClipContext.Fluid",
+          "display_name": "Fluid",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.level",
+          "class_name": "Fluid"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.FluidClipContext",
+  "member_groups": {
+    "ANY": {
+      "key": "ANY",
+      "members": [
+        {
+          "key": "ANY",
+          "display_name": "ANY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.ClipContext.Fluid",
+            "display_name": "Fluid",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Fluid"
+          }
+        }
+      ]
+    },
+    "NONE": {
+      "key": "NONE",
+      "members": [
+        {
+          "key": "NONE",
+          "display_name": "NONE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.ClipContext.Fluid",
+            "display_name": "Fluid",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Fluid"
+          }
+        }
+      ]
+    },
+    "SOURCE_ONLY": {
+      "key": "SOURCE_ONLY",
+      "members": [
+        {
+          "key": "SOURCE_ONLY",
+          "display_name": "SOURCE_ONLY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.ClipContext.Fluid",
+            "display_name": "Fluid",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Fluid"
+          }
+        }
+      ]
+    },
+    "WATER": {
+      "key": "WATER",
+      "members": [
+        {
+          "key": "WATER",
+          "display_name": "WATER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.ClipContext.Fluid",
+            "display_name": "Fluid",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Fluid"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "key": "vanilla/api/fluid/IFluidStack",
+  "display_name": "IFluidStack",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+    "display_name": "IFluidStack",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.fluid",
+    "class_name": "IFluidStack",
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.fluid.IFluidStack",
+  "member_groups": {
+    "amount": {
+      "key": "amount",
+      "members": [
+        {
+          "key": "amount",
+          "display_name": "amount",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the fluid amount in MilliBuckets (mB)."
+            }
+          ],
+          "return_type": {
+            "key": "long",
+            "display_name": "long",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "asFluidIngredient": {
+      "key": "asFluidIngredient",
+      "members": [
+        {
+          "key": "asFluidIngredient",
+          "display_name": "asFluidIngredient",
+          "member_type": "caster",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.CTFluidIngredient",
+            "display_name": "CTFluidIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "CTFluidIngredient"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "asIData": {
+      "key": "asIData",
+      "members": [
+        {
+          "key": "asIData",
+          "display_name": "asIData",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        },
+        {
+          "key": "asIData",
+          "display_name": "asIData",
+          "member_type": "caster",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "asImmutable": {
+      "key": "asImmutable",
+      "members": [
+        {
+          "key": "asImmutable",
+          "display_name": "asImmutable",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    },
+    "asMutable": {
+      "key": "asMutable",
+      "members": [
+        {
+          "key": "asMutable",
+          "display_name": "asMutable",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Makes this stack mutable"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "contains": {
+      "key": "contains",
+      "members": [
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this IFluidStack, matches the given IFluidStack by checking if the fluids are the same, and if this fluid\u0027s amount is bigger than the given fluid\u0027s amount"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+                "display_name": "IFluidStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.fluid",
+                "class_name": "IFluidStack"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "other IFluidStack to compare against"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        }
+      ]
+    },
+    "copy": {
+      "key": "copy",
+      "members": [
+        {
+          "key": "copy",
+          "display_name": "copy",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Copies the stack. Only needed when mutable stacks are involved."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    },
+    "empty": {
+      "key": "empty",
+      "members": [
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the empty IFluidStack"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        },
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets whether this fluid stack is empty."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "fluid": {
+      "key": "fluid",
+      "members": [
+        {
+          "key": "fluid",
+          "display_name": "fluid",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Retrieves this fluid stack\u0027s fluid."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.material.Fluid",
+            "display_name": "Fluid",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.material",
+            "class_name": "Fluid"
+          }
+        },
+        {
+          "key": "fluid",
+          "display_name": "fluid",
+          "member_type": "caster",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Retrieves this fluid stack\u0027s fluid."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.material.Fluid",
+            "display_name": "Fluid",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.material",
+            "class_name": "Fluid"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "hasTag": {
+      "key": "hasTag",
+      "members": [
+        {
+          "key": "hasTag",
+          "display_name": "hasTag",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns true if this FluidStack has a Tag"
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isImmutable": {
+      "key": "isImmutable",
+      "members": [
+        {
+          "key": "isImmutable",
+          "display_name": "isImmutable",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isImmutable",
+          "display_name": "isImmutable",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "matches": {
+      "key": "matches",
+      "members": [
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this IFluidStack, matches the given IFluidStack by checking if the fluids are the same, and if this fluid\u0027s amount is bigger than the given fluid\u0027s amount"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+                "display_name": "IFluidStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.fluid",
+                "class_name": "IFluidStack"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "other IFluidStack to compare against"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "mul": {
+      "key": "mul",
+      "members": [
+        {
+          "key": "setAmount",
+          "display_name": "setAmount",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the fluid amount in MilliBuckets (mB)"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "amount": [
+                    "1000"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The amount to multiply this stack"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          },
+          "operator_type": "mul"
+        }
+      ]
+    },
+    "or": {
+      "key": "or",
+      "members": [
+        {
+          "key": "asList",
+          "display_name": "asList",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.fluid.CTFluidIngredient",
+                "display_name": "CTFluidIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.fluid",
+                "class_name": "CTFluidIngredient"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.CTFluidIngredient",
+            "display_name": "CTFluidIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "CTFluidIngredient"
+          },
+          "operator_type": "or"
+        }
+      ]
+    },
+    "registryName": {
+      "key": "registryName",
+      "members": [
+        {
+          "key": "registryName",
+          "display_name": "registryName",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the registry name for the fluid this stack is representing."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "setAmount": {
+      "key": "setAmount",
+      "members": [
+        {
+          "key": "setAmount",
+          "display_name": "setAmount",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the fluid amount in MilliBuckets (mB)"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "amount": [
+                    "1000"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The amount to multiply this stack"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    },
+    "tag": {
+      "key": "tag",
+      "members": [
+        {
+          "key": "getTag",
+          "display_name": "getTag",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the NBT tag attached to this FluidStack."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        },
+        {
+          "key": "tag",
+          "display_name": "tag",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the NBT tag attached to this FluidStack."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    },
+    "withTag": {
+      "key": "withTag",
+      "members": [
+        {
+          "key": "withTag",
+          "display_name": "withTag",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the tag for the FluidStack."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "tag": [
+                    "{Display: {lore: [\"Hello\"]}}"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tag to set."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    }
+  }
+}

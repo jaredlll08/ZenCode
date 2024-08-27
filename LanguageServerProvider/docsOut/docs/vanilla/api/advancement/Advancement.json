@@ -1,0 +1,412 @@
+{
+  "key": "vanilla/api/advancement/Advancement",
+  "display_name": "Advancement",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.Advancement",
+    "display_name": "Advancement",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements",
+    "class_name": "Advancement",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.advancement.Advancement",
+  "member_groups": {
+    "chatComponent": {
+      "key": "chatComponent",
+      "members": [
+        {
+          "key": "getChatComponent",
+          "display_name": "getChatComponent",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        },
+        {
+          "key": "chatComponent",
+          "display_name": "chatComponent",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "children": {
+      "key": "children",
+      "members": [
+        {
+          "key": "getChildren",
+          "display_name": "getChildren",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.Iterable",
+            "display_name": "Iterable\u003cAdvancement\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.advancements.Advancement",
+                "display_name": "Advancement",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements",
+                "class_name": "Advancement"
+              }
+            },
+            "package_name": "java.lang",
+            "class_name": "Iterable"
+          }
+        },
+        {
+          "key": "children",
+          "display_name": "children",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.Iterable",
+            "display_name": "Iterable\u003cAdvancement\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "net.minecraft.advancements.Advancement",
+                "display_name": "Advancement",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements",
+                "class_name": "Advancement"
+              }
+            },
+            "package_name": "java.lang",
+            "class_name": "Iterable"
+          }
+        }
+      ]
+    },
+    "criteria": {
+      "key": "criteria",
+      "members": [
+        {
+          "key": "getCriteria",
+          "display_name": "getCriteria",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cString, Criterion\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "V": {
+                "key": "net.minecraft.advancements.Criterion",
+                "display_name": "Criterion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements",
+                "class_name": "Criterion"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        },
+        {
+          "key": "criteria",
+          "display_name": "criteria",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cString, Criterion\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "V": {
+                "key": "net.minecraft.advancements.Criterion",
+                "display_name": "Criterion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements",
+                "class_name": "Criterion"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        }
+      ]
+    },
+    "display": {
+      "key": "display",
+      "members": [
+        {
+          "key": "getDisplay",
+          "display_name": "getDisplay",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.DisplayInfo",
+            "display_name": "DisplayInfo",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "DisplayInfo"
+          }
+        },
+        {
+          "key": "display",
+          "display_name": "display",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.DisplayInfo",
+            "display_name": "DisplayInfo",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "DisplayInfo"
+          }
+        }
+      ]
+    },
+    "id": {
+      "key": "id",
+      "members": [
+        {
+          "key": "getId",
+          "display_name": "getId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "maxCriteriaRequired": {
+      "key": "maxCriteriaRequired",
+      "members": [
+        {
+          "key": "getMaxCriteriaRequired",
+          "display_name": "getMaxCriteriaRequired",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": true
+          }
+        },
+        {
+          "key": "maxCriteriaRequired",
+          "display_name": "maxCriteriaRequired",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": true
+          }
+        }
+      ]
+    },
+    "parent": {
+      "key": "parent",
+      "members": [
+        {
+          "key": "getParent",
+          "display_name": "getParent",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.Advancement",
+            "display_name": "Advancement",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "Advancement"
+          }
+        },
+        {
+          "key": "parent",
+          "display_name": "parent",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.Advancement",
+            "display_name": "Advancement",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "Advancement"
+          }
+        }
+      ]
+    },
+    "requirements": {
+      "key": "requirements",
+      "members": [
+        {
+          "key": "getRequirements",
+          "display_name": "getRequirements",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String[][]",
+            "display_name": "String[][]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.String[]",
+              "display_name": "String[]",
+              "type_type": "array",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            }
+          }
+        },
+        {
+          "key": "requirements",
+          "display_name": "requirements",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String[][]",
+            "display_name": "String[][]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.String[]",
+              "display_name": "String[]",
+              "type_type": "array",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "rewards": {
+      "key": "rewards",
+      "members": [
+        {
+          "key": "getRewards",
+          "display_name": "getRewards",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.AdvancementRewards",
+            "display_name": "AdvancementRewards",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "AdvancementRewards"
+          }
+        },
+        {
+          "key": "rewards",
+          "display_name": "rewards",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.AdvancementRewards",
+            "display_name": "AdvancementRewards",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "AdvancementRewards"
+          }
+        }
+      ]
+    }
+  }
+}

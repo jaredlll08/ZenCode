@@ -1,0 +1,436 @@
+{
+  "key": "vanilla/api/entity/type/villager/Merchant",
+  "display_name": "Merchant",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.trading.Merchant",
+    "display_name": "Merchant",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item.trading",
+    "class_name": "Merchant"
+  },
+  "zen_code_name": "crafttweaker.api.entity.type.villager.Merchant",
+  "member_groups": {
+    "canRestock": {
+      "key": "canRestock",
+      "members": [
+        {
+          "key": "canRestock",
+          "display_name": "canRestock",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canRestock",
+          "display_name": "canRestock",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isClientSide": {
+      "key": "isClientSide",
+      "members": [
+        {
+          "key": "isClientSide",
+          "display_name": "isClientSide",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isClientSide",
+          "display_name": "isClientSide",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "notifyTrade": {
+      "key": "notifyTrade",
+      "members": [
+        {
+          "key": "notifyTrade",
+          "display_name": "notifyTrade",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "offer",
+              "display_name": "offer",
+              "type": {
+                "key": "net.minecraft.world.item.trading.MerchantOffer",
+                "display_name": "MerchantOffer",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.trading",
+                "class_name": "MerchantOffer"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "notifyTradeSound": {
+      "key": "notifyTradeSound",
+      "members": [
+        {
+          "key": "getNotifyTradeSound",
+          "display_name": "getNotifyTradeSound",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        },
+        {
+          "key": "notifyTradeSound",
+          "display_name": "notifyTradeSound",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.sounds.SoundEvent",
+            "display_name": "SoundEvent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.sounds",
+            "class_name": "SoundEvent"
+          }
+        }
+      ]
+    },
+    "notifyTradeUpdated": {
+      "key": "notifyTradeUpdated",
+      "members": [
+        {
+          "key": "notifyTradeUpdated",
+          "display_name": "notifyTradeUpdated",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "net.minecraft.world.item.ItemStack",
+                "display_name": "ItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "ItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "offers": {
+      "key": "offers",
+      "members": [
+        {
+          "key": "getOffers",
+          "display_name": "getOffers",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.trading.MerchantOffers",
+            "display_name": "MerchantOffers",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.trading",
+            "class_name": "MerchantOffers"
+          }
+        },
+        {
+          "key": "offers",
+          "display_name": "offers",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.trading.MerchantOffers",
+            "display_name": "MerchantOffers",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item.trading",
+            "class_name": "MerchantOffers"
+          }
+        }
+      ]
+    },
+    "openTradingScreen": {
+      "key": "openTradingScreen",
+      "members": [
+        {
+          "key": "openTradingScreen",
+          "display_name": "openTradingScreen",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "optional": false
+            },
+            {
+              "key": "displayName",
+              "display_name": "displayName",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            },
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "showProgressBar": {
+      "key": "showProgressBar",
+      "members": [
+        {
+          "key": "showProgressBar",
+          "display_name": "showProgressBar",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "showProgressBar",
+          "display_name": "showProgressBar",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "tradingPlayer": {
+      "key": "tradingPlayer",
+      "members": [
+        {
+          "key": "setTradingPlayer",
+          "display_name": "setTradingPlayer",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "tradingPlayer",
+          "display_name": "tradingPlayer",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.item.trading.Merchant",
+                "display_name": "Merchant",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.trading",
+                "class_name": "Merchant"
+              },
+              "optional": false
+            },
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "getTradingPlayer",
+          "display_name": "getTradingPlayer",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.player.Player",
+            "display_name": "Player",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "Player"
+          }
+        },
+        {
+          "key": "tradingPlayer",
+          "display_name": "tradingPlayer",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.player.Player",
+            "display_name": "Player",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "Player"
+          }
+        }
+      ]
+    },
+    "villagerXp": {
+      "key": "villagerXp",
+      "members": [
+        {
+          "key": "getVillagerXp",
+          "display_name": "getVillagerXp",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "villagerXp",
+          "display_name": "villagerXp",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

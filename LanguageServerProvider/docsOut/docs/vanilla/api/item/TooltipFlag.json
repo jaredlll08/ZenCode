@@ -1,0 +1,52 @@
+{
+  "key": "vanilla/api/item/TooltipFlag",
+  "display_name": "TooltipFlag",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.TooltipFlag",
+    "display_name": "TooltipFlag",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item",
+    "class_name": "TooltipFlag"
+  },
+  "zen_code_name": "crafttweaker.api.item.TooltipFlag",
+  "member_groups": {
+    "advanced": {
+      "key": "advanced",
+      "members": [
+        {
+          "key": "isAdvanced",
+          "display_name": "isAdvanced",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "advanced",
+          "display_name": "advanced",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

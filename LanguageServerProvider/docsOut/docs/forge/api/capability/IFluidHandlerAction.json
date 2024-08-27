@@ -1,0 +1,209 @@
+{
+  "key": "forge/api/capability/IFluidHandlerAction",
+  "display_name": "IFluidHandlerAction",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "forge:fluid_action"
+  },
+  "type": {
+    "key": "net.minecraftforge.fluids.capability.IFluidHandler.FluidAction",
+    "display_name": "FluidAction",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.fluids.capability",
+    "class_name": "FluidAction",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cFluidAction\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraftforge.fluids.capability.IFluidHandler.FluidAction",
+          "display_name": "FluidAction",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraftforge.fluids.capability",
+          "class_name": "FluidAction"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.capability.IFluidHandlerAction",
+  "member_groups": {
+    "EXECUTE": {
+      "key": "EXECUTE",
+      "members": [
+        {
+          "key": "EXECUTE",
+          "display_name": "EXECUTE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.fluids.capability.IFluidHandler.FluidAction",
+            "display_name": "FluidAction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.fluids.capability",
+            "class_name": "FluidAction"
+          }
+        }
+      ]
+    },
+    "SIMULATE": {
+      "key": "SIMULATE",
+      "members": [
+        {
+          "key": "SIMULATE",
+          "display_name": "SIMULATE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.fluids.capability.IFluidHandler.FluidAction",
+            "display_name": "FluidAction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.fluids.capability",
+            "class_name": "FluidAction"
+          }
+        }
+      ]
+    },
+    "execute": {
+      "key": "execute",
+      "members": [
+        {
+          "key": "execute",
+          "display_name": "execute",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "If the action should execute."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "execute",
+          "display_name": "execute",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "If the action should execute."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "simulate": {
+      "key": "simulate",
+      "members": [
+        {
+          "key": "simulate",
+          "display_name": "simulate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "If the action should simulate."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "simulate",
+          "display_name": "simulate",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "If the action should simulate."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,649 @@
+{
+  "key": "vanilla/api/loot/LootTable",
+  "display_name": "LootTable",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "lootTables.getTable(\u003cresource:minecraft:gameplay/cat_morning_gift\u003e)"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "A loot table is used to determine what is dropped when the game needs to drop loot."
+    }
+  ],
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.LootTable",
+    "display_name": "LootTable",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot",
+    "class_name": "LootTable",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.loot.LootTable",
+  "member_groups": {
+    "fill": {
+      "key": "fill",
+      "members": [
+        {
+          "key": "fill",
+          "display_name": "fill",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Fills the given container with loot rolled by this table."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "container",
+              "display_name": "container",
+              "type": {
+                "key": "net.minecraft.world.Container",
+                "display_name": "Container",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world",
+                "class_name": "Container"
+              },
+              "extra": {
+                "examples": {
+                  "container": [
+                    "container"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The container to fill."
+                }
+              ]
+            },
+            {
+              "key": "params",
+              "display_name": "params",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootParams",
+                "display_name": "LootParams",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "LootParams"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The params that will be used to generate the loot."
+                }
+              ]
+            },
+            {
+              "key": "seed",
+              "display_name": "seed",
+              "type": {
+                "key": "long",
+                "display_name": "long",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "0",
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "An Optional seed used to generate the loot, defaults to "
+                },
+                {
+                  "type": "code",
+                  "content": "0"
+                },
+                {
+                  "type": "plaintext",
+                  "content": " if not supplied."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getRandomItems": {
+      "key": "getRandomItems",
+      "members": [
+        {
+          "key": "getRandomItems",
+          "display_name": "getRandomItems",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Rolls this table and passes all the rolled items to the given "
+            },
+            {
+              "type": "code",
+              "content": "Consumer\u003c{@link IItemStack"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003e}"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "NOTE: This method does respect max stack sizes"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "NOTE: The provided"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.storage.loot.LootContext",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootContext"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " should not be reused from a loot modifier, if you want to reuse a context, look at "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.natives.loot.ExpandLootContextBuilder#copy(LootContext)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.natives.loot.ExpandLootContextBuilder#copy(LootContext)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ".\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "context",
+              "display_name": "context",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootContext",
+                "display_name": "LootContext",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "LootContext"
+              },
+              "extra": {
+                "examples": {
+                  "context": [
+                    "new LootContextBuilder(level).withParameter\u003cVec3\u003e(LootContextParams.origin(), player.position).withParameter\u003cEntity\u003e(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift())"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The context that will generate the loot."
+                }
+              ]
+            },
+            {
+              "key": "stackConsumer",
+              "display_name": "stackConsumer",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cIItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "extra": {
+                "examples": {
+                  "stackConsumer": [
+                    "(stack) \u003d\u003e {\r\n\r\n println(stack.commandString);\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A consumer to act on the rolled stacks."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "getRandomItems",
+          "display_name": "getRandomItems",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Rolls this table and returns the rolled items in a list."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "NOTE: The provided"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.storage.loot.LootContext",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootContext"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " should not be reused from a loot modifier, if you want to reuse a context, look at "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.natives.loot.ExpandLootContextBuilder#copy(LootContext)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.natives.loot.ExpandLootContextBuilder#copy(LootContext)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ".\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "context",
+              "display_name": "context",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootContext",
+                "display_name": "LootContext",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "LootContext"
+              },
+              "extra": {
+                "examples": {
+                  "context": [
+                    "new LootContextBuilder(level).withParameter\u003cVec3\u003e(LootContextParams.origin(), player.position).withParameter\u003cEntity\u003e(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift())"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The context that this loot was generated with."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cIItemStack\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "getRandomItems",
+          "display_name": "getRandomItems",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Rolls this table and returns the rolled items in a list."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "NOTE: The provided"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.storage.loot.LootContext",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootContext"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " should not be reused from a loot modifier, if you want to reuse a context, look at "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.natives.loot.ExpandLootContextBuilder#copy(LootContext)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.natives.loot.ExpandLootContextBuilder#copy(LootContext)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ".\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "params",
+              "display_name": "params",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootParams",
+                "display_name": "LootParams",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "LootParams"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The params that this loot was generated with."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cIItemStack\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "getRandomItemsRaw": {
+      "key": "getRandomItemsRaw",
+      "members": [
+        {
+          "key": "getRandomItemsRaw",
+          "display_name": "getRandomItemsRaw",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Rolls this table and passes all the rolled items to the given "
+            },
+            {
+              "type": "code",
+              "content": "Consumer\u003c{@link IItemStack"
+            },
+            {
+              "type": "plaintext",
+              "content": "\u003e}"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "NOTE: This method does not respect max stack sizes!"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "NOTE: The provided"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.level.storage.loot.LootContext",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootContext"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " should not be reused from a loot modifier, if you want to reuse a context, look at "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.natives.loot.ExpandLootContextBuilder#copy(LootContext)",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "com.blamejared.crafttweaker.natives.loot.ExpandLootContextBuilder#copy(LootContext)"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": ".\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "context",
+              "display_name": "context",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.LootContext",
+                "display_name": "LootContext",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot",
+                "class_name": "LootContext"
+              },
+              "extra": {
+                "examples": {
+                  "context": [
+                    "new LootContextBuilder(level).withParameter\u003cVec3\u003e(LootContextParams.origin(), player.position).withParameter\u003cEntity\u003e(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift())"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The context that will generate the loot."
+                }
+              ]
+            },
+            {
+              "key": "stackConsumer",
+              "display_name": "stackConsumer",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cIItemStack\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                    "display_name": "IItemStack",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.item",
+                    "class_name": "IItemStack"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "extra": {
+                "examples": {
+                  "stackConsumer": [
+                    "(stack) \u003d\u003e {\r\n\r\n println(stack.commandString);\r\n }"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "A consumer to act on the rolled stacks."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "paramSet": {
+      "key": "paramSet",
+      "members": [
+        {
+          "key": "getParamSet",
+          "display_name": "getParamSet",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the param set that this table uses."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        },
+        {
+          "key": "paramSet",
+          "display_name": "paramSet",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the param set that this table uses."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+            "display_name": "LootContextParamSet",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.parameters",
+            "class_name": "LootContextParamSet"
+          }
+        }
+      ]
+    }
+  }
+}

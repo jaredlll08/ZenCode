@@ -1,0 +1,230 @@
+{
+  "key": "forge/api/fluid/FluidIngredient",
+  "display_name": "FluidIngredient",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "FluidIngredient that facilitates accepting either a single, or multiple "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IFluidStack"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s, "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "\u003cFluid\u003e"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s\r\n or "
+    },
+    {
+      "type": "link",
+      "to": "Many\u003cKnownTag\u003cFluid\u003e\u003e",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Many\u003cKnownTag\u003cFluid\u003e\u003e"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.fluid.CTFluidIngredient",
+    "display_name": "CTFluidIngredient",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.fluid",
+    "class_name": "CTFluidIngredient",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.fluid.FluidIngredient",
+  "member_groups": {
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "matches": {
+      "key": "matches",
+      "members": [
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "fluid",
+              "display_name": "fluid",
+              "type": {
+                "key": "net.minecraft.world.level.material.Fluid",
+                "display_name": "Fluid",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.material",
+                "class_name": "Fluid"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "fluidStack",
+              "display_name": "fluidStack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+                "display_name": "IFluidStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.fluid",
+                "class_name": "IFluidStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "or": {
+      "key": "or",
+      "members": [
+        {
+          "key": "asCompound",
+          "display_name": "asCompound",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.fluid.CTFluidIngredient",
+                "display_name": "CTFluidIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.fluid",
+                "class_name": "CTFluidIngredient"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.CTFluidIngredient",
+            "display_name": "CTFluidIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "CTFluidIngredient"
+          },
+          "operator_type": "or"
+        }
+      ]
+    }
+  }
+}

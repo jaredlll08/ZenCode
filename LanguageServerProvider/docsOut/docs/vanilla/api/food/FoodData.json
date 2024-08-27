@@ -1,0 +1,313 @@
+{
+  "key": "vanilla/api/food/FoodData",
+  "display_name": "FoodData",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.food.FoodData",
+    "display_name": "FoodData",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.food",
+    "class_name": "FoodData",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.food.FoodData",
+  "member_groups": {
+    "addExhaustion": {
+      "key": "addExhaustion",
+      "members": [
+        {
+          "key": "addExhaustion",
+          "display_name": "addExhaustion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "exhaustion",
+              "display_name": "exhaustion",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "eat": {
+      "key": "eat",
+      "members": [
+        {
+          "key": "eat",
+          "display_name": "eat",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "foodLevelModifier",
+              "display_name": "foodLevelModifier",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "saturationLevelModifier",
+              "display_name": "saturationLevelModifier",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "eat",
+          "display_name": "eat",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getExhaustionLevel": {
+      "key": "getExhaustionLevel",
+      "members": [
+        {
+          "key": "getExhaustionLevel",
+          "display_name": "getExhaustionLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getFoodLevel": {
+      "key": "getFoodLevel",
+      "members": [
+        {
+          "key": "getFoodLevel",
+          "display_name": "getFoodLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getLastFoodLevel": {
+      "key": "getLastFoodLevel",
+      "members": [
+        {
+          "key": "getLastFoodLevel",
+          "display_name": "getLastFoodLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getSaturationLevel": {
+      "key": "getSaturationLevel",
+      "members": [
+        {
+          "key": "getSaturationLevel",
+          "display_name": "getSaturationLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "needsFood": {
+      "key": "needsFood",
+      "members": [
+        {
+          "key": "needsFood",
+          "display_name": "needsFood",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setExhaustion": {
+      "key": "setExhaustion",
+      "members": [
+        {
+          "key": "setExhaustion",
+          "display_name": "setExhaustion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "exhaustionLevel",
+              "display_name": "exhaustionLevel",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setFoodLevel": {
+      "key": "setFoodLevel",
+      "members": [
+        {
+          "key": "setFoodLevel",
+          "display_name": "setFoodLevel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "foodLevel",
+              "display_name": "foodLevel",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setSaturation": {
+      "key": "setSaturation",
+      "members": [
+        {
+          "key": "setSaturation",
+          "display_name": "setSaturation",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "saturationLevel",
+              "display_name": "saturationLevel",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

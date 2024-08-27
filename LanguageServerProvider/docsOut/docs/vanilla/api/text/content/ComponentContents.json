@@ -1,0 +1,41 @@
+{
+  "key": "vanilla/api/text/content/ComponentContents",
+  "display_name": "ComponentContents",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.network.chat.ComponentContents",
+    "display_name": "ComponentContents",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.network.chat",
+    "class_name": "ComponentContents"
+  },
+  "zen_code_name": "crafttweaker.api.text.content.ComponentContents",
+  "member_groups": {
+    "empty": {
+      "key": "empty",
+      "members": [
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.network.chat.ComponentContents",
+            "display_name": "ComponentContents",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "ComponentContents"
+          }
+        }
+      ]
+    }
+  }
+}

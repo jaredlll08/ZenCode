@@ -1,0 +1,19 @@
+{
+  "key": "vanilla/api/text/FormattedText",
+  "display_name": "FormattedText",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.network.chat.FormattedText",
+    "display_name": "FormattedText",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.network.chat",
+    "class_name": "FormattedText"
+  },
+  "zen_code_name": "crafttweaker.api.text.FormattedText"
+}

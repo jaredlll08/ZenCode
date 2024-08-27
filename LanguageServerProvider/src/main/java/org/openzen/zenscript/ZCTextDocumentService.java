@@ -59,7 +59,6 @@ public class ZCTextDocumentService implements TextDocumentService {
 
 	@Override
 	public CompletableFuture<Either<List<CompletionItem>, CompletionList>> completion(CompletionParams position) {
-
 		return CompletableFuture.supplyAsync(() -> {
 			final CodePosition queriedPosition = OpenFileInfo.positionToCodePosition(position.getTextDocument().getUri(), position.getPosition());
 			final Optional<List<CompletionItem>> completionItems = fromDot(position, queriedPosition);
@@ -110,7 +109,9 @@ public class ZCTextDocumentService implements TextDocumentService {
 					PositionedToken<ZSTokenType, ZSToken> next = raw.next();
 					tokens.add(next);
 				}
-				System.out.println(tokens);
+				server.client().ifPresent(languageClient -> {
+					languageClient.logMessage(new MessageParams(MessageType.Info, tokens.toString()));
+				});
 			} catch (IOException | ParseException e) {
 				throw new RuntimeException(e);
 			}
@@ -353,7 +354,7 @@ public class ZCTextDocumentService implements TextDocumentService {
 						.findAny()
 						.flatMap(Function.identity());
 				if (expression.isPresent()) {
-					System.out.println("got expression");
+					ZCLSPServer.log("got expression");
 //					final LocalMemberCache localMemberCache = new LocalMemberCache(engine.engine().registry, Collections.emptyList());
 //					final TypeMembers typeMembers = localMemberCache.get(expression.get().type);
 //					for (String memberName : typeMembers.getMemberNames()) {

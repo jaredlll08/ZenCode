@@ -1,0 +1,197 @@
+{
+  "key": "vanilla/api/recipe/replacement/type/ModsFilteringRule",
+  "display_name": "ModsFilteringRule",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Filters recipes that have been created by the given set of mods."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Every mod is identified according to its mod id. Recipes have been created by a mod if their name as determined\r\n by"
+    },
+    {
+      "type": "link",
+      "to": "Recipe#getId()",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Recipe#getId()"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " has that mod id as the namespace.\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.ModsFilteringRule",
+    "display_name": "ModsFilteringRule",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+    "class_name": "ModsFilteringRule",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+        "display_name": "IFilteringRule",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "IFilteringRule"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+        "display_name": "ITargetingFilter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "ITargetingFilter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.type.ModsFilteringRule",
+  "member_groups": {
+    "of": {
+      "key": "of",
+      "members": [
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule filtering recipes based on the given mod ids."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "modIds",
+              "display_name": "modIds",
+              "type": {
+                "key": "java.lang.String[]",
+                "display_name": "String[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.String",
+                  "display_name": "string",
+                  "type_type": "basic",
+                  "nullable": false
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The mod ids to check for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+            "display_name": "IFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "IFilteringRule"
+          }
+        },
+        {
+          "key": "of",
+          "display_name": "of",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule filtering recipes based on the ids of the given "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.mod.Mod",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Mod"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "s."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "mods",
+              "display_name": "mods",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.mod.Mod[]",
+                "display_name": "Mod[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.mod.Mod",
+                  "display_name": "Mod",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.mod",
+                  "class_name": "Mod"
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The mods to check for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+            "display_name": "IFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+            "class_name": "IFilteringRule"
+          }
+        }
+      ]
+    }
+  }
+}

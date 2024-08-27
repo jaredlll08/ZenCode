@@ -1,0 +1,129 @@
+{
+  "key": "vanilla/api/entity/MobType",
+  "display_name": "MobType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.MobType",
+    "display_name": "MobType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity",
+    "class_name": "MobType",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.entity.MobType",
+  "member_groups": {
+    "getArthropod": {
+      "key": "getArthropod",
+      "members": [
+        {
+          "key": "getArthropod",
+          "display_name": "getArthropod",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.world.entity.MobType",
+            "display_name": "MobType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobType"
+          }
+        }
+      ]
+    },
+    "getIllager": {
+      "key": "getIllager",
+      "members": [
+        {
+          "key": "getIllager",
+          "display_name": "getIllager",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.world.entity.MobType",
+            "display_name": "MobType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobType"
+          }
+        }
+      ]
+    },
+    "getUndead": {
+      "key": "getUndead",
+      "members": [
+        {
+          "key": "getUndead",
+          "display_name": "getUndead",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.world.entity.MobType",
+            "display_name": "MobType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobType"
+          }
+        }
+      ]
+    },
+    "getUndefined": {
+      "key": "getUndefined",
+      "members": [
+        {
+          "key": "getUndefined",
+          "display_name": "getUndefined",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.world.entity.MobType",
+            "display_name": "MobType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobType"
+          }
+        }
+      ]
+    },
+    "getWater": {
+      "key": "getWater",
+      "members": [
+        {
+          "key": "getWater",
+          "display_name": "getWater",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.world.entity.MobType",
+            "display_name": "MobType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobType"
+          }
+        }
+      ]
+    }
+  }
+}

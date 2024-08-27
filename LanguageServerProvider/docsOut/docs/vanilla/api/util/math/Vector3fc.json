@@ -1,0 +1,19 @@
+{
+  "key": "vanilla/api/util/math/Vector3fc",
+  "display_name": "Vector3fc",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "org.joml.Vector3fc",
+    "display_name": "Vector3fc",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "org.joml",
+    "class_name": "Vector3fc"
+  },
+  "zen_code_name": "crafttweaker.api.util.math.Vector3fc"
+}

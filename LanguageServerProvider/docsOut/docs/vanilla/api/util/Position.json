@@ -1,0 +1,114 @@
+{
+  "key": "vanilla/api/util/Position",
+  "display_name": "Position",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.core.Position",
+    "display_name": "Position",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.core",
+    "class_name": "Position"
+  },
+  "zen_code_name": "crafttweaker.api.util.Position",
+  "member_groups": {
+    "x": {
+      "key": "x",
+      "members": [
+        {
+          "key": "x",
+          "display_name": "x",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "x",
+          "display_name": "x",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "y": {
+      "key": "y",
+      "members": [
+        {
+          "key": "y",
+          "display_name": "y",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "y",
+          "display_name": "y",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "z": {
+      "key": "z",
+      "members": [
+        {
+          "key": "z",
+          "display_name": "z",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "z",
+          "display_name": "z",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "key": "vanilla/api/ingredient/IIngredientWithAmount",
+  "display_name": "IIngredientWithAmount",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Consists of an ingredient and an amount."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.ingredient.IIngredientWithAmount",
+    "display_name": "IIngredientWithAmount",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.ingredient",
+    "class_name": "IIngredientWithAmount",
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.ingredient.IIngredientWithAmount",
+  "member_groups": {
+    "amount": {
+      "key": "amount",
+      "members": [
+        {
+          "key": "amount",
+          "display_name": "amount",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of Items in the ItemStack"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "asIData": {
+      "key": "asIData",
+      "members": [
+        {
+          "key": "asIData",
+          "display_name": "asIData",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        },
+        {
+          "key": "asIData",
+          "display_name": "asIData",
+          "member_type": "caster",
+          "origin": "declared",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "ingredient": {
+      "key": "ingredient",
+      "members": [
+        {
+          "key": "ingredient",
+          "display_name": "ingredient",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "The backing ingredient"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+            "display_name": "IIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.ingredient",
+            "class_name": "IIngredient"
+          }
+        }
+      ]
+    }
+  }
+}

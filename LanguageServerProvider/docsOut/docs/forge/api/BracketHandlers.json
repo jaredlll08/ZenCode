@@ -1,0 +1,68 @@
+{
+  "key": "forge/api/BracketHandlers",
+  "display_name": "BracketHandlers",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "This class contains the \"simple\" Forge Bracket handlers from CraftTweaker."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.bracket.ForgeBracketHandlers",
+    "display_name": "ForgeBracketHandlers",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.bracket",
+    "class_name": "ForgeBracketHandlers",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.bracket.ForgeBracketHandlers",
+  "member_groups": {
+    "getToolType": {
+      "key": "getToolType",
+      "members": [
+        {
+          "key": "getToolType",
+          "display_name": "getToolType",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraftforge.common.ToolAction",
+            "display_name": "ToolAction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.common",
+            "class_name": "ToolAction"
+          }
+        }
+      ]
+    }
+  }
+}

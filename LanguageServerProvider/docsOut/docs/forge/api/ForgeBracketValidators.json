@@ -1,0 +1,60 @@
+{
+  "key": "forge/api/ForgeBracketValidators",
+  "display_name": "ForgeBracketValidators",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.bracket.ForgeBracketValidators",
+    "display_name": "ForgeBracketValidators",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.bracket",
+    "class_name": "ForgeBracketValidators",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.bracket.ForgeBracketValidators",
+  "member_groups": {
+    "validateToolActionBracket": {
+      "key": "validateToolActionBracket",
+      "members": [
+        {
+          "key": "validateToolActionBracket",
+          "display_name": "validateToolActionBracket",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

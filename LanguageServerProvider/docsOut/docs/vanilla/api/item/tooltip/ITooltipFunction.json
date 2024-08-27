@@ -1,0 +1,90 @@
+{
+  "key": "vanilla/api/item/tooltip/ITooltipFunction",
+  "display_name": "ITooltipFunction",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.item.tooltip.ITooltipFunction",
+    "display_name": "ITooltipFunction",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.item.tooltip",
+    "class_name": "ITooltipFunction"
+  },
+  "zen_code_name": "crafttweaker.api.item.tooltip.ITooltipFunction",
+  "member_groups": {
+    "apply": {
+      "key": "apply",
+      "members": [
+        {
+          "key": "apply",
+          "display_name": "apply",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            },
+            {
+              "key": "tooltip",
+              "display_name": "tooltip",
+              "type": {
+                "key": "java.util.List",
+                "display_name": "List\u003cComponent\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "E": {
+                    "key": "net.minecraft.network.chat.Component",
+                    "display_name": "Component",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.network.chat",
+                    "class_name": "Component"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "List"
+              },
+              "optional": false
+            },
+            {
+              "key": "flag",
+              "display_name": "flag",
+              "type": {
+                "key": "net.minecraft.world.item.TooltipFlag",
+                "display_name": "TooltipFlag",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "TooltipFlag"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

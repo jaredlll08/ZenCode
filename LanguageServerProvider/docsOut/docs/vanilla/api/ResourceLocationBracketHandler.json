@@ -1,0 +1,88 @@
+{
+  "key": "vanilla/api/ResourceLocationBracketHandler",
+  "display_name": "ResourceLocationBracketHandler",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker",
+      "tags"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Bracket handlers specifically for resource location as it is used in multiple loaders."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.bracket.ResourceLocationBracketHandler",
+    "display_name": "ResourceLocationBracketHandler",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.bracket",
+    "class_name": "ResourceLocationBracketHandler",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.bracket.ResourceLocationBracketHandler",
+  "member_groups": {
+    "getResourceLocation": {
+      "key": "getResourceLocation",
+      "members": [
+        {
+          "key": "getResourceLocation",
+          "display_name": "getResourceLocation",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a Resource location based on the tokens.\r\n Throws an error if the tokens are not a valid location."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tokens": [
+                    "\"minecraft:dirt\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The resource location"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    }
+  }
+}

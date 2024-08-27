@@ -1,0 +1,172 @@
+{
+  "key": "vanilla/api/predicate/EntityVariantPredicate",
+  "display_name": "EntityVariantPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.EntityVariantPredicate",
+    "display_name": "EntityVariantPredicate",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "V": {
+        "key": "V",
+        "display_name": "V",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "EntityVariantPredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.EntityVariantPredicate",
+  "member_groups": {
+    "catVariant": {
+      "key": "catVariant",
+      "members": [
+        {
+          "key": "catVariant",
+          "display_name": "catVariant",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "variant",
+              "display_name": "variant",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+            "display_name": "EntitySubPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntitySubPredicate"
+          }
+        },
+        {
+          "key": "catVariant",
+          "display_name": "catVariant",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "variant",
+              "display_name": "variant",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+            "display_name": "EntitySubPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntitySubPredicate"
+          }
+        }
+      ]
+    },
+    "frogVariant": {
+      "key": "frogVariant",
+      "members": [
+        {
+          "key": "frogVariant",
+          "display_name": "frogVariant",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "variant",
+              "display_name": "variant",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+            "display_name": "EntitySubPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntitySubPredicate"
+          }
+        },
+        {
+          "key": "frogVariant",
+          "display_name": "frogVariant",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "variant",
+              "display_name": "variant",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+            "display_name": "EntitySubPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntitySubPredicate"
+          }
+        }
+      ]
+    }
+  }
+}

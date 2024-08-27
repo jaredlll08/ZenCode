@@ -1,0 +1,186 @@
+{
+  "key": "vanilla/api/entity/attribute/AttributeOperation",
+  "display_name": "AttributeOperation",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:attribute/operation"
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+    "display_name": "Operation",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity.ai.attributes",
+    "class_name": "Operation",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cOperation\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+          "display_name": "Operation",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.entity.ai.attributes",
+          "class_name": "Operation"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.attribute.AttributeOperation",
+  "member_groups": {
+    "ADDITION": {
+      "key": "ADDITION",
+      "members": [
+        {
+          "key": "ADDITION",
+          "display_name": "ADDITION",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+            "display_name": "Operation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.ai.attributes",
+            "class_name": "Operation"
+          }
+        }
+      ]
+    },
+    "MULTIPLY_BASE": {
+      "key": "MULTIPLY_BASE",
+      "members": [
+        {
+          "key": "MULTIPLY_BASE",
+          "display_name": "MULTIPLY_BASE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+            "display_name": "Operation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.ai.attributes",
+            "class_name": "Operation"
+          }
+        }
+      ]
+    },
+    "MULTIPLY_TOTAL": {
+      "key": "MULTIPLY_TOTAL",
+      "members": [
+        {
+          "key": "MULTIPLY_TOTAL",
+          "display_name": "MULTIPLY_TOTAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation",
+            "display_name": "Operation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.ai.attributes",
+            "class_name": "Operation"
+          }
+        }
+      ]
+    },
+    "value": {
+      "key": "value",
+      "members": [
+        {
+          "key": "getValue",
+          "display_name": "getValue",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the value of this operation."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "value",
+          "display_name": "value",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the value of this operation."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

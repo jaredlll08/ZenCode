@@ -1,0 +1,475 @@
+{
+  "key": "vanilla/api/entity/MobCategory",
+  "display_name": "MobCategory",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:mobcategory"
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.MobCategory",
+    "display_name": "MobCategory",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity",
+    "class_name": "MobCategory",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cMobCategory\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.entity.MobCategory",
+          "display_name": "MobCategory",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.entity",
+          "class_name": "MobCategory"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "net.minecraftforge.common.IExtensibleEnum",
+        "display_name": "IExtensibleEnum",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common",
+        "class_name": "IExtensibleEnum"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.MobCategory",
+  "member_groups": {
+    "AMBIENT": {
+      "key": "AMBIENT",
+      "members": [
+        {
+          "key": "AMBIENT",
+          "display_name": "AMBIENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobCategory",
+            "display_name": "MobCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobCategory"
+          }
+        }
+      ]
+    },
+    "AXOLOTLS": {
+      "key": "AXOLOTLS",
+      "members": [
+        {
+          "key": "AXOLOTLS",
+          "display_name": "AXOLOTLS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobCategory",
+            "display_name": "MobCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobCategory"
+          }
+        }
+      ]
+    },
+    "CREATURE": {
+      "key": "CREATURE",
+      "members": [
+        {
+          "key": "CREATURE",
+          "display_name": "CREATURE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobCategory",
+            "display_name": "MobCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobCategory"
+          }
+        }
+      ]
+    },
+    "MISC": {
+      "key": "MISC",
+      "members": [
+        {
+          "key": "MISC",
+          "display_name": "MISC",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobCategory",
+            "display_name": "MobCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobCategory"
+          }
+        }
+      ]
+    },
+    "MONSTER": {
+      "key": "MONSTER",
+      "members": [
+        {
+          "key": "MONSTER",
+          "display_name": "MONSTER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobCategory",
+            "display_name": "MobCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobCategory"
+          }
+        }
+      ]
+    },
+    "UNDERGROUND_WATER_CREATURE": {
+      "key": "UNDERGROUND_WATER_CREATURE",
+      "members": [
+        {
+          "key": "UNDERGROUND_WATER_CREATURE",
+          "display_name": "UNDERGROUND_WATER_CREATURE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobCategory",
+            "display_name": "MobCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobCategory"
+          }
+        }
+      ]
+    },
+    "WATER_AMBIENT": {
+      "key": "WATER_AMBIENT",
+      "members": [
+        {
+          "key": "WATER_AMBIENT",
+          "display_name": "WATER_AMBIENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobCategory",
+            "display_name": "MobCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobCategory"
+          }
+        }
+      ]
+    },
+    "WATER_CREATURE": {
+      "key": "WATER_CREATURE",
+      "members": [
+        {
+          "key": "WATER_CREATURE",
+          "display_name": "WATER_CREATURE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.entity.MobCategory",
+            "display_name": "MobCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "MobCategory"
+          }
+        }
+      ]
+    },
+    "despawnDistance": {
+      "key": "despawnDistance",
+      "members": [
+        {
+          "key": "getDespawnDistance",
+          "display_name": "getDespawnDistance",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "despawnDistance",
+          "display_name": "despawnDistance",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "friendly": {
+      "key": "friendly",
+      "members": [
+        {
+          "key": "isFriendly",
+          "display_name": "isFriendly",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "friendly",
+          "display_name": "friendly",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getName": {
+      "key": "getName",
+      "members": [
+        {
+          "key": "getName",
+          "display_name": "getName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "maxInstancesPerChunk": {
+      "key": "maxInstancesPerChunk",
+      "members": [
+        {
+          "key": "getMaxInstancesPerChunk",
+          "display_name": "getMaxInstancesPerChunk",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "maxInstancesPerChunk",
+          "display_name": "maxInstancesPerChunk",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "noDespawnDistance": {
+      "key": "noDespawnDistance",
+      "members": [
+        {
+          "key": "getNoDespawnDistance",
+          "display_name": "getNoDespawnDistance",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "noDespawnDistance",
+          "display_name": "noDespawnDistance",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "persistent": {
+      "key": "persistent",
+      "members": [
+        {
+          "key": "isPersistent",
+          "display_name": "isPersistent",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "persistent",
+          "display_name": "persistent",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

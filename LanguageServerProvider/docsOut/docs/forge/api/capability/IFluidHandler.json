@@ -1,0 +1,540 @@
+{
+  "key": "forge/api/capability/IFluidHandler",
+  "display_name": "IFluidHandler",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraftforge.fluids.capability.IFluidHandler",
+    "display_name": "IFluidHandler",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.fluids.capability",
+    "class_name": "IFluidHandler"
+  },
+  "zen_code_name": "crafttweaker.api.capability.IFluidHandler",
+  "member_groups": {
+    "drain": {
+      "key": "drain",
+      "members": [
+        {
+          "key": "drain",
+          "display_name": "drain",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Drains fluid out of the internal tanks."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "resource",
+              "display_name": "resource",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+                "display_name": "IFluidStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.fluid",
+                "class_name": "IFluidStack"
+              },
+              "extra": {
+                "examples": {
+                  "resource": [
+                    "\u003cfluid:minecraft:water\u003e * 400"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The fluid and the maximum amount of the fluid to drain."
+                }
+              ]
+            },
+            {
+              "key": "action",
+              "display_name": "action",
+              "type": {
+                "key": "net.minecraftforge.fluids.capability.IFluidHandler.FluidAction",
+                "display_name": "FluidAction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.fluids.capability",
+                "class_name": "FluidAction"
+              },
+              "extra": {
+                "examples": {
+                  "action": [
+                    "\u003cconstant:forge:fluid_action:execute\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Determines if the drain is simulated or executed."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        },
+        {
+          "key": "drain",
+          "display_name": "drain",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Drains fluid out of the internal tanks."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "maxDrain",
+              "display_name": "maxDrain",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxDrain": [
+                    "400"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "How much fluid should be drained."
+                }
+              ]
+            },
+            {
+              "key": "action",
+              "display_name": "action",
+              "type": {
+                "key": "net.minecraftforge.fluids.capability.IFluidHandler.FluidAction",
+                "display_name": "FluidAction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.fluids.capability",
+                "class_name": "FluidAction"
+              },
+              "extra": {
+                "examples": {
+                  "action": [
+                    "\u003cconstant:forge:fluid_action:execute\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Determines if the drain is simulated or executed."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    },
+    "fill": {
+      "key": "fill",
+      "members": [
+        {
+          "key": "fill",
+          "display_name": "fill",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Fills the internal tanks with the given fluid."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "resource",
+              "display_name": "resource",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+                "display_name": "IFluidStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.fluid",
+                "class_name": "IFluidStack"
+              },
+              "extra": {
+                "examples": {
+                  "resource": [
+                    "\u003cfluid:minecraft:water\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The fluid to fill."
+                }
+              ]
+            },
+            {
+              "key": "action",
+              "display_name": "action",
+              "type": {
+                "key": "net.minecraftforge.fluids.capability.IFluidHandler.FluidAction",
+                "display_name": "FluidAction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.fluids.capability",
+                "class_name": "FluidAction"
+              },
+              "extra": {
+                "examples": {
+                  "action": [
+                    "\u003cconstant:forge:fluid_action:execute\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Determines if the fill is simulated or executed."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getFluidInTank": {
+      "key": "getFluidInTank",
+      "members": [
+        {
+          "key": "getFluidInTank",
+          "display_name": "getFluidInTank",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the fluid in the given tank."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tank",
+              "display_name": "tank",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tank": [
+                    "0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tank to get the fluid of."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    },
+    "getTankCapacity": {
+      "key": "getTankCapacity",
+      "members": [
+        {
+          "key": "getTankCapacity",
+          "display_name": "getTankCapacity",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the capacity of the given tank."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tank",
+              "display_name": "tank",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tank": [
+                    "0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tank to get the capacity of."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "indexget": {
+      "key": "indexget",
+      "members": [
+        {
+          "key": "getFluidInTank",
+          "display_name": "getFluidInTank",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the fluid in the given tank."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tank",
+              "display_name": "tank",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tank": [
+                    "0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tank to get the fluid of."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          },
+          "operator_type": "indexget"
+        }
+      ]
+    },
+    "isFluidValid": {
+      "key": "isFluidValid",
+      "members": [
+        {
+          "key": "isFluidValid",
+          "display_name": "isFluidValid",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if the given fluid is valid for the given tank."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "tank",
+              "display_name": "tank",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "tank": [
+                    "0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The tank to check."
+                }
+              ]
+            },
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+                "display_name": "IFluidStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.fluid",
+                "class_name": "IFluidStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003cfluid:minecraft:water\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The fluid to check."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "tanks": {
+      "key": "tanks",
+      "members": [
+        {
+          "key": "getTanks",
+          "display_name": "getTanks",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the number of tanks in this fluid handler."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A single handler can have many tanks holding different fluids"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "tanks",
+          "display_name": "tanks",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the number of tanks in this fluid handler."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A single handler can have many tanks holding different fluids"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

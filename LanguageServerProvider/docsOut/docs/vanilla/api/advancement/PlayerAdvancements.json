@@ -1,0 +1,185 @@
+{
+  "key": "vanilla/api/advancement/PlayerAdvancements",
+  "display_name": "PlayerAdvancements",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.server.PlayerAdvancements",
+    "display_name": "PlayerAdvancements",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.server",
+    "class_name": "PlayerAdvancements",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.advancement.PlayerAdvancements",
+  "member_groups": {
+    "award": {
+      "key": "award",
+      "members": [
+        {
+          "key": "award",
+          "display_name": "award",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "advancement",
+              "display_name": "advancement",
+              "type": {
+                "key": "net.minecraft.advancements.Advancement",
+                "display_name": "Advancement",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements",
+                "class_name": "Advancement"
+              },
+              "optional": false
+            },
+            {
+              "key": "criteria",
+              "display_name": "criteria",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "flushDirty": {
+      "key": "flushDirty",
+      "members": [
+        {
+          "key": "flushDirty",
+          "display_name": "flushDirty",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "player",
+              "display_name": "player",
+              "type": {
+                "key": "net.minecraft.server.level.ServerPlayer",
+                "display_name": "ServerPlayer",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.server.level",
+                "class_name": "ServerPlayer"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getOrStartProgress": {
+      "key": "getOrStartProgress",
+      "members": [
+        {
+          "key": "getOrStartProgress",
+          "display_name": "getOrStartProgress",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "advancement",
+              "display_name": "advancement",
+              "type": {
+                "key": "net.minecraft.advancements.Advancement",
+                "display_name": "Advancement",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements",
+                "class_name": "Advancement"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.AdvancementProgress",
+            "display_name": "AdvancementProgress",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "AdvancementProgress"
+          }
+        }
+      ]
+    },
+    "revoke": {
+      "key": "revoke",
+      "members": [
+        {
+          "key": "revoke",
+          "display_name": "revoke",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "advancement",
+              "display_name": "advancement",
+              "type": {
+                "key": "net.minecraft.advancements.Advancement",
+                "display_name": "Advancement",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements",
+                "class_name": "Advancement"
+              },
+              "optional": false
+            },
+            {
+              "key": "criteria",
+              "display_name": "criteria",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

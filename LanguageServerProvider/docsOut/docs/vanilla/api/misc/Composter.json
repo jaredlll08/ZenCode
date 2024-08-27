@@ -1,0 +1,114 @@
+{
+  "key": "vanilla/api/misc/Composter",
+  "display_name": "Composter",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "composter"
+      ]
+    }
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.misc.CTComposter",
+    "display_name": "CTComposter",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.misc",
+    "class_name": "CTComposter",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.misc.Composter",
+  "member_groups": {
+    "setValue": {
+      "key": "setValue",
+      "members": [
+        {
+          "key": "setValue",
+          "display_name": "setValue",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the compost value of the given IItemStack."
+            },
+            {
+              "type": "plaintext",
+              "content": "The amount should be between 0 and 1, anything above 1 would just be wasted."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "extra": {
+                "examples": {
+                  "stack": [
+                    "\u003citem:minecraft:diamond\u003e"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The stack to be compostable"
+                }
+              ]
+            },
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "amount": [
+                    "0.85"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The amount of Compost that should be added when the item is put in a Composter."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

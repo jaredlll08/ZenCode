@@ -1,0 +1,47 @@
+{
+  "key": "vanilla/api/entity/Targeting",
+  "display_name": "Targeting",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.entity.Targeting",
+    "display_name": "Targeting",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.entity",
+    "class_name": "Targeting"
+  },
+  "zen_code_name": "crafttweaker.api.entity.Targeting",
+  "member_groups": {
+    "target": {
+      "key": "target",
+      "members": [
+        {
+          "key": "target",
+          "display_name": "target",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the current target, or null if not targeting anything."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.LivingEntity",
+            "display_name": "LivingEntity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "LivingEntity"
+          }
+        }
+      ]
+    }
+  }
+}

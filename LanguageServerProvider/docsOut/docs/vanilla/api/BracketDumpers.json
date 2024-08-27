@@ -1,0 +1,337 @@
+{
+  "key": "vanilla/api/BracketDumpers",
+  "display_name": "BracketDumpers",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.bracket.BracketDumpers",
+    "display_name": "BracketDumpers",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.bracket",
+    "class_name": "BracketDumpers",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.BracketDumpers",
+  "member_groups": {
+    "getAttributeDump": {
+      "key": "getAttributeDump",
+      "members": [
+        {
+          "key": "getAttributeDump",
+          "display_name": "getAttributeDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getBlockDump": {
+      "key": "getBlockDump",
+      "members": [
+        {
+          "key": "getBlockDump",
+          "display_name": "getBlockDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getEffectDump": {
+      "key": "getEffectDump",
+      "members": [
+        {
+          "key": "getEffectDump",
+          "display_name": "getEffectDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getEnchantmentDump": {
+      "key": "getEnchantmentDump",
+      "members": [
+        {
+          "key": "getEnchantmentDump",
+          "display_name": "getEnchantmentDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getEntityTypeDump": {
+      "key": "getEntityTypeDump",
+      "members": [
+        {
+          "key": "getEntityTypeDump",
+          "display_name": "getEntityTypeDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getFluidStackDump": {
+      "key": "getFluidStackDump",
+      "members": [
+        {
+          "key": "getFluidStackDump",
+          "display_name": "getFluidStackDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getItemBracketDump": {
+      "key": "getItemBracketDump",
+      "members": [
+        {
+          "key": "getItemBracketDump",
+          "display_name": "getItemBracketDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getPotionTypeDump": {
+      "key": "getPotionTypeDump",
+      "members": [
+        {
+          "key": "getPotionTypeDump",
+          "display_name": "getPotionTypeDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getProfessionDump": {
+      "key": "getProfessionDump",
+      "members": [
+        {
+          "key": "getProfessionDump",
+          "display_name": "getProfessionDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getSoundEventDump": {
+      "key": "getSoundEventDump",
+      "members": [
+        {
+          "key": "getSoundEventDump",
+          "display_name": "getSoundEventDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getTargetingStrategyDump": {
+      "key": "getTargetingStrategyDump",
+      "members": [
+        {
+          "key": "getTargetingStrategyDump",
+          "display_name": "getTargetingStrategyDump",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    }
+  }
+}

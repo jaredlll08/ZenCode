@@ -1,0 +1,458 @@
+{
+  "key": "vanilla/api/event/EventManager",
+  "display_name": "EventManager",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "11.0.0"
+        }
+      ]
+    },
+    "examples": {
+      "this": [
+        "events"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Manages the registration and handling of custom handlers for the various events of the game."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "You can register event handlers for pretty much everything, but make sure that the class you are referencing is\r\n documented as an event, otherwise you\u0027re in for a nasty surprise."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.impl.event.ZenEventManager",
+    "display_name": "ZenEventManager",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.impl.event",
+    "class_name": "ZenEventManager",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.events.EventManager",
+  "member_groups": {
+    "register": {
+      "key": "register",
+      "members": [
+        {
+          "key": "register",
+          "display_name": "register",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Registers a new event listener."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "consumer",
+              "display_name": "consumer",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The event handler."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "register",
+          "display_name": "register",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Registers a new event listener for the specified "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ZenEventPhase"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "phase",
+              "display_name": "phase",
+              "type": {
+                "key": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+                "display_name": "ZenEventPhase",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.impl.event",
+                "class_name": "ZenEventPhase"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The phase on which the event should be registered."
+                }
+              ]
+            },
+            {
+              "key": "consumer",
+              "display_name": "consumer",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The event handler."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "register",
+          "display_name": "register",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Registers a new event listener that can listen to cancelled events."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "listenToCanceled",
+              "display_name": "listenToCanceled",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Whether cancelled events should also be listened to or not."
+                }
+              ]
+            },
+            {
+              "key": "consumer",
+              "display_name": "consumer",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The event handler."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        },
+        {
+          "key": "register",
+          "display_name": "register",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Registers a new event listener for the specified "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "ZenEventPhase"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " that can listen to cancelled events."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "phase",
+              "display_name": "phase",
+              "type": {
+                "key": "com.blamejared.crafttweaker.impl.event.ZenEventPhase",
+                "display_name": "ZenEventPhase",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.impl.event",
+                "class_name": "ZenEventPhase"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The phase on which the event should be registered."
+                }
+              ]
+            },
+            {
+              "key": "listenToCanceled",
+              "display_name": "listenToCanceled",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Whether cancelled events should also be listened to or not."
+                }
+              ]
+            },
+            {
+              "key": "consumer",
+              "display_name": "consumer",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The event handler."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "type_parameters": {
+            "T": {
+              "key": "T",
+              "display_name": "T",
+              "type_type": "generic",
+              "nullable": false,
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "bound": "specific"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

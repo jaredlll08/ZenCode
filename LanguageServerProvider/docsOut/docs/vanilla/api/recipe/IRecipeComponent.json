@@ -1,0 +1,196 @@
+{
+  "key": "vanilla/api/recipe/IRecipeComponent",
+  "display_name": "IRecipeComponent",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    },
+    "see": [
+      [
+        {
+          "type": "plaintext",
+          "content": "IDecomposedRecipe"
+        }
+      ],
+      [
+        {
+          "type": "plaintext",
+          "content": "#find(ResourceLocation)"
+        }
+      ],
+      [
+        {
+          "type": "plaintext",
+          "content": "#simple(ResourceLocation, TypeToken, BiPredicate)"
+        }
+      ],
+      [
+        {
+          "type": "plaintext",
+          "content": "#composite(ResourceLocation, TypeToken, BiPredicate, Function, Function)"
+        }
+      ],
+      [
+        {
+          "type": "plaintext",
+          "content": "com.blamejared.crafttweaker.api.plugin.ICraftTweakerPlugin#registerRecipeComponents(com.blamejared.crafttweaker.api.plugin.IRecipeComponentRegistrationHandler)"
+        }
+      ]
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Represents a part of a recipe after it has been decomposed."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Recipe components in a recipe are associated with a list of data, whose type varies depending on the component.\r\n The data indicates what the component is made up of, allowing for introspection and selective editing of any recipe\r\n that can be decomposed and then recomposed, without requiring explicit support for every type of change."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Obtaining an instance of a recipe component in a script can be done through the usage of the"
+    },
+    {
+      "type": "code",
+      "content": "\u003crecipecomponent\u003e"
+    },
+    {
+      "type": "plaintext",
+      "content": " bracket handler. Integration writers can instead refer to the "
+    },
+    {
+      "type": "code",
+      "content": "find"
+    },
+    {
+      "type": "plaintext",
+      "content": "method."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Every recipe component must be registered to the registry through a plugin to be able to be used effectively and\r\n discovered by script writers. New recipe components can be created with either"
+    },
+    {
+      "type": "code",
+      "content": "simple"
+    },
+    {
+      "type": "plaintext",
+      "content": " or "
+    },
+    {
+      "type": "code",
+      "content": "composite"
+    },
+    {
+      "type": "plaintext",
+      "content": ". A\r\n set of common components is already provided by CraftTweaker.\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+    "display_name": "IRecipeComponent\u003cT\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.recipe.component",
+    "class_name": "IRecipeComponent",
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.IRecipeComponent",
+  "member_groups": {
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

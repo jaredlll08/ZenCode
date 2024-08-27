@@ -1,0 +1,159 @@
+{
+  "key": "forge/api/game/LogicalSide",
+  "display_name": "LogicalSide",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "forge:game/logical_side"
+  },
+  "type": {
+    "key": "net.minecraftforge.fml.LogicalSide",
+    "display_name": "LogicalSide",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.fml",
+    "class_name": "LogicalSide",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cLogicalSide\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraftforge.fml.LogicalSide",
+          "display_name": "LogicalSide",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraftforge.fml",
+          "class_name": "LogicalSide"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.forge.game.LogicalSide",
+  "member_groups": {
+    "CLIENT": {
+      "key": "CLIENT",
+      "members": [
+        {
+          "key": "CLIENT",
+          "display_name": "CLIENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.fml.LogicalSide",
+            "display_name": "LogicalSide",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.fml",
+            "class_name": "LogicalSide"
+          }
+        }
+      ]
+    },
+    "SERVER": {
+      "key": "SERVER",
+      "members": [
+        {
+          "key": "SERVER",
+          "display_name": "SERVER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.fml.LogicalSide",
+            "display_name": "LogicalSide",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.fml",
+            "class_name": "LogicalSide"
+          }
+        }
+      ]
+    },
+    "isClient": {
+      "key": "isClient",
+      "members": [
+        {
+          "key": "isClient",
+          "display_name": "isClient",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isServer": {
+      "key": "isServer",
+      "members": [
+        {
+          "key": "isServer",
+          "display_name": "isServer",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

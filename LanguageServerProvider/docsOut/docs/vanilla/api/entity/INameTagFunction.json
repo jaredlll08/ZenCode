@@ -1,0 +1,67 @@
+{
+  "key": "vanilla/api/entity/INameTagFunction",
+  "display_name": "INameTagFunction",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.entity.INameTagFunction",
+    "display_name": "INameTagFunction",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.entity",
+    "class_name": "INameTagFunction"
+  },
+  "zen_code_name": "crafttweaker.api.entity.INameTagFunction",
+  "member_groups": {
+    "apply": {
+      "key": "apply",
+      "members": [
+        {
+          "key": "apply",
+          "display_name": "apply",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": false
+            },
+            {
+              "key": "result",
+              "display_name": "result",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.entity.NameTagResult",
+                "display_name": "NameTagResult",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.entity",
+                "class_name": "NameTagResult"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

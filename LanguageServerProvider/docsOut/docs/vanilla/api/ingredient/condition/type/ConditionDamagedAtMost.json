@@ -1,0 +1,146 @@
+{
+  "key": "vanilla/api/ingredient/condition/type/ConditionDamagedAtMost",
+  "display_name": "ConditionDamagedAtMost",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.ingredient.condition.type.ConditionDamagedAtMost",
+    "display_name": "ConditionDamagedAtMost\u003cT : IIngredient\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+          "display_name": "IIngredient",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.blamejared.crafttweaker.api.ingredient",
+          "class_name": "IIngredient"
+        },
+        "bound": "upper"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.ingredient.condition.type",
+    "class_name": "ConditionDamagedAtMost",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.ingredient.condition.IIngredientCondition",
+        "display_name": "IIngredientCondition\u003cT : IIngredient\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+              "display_name": "IIngredient",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "com.blamejared.crafttweaker.api.ingredient",
+              "class_name": "IIngredient"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "com.blamejared.crafttweaker.api.ingredient.condition",
+        "class_name": "IIngredientCondition"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.ingredient.condition.type.ConditionDamagedAtMost",
+  "member_groups": {
+    "getCommandString": {
+      "key": "getCommandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "ingredient",
+              "display_name": "ingredient",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                  "display_name": "IIngredient",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                  "class_name": "IIngredient"
+                },
+                "bound": "upper"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "matches": {
+      "key": "matches",
+      "members": [
+        {
+          "key": "matches",
+          "display_name": "matches",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "parameters": [
+            {
+              "key": "stack",
+              "display_name": "stack",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

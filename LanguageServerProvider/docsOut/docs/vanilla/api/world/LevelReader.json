@@ -1,0 +1,553 @@
+{
+  "key": "vanilla/api/world/LevelReader",
+  "display_name": "LevelReader",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.LevelReader",
+    "display_name": "LevelReader",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "LevelReader",
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.BlockAndTintGetter",
+        "display_name": "BlockAndTintGetter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "BlockAndTintGetter"
+      },
+      {
+        "key": "net.minecraft.world.level.CollisionGetter",
+        "display_name": "CollisionGetter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "CollisionGetter"
+      },
+      {
+        "key": "net.minecraft.world.level.SignalGetter",
+        "display_name": "SignalGetter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "SignalGetter"
+      },
+      {
+        "key": "net.minecraft.world.level.biome.BiomeManager.NoiseBiomeSource",
+        "display_name": "NoiseBiomeSource",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.biome",
+        "class_name": "NoiseBiomeSource"
+      },
+      {
+        "key": "net.minecraft.world.level.BlockGetter",
+        "display_name": "BlockGetter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "BlockGetter"
+      },
+      {
+        "key": "net.minecraftforge.client.extensions.IForgeBlockAndTintGetter",
+        "display_name": "IForgeBlockAndTintGetter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.client.extensions",
+        "class_name": "IForgeBlockAndTintGetter"
+      },
+      {
+        "key": "net.minecraft.world.level.LevelHeightAccessor",
+        "display_name": "LevelHeightAccessor",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "LevelHeightAccessor"
+      },
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeBlockGetter",
+        "display_name": "IForgeBlockGetter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeBlockGetter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.LevelReader",
+  "member_groups": {
+    "canSeeSkyFromBelowWater": {
+      "key": "canSeeSkyFromBelowWater",
+      "members": [
+        {
+          "key": "canSeeSkyFromBelowWater",
+          "display_name": "canSeeSkyFromBelowWater",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getBiome": {
+      "key": "getBiome",
+      "members": [
+        {
+          "key": "getBiome",
+          "display_name": "getBiome",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the biome at a given position."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "extra": {
+                "examples": {
+                  "pos": [
+                    "new BlockPos(0, 1, 2)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The position to look up."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.biome.Biome",
+            "display_name": "Biome",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.biome",
+            "class_name": "Biome"
+          }
+        }
+      ]
+    },
+    "getBlockEntityData": {
+      "key": "getBlockEntityData",
+      "members": [
+        {
+          "key": "getBlockEntityData",
+          "display_name": "getBlockEntityData",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the tile entity data for a tile entity at a given position."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "extra": {
+                "examples": {
+                  "pos": [
+                    "new BlockPos(0, 1, 2)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The position of the tile entity."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    },
+    "getBlockFloorHeight": {
+      "key": "getBlockFloorHeight",
+      "members": [
+        {
+          "key": "getBlockFloorHeight",
+          "display_name": "getBlockFloorHeight",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getBlockState": {
+      "key": "getBlockState",
+      "members": [
+        {
+          "key": "getBlockState",
+          "display_name": "getBlockState",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the block state at a given position."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "extra": {
+                "examples": {
+                  "pos": [
+                    "new BlockPos(0, 1, 2)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The position to look up."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    },
+    "getLightEmission": {
+      "key": "getLightEmission",
+      "members": [
+        {
+          "key": "getLightEmission",
+          "display_name": "getLightEmission",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasChunk": {
+      "key": "hasChunk",
+      "members": [
+        {
+          "key": "hasChunk",
+          "display_name": "hasChunk",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isClientSide": {
+      "key": "isClientSide",
+      "members": [
+        {
+          "key": "isClientSide",
+          "display_name": "isClientSide",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isEmptyBlock": {
+      "key": "isEmptyBlock",
+      "members": [
+        {
+          "key": "isEmptyBlock",
+          "display_name": "isEmptyBlock",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if the block at a given position is empty."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "extra": {
+                "examples": {
+                  "pos": [
+                    "new BlockPos(0, 1, 2)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The position to look up."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isWaterAt": {
+      "key": "isWaterAt",
+      "members": [
+        {
+          "key": "isWaterAt",
+          "display_name": "isWaterAt",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "maxLightLevel": {
+      "key": "maxLightLevel",
+      "members": [
+        {
+          "key": "maxLightLevel",
+          "display_name": "maxLightLevel",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "seaLevel": {
+      "key": "seaLevel",
+      "members": [
+        {
+          "key": "seaLevel",
+          "display_name": "seaLevel",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the height of the sea level."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "skyDarken": {
+      "key": "skyDarken",
+      "members": [
+        {
+          "key": "skyDarken",
+          "display_name": "skyDarken",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

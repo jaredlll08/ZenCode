@@ -1,0 +1,71 @@
+{
+  "name": "language-client-example",
+  "description": "VSCode part of a language server",
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "version": "0.0.1",
+  "publisher": "vscode",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:zenscript"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "languages": [
+      {
+        "id": "zenscript",
+        "aliases": [
+          "ZenScript"
+        ],
+        "extensions": [
+          ".zs",
+          ".zc"
+        ],
+        "configuration": "./src/language.json"
+      }
+    ],
+    "configuration": {
+      "title": "ZenScript Language Server",
+      "properties": {
+        "zenscript.languageServer.debug": {
+          "order": 0,
+          "type": "boolean",
+          "default": false,
+          "description": "Enable/disable debug mode for language server"
+        },
+        "zenscript.languageServer.suspend": {
+          "order": 1,
+          "type": "boolean",
+          "default": false,
+          "description": "Suspend to wait for the debugger to attach"
+        },
+        "zenscript.languageServer.javaHome": {
+          "order": 2,
+          "type": "string",
+          "default": null,
+          "description": "Path of java home"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.2",
+    "typescript": "^5.1.6",
+    "@vscode/vsce": "^2.19.0",
+    "@vscode/test-electron": "^2.2.3"
+  },
+  "dependencies": {
+    "@types/vscode": "^1.75.1",
+    "vscode-languageclient": "^8.1.0"
+  }
+}

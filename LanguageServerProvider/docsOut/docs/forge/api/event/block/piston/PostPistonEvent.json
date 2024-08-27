@@ -1,0 +1,563 @@
+{
+  "key": "forge/api/event/block/piston/PostPistonEvent",
+  "display_name": "PostPistonEvent",
+  "page_type": "event",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraftforge.event.level.PistonEvent.Post",
+    "display_name": "Post",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.event.level",
+    "class_name": "Post",
+    "super_type": {
+      "key": "net.minecraftforge.event.level.PistonEvent",
+      "display_name": "PistonEvent",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraftforge.event.level",
+      "class_name": "PistonEvent"
+    }
+  },
+  "zen_code_name": "crafttweaker.forge.api.event.block.piston.PostPistonEvent",
+  "member_groups": {
+    "cancel": {
+      "key": "cancel",
+      "members": [
+        {
+          "key": "cancel",
+          "display_name": "cancel",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Cancels the event. Same as `setCanceled(true)`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "cancelable": {
+      "key": "cancelable",
+      "members": [
+        {
+          "key": "isCancelable",
+          "display_name": "isCancelable",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "cancelable",
+          "display_name": "cancelable",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "canceled": {
+      "key": "canceled",
+      "members": [
+        {
+          "key": "isCanceled",
+          "display_name": "isCanceled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canceled",
+          "display_name": "canceled",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "setCanceled",
+          "display_name": "setCanceled",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "cancel",
+              "display_name": "cancel",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canceled",
+          "display_name": "canceled",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event",
+                "display_name": "Event",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Event"
+              },
+              "optional": false
+            },
+            {
+              "key": "cancel",
+              "display_name": "cancel",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "direction": {
+      "key": "direction",
+      "members": [
+        {
+          "key": "direction",
+          "display_name": "direction",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the direction that the piston is facing."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        }
+      ]
+    },
+    "faceOffsetPos": {
+      "key": "faceOffsetPos",
+      "members": [
+        {
+          "key": "faceOffsetPos",
+          "display_name": "faceOffsetPos",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the position that the piston is facing towards."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        }
+      ]
+    },
+    "hasResult": {
+      "key": "hasResult",
+      "members": [
+        {
+          "key": "hasResult",
+          "display_name": "hasResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "hasResult",
+          "display_name": "hasResult",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "level": {
+      "key": "level",
+      "members": [
+        {
+          "key": "level",
+          "display_name": "level",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.Level",
+            "display_name": "Level",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Level"
+          }
+        },
+        {
+          "key": "level",
+          "display_name": "level",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.LevelAccessor",
+            "display_name": "LevelAccessor",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "LevelAccessor"
+          }
+        }
+      ]
+    },
+    "pistonMoveType": {
+      "key": "pistonMoveType",
+      "members": [
+        {
+          "key": "pistonMoveType",
+          "display_name": "pistonMoveType",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the move type of the piston (is it extending or retracting)."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraftforge.event.level.PistonEvent.PistonMoveType",
+            "display_name": "PistonMoveType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.event.level",
+            "class_name": "PistonMoveType"
+          }
+        }
+      ]
+    },
+    "pos": {
+      "key": "pos",
+      "members": [
+        {
+          "key": "pos",
+          "display_name": "pos",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.core.BlockPos",
+            "display_name": "BlockPos",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "BlockPos"
+          }
+        }
+      ]
+    },
+    "result": {
+      "key": "result",
+      "members": [
+        {
+          "key": "getResult",
+          "display_name": "getResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        },
+        {
+          "key": "result",
+          "display_name": "result",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraftforge.eventbus.api.Event.Result",
+            "display_name": "Result",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.eventbus.api",
+            "class_name": "Result"
+          }
+        },
+        {
+          "key": "setResult",
+          "display_name": "setResult",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "result",
+              "display_name": "result",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event.Result",
+                "display_name": "Result",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Result"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "result",
+          "display_name": "result",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event",
+                "display_name": "Event",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Event"
+              },
+              "optional": false
+            },
+            {
+              "key": "result",
+              "display_name": "result",
+              "type": {
+                "key": "net.minecraftforge.eventbus.api.Event.Result",
+                "display_name": "Result",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraftforge.eventbus.api",
+                "class_name": "Result"
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "setAllow": {
+      "key": "setAllow",
+      "members": [
+        {
+          "key": "setAllow",
+          "display_name": "setAllow",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `allow`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDefault": {
+      "key": "setDefault",
+      "members": [
+        {
+          "key": "setDefault",
+          "display_name": "setDefault",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `default`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setDeny": {
+      "key": "setDeny",
+      "members": [
+        {
+          "key": "setDeny",
+          "display_name": "setDeny",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "sets the event\u0027s result to `deny`"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "state": {
+      "key": "state",
+      "members": [
+        {
+          "key": "state",
+          "display_name": "state",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    },
+    "structureHelper": {
+      "key": "structureHelper",
+      "members": [
+        {
+          "key": "structureHelper",
+          "display_name": "structureHelper",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a **nullable** structure resolver that can be used to get all the blocks that will be affected by the piston."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Be sure to call the `resolve()` method on the structure resolver"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.piston.PistonStructureResolver",
+            "display_name": "PistonStructureResolver",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.piston",
+            "class_name": "PistonStructureResolver"
+          }
+        }
+      ]
+    }
+  },
+  "has_result": false,
+  "cancelable": false
+}

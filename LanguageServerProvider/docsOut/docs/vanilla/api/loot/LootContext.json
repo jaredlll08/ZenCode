@@ -1,0 +1,285 @@
+{
+  "key": "vanilla/api/loot/LootContext",
+  "display_name": "LootContext",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.LootContext",
+    "display_name": "LootContext",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot",
+    "class_name": "LootContext",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.loot.LootContext",
+  "member_groups": {
+    "blockEntity": {
+      "key": "blockEntity",
+      "members": [
+        {
+          "key": "blockEntity",
+          "display_name": "blockEntity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.block.entity.BlockEntity",
+            "display_name": "BlockEntity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.entity",
+            "class_name": "BlockEntity"
+          }
+        }
+      ]
+    },
+    "blockState": {
+      "key": "blockState",
+      "members": [
+        {
+          "key": "blockState",
+          "display_name": "blockState",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    },
+    "damageSource": {
+      "key": "damageSource",
+      "members": [
+        {
+          "key": "damageSource",
+          "display_name": "damageSource",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageSource",
+            "display_name": "DamageSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageSource"
+          }
+        }
+      ]
+    },
+    "directKillerEntity": {
+      "key": "directKillerEntity",
+      "members": [
+        {
+          "key": "directKillerEntity",
+          "display_name": "directKillerEntity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.Entity",
+            "display_name": "Entity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Entity"
+          }
+        }
+      ]
+    },
+    "explosionRadius": {
+      "key": "explosionRadius",
+      "members": [
+        {
+          "key": "explosionRadius",
+          "display_name": "explosionRadius",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "killerEntity": {
+      "key": "killerEntity",
+      "members": [
+        {
+          "key": "killerEntity",
+          "display_name": "killerEntity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.Entity",
+            "display_name": "Entity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Entity"
+          }
+        }
+      ]
+    },
+    "lastDamagePlayer": {
+      "key": "lastDamagePlayer",
+      "members": [
+        {
+          "key": "lastDamagePlayer",
+          "display_name": "lastDamagePlayer",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.player.Player",
+            "display_name": "Player",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity.player",
+            "class_name": "Player"
+          }
+        }
+      ]
+    },
+    "level": {
+      "key": "level",
+      "members": [
+        {
+          "key": "level",
+          "display_name": "level",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.server.level.ServerLevel",
+            "display_name": "ServerLevel",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.server.level",
+            "class_name": "ServerLevel"
+          }
+        }
+      ]
+    },
+    "luck": {
+      "key": "luck",
+      "members": [
+        {
+          "key": "luck",
+          "display_name": "luck",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "origin": {
+      "key": "origin",
+      "members": [
+        {
+          "key": "origin",
+          "display_name": "origin",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.phys.Vec3",
+            "display_name": "Vec3",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.phys",
+            "class_name": "Vec3"
+          }
+        }
+      ]
+    },
+    "random": {
+      "key": "random",
+      "members": [
+        {
+          "key": "random",
+          "display_name": "random",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.util.RandomSource",
+            "display_name": "RandomSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.util",
+            "class_name": "RandomSource"
+          }
+        }
+      ]
+    },
+    "thisEntity": {
+      "key": "thisEntity",
+      "members": [
+        {
+          "key": "thisEntity",
+          "display_name": "thisEntity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.entity.Entity",
+            "display_name": "Entity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "Entity"
+          }
+        }
+      ]
+    },
+    "tool": {
+      "key": "tool",
+      "members": [
+        {
+          "key": "tool",
+          "display_name": "tool",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,660 @@
+{
+  "key": "vanilla/api/world/Explosion",
+  "display_name": "Explosion",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.Explosion",
+    "display_name": "Explosion",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "Explosion",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.world.Explosion",
+  "member_groups": {
+    "clearToBlow": {
+      "key": "clearToBlow",
+      "members": [
+        {
+          "key": "clearToBlow",
+          "display_name": "clearToBlow",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Clears the affected block positions of this Explosion."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "world",
+              "display_name": "world",
+              "type": {
+                "key": "net.minecraft.world.level.Level",
+                "display_name": "Level",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "Level"
+              },
+              "optional": false
+            },
+            {
+              "key": "x",
+              "display_name": "x",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "y",
+              "display_name": "y",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "z",
+              "display_name": "z",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "size",
+              "display_name": "size",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "causesFire",
+              "display_name": "causesFire",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "mode",
+              "display_name": "mode",
+              "type": {
+                "key": "net.minecraft.world.level.Explosion.BlockInteraction",
+                "display_name": "BlockInteraction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "BlockInteraction"
+              },
+              "optional": false
+            },
+            {
+              "key": "exploder",
+              "display_name": "exploder",
+              "type": {
+                "key": "net.minecraft.world.entity.Entity",
+                "display_name": "Entity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "Entity"
+              },
+              "optional": true,
+              "default_value": "null"
+            },
+            {
+              "key": "source",
+              "display_name": "source",
+              "type": {
+                "key": "net.minecraft.world.damagesource.DamageSource",
+                "display_name": "DamageSource",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.damagesource",
+                "class_name": "DamageSource"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.Explosion",
+            "display_name": "Explosion",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "Explosion"
+          }
+        }
+      ]
+    },
+    "damageSource": {
+      "key": "damageSource",
+      "members": [
+        {
+          "key": "getDamageSource",
+          "display_name": "getDamageSource",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the damage source of this Explosion."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageSource",
+            "display_name": "DamageSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageSource"
+          }
+        },
+        {
+          "key": "damageSource",
+          "display_name": "damageSource",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the damage source of this Explosion."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.damagesource.DamageSource",
+            "display_name": "DamageSource",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DamageSource"
+          }
+        }
+      ]
+    },
+    "explode": {
+      "key": "explode",
+      "members": [
+        {
+          "key": "explode",
+          "display_name": "explode",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Performs the first part of the explosion which is destroying the blocks."
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "finalizeExplosion": {
+      "key": "finalizeExplosion",
+      "members": [
+        {
+          "key": "finalizeExplosion",
+          "display_name": "finalizeExplosion",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Performs the second part of the explosion which is the sound, drops and if enabled the particles."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "spawnParticles",
+              "display_name": "spawnParticles",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "spawnParticles": [
+                    "true"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "Should particles be spawned."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "indirectSourceEntity": {
+      "key": "indirectSourceEntity",
+      "members": [
+        {
+          "key": "getIndirectSourceEntity",
+          "display_name": "getIndirectSourceEntity",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the LivingEntity that caused this Explosion."
+            },
+            {
+              "type": "plaintext",
+              "content": "For example:\r\n If the Explosion was caused by TNT, it will return the PlayerEntity that placed it.\r\n If the Explosion was caused by a Creeper or another Entity directly, it will return that Entity.\r\n If the Explosion was caused by a Ghast fireball, it will return the Ghast."
+            },
+            {
+              "type": "plaintext",
+              "content": "If no Entity caused this Explosion (for example, if the Explosion was caused by TNT in a Desert Temple that\r\n generated in the world), then `null` is returned."
+            },
+            {
+              "type": "plaintext",
+              "content": "You may need to cast the returned LivingEntity to not be nullable."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.LivingEntity",
+            "display_name": "LivingEntity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "LivingEntity"
+          }
+        },
+        {
+          "key": "indirectSourceEntity",
+          "display_name": "indirectSourceEntity",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the LivingEntity that caused this Explosion."
+            },
+            {
+              "type": "plaintext",
+              "content": "For example:\r\n If the Explosion was caused by TNT, it will return the PlayerEntity that placed it.\r\n If the Explosion was caused by a Creeper or another Entity directly, it will return that Entity.\r\n If the Explosion was caused by a Ghast fireball, it will return the Ghast."
+            },
+            {
+              "type": "plaintext",
+              "content": "If no Entity caused this Explosion (for example, if the Explosion was caused by TNT in a Desert Temple that\r\n generated in the world), then `null` is returned."
+            },
+            {
+              "type": "plaintext",
+              "content": "You may need to cast the returned LivingEntity to not be nullable."
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.entity.LivingEntity",
+            "display_name": "LivingEntity",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.entity",
+            "class_name": "LivingEntity"
+          }
+        }
+      ]
+    },
+    "optionalTest": {
+      "key": "optionalTest",
+      "members": [
+        {
+          "key": "optionalTest",
+          "display_name": "optionalTest",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "first",
+              "display_name": "first",
+              "type": {
+                "key": "java.lang.Object",
+                "display_name": "Object",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Object"
+              },
+              "optional": true,
+              "default_value": "null"
+            },
+            {
+              "key": "second",
+              "display_name": "second",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "0"
+            },
+            {
+              "key": "third",
+              "display_name": "third",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": "false"
+            },
+            {
+              "key": "fourth",
+              "display_name": "fourth",
+              "type": {
+                "key": "char",
+                "display_name": "char",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": " "
+            },
+            {
+              "key": "fifth",
+              "display_name": "fifth",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": true,
+              "default_value": ""
+            },
+            {
+              "key": "sixth",
+              "display_name": "sixth",
+              "type": {
+                "key": "java.lang.String[]",
+                "display_name": "String[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.String",
+                  "display_name": "string",
+                  "type_type": "basic",
+                  "nullable": false
+                }
+              },
+              "optional": true,
+              "default_value": "[]"
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "playerKnockbackMap": {
+      "key": "playerKnockbackMap",
+      "members": [
+        {
+          "key": "getHitPlayers",
+          "display_name": "getHitPlayers",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the player knockback map for this Explosion."
+            },
+            {
+              "type": "plaintext",
+              "content": "This map is only populated in"
+            },
+            {
+              "type": "link",
+              "to": "Explosion#explode()",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Explosion#explode()"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "so calling it before will return nothing."
+            },
+            {
+              "type": "plaintext",
+              "content": "This map is used to calculate the vectors that players around the explosion will be pushed back by."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cPlayer, Vec3\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "V": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        },
+        {
+          "key": "playerKnockbackMap",
+          "display_name": "playerKnockbackMap",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the player knockback map for this Explosion."
+            },
+            {
+              "type": "plaintext",
+              "content": "This map is only populated in"
+            },
+            {
+              "type": "link",
+              "to": "Explosion#explode()",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Explosion#explode()"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "so calling it before will return nothing."
+            },
+            {
+              "type": "plaintext",
+              "content": "This map is used to calculate the vectors that players around the explosion will be pushed back by."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cPlayer, Vec3\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "net.minecraft.world.entity.player.Player",
+                "display_name": "Player",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.player",
+                "class_name": "Player"
+              },
+              "V": {
+                "key": "net.minecraft.world.phys.Vec3",
+                "display_name": "Vec3",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.phys",
+                "class_name": "Vec3"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        }
+      ]
+    },
+    "toBlow": {
+      "key": "toBlow",
+      "members": [
+        {
+          "key": "getToBlow",
+          "display_name": "getToBlow",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cBlockPos\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "toBlow",
+          "display_name": "toBlow",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cBlockPos\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "key": "vanilla/api/sequence/task/type/SleepUntilTask",
+  "display_name": "SleepUntilTask",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "new SleepUntilTask((level) \u003d\u003e level.isRaining)"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "A task that will sleep until its condition is met."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.util.sequence.task.type.SleepUntilTask",
+    "display_name": "SleepUntilTask\u003cT, U\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      },
+      "U": {
+        "key": "U",
+        "display_name": "U",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.util.sequence.task.type",
+    "class_name": "SleepUntilTask",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.util.sequence.task.ISequenceTask",
+        "display_name": "ISequenceTask\u003cT, U\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "T",
+            "display_name": "T",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          },
+          "U": {
+            "key": "U",
+            "display_name": "U",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Object",
+              "display_name": "Object",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Object"
+            },
+            "bound": "specific"
+          }
+        },
+        "package_name": "com.blamejared.crafttweaker.api.util.sequence.task",
+        "class_name": "ISequenceTask"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.sequence.task.type.SleepUntilTask",
+  "member_groups": {
+    "isComplete": {
+      "key": "isComplete",
+      "members": [
+        {
+          "key": "isComplete",
+          "display_name": "isComplete",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this task is complete."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "actor",
+              "display_name": "actor",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "extra": {
+                "examples": {
+                  "actor": [
+                    "level"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The actor that is being sequenced."
+                }
+              ]
+            },
+            {
+              "key": "context",
+              "display_name": "context",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceContext",
+                "display_name": "SequenceContext\u003cT, U\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "U": {
+                    "key": "U",
+                    "display_name": "U",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+                "class_name": "SequenceContext"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The context for the sequence."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "tick": {
+      "key": "tick",
+      "members": [
+        {
+          "key": "tick",
+          "display_name": "tick",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Ticks this task."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "A check to"
+            },
+            {
+              "type": "code",
+              "content": "isComplete"
+            },
+            {
+              "type": "plaintext",
+              "content": " should be done before ticking!.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "actor",
+              "display_name": "actor",
+              "type": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "extra": {
+                "examples": {
+                  "actor": [
+                    "level"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The actor that is being sequenced."
+                }
+              ]
+            },
+            {
+              "key": "context",
+              "display_name": "context",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceContext",
+                "display_name": "SequenceContext\u003cT, U\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "U": {
+                    "key": "U",
+                    "display_name": "U",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+                "class_name": "SequenceContext"
+              },
+              "extra": {
+                "examples": {
+                  "context": [
+                    "new crafttweaker.api.util.sequence.SequenceContext(sequence, new crafttweaker.api.data.MapData())"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The context for the sequence."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

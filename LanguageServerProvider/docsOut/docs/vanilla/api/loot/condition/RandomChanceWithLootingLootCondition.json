@@ -1,0 +1,109 @@
+{
+  "key": "vanilla/api/loot/condition/RandomChanceWithLootingLootCondition",
+  "display_name": "RandomChanceWithLootingLootCondition",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithLootingCondition",
+    "display_name": "LootItemRandomChanceWithLootingCondition",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot.predicates",
+    "class_name": "LootItemRandomChanceWithLootingCondition",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+        "display_name": "LootItemCondition",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage.loot.predicates",
+        "class_name": "LootItemCondition"
+      },
+      {
+        "key": "net.minecraft.world.level.storage.loot.LootContextUser",
+        "display_name": "LootContextUser",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage.loot",
+        "class_name": "LootContextUser"
+      },
+      {
+        "key": "java.util.function.Predicate",
+        "display_name": "Predicate\u003cLootContext\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext",
+            "display_name": "LootContext",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "LootContext"
+          }
+        },
+        "package_name": "java.util.function",
+        "class_name": "Predicate"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.condition.RandomChanceWithLootingLootCondition",
+  "member_groups": {
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "probability",
+              "display_name": "probability",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "lootingBoost",
+              "display_name": "lootingBoost",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.predicates",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

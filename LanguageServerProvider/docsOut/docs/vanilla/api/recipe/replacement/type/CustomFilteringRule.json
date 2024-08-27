@@ -1,0 +1,307 @@
+{
+  "key": "vanilla/api/recipe/replacement/type/CustomFilteringRule",
+  "display_name": "CustomFilteringRule",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Filters recipes according to a custom set of rules."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.CustomFilteringRule",
+    "display_name": "CustomFilteringRule",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+    "class_name": "CustomFilteringRule",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+        "display_name": "IFilteringRule",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "IFilteringRule"
+      },
+      {
+        "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+        "display_name": "ITargetingFilter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+        "class_name": "ITargetingFilter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.type.CustomFilteringRule",
+  "member_groups": {
+    "of": {
+      "key": "of",
+      "members": [
+        {
+          "key": "ofZen",
+          "display_name": "ofZen",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule filtering recipes based on the given "
+            },
+            {
+              "type": "link",
+              "to": "java.util.function.Predicate",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Predicate"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The predicate gets access to the"
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.item.crafting.Recipe",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Recipe"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " instance directly, allowing for it to check directly elements\r\n that might be required.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "java.util.function.Predicate",
+                "display_name": "Predicate\u003cRecipe\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.item.crafting.Recipe",
+                    "display_name": "Recipe\u003cContainer\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "C": {
+                        "key": "net.minecraft.world.Container",
+                        "display_name": "Container",
+                        "type_type": "java",
+                        "nullable": false,
+                        "package_name": "net.minecraft.world",
+                        "class_name": "Container"
+                      }
+                    },
+                    "package_name": "net.minecraft.world.item.crafting",
+                    "class_name": "Recipe"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Predicate"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The predicate for checking."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.CustomFilteringRule",
+            "display_name": "CustomFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "CustomFilteringRule"
+          }
+        },
+        {
+          "key": "ofZen",
+          "display_name": "ofZen",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new rule filtering recipes based on the given "
+            },
+            {
+              "type": "link",
+              "to": "java.util.function.BiPredicate",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "BiPredicate"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": "."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "The predicate\u0027s first argument represents the"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IRecipeManager"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " used by the recipe, whereas the second\r\n argument is the "
+            },
+            {
+              "type": "link",
+              "to": "net.minecraft.world.item.crafting.Recipe",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "Recipe"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " instance directly, allowing for it to check properties that might be required or\r\n perform additional manager-specific lookups.\u003c/p\u003e"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "java.util.function.BiPredicate",
+                "display_name": "BiPredicate\u003cIRecipeManager, Recipe\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.recipe.manager.base.IRecipeManager",
+                    "display_name": "IRecipeManager\u003cRecipe\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "T": {
+                        "key": "net.minecraft.world.item.crafting.Recipe",
+                        "display_name": "Recipe\u003cContainer\u003e",
+                        "type_type": "java",
+                        "nullable": false,
+                        "type_parameters": {
+                          "C": {
+                            "key": "net.minecraft.world.Container",
+                            "display_name": "Container",
+                            "type_type": "java",
+                            "nullable": false,
+                            "package_name": "net.minecraft.world",
+                            "class_name": "Container"
+                          }
+                        },
+                        "package_name": "net.minecraft.world.item.crafting",
+                        "class_name": "Recipe"
+                      }
+                    },
+                    "package_name": "com.blamejared.crafttweaker.api.recipe.manager.base",
+                    "class_name": "IRecipeManager"
+                  },
+                  "U": {
+                    "key": "net.minecraft.world.item.crafting.Recipe",
+                    "display_name": "Recipe\u003cContainer\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "C": {
+                        "key": "net.minecraft.world.Container",
+                        "display_name": "Container",
+                        "type_type": "java",
+                        "nullable": false,
+                        "package_name": "net.minecraft.world",
+                        "class_name": "Container"
+                      }
+                    },
+                    "package_name": "net.minecraft.world.item.crafting",
+                    "class_name": "Recipe"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "BiPredicate"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The predicate for checking."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.recipe.replacement.type.CustomFilteringRule",
+            "display_name": "CustomFilteringRule",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.recipe.replacement.type",
+            "class_name": "CustomFilteringRule"
+          }
+        }
+      ]
+    }
+  }
+}

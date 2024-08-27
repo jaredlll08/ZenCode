@@ -1,0 +1,224 @@
+{
+  "key": "vanilla/api/loot/LootManager",
+  "display_name": "LootManager",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "loot"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "The main entry point for everything loot related."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "This entry point can be obtained via the"
+    },
+    {
+      "type": "code",
+      "content": "loot"
+    },
+    {
+      "type": "plaintext",
+      "content": " global in scripts and allows you to manipulate everything\r\n related to loot or query loot tables.\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.loot.LootManager",
+    "display_name": "LootManager",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.loot",
+    "class_name": "LootManager",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cLootManager\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "com.blamejared.crafttweaker.api.loot.LootManager",
+          "display_name": "LootManager",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.blamejared.crafttweaker.api.loot",
+          "class_name": "LootManager"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.LootManager",
+  "member_groups": {
+    "INSTANCE": {
+      "key": "INSTANCE",
+      "members": [
+        {
+          "key": "INSTANCE",
+          "display_name": "INSTANCE",
+          "member_type": "enum_constant",
+          "origin": "declared",
+          "static": true,
+          "type": {
+            "key": "com.blamejared.crafttweaker.api.loot.LootManager",
+            "display_name": "LootManager",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot",
+            "class_name": "LootManager"
+          }
+        }
+      ]
+    },
+    "modifiers": {
+      "key": "modifiers",
+      "members": [
+        {
+          "key": "modifiers",
+          "display_name": "modifiers",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the loot modifiers manager."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Refer to"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.loot.modifier.LootModifierManager",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootModifierManager"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " for additional info.\u003c/p\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.modifier.LootModifierManager",
+            "display_name": "LootModifierManager",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.modifier",
+            "class_name": "LootModifierManager"
+          }
+        }
+      ]
+    },
+    "tables": {
+      "key": "tables",
+      "members": [
+        {
+          "key": "tables",
+          "display_name": "tables",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the loot table manager."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "Refer to"
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.loot.table.LootTableManager",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "LootTableManager"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " for additional info.\u003c/p\u003e"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.table.LootTableManager",
+            "display_name": "LootTableManager",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.table",
+            "class_name": "LootTableManager"
+          }
+        }
+      ]
+    }
+  }
+}

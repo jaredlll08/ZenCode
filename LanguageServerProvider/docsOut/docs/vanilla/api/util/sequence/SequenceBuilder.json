@@ -1,0 +1,1092 @@
+{
+  "key": "vanilla/api/util/sequence/SequenceBuilder",
+  "display_name": "SequenceBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "level.sequence()"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "A builder for "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.util.sequence.Sequence",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Sequence"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+    "display_name": "SequenceBuilder\u003cT, U\u003e",
+    "type_type": "java",
+    "nullable": false,
+    "type_parameters": {
+      "T": {
+        "key": "T",
+        "display_name": "T",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      },
+      "U": {
+        "key": "U",
+        "display_name": "U",
+        "type_type": "generic",
+        "nullable": false,
+        "type": {
+          "key": "java.lang.Object",
+          "display_name": "Object",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Object"
+        },
+        "bound": "specific"
+      }
+    },
+    "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+    "class_name": "SequenceBuilder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.util.sequence.SequenceBuilder",
+  "member_groups": {
+    "addTask": {
+      "key": "addTask",
+      "members": [
+        {
+          "key": "addTask",
+          "display_name": "addTask",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds a task to the sequence."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "task",
+              "display_name": "task",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.util.sequence.task.ISequenceTask",
+                "display_name": "ISequenceTask\u003cT, U\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "U": {
+                    "key": "U",
+                    "display_name": "U",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.util.sequence.task",
+                "class_name": "ISequenceTask"
+              },
+              "extra": {
+                "examples": {
+                  "task": [
+                    "new SleepTask(20)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The task to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+            "display_name": "SequenceBuilder\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceBuilder"
+          }
+        }
+      ]
+    },
+    "run": {
+      "key": "run",
+      "members": [
+        {
+          "key": "run",
+          "display_name": "run",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Runs the function as part of the sequence."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "function",
+              "display_name": "function",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "extra": {
+                "examples": {
+                  "function": [
+                    "(level) \u003d\u003e level.setRainLevel(0.5)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The function to run."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+            "display_name": "SequenceBuilder\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceBuilder"
+          }
+        },
+        {
+          "key": "run",
+          "display_name": "run",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Runs the function as part of the sequence."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "function",
+              "display_name": "function",
+              "type": {
+                "key": "java.util.function.BiConsumer",
+                "display_name": "BiConsumer\u003cT, SequenceContext\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "U": {
+                    "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceContext",
+                    "display_name": "SequenceContext\u003cT, U\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "T": {
+                        "key": "T",
+                        "display_name": "T",
+                        "type_type": "generic",
+                        "nullable": false,
+                        "type": {
+                          "key": "java.lang.Object",
+                          "display_name": "Object",
+                          "type_type": "java",
+                          "nullable": false,
+                          "package_name": "java.lang",
+                          "class_name": "Object"
+                        },
+                        "bound": "specific"
+                      },
+                      "U": {
+                        "key": "U",
+                        "display_name": "U",
+                        "type_type": "generic",
+                        "nullable": false,
+                        "type": {
+                          "key": "java.lang.Object",
+                          "display_name": "Object",
+                          "type_type": "java",
+                          "nullable": false,
+                          "package_name": "java.lang",
+                          "class_name": "Object"
+                        },
+                        "bound": "specific"
+                      }
+                    },
+                    "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+                    "class_name": "SequenceContext"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "BiConsumer"
+              },
+              "extra": {
+                "examples": {
+                  "function": [
+                    "(level, context) \u003d\u003e level.setRainLevel(0.5)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The function to run."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+            "display_name": "SequenceBuilder\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceBuilder"
+          }
+        }
+      ]
+    },
+    "sleep": {
+      "key": "sleep",
+      "members": [
+        {
+          "key": "sleep",
+          "display_name": "sleep",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sleep (wait) for the given amount of ticks."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "ticks",
+              "display_name": "ticks",
+              "type": {
+                "key": "long",
+                "display_name": "long",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "ticks": [
+                    "20"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The amount of ticks to wait."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+            "display_name": "SequenceBuilder\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceBuilder"
+          }
+        }
+      ]
+    },
+    "sleepUntil": {
+      "key": "sleepUntil",
+      "members": [
+        {
+          "key": "sleepUntil",
+          "display_name": "sleepUntil",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sleeps until the given condition is met."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "condition",
+              "display_name": "condition",
+              "type": {
+                "key": "java.util.function.Predicate",
+                "display_name": "Predicate\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Predicate"
+              },
+              "extra": {
+                "examples": {
+                  "condition": [
+                    "(level) \u003d\u003e level.isRaining"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The condition to wait for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+            "display_name": "SequenceBuilder\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceBuilder"
+          }
+        },
+        {
+          "key": "sleepUntil",
+          "display_name": "sleepUntil",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sleeps until the given condition is met."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "condition",
+              "display_name": "condition",
+              "type": {
+                "key": "java.util.function.BiPredicate",
+                "display_name": "BiPredicate\u003cT, SequenceContext\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "U": {
+                    "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceContext",
+                    "display_name": "SequenceContext\u003cT, U\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "T": {
+                        "key": "T",
+                        "display_name": "T",
+                        "type_type": "generic",
+                        "nullable": false,
+                        "type": {
+                          "key": "java.lang.Object",
+                          "display_name": "Object",
+                          "type_type": "java",
+                          "nullable": false,
+                          "package_name": "java.lang",
+                          "class_name": "Object"
+                        },
+                        "bound": "specific"
+                      },
+                      "U": {
+                        "key": "U",
+                        "display_name": "U",
+                        "type_type": "generic",
+                        "nullable": false,
+                        "type": {
+                          "key": "java.lang.Object",
+                          "display_name": "Object",
+                          "type_type": "java",
+                          "nullable": false,
+                          "package_name": "java.lang",
+                          "class_name": "Object"
+                        },
+                        "bound": "specific"
+                      }
+                    },
+                    "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+                    "class_name": "SequenceContext"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "BiPredicate"
+              },
+              "extra": {
+                "examples": {
+                  "condition": [
+                    "(level, context) \u003d\u003e level.isRaining"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The condition to wait for."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+            "display_name": "SequenceBuilder\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceBuilder"
+          }
+        }
+      ]
+    },
+    "start": {
+      "key": "start",
+      "members": [
+        {
+          "key": "start",
+          "display_name": "start",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Builds and starts the sequence."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.Sequence",
+            "display_name": "Sequence\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "Sequence"
+          }
+        }
+      ]
+    },
+    "then": {
+      "key": "then",
+      "members": [
+        {
+          "key": "then",
+          "display_name": "then",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Runs the function as part of the sequence."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "This method is an alias for"
+            },
+            {
+              "type": "code",
+              "content": "run"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "function",
+              "display_name": "function",
+              "type": {
+                "key": "java.util.function.Consumer",
+                "display_name": "Consumer\u003cT\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Consumer"
+              },
+              "extra": {
+                "examples": {
+                  "function": [
+                    "(level) \u003d\u003e level.setRainLevel(0.5)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The function to run."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+            "display_name": "SequenceBuilder\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceBuilder"
+          }
+        },
+        {
+          "key": "then",
+          "display_name": "then",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Runs the function as part of the sequence."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "This method is an alias for"
+            },
+            {
+              "type": "code",
+              "content": "run"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "function",
+              "display_name": "function",
+              "type": {
+                "key": "java.util.function.BiConsumer",
+                "display_name": "BiConsumer\u003cT, SequenceContext\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "T",
+                    "display_name": "T",
+                    "type_type": "generic",
+                    "nullable": false,
+                    "type": {
+                      "key": "java.lang.Object",
+                      "display_name": "Object",
+                      "type_type": "java",
+                      "nullable": false,
+                      "package_name": "java.lang",
+                      "class_name": "Object"
+                    },
+                    "bound": "specific"
+                  },
+                  "U": {
+                    "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceContext",
+                    "display_name": "SequenceContext\u003cT, U\u003e",
+                    "type_type": "java",
+                    "nullable": false,
+                    "type_parameters": {
+                      "T": {
+                        "key": "T",
+                        "display_name": "T",
+                        "type_type": "generic",
+                        "nullable": false,
+                        "type": {
+                          "key": "java.lang.Object",
+                          "display_name": "Object",
+                          "type_type": "java",
+                          "nullable": false,
+                          "package_name": "java.lang",
+                          "class_name": "Object"
+                        },
+                        "bound": "specific"
+                      },
+                      "U": {
+                        "key": "U",
+                        "display_name": "U",
+                        "type_type": "generic",
+                        "nullable": false,
+                        "type": {
+                          "key": "java.lang.Object",
+                          "display_name": "Object",
+                          "type_type": "java",
+                          "nullable": false,
+                          "package_name": "java.lang",
+                          "class_name": "Object"
+                        },
+                        "bound": "specific"
+                      }
+                    },
+                    "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+                    "class_name": "SequenceContext"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "BiConsumer"
+              },
+              "extra": {
+                "examples": {
+                  "function": [
+                    "(level, context) \u003d\u003e level.setRainLevel(0.5)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The function to run."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.util.sequence.SequenceBuilder",
+            "display_name": "SequenceBuilder\u003cT, U\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "T": {
+                "key": "T",
+                "display_name": "T",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              },
+              "U": {
+                "key": "U",
+                "display_name": "U",
+                "type_type": "generic",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.Object",
+                  "display_name": "Object",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "java.lang",
+                  "class_name": "Object"
+                },
+                "bound": "specific"
+              }
+            },
+            "package_name": "com.blamejared.crafttweaker.api.util.sequence",
+            "class_name": "SequenceBuilder"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "key": "forge/api/event/advancement/AdvancementProgressEventType",
+  "display_name": "AdvancementProgressEventType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "forge:event/advancement/progress/type"
+  },
+  "type": {
+    "key": "net.minecraftforge.event.entity.player.AdvancementEvent.AdvancementProgressEvent.ProgressType",
+    "display_name": "ProgressType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.event.entity.player",
+    "class_name": "ProgressType",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cProgressType\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraftforge.event.entity.player.AdvancementEvent.AdvancementProgressEvent.ProgressType",
+          "display_name": "ProgressType",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraftforge.event.entity.player",
+          "class_name": "ProgressType"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.forge.api.event.advancement.AdvancementProgressEventType",
+  "member_groups": {
+    "GRANT": {
+      "key": "GRANT",
+      "members": [
+        {
+          "key": "GRANT",
+          "display_name": "GRANT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.event.entity.player.AdvancementEvent.AdvancementProgressEvent.ProgressType",
+            "display_name": "ProgressType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.event.entity.player",
+            "class_name": "ProgressType"
+          }
+        }
+      ]
+    },
+    "REVOKE": {
+      "key": "REVOKE",
+      "members": [
+        {
+          "key": "REVOKE",
+          "display_name": "REVOKE",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.event.entity.player.AdvancementEvent.AdvancementProgressEvent.ProgressType",
+            "display_name": "ProgressType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.event.entity.player",
+            "class_name": "ProgressType"
+          }
+        }
+      ]
+    }
+  }
+}

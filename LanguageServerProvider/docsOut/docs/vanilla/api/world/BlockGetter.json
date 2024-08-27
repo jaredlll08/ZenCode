@@ -1,0 +1,231 @@
+{
+  "key": "vanilla/api/world/BlockGetter",
+  "display_name": "BlockGetter",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.BlockGetter",
+    "display_name": "BlockGetter",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level",
+    "class_name": "BlockGetter",
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.LevelHeightAccessor",
+        "display_name": "LevelHeightAccessor",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level",
+        "class_name": "LevelHeightAccessor"
+      },
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeBlockGetter",
+        "display_name": "IForgeBlockGetter",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeBlockGetter"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.BlockGetter",
+  "member_groups": {
+    "getBlockEntityData": {
+      "key": "getBlockEntityData",
+      "members": [
+        {
+          "key": "getBlockEntityData",
+          "display_name": "getBlockEntityData",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the tile entity data for a tile entity at a given position."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "extra": {
+                "examples": {
+                  "pos": [
+                    "new BlockPos(0, 1, 2)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The position of the tile entity."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    },
+    "getBlockFloorHeight": {
+      "key": "getBlockFloorHeight",
+      "members": [
+        {
+          "key": "getBlockFloorHeight",
+          "display_name": "getBlockFloorHeight",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "getBlockState": {
+      "key": "getBlockState",
+      "members": [
+        {
+          "key": "getBlockState",
+          "display_name": "getBlockState",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the block state at a given position."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "extra": {
+                "examples": {
+                  "pos": [
+                    "new BlockPos(0, 1, 2)"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The position to look up."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.block.state.BlockState",
+            "display_name": "BlockState",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.block.state",
+            "class_name": "BlockState"
+          }
+        }
+      ]
+    },
+    "getLightEmission": {
+      "key": "getLightEmission",
+      "members": [
+        {
+          "key": "getLightEmission",
+          "display_name": "getLightEmission",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "maxLightLevel": {
+      "key": "maxLightLevel",
+      "members": [
+        {
+          "key": "maxLightLevel",
+          "display_name": "maxLightLevel",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

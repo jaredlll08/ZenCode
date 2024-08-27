@@ -2,6 +2,7 @@ package org.openzen.zenscript.json;
 
 import com.google.gson.*;
 import org.openzen.zencode.shared.CodePosition;
+import org.openzen.zenscript.ZCLSPServer;
 import org.openzen.zenscript.codemodel.*;
 import org.openzen.zenscript.codemodel.annotations.AnnotationDefinition;
 import org.openzen.zenscript.codemodel.definition.ClassDefinition;
@@ -18,6 +19,7 @@ import org.openzen.zenscript.parser.ModuleLoader;
 import org.openzen.zenscript.parser.logger.ParserLogger;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -67,7 +69,8 @@ public class JsonModule {
 			try {
 				ModuleSymbol json1 = new ModuleSymbol("json");
 				PackageDefinitions packageDefinitions = new PackageDefinitions();
-				Path path = Paths.get("X:", "LSP", "docsOut", "docs");
+				Path path = Paths.get("LanguageServerProvider","docsOut", "docs");
+				ZCLSPServer.log(path.toAbsolutePath());
 				// map of java key to TypeSymbol
 				Map<String, JsonSymbol> definitions = new HashMap<>();
 

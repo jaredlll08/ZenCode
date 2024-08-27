@@ -1,0 +1,19 @@
+{
+  "key": "vanilla/api/util/math/Quaternionfc",
+  "display_name": "Quaternionfc",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "org.joml.Quaternionfc",
+    "display_name": "Quaternionfc",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "org.joml",
+    "class_name": "Quaternionfc"
+  },
+  "zen_code_name": "crafttweaker.api.util.math.Quaternionfc"
+}

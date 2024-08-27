@@ -1,0 +1,406 @@
+{
+  "key": "vanilla/api/recipe/type/CampfireCookingRecipe",
+  "display_name": "CampfireCookingRecipe",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.item.crafting.CampfireCookingRecipe",
+    "display_name": "CampfireCookingRecipe",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.item.crafting",
+    "class_name": "CampfireCookingRecipe",
+    "super_type": {
+      "key": "net.minecraft.world.item.crafting.AbstractCookingRecipe",
+      "display_name": "AbstractCookingRecipe",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.world.item.crafting",
+      "class_name": "AbstractCookingRecipe"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.item.crafting.Recipe",
+        "display_name": "Recipe\u003cContainer\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "C": {
+            "key": "net.minecraft.world.Container",
+            "display_name": "Container",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "Container"
+          }
+        },
+        "package_name": "net.minecraft.world.item.crafting",
+        "class_name": "Recipe"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.type.CampfireCookingRecipe",
+  "member_groups": {
+    "canCraftInDimensions": {
+      "key": "canCraftInDimensions",
+      "members": [
+        {
+          "key": "canCraftInDimensions",
+          "display_name": "canCraftInDimensions",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "var1",
+              "display_name": "var1",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "var2",
+              "display_name": "var2",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "cookingTime": {
+      "key": "cookingTime",
+      "members": [
+        {
+          "key": "getCookingTime",
+          "display_name": "getCookingTime",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "cookingTime",
+          "display_name": "cookingTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "experience": {
+      "key": "experience",
+      "members": [
+        {
+          "key": "getExperience",
+          "display_name": "getExperience",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "experience",
+          "display_name": "experience",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "group": {
+      "key": "group",
+      "members": [
+        {
+          "key": "getGroup",
+          "display_name": "getGroup",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "group",
+          "display_name": "group",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "id": {
+      "key": "id",
+      "members": [
+        {
+          "key": "getId",
+          "display_name": "getId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    },
+    "ingredients": {
+      "key": "ingredients",
+      "members": [
+        {
+          "key": "getIngredients",
+          "display_name": "getIngredients",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "ingredients",
+          "display_name": "ingredients",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cIIngredient\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.ingredient.IIngredient",
+                "display_name": "IIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.ingredient",
+                "class_name": "IIngredient"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "isIncomplete": {
+      "key": "isIncomplete",
+      "members": [
+        {
+          "key": "isIncomplete",
+          "display_name": "isIncomplete",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isIncomplete",
+          "display_name": "isIncomplete",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isSpecial": {
+      "key": "isSpecial",
+      "members": [
+        {
+          "key": "isSpecial",
+          "display_name": "isSpecial",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isSpecial",
+          "display_name": "isSpecial",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "resultItem": {
+      "key": "resultItem",
+      "members": [
+        {
+          "key": "getResultItem",
+          "display_name": "getResultItem",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        },
+        {
+          "key": "resultItem",
+          "display_name": "resultItem",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    },
+    "toastSymbol": {
+      "key": "toastSymbol",
+      "members": [
+        {
+          "key": "getToastSymbol",
+          "display_name": "getToastSymbol",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        },
+        {
+          "key": "toastSymbol",
+          "display_name": "toastSymbol",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.ItemStack",
+            "display_name": "ItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "ItemStack"
+          }
+        }
+      ]
+    }
+  }
+}

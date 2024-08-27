@@ -1,0 +1,145 @@
+{
+  "key": "vanilla/api/predicate/MobEffectsPredicate",
+  "display_name": "MobEffectsPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.MobEffectsPredicate",
+    "display_name": "MobEffectsPredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "MobEffectsPredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.MobEffectsPredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate",
+            "display_name": "MobEffectsPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectsPredicate"
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "map",
+              "display_name": "map",
+              "type": {
+                "key": "java.util.Map",
+                "display_name": "Map\u003cMobEffect, MobEffectInstancePredicate\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "K": {
+                    "key": "net.minecraft.world.effect.MobEffect",
+                    "display_name": "MobEffect",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.effect",
+                    "class_name": "MobEffect"
+                  },
+                  "V": {
+                    "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+                    "display_name": "MobEffectInstancePredicate",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.advancements.critereon",
+                    "class_name": "MobEffectInstancePredicate"
+                  }
+                },
+                "package_name": "java.util",
+                "class_name": "Map"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate",
+            "display_name": "MobEffectsPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectsPredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "effect",
+              "display_name": "effect",
+              "type": {
+                "key": "net.minecraft.world.effect.MobEffect",
+                "display_name": "MobEffect",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffect"
+              },
+              "optional": false
+            },
+            {
+              "key": "predicate",
+              "display_name": "predicate",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MobEffectsPredicate.MobEffectInstancePredicate",
+                "display_name": "MobEffectInstancePredicate",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "MobEffectInstancePredicate"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MobEffectsPredicate",
+            "display_name": "MobEffectsPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "MobEffectsPredicate"
+          }
+        }
+      ]
+    }
+  }
+}

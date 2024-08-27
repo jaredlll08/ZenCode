@@ -1,0 +1,202 @@
+{
+  "key": "vanilla/api/predicate/IntMinMaxBoundsPredicate",
+  "display_name": "IntMinMaxBoundsPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+    "display_name": "Ints",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "Ints",
+    "super_type": {
+      "key": "net.minecraft.advancements.critereon.MinMaxBounds",
+      "display_name": "MinMaxBounds\u003cInteger\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "T": {
+          "key": "java.lang.Integer",
+          "display_name": "Integer",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "java.lang",
+          "class_name": "Integer"
+        }
+      },
+      "package_name": "net.minecraft.advancements.critereon",
+      "class_name": "MinMaxBounds"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.IntMinMaxBoundsPredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+            "display_name": "Ints",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Ints"
+          }
+        }
+      ]
+    },
+    "atLeast": {
+      "key": "atLeast",
+      "members": [
+        {
+          "key": "atLeast",
+          "display_name": "atLeast",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "min",
+              "display_name": "min",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+            "display_name": "Ints",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Ints"
+          }
+        }
+      ]
+    },
+    "atMost": {
+      "key": "atMost",
+      "members": [
+        {
+          "key": "atMost",
+          "display_name": "atMost",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "max",
+              "display_name": "max",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+            "display_name": "Ints",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Ints"
+          }
+        }
+      ]
+    },
+    "between": {
+      "key": "between",
+      "members": [
+        {
+          "key": "between",
+          "display_name": "between",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "min",
+              "display_name": "min",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "max",
+              "display_name": "max",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+            "display_name": "Ints",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Ints"
+          }
+        }
+      ]
+    },
+    "exactly": {
+      "key": "exactly",
+      "members": [
+        {
+          "key": "exactly",
+          "display_name": "exactly",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+            "display_name": "Ints",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Ints"
+          }
+        }
+      ]
+    }
+  }
+}

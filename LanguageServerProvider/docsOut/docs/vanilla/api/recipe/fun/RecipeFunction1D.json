@@ -1,0 +1,75 @@
+{
+  "key": "vanilla/api/recipe/fun/RecipeFunction1D",
+  "display_name": "RecipeFunction1D",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.fun.RecipeFunction1D",
+    "display_name": "RecipeFunction1D",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.fun",
+    "class_name": "RecipeFunction1D"
+  },
+  "zen_code_name": "crafttweaker.api.recipe.fun.RecipeFunction1D",
+  "member_groups": {
+    "process": {
+      "key": "process",
+      "members": [
+        {
+          "key": "process",
+          "display_name": "process",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "usualOut",
+              "display_name": "usualOut",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              },
+              "optional": false
+            },
+            {
+              "key": "inputs",
+              "display_name": "inputs",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack[]",
+                "display_name": "IItemStack[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                  "display_name": "IItemStack",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.item",
+                  "class_name": "IItemStack"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+            "display_name": "IItemStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.item",
+            "class_name": "IItemStack"
+          }
+        }
+      ]
+    }
+  }
+}

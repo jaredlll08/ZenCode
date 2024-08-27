@@ -1,0 +1,341 @@
+{
+  "key": "forge/api/capability/IEnergyStorage",
+  "display_name": "IEnergyStorage",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraftforge.energy.IEnergyStorage",
+    "display_name": "IEnergyStorage",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.energy",
+    "class_name": "IEnergyStorage"
+  },
+  "zen_code_name": "crafttweaker.api.capability.IEnergyStorage",
+  "member_groups": {
+    "canExtract": {
+      "key": "canExtract",
+      "members": [
+        {
+          "key": "canExtract",
+          "display_name": "canExtract",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if energy can be extracted from this storage."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canExtract",
+          "display_name": "canExtract",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if energy can be extracted from this storage."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "canReceive": {
+      "key": "canReceive",
+      "members": [
+        {
+          "key": "canReceive",
+          "display_name": "canReceive",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this storage can receive energy."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "canReceive",
+          "display_name": "canReceive",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this storage can receive energy."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "energyStored": {
+      "key": "energyStored",
+      "members": [
+        {
+          "key": "getEnergyStored",
+          "display_name": "getEnergyStored",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of energy stored."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "energyStored",
+          "display_name": "energyStored",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of energy stored."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "extractEnergy": {
+      "key": "extractEnergy",
+      "members": [
+        {
+          "key": "extractEnergy",
+          "display_name": "extractEnergy",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Extracts energy from the storage."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "maxExtract",
+              "display_name": "maxExtract",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxExtract": [
+                    "400"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The max amount of energy to be extracted."
+                }
+              ]
+            },
+            {
+              "key": "simulate",
+              "display_name": "simulate",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "simulate": [
+                    "false"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "If the energy should actually be extracted or not."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "maxEnergyStored": {
+      "key": "maxEnergyStored",
+      "members": [
+        {
+          "key": "getMaxEnergyStored",
+          "display_name": "getMaxEnergyStored",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the max energy that can be stored."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "maxEnergyStored",
+          "display_name": "maxEnergyStored",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the max energy that can be stored."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "receiveEnergy": {
+      "key": "receiveEnergy",
+      "members": [
+        {
+          "key": "receiveEnergy",
+          "display_name": "receiveEnergy",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds energy to the storage."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "maxReceive",
+              "display_name": "maxReceive",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "maxReceive": [
+                    "300"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The max amount of energy to be inserted."
+                }
+              ]
+            },
+            {
+              "key": "simulate",
+              "display_name": "simulate",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "simulate": [
+                    "false"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "If the energy should actually be inserted or not."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

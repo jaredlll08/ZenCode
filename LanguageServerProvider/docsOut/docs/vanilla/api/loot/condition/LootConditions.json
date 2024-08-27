@@ -1,0 +1,455 @@
+{
+  "key": "vanilla/api/loot/condition/LootConditions",
+  "display_name": "LootConditions",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+    "display_name": "LootConditions",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+    "class_name": "LootConditions",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.loot.condition.LootConditions",
+  "member_groups": {
+    "allOf": {
+      "key": "allOf",
+      "members": [
+        {
+          "key": "allOf",
+          "display_name": "allOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "conditions",
+              "display_name": "conditions",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition[]",
+                "display_name": "LootItemCondition[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+                  "display_name": "LootItemCondition",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                  "class_name": "LootItemCondition"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        },
+        {
+          "key": "allOf",
+          "display_name": "allOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "builders",
+              "display_name": "builders",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder[]",
+                "display_name": "Builder[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+                  "display_name": "Builder",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                  "class_name": "Builder"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        }
+      ]
+    },
+    "anyOf": {
+      "key": "anyOf",
+      "members": [
+        {
+          "key": "anyOf",
+          "display_name": "anyOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "conditions",
+              "display_name": "conditions",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition[]",
+                "display_name": "LootItemCondition[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+                  "display_name": "LootItemCondition",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                  "class_name": "LootItemCondition"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        },
+        {
+          "key": "anyOf",
+          "display_name": "anyOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "builders",
+              "display_name": "builders",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder[]",
+                "display_name": "Builder[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+                  "display_name": "Builder",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                  "class_name": "Builder"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        }
+      ]
+    },
+    "none": {
+      "key": "none",
+      "members": [
+        {
+          "key": "none",
+          "display_name": "none",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        }
+      ]
+    },
+    "noneOf": {
+      "key": "noneOf",
+      "members": [
+        {
+          "key": "noneOf",
+          "display_name": "noneOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "conditions",
+              "display_name": "conditions",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition[]",
+                "display_name": "LootItemCondition[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+                  "display_name": "LootItemCondition",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                  "class_name": "LootItemCondition"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        },
+        {
+          "key": "noneOf",
+          "display_name": "noneOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "builders",
+              "display_name": "builders",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder[]",
+                "display_name": "Builder[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+                  "display_name": "Builder",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                  "class_name": "Builder"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        }
+      ]
+    },
+    "notAllOf": {
+      "key": "notAllOf",
+      "members": [
+        {
+          "key": "notAllOf",
+          "display_name": "notAllOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "conditions",
+              "display_name": "conditions",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition[]",
+                "display_name": "LootItemCondition[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+                  "display_name": "LootItemCondition",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                  "class_name": "LootItemCondition"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        },
+        {
+          "key": "notAllOf",
+          "display_name": "notAllOf",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "builders",
+              "display_name": "builders",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder[]",
+                "display_name": "Builder[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+                  "display_name": "Builder",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                  "class_name": "Builder"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        }
+      ]
+    },
+    "only": {
+      "key": "only",
+      "members": [
+        {
+          "key": "only",
+          "display_name": "only",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "condition",
+              "display_name": "condition",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+                "display_name": "LootItemCondition",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                "class_name": "LootItemCondition"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        },
+        {
+          "key": "only",
+          "display_name": "only",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "builder",
+              "display_name": "builder",
+              "type": {
+                "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+                "display_name": "Builder",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage.loot.predicates",
+                "class_name": "Builder"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        }
+      ]
+    },
+    "randomlyIn": {
+      "key": "randomlyIn",
+      "members": [
+        {
+          "key": "randomlyIn",
+          "display_name": "randomlyIn",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "percentageChance",
+              "display_name": "percentageChance",
+              "type": {
+                "key": "double",
+                "display_name": "double",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.loot.condition.LootConditions",
+            "display_name": "LootConditions",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.loot.condition",
+            "class_name": "LootConditions"
+          }
+        }
+      ]
+    }
+  }
+}

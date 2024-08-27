@@ -1,0 +1,159 @@
+{
+  "key": "forge/api/game/Distribution",
+  "display_name": "Distribution",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "forge:game/distribution"
+  },
+  "type": {
+    "key": "net.minecraftforge.api.distmarker.Dist",
+    "display_name": "Dist",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraftforge.api.distmarker",
+    "class_name": "Dist",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cDist\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraftforge.api.distmarker.Dist",
+          "display_name": "Dist",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraftforge.api.distmarker",
+          "class_name": "Dist"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.forge.game.Distribution",
+  "member_groups": {
+    "CLIENT": {
+      "key": "CLIENT",
+      "members": [
+        {
+          "key": "CLIENT",
+          "display_name": "CLIENT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.api.distmarker.Dist",
+            "display_name": "Dist",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.api.distmarker",
+            "class_name": "Dist"
+          }
+        }
+      ]
+    },
+    "DEDICATED_SERVER": {
+      "key": "DEDICATED_SERVER",
+      "members": [
+        {
+          "key": "DEDICATED_SERVER",
+          "display_name": "DEDICATED_SERVER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraftforge.api.distmarker.Dist",
+            "display_name": "Dist",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraftforge.api.distmarker",
+            "class_name": "Dist"
+          }
+        }
+      ]
+    },
+    "isClient": {
+      "key": "isClient",
+      "members": [
+        {
+          "key": "isClient",
+          "display_name": "isClient",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isDedicatedServer": {
+      "key": "isDedicatedServer",
+      "members": [
+        {
+          "key": "isDedicatedServer",
+          "display_name": "isDedicatedServer",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

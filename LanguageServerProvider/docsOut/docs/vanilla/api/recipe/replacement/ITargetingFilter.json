@@ -1,0 +1,120 @@
+{
+  "key": "vanilla/api/recipe/replacement/ITargetingFilter",
+  "display_name": "ITargetingFilter",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Represents a filter applied to the recipe list."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "This filter is applied to"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.replacement.Replacer",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Replacer"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "instances and allows for the removal of certain set of recipes from\r\n being able to be inspected by a replacer, or for additional global executions to be performed. Note that the filter\r\n is \u003cstrong\u003epositive\u003c/strong\u003e, meaning that the filter determines which recipes are allowed to be examined by a\r\n replacer, not the opposite."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "Script writers should refer to"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.replacement.IFilteringRule",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IFilteringRule"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "instead."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "This is a"
+    },
+    {
+      "type": "link",
+      "to": "FunctionalInterface",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "FunctionalInterface"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " whose functional method is "
+    },
+    {
+      "type": "link",
+      "to": "#castFilter(Stream)",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "#castFilter(Stream)"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ".\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingFilter",
+    "display_name": "ITargetingFilter",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+    "class_name": "ITargetingFilter"
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.ITargetingFilter"
+}

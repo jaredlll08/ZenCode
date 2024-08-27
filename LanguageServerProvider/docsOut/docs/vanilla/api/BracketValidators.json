@@ -1,0 +1,370 @@
+{
+  "key": "vanilla/api/BracketValidators",
+  "display_name": "BracketValidators",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.bracket.BracketValidators",
+    "display_name": "BracketValidators",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.bracket",
+    "class_name": "BracketValidators",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.BracketValidators",
+  "member_groups": {
+    "validateBlockBracket": {
+      "key": "validateBlockBracket",
+      "members": [
+        {
+          "key": "validateBlockBracket",
+          "display_name": "validateBlockBracket",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateBlockStateMaterialBracket": {
+      "key": "validateBlockStateMaterialBracket",
+      "members": [
+        {
+          "key": "validateBlockStateMaterialBracket",
+          "display_name": "validateBlockStateMaterialBracket",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateEffectBracket": {
+      "key": "validateEffectBracket",
+      "members": [
+        {
+          "key": "validateEffectBracket",
+          "display_name": "validateEffectBracket",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateEnchantment": {
+      "key": "validateEnchantment",
+      "members": [
+        {
+          "key": "validateEnchantment",
+          "display_name": "validateEnchantment",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateEntityType": {
+      "key": "validateEntityType",
+      "members": [
+        {
+          "key": "validateEntityType",
+          "display_name": "validateEntityType",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateFluidStack": {
+      "key": "validateFluidStack",
+      "members": [
+        {
+          "key": "validateFluidStack",
+          "display_name": "validateFluidStack",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateItemBracket": {
+      "key": "validateItemBracket",
+      "members": [
+        {
+          "key": "validateItemBracket",
+          "display_name": "validateItemBracket",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateProfessionBracket": {
+      "key": "validateProfessionBracket",
+      "members": [
+        {
+          "key": "validateProfessionBracket",
+          "display_name": "validateProfessionBracket",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateResourceBracket": {
+      "key": "validateResourceBracket",
+      "members": [
+        {
+          "key": "validateResourceBracket",
+          "display_name": "validateResourceBracket",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateSoundEvent": {
+      "key": "validateSoundEvent",
+      "members": [
+        {
+          "key": "validateSoundEvent",
+          "display_name": "validateSoundEvent",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "validateTargetingStrategy": {
+      "key": "validateTargetingStrategy",
+      "members": [
+        {
+          "key": "validateTargetingStrategy",
+          "display_name": "validateTargetingStrategy",
+          "member_type": "method",
+          "origin": "declared",
+          "static": true,
+          "parameters": [
+            {
+              "key": "tokens",
+              "display_name": "tokens",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

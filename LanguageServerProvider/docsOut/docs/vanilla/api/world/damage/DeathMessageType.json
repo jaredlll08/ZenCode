@@ -1,0 +1,194 @@
+{
+  "key": "vanilla/api/world/damage/DeathMessageType",
+  "display_name": "DeathMessageType",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:damage/death_message_type"
+  },
+  "type": {
+    "key": "net.minecraft.world.damagesource.DeathMessageType",
+    "display_name": "DeathMessageType",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.damagesource",
+    "class_name": "DeathMessageType",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cDeathMessageType\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.damagesource.DeathMessageType",
+          "display_name": "DeathMessageType",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.damagesource",
+          "class_name": "DeathMessageType"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.damage.DeathMessageType",
+  "member_groups": {
+    "DEFAULT": {
+      "key": "DEFAULT",
+      "members": [
+        {
+          "key": "DEFAULT",
+          "display_name": "DEFAULT",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DeathMessageType",
+            "display_name": "DeathMessageType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DeathMessageType"
+          }
+        }
+      ]
+    },
+    "FALL_VARIANTS": {
+      "key": "FALL_VARIANTS",
+      "members": [
+        {
+          "key": "FALL_VARIANTS",
+          "display_name": "FALL_VARIANTS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DeathMessageType",
+            "display_name": "DeathMessageType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DeathMessageType"
+          }
+        }
+      ]
+    },
+    "INTENTIONAL_GAME_DESIGN": {
+      "key": "INTENTIONAL_GAME_DESIGN",
+      "members": [
+        {
+          "key": "INTENTIONAL_GAME_DESIGN",
+          "display_name": "INTENTIONAL_GAME_DESIGN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.damagesource.DeathMessageType",
+            "display_name": "DeathMessageType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.damagesource",
+            "class_name": "DeathMessageType"
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

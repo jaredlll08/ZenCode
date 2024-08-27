@@ -12,10 +12,9 @@ public class StandardIOLauncher {
 
     public static void start() {
         try {
-            ZCLSPServer server = new ZCLSPServer();
-            Launcher<LanguageClient> launcher = LSPLauncher.createServerLauncher(server, System.in, System.out);
+            Launcher<LanguageClient> launcher = LSPLauncher.createServerLauncher(ZCLSPServer.INSTANCE, System.in, System.out);
             LanguageClient client = launcher.getRemoteProxy();
-            server.connect(client);
+			ZCLSPServer.INSTANCE.connect(client);
             launcher.startListening().get();
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,0 +1,529 @@
+{
+  "key": "vanilla/api/entity/effect/MobEffectInstance",
+  "display_name": "MobEffectInstance",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.effect.MobEffectInstance",
+    "display_name": "MobEffectInstance",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.effect",
+    "class_name": "MobEffectInstance",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cMobEffectInstance\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.world.effect.MobEffectInstance",
+            "display_name": "MobEffectInstance",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.effect",
+            "class_name": "MobEffectInstance"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeMobEffectInstance",
+        "display_name": "IForgeMobEffectInstance",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeMobEffectInstance"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.effect.MobEffectInstance",
+  "member_groups": {
+    "ambient": {
+      "key": "ambient",
+      "members": [
+        {
+          "key": "isAmbient",
+          "display_name": "isAmbient",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "ambient",
+          "display_name": "ambient",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "amplifier": {
+      "key": "amplifier",
+      "members": [
+        {
+          "key": "getAmplifier",
+          "display_name": "getAmplifier",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "amplifier",
+          "display_name": "amplifier",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "applyEffect": {
+      "key": "applyEffect",
+      "members": [
+        {
+          "key": "applyEffect",
+          "display_name": "applyEffect",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.LivingEntity",
+                "display_name": "LivingEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "LivingEntity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "compare": {
+      "key": "compare",
+      "members": [
+        {
+          "key": "compareTo",
+          "display_name": "compareTo",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.effect.MobEffectInstance",
+                "display_name": "MobEffectInstance",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffectInstance"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "compare"
+        }
+      ]
+    },
+    "compareTo": {
+      "key": "compareTo",
+      "members": [
+        {
+          "key": "compareTo",
+          "display_name": "compareTo",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.effect.MobEffectInstance",
+                "display_name": "MobEffectInstance",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffectInstance"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "descriptionId": {
+      "key": "descriptionId",
+      "members": [
+        {
+          "key": "getDescriptionId",
+          "display_name": "getDescriptionId",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "descriptionId",
+          "display_name": "descriptionId",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "duration": {
+      "key": "duration",
+      "members": [
+        {
+          "key": "getDuration",
+          "display_name": "getDuration",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "duration",
+          "display_name": "duration",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "effect": {
+      "key": "effect",
+      "members": [
+        {
+          "key": "getEffect",
+          "display_name": "getEffect",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.effect.MobEffect",
+            "display_name": "MobEffect",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.effect",
+            "class_name": "MobEffect"
+          }
+        },
+        {
+          "key": "effect",
+          "display_name": "effect",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.effect.MobEffect",
+            "display_name": "MobEffect",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.effect",
+            "class_name": "MobEffect"
+          }
+        }
+      ]
+    },
+    "load": {
+      "key": "load",
+      "members": [
+        {
+          "key": "load",
+          "display_name": "load",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "data",
+              "display_name": "data",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.MapData",
+                "display_name": "MapData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "MapData"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.effect.MobEffectInstance",
+            "display_name": "MobEffectInstance",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.effect",
+            "class_name": "MobEffectInstance"
+          }
+        }
+      ]
+    },
+    "save": {
+      "key": "save",
+      "members": [
+        {
+          "key": "save",
+          "display_name": "save",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "data",
+              "display_name": "data",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.MapData",
+                "display_name": "MapData",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "MapData"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.MapData",
+            "display_name": "MapData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "MapData"
+          }
+        }
+      ]
+    },
+    "showIcon": {
+      "key": "showIcon",
+      "members": [
+        {
+          "key": "showIcon",
+          "display_name": "showIcon",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "showIcon",
+          "display_name": "showIcon",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "tick": {
+      "key": "tick",
+      "members": [
+        {
+          "key": "tick",
+          "display_name": "tick",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.LivingEntity",
+                "display_name": "LivingEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "LivingEntity"
+              },
+              "optional": false
+            },
+            {
+              "key": "onFinish",
+              "display_name": "onFinish",
+              "type": {
+                "key": "java.lang.Runnable",
+                "display_name": "Runnable",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "java.lang",
+                "class_name": "Runnable"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "update": {
+      "key": "update",
+      "members": [
+        {
+          "key": "update",
+          "display_name": "update",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "instance",
+              "display_name": "instance",
+              "type": {
+                "key": "net.minecraft.world.effect.MobEffectInstance",
+                "display_name": "MobEffectInstance",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffectInstance"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "visible": {
+      "key": "visible",
+      "members": [
+        {
+          "key": "isVisible",
+          "display_name": "isVisible",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "visible",
+          "display_name": "visible",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

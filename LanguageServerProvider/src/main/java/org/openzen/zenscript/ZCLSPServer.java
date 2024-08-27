@@ -3,13 +3,14 @@ package org.openzen.zenscript;
 import org.eclipse.lsp4j.*;
 import org.eclipse.lsp4j.services.*;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.concurrent.CompletableFuture;
+import java.util.stream.Collectors;
 
 public class ZCLSPServer implements LanguageServer, LanguageClientAware {
+	private static final List<String> TO_SEND = new LinkedList<>();
+	// Probably a bad idea in the long run
+	public static final ZCLSPServer INSTANCE = new ZCLSPServer();
 
 	private LanguageClient client;
 	private WorkspaceService workspaceService;
@@ -23,6 +24,11 @@ public class ZCLSPServer implements LanguageServer, LanguageClientAware {
 	@Override
 	public void connect(LanguageClient client) {
 		this.client = client;
+		if (ZCLSPServer.INSTANCE != null && !ZCLSPServer.TO_SEND.isEmpty()) {
+			for (String s : TO_SEND) {
+				log(s);
+			}
+		}
 	}
 
 	@Override
@@ -72,5 +78,18 @@ public class ZCLSPServer implements LanguageServer, LanguageClientAware {
 	@Override
 	public void setTrace(SetTraceParams params) {
 		//TODO
+	}
+
+
+
+	public static void log(Object... message) {
+		String collect = Arrays.stream(message).filter(Objects::nonNull).map(o -> o.getClass().isArray() ? Arrays.toString((Object[]) o) : Objects.toString(o)).collect(Collectors.joining(" "));
+		if (ZCLSPServer.INSTANCE != null) {
+			ZCLSPServer.INSTANCE.client().ifPresent(languageClient -> {
+				languageClient.logMessage(new MessageParams(MessageType.Info, collect));
+			});
+		} else {
+			TO_SEND.add(collect);
+		}
 	}
 }

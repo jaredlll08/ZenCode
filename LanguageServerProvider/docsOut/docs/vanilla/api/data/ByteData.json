@@ -1,0 +1,2528 @@
+{
+  "key": "vanilla/api/data/ByteData",
+  "display_name": "ByteData",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "(4 as IData)"
+      ]
+    }
+  },
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.data.ByteData",
+    "display_name": "ByteData",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.data",
+    "class_name": "ByteData",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.data.IData",
+        "display_name": "IData",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.data",
+        "class_name": "IData"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cIData\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.lang.Iterable",
+        "display_name": "Iterable\u003cIData\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Iterable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.data.ByteData",
+  "member_groups": {
+    "add": {
+      "key": "add",
+      "members": [
+        {
+          "key": "add",
+          "display_name": "add",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given IData to this IData."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        },
+        {
+          "key": "add",
+          "display_name": "add",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Adds the given IData to this IData."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data to add."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "add"
+        }
+      ]
+    },
+    "and": {
+      "key": "and",
+      "members": [
+        {
+          "key": "and",
+          "display_name": "and",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Applies a bitwise AND (\u0026) operation to this IData and the other IData"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "and"
+        }
+      ]
+    },
+    "asBool": {
+      "key": "asBool",
+      "members": [
+        {
+          "key": "asBool",
+          "display_name": "asBool",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a boolean."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "asBool",
+          "display_name": "asBool",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a boolean."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asByte": {
+      "key": "asByte",
+      "members": [
+        {
+          "key": "asByte",
+          "display_name": "asByte",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a byte."
+            }
+          ],
+          "return_type": {
+            "key": "byte",
+            "display_name": "byte",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "asByte",
+          "display_name": "asByte",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a byte."
+            }
+          ],
+          "return_type": {
+            "key": "byte",
+            "display_name": "byte",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asByteArray": {
+      "key": "asByteArray",
+      "members": [
+        {
+          "key": "asByteArray",
+          "display_name": "asByteArray",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a byte array."
+            }
+          ],
+          "return_type": {
+            "key": "byte[]",
+            "display_name": "byte[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "byte",
+              "display_name": "byte",
+              "type_type": "basic",
+              "nullable": false
+            }
+          }
+        },
+        {
+          "key": "asByteArray",
+          "display_name": "asByteArray",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a byte array."
+            }
+          ],
+          "return_type": {
+            "key": "byte[]",
+            "display_name": "byte[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "byte",
+              "display_name": "byte",
+              "type_type": "basic",
+              "nullable": false
+            }
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asDouble": {
+      "key": "asDouble",
+      "members": [
+        {
+          "key": "asDouble",
+          "display_name": "asDouble",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a double."
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "asDouble",
+          "display_name": "asDouble",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a double."
+            }
+          ],
+          "return_type": {
+            "key": "double",
+            "display_name": "double",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asFloat": {
+      "key": "asFloat",
+      "members": [
+        {
+          "key": "asFloat",
+          "display_name": "asFloat",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a float."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "asFloat",
+          "display_name": "asFloat",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a float."
+            }
+          ],
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asInt": {
+      "key": "asInt",
+      "members": [
+        {
+          "key": "asInt",
+          "display_name": "asInt",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to an int."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "asInt",
+          "display_name": "asInt",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to an int."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asIntArray": {
+      "key": "asIntArray",
+      "members": [
+        {
+          "key": "asIntArray",
+          "display_name": "asIntArray",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to an int array."
+            }
+          ],
+          "return_type": {
+            "key": "int[]",
+            "display_name": "int[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "int",
+              "display_name": "int",
+              "type_type": "basic",
+              "nullable": false
+            }
+          }
+        },
+        {
+          "key": "asIntArray",
+          "display_name": "asIntArray",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to an int array."
+            }
+          ],
+          "return_type": {
+            "key": "int[]",
+            "display_name": "int[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "int",
+              "display_name": "int",
+              "type_type": "basic",
+              "nullable": false
+            }
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asList": {
+      "key": "asList",
+      "members": [
+        {
+          "key": "asList",
+          "display_name": "asList",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a list."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cIData\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "asList",
+          "display_name": "asList",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a list."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cIData\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asLong": {
+      "key": "asLong",
+      "members": [
+        {
+          "key": "asLong",
+          "display_name": "asLong",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a long."
+            }
+          ],
+          "return_type": {
+            "key": "long",
+            "display_name": "long",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "asLong",
+          "display_name": "asLong",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a long."
+            }
+          ],
+          "return_type": {
+            "key": "long",
+            "display_name": "long",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asLongArray": {
+      "key": "asLongArray",
+      "members": [
+        {
+          "key": "asLongArray",
+          "display_name": "asLongArray",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a long array."
+            }
+          ],
+          "return_type": {
+            "key": "long[]",
+            "display_name": "long[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "long",
+              "display_name": "long",
+              "type_type": "basic",
+              "nullable": false
+            }
+          }
+        },
+        {
+          "key": "asLongArray",
+          "display_name": "asLongArray",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a long array."
+            }
+          ],
+          "return_type": {
+            "key": "long[]",
+            "display_name": "long[]",
+            "type_type": "array",
+            "nullable": false,
+            "type": {
+              "key": "long",
+              "display_name": "long",
+              "type_type": "basic",
+              "nullable": false
+            }
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asMap": {
+      "key": "asMap",
+      "members": [
+        {
+          "key": "asMap",
+          "display_name": "asMap",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a map."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cString, IData\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "V": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          }
+        },
+        {
+          "key": "asMap",
+          "display_name": "asMap",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a map."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Map",
+            "display_name": "Map\u003cString, IData\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "K": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "V": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Map"
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asShort": {
+      "key": "asShort",
+      "members": [
+        {
+          "key": "asShort",
+          "display_name": "asShort",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a short."
+            }
+          ],
+          "return_type": {
+            "key": "short",
+            "display_name": "short",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "asShort",
+          "display_name": "asShort",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Casts this IData to a short."
+            }
+          ],
+          "return_type": {
+            "key": "short",
+            "display_name": "short",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "asString": {
+      "key": "asString",
+      "members": [
+        {
+          "key": "asString",
+          "display_name": "asString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets an escaped string version of this IData, quotes are included in the output"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G"
+            },
+            {
+              "type": "code",
+              "content": "println((\"hello\" as IData).asString())"
+            },
+            {
+              "type": "plaintext",
+              "content": " prints "
+            },
+            {
+              "type": "code",
+              "content": "\"hello\""
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "cat": {
+      "key": "cat",
+      "members": [
+        {
+          "key": "cat",
+          "display_name": "cat",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Concatenates the given IData to this IData."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data to concatenate."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "cat"
+        }
+      ]
+    },
+    "compare": {
+      "key": "compare",
+      "members": [
+        {
+          "key": "compareTo",
+          "display_name": "compareTo",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Compares this IData to the other IData"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "5"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the data to be compared."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "compare"
+        }
+      ]
+    },
+    "compareTo": {
+      "key": "compareTo",
+      "members": [
+        {
+          "key": "compareTo",
+          "display_name": "compareTo",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Compares this IData to the other IData"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "5"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the data to be compared."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "contains": {
+      "key": "contains",
+      "members": [
+        {
+          "key": "contains",
+          "display_name": "contains",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this IData contains the other IData"
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "For most data types, this will check equality of the data, but for map data, it will check if the other data is a string, and then check if it contains a key with that name"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data to check"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "contains"
+        }
+      ]
+    },
+    "copy": {
+      "key": "copy",
+      "members": [
+        {
+          "key": "copy",
+          "display_name": "copy",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    },
+    "div": {
+      "key": "div",
+      "members": [
+        {
+          "key": "div",
+          "display_name": "div",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Divides the given IData from this IData."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data to divide by."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "div"
+        }
+      ]
+    },
+    "equals": {
+      "key": "equals",
+      "members": [
+        {
+          "key": "equalTo",
+          "display_name": "equalTo",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this IData is equal to the other IData."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The data to check equality of."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "equals"
+        }
+      ]
+    },
+    "getAsString": {
+      "key": "getAsString",
+      "members": [
+        {
+          "key": "getAsString",
+          "display_name": "getAsString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the literal string version of this IData."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G"
+            },
+            {
+              "type": "code",
+              "content": "println((\"hello\" as IData).getAsString())"
+            },
+            {
+              "type": "plaintext",
+              "content": " prints "
+            },
+            {
+              "type": "code",
+              "content": "hello"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "getAsString",
+          "display_name": "getAsString",
+          "member_type": "caster",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the literal string version of this IData."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "E.G"
+            },
+            {
+              "type": "code",
+              "content": "println((\"hello\" as IData).getAsString())"
+            },
+            {
+              "type": "plaintext",
+              "content": " prints "
+            },
+            {
+              "type": "code",
+              "content": "hello"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": false
+        }
+      ]
+    },
+    "getId": {
+      "key": "getId",
+      "members": [
+        {
+          "key": "getId",
+          "display_name": "getId",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the internal ID of this data."
+            }
+          ],
+          "return_type": {
+            "key": "byte",
+            "display_name": "byte",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "indexget": {
+      "key": "indexget",
+      "members": [
+        {
+          "key": "getAt",
+          "display_name": "getAt",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the data at the given index."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "index": [
+                    "0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The index to get"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "indexget"
+        },
+        {
+          "key": "getAt",
+          "display_name": "getAt",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the data at the given key."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "key",
+              "display_name": "key",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The key to get"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "indexget"
+        }
+      ]
+    },
+    "indexset": {
+      "key": "indexset",
+      "members": [
+        {
+          "key": "put",
+          "display_name": "put",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Puts the given value inside this IData at the given index."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "index": [
+                    "\"key\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The key to store the data at"
+                }
+              ]
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "value": [
+                    "\"value\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The data to store."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "indexset"
+        }
+      ]
+    },
+    "isEmpty": {
+      "key": "isEmpty",
+      "members": [
+        {
+          "key": "isEmpty",
+          "display_name": "isEmpty",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this data is empty."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "isEmpty",
+          "display_name": "isEmpty",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if this data is empty."
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "keys": {
+      "key": "keys",
+      "members": [
+        {
+          "key": "getKeys",
+          "display_name": "getKeys",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the keys of this IData"
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Set",
+            "display_name": "Set\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Set"
+          }
+        },
+        {
+          "key": "keys",
+          "display_name": "keys",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the keys of this IData"
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Set",
+            "display_name": "Set\u003cString\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Set"
+          }
+        }
+      ]
+    },
+    "length": {
+      "key": "length",
+      "members": [
+        {
+          "key": "length",
+          "display_name": "length",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the length of this IData."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "length",
+          "display_name": "length",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the length of this IData."
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "listOf": {
+      "key": "listOf",
+      "members": [
+        {
+          "key": "listOf",
+          "display_name": "listOf",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": true,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a collection of the given IData members."
+            },
+            {
+              "type": "new_line"
+            },
+            {
+              "type": "plaintext",
+              "content": "This attempts to give the most accurate type for the given members, for example, if all the members are bytes, then it returns a ByteArrayData."
+            },
+            {
+              "type": "plaintext",
+              "content": "However if the types are mixed or do not have a *ArrayData version, then a ListData is returned."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "members",
+              "display_name": "members",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData[]",
+                "display_name": "IData[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "com.blamejared.crafttweaker.api.data.IData",
+                  "display_name": "IData",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "com.blamejared.crafttweaker.api.data",
+                  "class_name": "IData"
+                }
+              },
+              "extra": {
+                "examples": {
+                  "members": [
+                    "1, 2, 3"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The members to put in the list."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    },
+    "map": {
+      "key": "map",
+      "members": [
+        {
+          "key": "map",
+          "display_name": "map",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Maps this IData to another IData based on the given operation."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "operation",
+              "display_name": "operation",
+              "type": {
+                "key": "java.util.function.Function",
+                "display_name": "Function\u003cIData, IData\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "com.blamejared.crafttweaker.api.data.IData",
+                    "display_name": "IData",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.data",
+                    "class_name": "IData"
+                  },
+                  "R": {
+                    "key": "com.blamejared.crafttweaker.api.data.IData",
+                    "display_name": "IData",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "com.blamejared.crafttweaker.api.data",
+                    "class_name": "IData"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Function"
+              },
+              "extra": {
+                "examples": {
+                  "operation": [
+                    "(data) \u003d\u003e 3"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The operation to apply to this IData"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    },
+    "merge": {
+      "key": "merge",
+      "members": [
+        {
+          "key": "merge",
+          "display_name": "merge",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Merges the given data with this data."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the data to merge"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          }
+        }
+      ]
+    },
+    "mod": {
+      "key": "mod",
+      "members": [
+        {
+          "key": "mod",
+          "display_name": "mod",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Applies a modulo operation to this IData against the other IData."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data to modulo by."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "mod"
+        }
+      ]
+    },
+    "mul": {
+      "key": "mul",
+      "members": [
+        {
+          "key": "mul",
+          "display_name": "mul",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Multiplies the given IData to this IData."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data to multiply by."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "mul"
+        }
+      ]
+    },
+    "neg": {
+      "key": "neg",
+      "members": [
+        {
+          "key": "neg",
+          "display_name": "neg",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Negates this IData."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "neg"
+        }
+      ]
+    },
+    "not": {
+      "key": "not",
+      "members": [
+        {
+          "key": "not",
+          "display_name": "not",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Applies a NOT (!) operation to this IData."
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "not"
+        }
+      ]
+    },
+    "or": {
+      "key": "or",
+      "members": [
+        {
+          "key": "or",
+          "display_name": "or",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Applies a bitwise OR (|) operation to this IData and the other IData"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "or"
+        }
+      ]
+    },
+    "put": {
+      "key": "put",
+      "members": [
+        {
+          "key": "put",
+          "display_name": "put",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Puts the given value inside this IData at the given index."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "index": [
+                    "\"key\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The key to store the data at"
+                }
+              ]
+            },
+            {
+              "key": "value",
+              "display_name": "value",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "value": [
+                    "\"value\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The data to store."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "remove": {
+      "key": "remove",
+      "members": [
+        {
+          "key": "remove",
+          "display_name": "remove",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the stored data at the given index."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "index",
+              "display_name": "index",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "index": [
+                    "0"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The index to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "remove",
+          "display_name": "remove",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Removes the stored data at the given key."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "key",
+              "display_name": "key",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "key": [
+                    "\"key\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The key to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "setAt": {
+      "key": "setAt",
+      "members": [
+        {
+          "key": "setAt",
+          "display_name": "setAt",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Sets the given value inside this IData at the given index."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The key to store the data at"
+                }
+              ]
+            },
+            {
+              "key": "data",
+              "display_name": "data",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The data to store."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "shl": {
+      "key": "shl",
+      "members": [
+        {
+          "key": "shl",
+          "display_name": "shl",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Applies a SHL (\u003c\u003c) operation to this data by the other data"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The data to SHL by."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "shl"
+        }
+      ]
+    },
+    "shr": {
+      "key": "shr",
+      "members": [
+        {
+          "key": "shr",
+          "display_name": "shr",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Applies a SHR (\u003e\u003e) operation to this data by the other data"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "The data to SHR by."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "shr"
+        }
+      ]
+    },
+    "sub": {
+      "key": "sub",
+      "members": [
+        {
+          "key": "sub",
+          "display_name": "sub",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Subtracts the given IData from this IData."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data to remove."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "sub"
+        }
+      ]
+    },
+    "xor": {
+      "key": "xor",
+      "members": [
+        {
+          "key": "xor",
+          "display_name": "xor",
+          "member_type": "operator",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Applies a bitwise XOR (^) operation to this IData and the other IData"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.data.IData",
+                "display_name": "IData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.data",
+                "class_name": "IData"
+              },
+              "extra": {
+                "examples": {
+                  "other": [
+                    "2"
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "the other data."
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.data.IData",
+            "display_name": "IData",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.data",
+            "class_name": "IData"
+          },
+          "operator_type": "xor"
+        }
+      ]
+    }
+  }
+}

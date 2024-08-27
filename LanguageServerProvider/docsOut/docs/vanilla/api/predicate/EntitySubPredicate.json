@@ -1,0 +1,41 @@
+{
+  "key": "vanilla/api/predicate/EntitySubPredicate",
+  "display_name": "EntitySubPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+    "display_name": "EntitySubPredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "EntitySubPredicate"
+  },
+  "zen_code_name": "crafttweaker.api.predicate.EntitySubPredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntitySubPredicate",
+            "display_name": "EntitySubPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntitySubPredicate"
+          }
+        }
+      ]
+    }
+  }
+}

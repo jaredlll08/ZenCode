@@ -1,0 +1,1120 @@
+{
+  "key": "vanilla/api/text/MutableComponent",
+  "display_name": "MutableComponent",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.network.chat.MutableComponent",
+    "display_name": "MutableComponent",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.network.chat",
+    "class_name": "MutableComponent",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.network.chat.Component",
+        "display_name": "Component",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.network.chat",
+        "class_name": "Component"
+      },
+      {
+        "key": "com.mojang.brigadier.Message",
+        "display_name": "Message",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.mojang.brigadier",
+        "class_name": "Message"
+      },
+      {
+        "key": "net.minecraft.network.chat.FormattedText",
+        "display_name": "FormattedText",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.network.chat",
+        "class_name": "FormattedText"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.text.MutableComponent",
+  "member_groups": {
+    "add": {
+      "key": "add",
+      "members": [
+        {
+          "key": "opAddString",
+          "display_name": "opAddString",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "add"
+        },
+        {
+          "key": "opAddComponent",
+          "display_name": "opAddComponent",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "add"
+        },
+        {
+          "key": "opAddMutableComponent",
+          "display_name": "opAddMutableComponent",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.MutableComponent",
+                "display_name": "MutableComponent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "MutableComponent"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "add"
+        }
+      ]
+    },
+    "append": {
+      "key": "append",
+      "members": [
+        {
+          "key": "append",
+          "display_name": "append",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        },
+        {
+          "key": "append",
+          "display_name": "append",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "component",
+              "display_name": "component",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        },
+        {
+          "key": "append",
+          "display_name": "append",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "component",
+              "display_name": "component",
+              "type": {
+                "key": "net.minecraft.network.chat.MutableComponent",
+                "display_name": "MutableComponent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "MutableComponent"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "cat": {
+      "key": "cat",
+      "members": [
+        {
+          "key": "opCatString",
+          "display_name": "opCatString",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "cat"
+        },
+        {
+          "key": "opCatComponent",
+          "display_name": "opCatComponent",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "cat"
+        },
+        {
+          "key": "opCatMutableComponent",
+          "display_name": "opCatMutableComponent",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.MutableComponent",
+                "display_name": "MutableComponent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "MutableComponent"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "cat"
+        }
+      ]
+    },
+    "contents": {
+      "key": "contents",
+      "members": [
+        {
+          "key": "getContents",
+          "display_name": "getContents",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.ComponentContents",
+            "display_name": "ComponentContents",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "ComponentContents"
+          }
+        },
+        {
+          "key": "contents",
+          "display_name": "contents",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.ComponentContents",
+            "display_name": "ComponentContents",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "ComponentContents"
+          }
+        }
+      ]
+    },
+    "copy": {
+      "key": "copy",
+      "members": [
+        {
+          "key": "copy",
+          "display_name": "copy",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "empty": {
+      "key": "empty",
+      "members": [
+        {
+          "key": "empty",
+          "display_name": "empty",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "getString": {
+      "key": "getString",
+      "members": [
+        {
+          "key": "getString",
+          "display_name": "getString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "maxLength",
+              "display_name": "maxLength",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "getString",
+          "display_name": "getString",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "getString",
+          "display_name": "getString",
+          "member_type": "caster",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "implicit": true
+        }
+      ]
+    },
+    "keybind": {
+      "key": "keybind",
+      "members": [
+        {
+          "key": "keybind",
+          "display_name": "keybind",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "literal": {
+      "key": "literal",
+      "members": [
+        {
+          "key": "literal",
+          "display_name": "literal",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "nullToEmpty": {
+      "key": "nullToEmpty",
+      "members": [
+        {
+          "key": "nullToEmpty",
+          "display_name": "nullToEmpty",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": true
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "plainCopy": {
+      "key": "plainCopy",
+      "members": [
+        {
+          "key": "plainCopy",
+          "display_name": "plainCopy",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "score": {
+      "key": "score",
+      "members": [
+        {
+          "key": "score",
+          "display_name": "score",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "name",
+              "display_name": "name",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "objective",
+              "display_name": "objective",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "selector": {
+      "key": "selector",
+      "members": [
+        {
+          "key": "selector",
+          "display_name": "selector",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "pattern",
+              "display_name": "pattern",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "separator",
+              "display_name": "separator",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": true,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": true,
+              "default_value": "null"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "setStyle": {
+      "key": "setStyle",
+      "members": [
+        {
+          "key": "setStyle",
+          "display_name": "setStyle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "style",
+              "display_name": "style",
+              "type": {
+                "key": "net.minecraft.network.chat.Style",
+                "display_name": "Style",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Style"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "shl": {
+      "key": "shl",
+      "members": [
+        {
+          "key": "opShiftLeftString",
+          "display_name": "opShiftLeftString",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "shl"
+        },
+        {
+          "key": "opShiftLeftComponent",
+          "display_name": "opShiftLeftComponent",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "shl"
+        },
+        {
+          "key": "opShiftLeftMutableComponent",
+          "display_name": "opShiftLeftMutableComponent",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "net.minecraft.network.chat.MutableComponent",
+                "display_name": "MutableComponent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "MutableComponent"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          },
+          "operator_type": "shl"
+        }
+      ]
+    },
+    "siblings": {
+      "key": "siblings",
+      "members": [
+        {
+          "key": "getSiblings",
+          "display_name": "getSiblings",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cComponent\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "siblings",
+          "display_name": "siblings",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cComponent\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.network.chat.Component",
+                "display_name": "Component",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Component"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "style": {
+      "key": "style",
+      "members": [
+        {
+          "key": "getStyle",
+          "display_name": "getStyle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        },
+        {
+          "key": "style",
+          "display_name": "style",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.network.chat.Style",
+            "display_name": "Style",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Style"
+          }
+        }
+      ]
+    },
+    "translatable": {
+      "key": "translatable",
+      "members": [
+        {
+          "key": "translatable",
+          "display_name": "translatable",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "args",
+              "display_name": "args",
+              "type": {
+                "key": "java.lang.String[]",
+                "display_name": "String[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "java.lang.String",
+                  "display_name": "string",
+                  "type_type": "basic",
+                  "nullable": false
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        },
+        {
+          "key": "translatable",
+          "display_name": "translatable",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "content",
+              "display_name": "content",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            },
+            {
+              "key": "args",
+              "display_name": "args",
+              "type": {
+                "key": "net.minecraft.network.chat.Component[]",
+                "display_name": "Component[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.network.chat.Component",
+                  "display_name": "Component",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft.network.chat",
+                  "class_name": "Component"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    },
+    "withStyle": {
+      "key": "withStyle",
+      "members": [
+        {
+          "key": "withStyle",
+          "display_name": "withStyle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "styleOperator",
+              "display_name": "styleOperator",
+              "type": {
+                "key": "java.util.function.Function",
+                "display_name": "Function\u003cStyle, Style\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.network.chat.Style",
+                    "display_name": "Style",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.network.chat",
+                    "class_name": "Style"
+                  },
+                  "R": {
+                    "key": "net.minecraft.network.chat.Style",
+                    "display_name": "Style",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.network.chat",
+                    "class_name": "Style"
+                  }
+                },
+                "package_name": "java.util.function",
+                "class_name": "Function"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        },
+        {
+          "key": "withStyle",
+          "display_name": "withStyle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "style",
+              "display_name": "style",
+              "type": {
+                "key": "net.minecraft.network.chat.Style",
+                "display_name": "Style",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.network.chat",
+                "class_name": "Style"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        },
+        {
+          "key": "withStyle",
+          "display_name": "withStyle",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "formatting",
+              "display_name": "formatting",
+              "type": {
+                "key": "net.minecraft.ChatFormatting[]",
+                "display_name": "ChatFormatting[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "net.minecraft.ChatFormatting",
+                  "display_name": "ChatFormatting",
+                  "type_type": "java",
+                  "nullable": false,
+                  "package_name": "net.minecraft",
+                  "class_name": "ChatFormatting"
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.MutableComponent",
+            "display_name": "MutableComponent",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "MutableComponent"
+          }
+        }
+      ]
+    }
+  }
+}

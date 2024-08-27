@@ -1,0 +1,157 @@
+{
+  "key": "vanilla/api/predicate/EnchantmentPredicate",
+  "display_name": "EnchantmentPredicate",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.EnchantmentPredicate",
+    "display_name": "EnchantmentPredicate",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "EnchantmentPredicate",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.EnchantmentPredicate",
+  "member_groups": {
+    "any": {
+      "key": "any",
+      "members": [
+        {
+          "key": "any",
+          "display_name": "any",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EnchantmentPredicate",
+            "display_name": "EnchantmentPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EnchantmentPredicate"
+          }
+        }
+      ]
+    },
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EnchantmentPredicate",
+            "display_name": "EnchantmentPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EnchantmentPredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EnchantmentPredicate",
+            "display_name": "EnchantmentPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EnchantmentPredicate"
+          }
+        },
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "optional": false
+            },
+            {
+              "key": "level",
+              "display_name": "level",
+              "type": {
+                "key": "net.minecraft.advancements.critereon.MinMaxBounds.Ints",
+                "display_name": "Ints",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements.critereon",
+                "class_name": "Ints"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EnchantmentPredicate",
+            "display_name": "EnchantmentPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EnchantmentPredicate"
+          }
+        }
+      ]
+    }
+  }
+}

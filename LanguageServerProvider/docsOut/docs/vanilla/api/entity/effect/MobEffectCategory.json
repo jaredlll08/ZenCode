@@ -1,0 +1,178 @@
+{
+  "key": "vanilla/api/entity/effect/MobEffectCategory",
+  "display_name": "MobEffectCategory",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:mobeffect/category"
+  },
+  "type": {
+    "key": "net.minecraft.world.effect.MobEffectCategory",
+    "display_name": "MobEffectCategory",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.effect",
+    "class_name": "MobEffectCategory",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cMobEffectCategory\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.effect.MobEffectCategory",
+          "display_name": "MobEffectCategory",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.effect",
+          "class_name": "MobEffectCategory"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.effect.MobEffectCategory",
+  "member_groups": {
+    "BENEFICIAL": {
+      "key": "BENEFICIAL",
+      "members": [
+        {
+          "key": "BENEFICIAL",
+          "display_name": "BENEFICIAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.effect.MobEffectCategory",
+            "display_name": "MobEffectCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.effect",
+            "class_name": "MobEffectCategory"
+          }
+        }
+      ]
+    },
+    "HARMFUL": {
+      "key": "HARMFUL",
+      "members": [
+        {
+          "key": "HARMFUL",
+          "display_name": "HARMFUL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.effect.MobEffectCategory",
+            "display_name": "MobEffectCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.effect",
+            "class_name": "MobEffectCategory"
+          }
+        }
+      ]
+    },
+    "NEUTRAL": {
+      "key": "NEUTRAL",
+      "members": [
+        {
+          "key": "NEUTRAL",
+          "display_name": "NEUTRAL",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.effect.MobEffectCategory",
+            "display_name": "MobEffectCategory",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.effect",
+            "class_name": "MobEffectCategory"
+          }
+        }
+      ]
+    },
+    "tooltipFormatting": {
+      "key": "tooltipFormatting",
+      "members": [
+        {
+          "key": "getTooltipFormatting",
+          "display_name": "getTooltipFormatting",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        },
+        {
+          "key": "tooltipFormatting",
+          "display_name": "tooltipFormatting",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.ChatFormatting",
+            "display_name": "ChatFormatting",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft",
+            "class_name": "ChatFormatting"
+          }
+        }
+      ]
+    }
+  }
+}

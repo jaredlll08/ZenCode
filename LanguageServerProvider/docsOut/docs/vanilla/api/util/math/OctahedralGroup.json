@@ -1,0 +1,1282 @@
+{
+  "key": "vanilla/api/util/math/OctahedralGroup",
+  "display_name": "OctahedralGroup",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:math/octahedralgroup"
+  },
+  "type": {
+    "key": "com.mojang.math.OctahedralGroup",
+    "display_name": "OctahedralGroup",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.mojang.math",
+    "class_name": "OctahedralGroup",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cOctahedralGroup\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "com.mojang.math.OctahedralGroup",
+          "display_name": "OctahedralGroup",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "com.mojang.math",
+          "class_name": "OctahedralGroup"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.util.StringRepresentable",
+        "display_name": "StringRepresentable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.util",
+        "class_name": "StringRepresentable"
+      },
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.util.math.OctahedralGroup",
+  "member_groups": {
+    "IDENTITY": {
+      "key": "IDENTITY",
+      "members": [
+        {
+          "key": "IDENTITY",
+          "display_name": "IDENTITY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "INVERSION": {
+      "key": "INVERSION",
+      "members": [
+        {
+          "key": "INVERSION",
+          "display_name": "INVERSION",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "INVERT_X": {
+      "key": "INVERT_X",
+      "members": [
+        {
+          "key": "INVERT_X",
+          "display_name": "INVERT_X",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "INVERT_Y": {
+      "key": "INVERT_Y",
+      "members": [
+        {
+          "key": "INVERT_Y",
+          "display_name": "INVERT_Y",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "INVERT_Z": {
+      "key": "INVERT_Z",
+      "members": [
+        {
+          "key": "INVERT_Z",
+          "display_name": "INVERT_Z",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_120_NNN": {
+      "key": "ROT_120_NNN",
+      "members": [
+        {
+          "key": "ROT_120_NNN",
+          "display_name": "ROT_120_NNN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_120_NNP": {
+      "key": "ROT_120_NNP",
+      "members": [
+        {
+          "key": "ROT_120_NNP",
+          "display_name": "ROT_120_NNP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_120_NPN": {
+      "key": "ROT_120_NPN",
+      "members": [
+        {
+          "key": "ROT_120_NPN",
+          "display_name": "ROT_120_NPN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_120_NPP": {
+      "key": "ROT_120_NPP",
+      "members": [
+        {
+          "key": "ROT_120_NPP",
+          "display_name": "ROT_120_NPP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_120_PNN": {
+      "key": "ROT_120_PNN",
+      "members": [
+        {
+          "key": "ROT_120_PNN",
+          "display_name": "ROT_120_PNN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_120_PNP": {
+      "key": "ROT_120_PNP",
+      "members": [
+        {
+          "key": "ROT_120_PNP",
+          "display_name": "ROT_120_PNP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_120_PPN": {
+      "key": "ROT_120_PPN",
+      "members": [
+        {
+          "key": "ROT_120_PPN",
+          "display_name": "ROT_120_PPN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_120_PPP": {
+      "key": "ROT_120_PPP",
+      "members": [
+        {
+          "key": "ROT_120_PPP",
+          "display_name": "ROT_120_PPP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_EDGE_XY_NEG": {
+      "key": "ROT_180_EDGE_XY_NEG",
+      "members": [
+        {
+          "key": "ROT_180_EDGE_XY_NEG",
+          "display_name": "ROT_180_EDGE_XY_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_EDGE_XY_POS": {
+      "key": "ROT_180_EDGE_XY_POS",
+      "members": [
+        {
+          "key": "ROT_180_EDGE_XY_POS",
+          "display_name": "ROT_180_EDGE_XY_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_EDGE_XZ_NEG": {
+      "key": "ROT_180_EDGE_XZ_NEG",
+      "members": [
+        {
+          "key": "ROT_180_EDGE_XZ_NEG",
+          "display_name": "ROT_180_EDGE_XZ_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_EDGE_XZ_POS": {
+      "key": "ROT_180_EDGE_XZ_POS",
+      "members": [
+        {
+          "key": "ROT_180_EDGE_XZ_POS",
+          "display_name": "ROT_180_EDGE_XZ_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_EDGE_YZ_NEG": {
+      "key": "ROT_180_EDGE_YZ_NEG",
+      "members": [
+        {
+          "key": "ROT_180_EDGE_YZ_NEG",
+          "display_name": "ROT_180_EDGE_YZ_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_EDGE_YZ_POS": {
+      "key": "ROT_180_EDGE_YZ_POS",
+      "members": [
+        {
+          "key": "ROT_180_EDGE_YZ_POS",
+          "display_name": "ROT_180_EDGE_YZ_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_FACE_XY": {
+      "key": "ROT_180_FACE_XY",
+      "members": [
+        {
+          "key": "ROT_180_FACE_XY",
+          "display_name": "ROT_180_FACE_XY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_FACE_XZ": {
+      "key": "ROT_180_FACE_XZ",
+      "members": [
+        {
+          "key": "ROT_180_FACE_XZ",
+          "display_name": "ROT_180_FACE_XZ",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_180_FACE_YZ": {
+      "key": "ROT_180_FACE_YZ",
+      "members": [
+        {
+          "key": "ROT_180_FACE_YZ",
+          "display_name": "ROT_180_FACE_YZ",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_60_REF_NNN": {
+      "key": "ROT_60_REF_NNN",
+      "members": [
+        {
+          "key": "ROT_60_REF_NNN",
+          "display_name": "ROT_60_REF_NNN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_60_REF_NNP": {
+      "key": "ROT_60_REF_NNP",
+      "members": [
+        {
+          "key": "ROT_60_REF_NNP",
+          "display_name": "ROT_60_REF_NNP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_60_REF_NPN": {
+      "key": "ROT_60_REF_NPN",
+      "members": [
+        {
+          "key": "ROT_60_REF_NPN",
+          "display_name": "ROT_60_REF_NPN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_60_REF_NPP": {
+      "key": "ROT_60_REF_NPP",
+      "members": [
+        {
+          "key": "ROT_60_REF_NPP",
+          "display_name": "ROT_60_REF_NPP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_60_REF_PNN": {
+      "key": "ROT_60_REF_PNN",
+      "members": [
+        {
+          "key": "ROT_60_REF_PNN",
+          "display_name": "ROT_60_REF_PNN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_60_REF_PNP": {
+      "key": "ROT_60_REF_PNP",
+      "members": [
+        {
+          "key": "ROT_60_REF_PNP",
+          "display_name": "ROT_60_REF_PNP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_60_REF_PPN": {
+      "key": "ROT_60_REF_PPN",
+      "members": [
+        {
+          "key": "ROT_60_REF_PPN",
+          "display_name": "ROT_60_REF_PPN",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_60_REF_PPP": {
+      "key": "ROT_60_REF_PPP",
+      "members": [
+        {
+          "key": "ROT_60_REF_PPP",
+          "display_name": "ROT_60_REF_PPP",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_REF_X_NEG": {
+      "key": "ROT_90_REF_X_NEG",
+      "members": [
+        {
+          "key": "ROT_90_REF_X_NEG",
+          "display_name": "ROT_90_REF_X_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_REF_X_POS": {
+      "key": "ROT_90_REF_X_POS",
+      "members": [
+        {
+          "key": "ROT_90_REF_X_POS",
+          "display_name": "ROT_90_REF_X_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_REF_Y_NEG": {
+      "key": "ROT_90_REF_Y_NEG",
+      "members": [
+        {
+          "key": "ROT_90_REF_Y_NEG",
+          "display_name": "ROT_90_REF_Y_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_REF_Y_POS": {
+      "key": "ROT_90_REF_Y_POS",
+      "members": [
+        {
+          "key": "ROT_90_REF_Y_POS",
+          "display_name": "ROT_90_REF_Y_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_REF_Z_NEG": {
+      "key": "ROT_90_REF_Z_NEG",
+      "members": [
+        {
+          "key": "ROT_90_REF_Z_NEG",
+          "display_name": "ROT_90_REF_Z_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_REF_Z_POS": {
+      "key": "ROT_90_REF_Z_POS",
+      "members": [
+        {
+          "key": "ROT_90_REF_Z_POS",
+          "display_name": "ROT_90_REF_Z_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_X_NEG": {
+      "key": "ROT_90_X_NEG",
+      "members": [
+        {
+          "key": "ROT_90_X_NEG",
+          "display_name": "ROT_90_X_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_X_POS": {
+      "key": "ROT_90_X_POS",
+      "members": [
+        {
+          "key": "ROT_90_X_POS",
+          "display_name": "ROT_90_X_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_Y_NEG": {
+      "key": "ROT_90_Y_NEG",
+      "members": [
+        {
+          "key": "ROT_90_Y_NEG",
+          "display_name": "ROT_90_Y_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_Y_POS": {
+      "key": "ROT_90_Y_POS",
+      "members": [
+        {
+          "key": "ROT_90_Y_POS",
+          "display_name": "ROT_90_Y_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_Z_NEG": {
+      "key": "ROT_90_Z_NEG",
+      "members": [
+        {
+          "key": "ROT_90_Z_NEG",
+          "display_name": "ROT_90_Z_NEG",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "ROT_90_Z_POS": {
+      "key": "ROT_90_Z_POS",
+      "members": [
+        {
+          "key": "ROT_90_Z_POS",
+          "display_name": "ROT_90_Z_POS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "SWAP_NEG_XY": {
+      "key": "SWAP_NEG_XY",
+      "members": [
+        {
+          "key": "SWAP_NEG_XY",
+          "display_name": "SWAP_NEG_XY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "SWAP_NEG_XZ": {
+      "key": "SWAP_NEG_XZ",
+      "members": [
+        {
+          "key": "SWAP_NEG_XZ",
+          "display_name": "SWAP_NEG_XZ",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "SWAP_NEG_YZ": {
+      "key": "SWAP_NEG_YZ",
+      "members": [
+        {
+          "key": "SWAP_NEG_YZ",
+          "display_name": "SWAP_NEG_YZ",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "SWAP_XY": {
+      "key": "SWAP_XY",
+      "members": [
+        {
+          "key": "SWAP_XY",
+          "display_name": "SWAP_XY",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "SWAP_XZ": {
+      "key": "SWAP_XZ",
+      "members": [
+        {
+          "key": "SWAP_XZ",
+          "display_name": "SWAP_XZ",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "SWAP_YZ": {
+      "key": "SWAP_YZ",
+      "members": [
+        {
+          "key": "SWAP_YZ",
+          "display_name": "SWAP_YZ",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "compose": {
+      "key": "compose",
+      "members": [
+        {
+          "key": "compose",
+          "display_name": "compose",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "group",
+              "display_name": "group",
+              "type": {
+                "key": "com.mojang.math.OctahedralGroup",
+                "display_name": "OctahedralGroup",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.mojang.math",
+                "class_name": "OctahedralGroup"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "inverse": {
+      "key": "inverse",
+      "members": [
+        {
+          "key": "inverse",
+          "display_name": "inverse",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "com.mojang.math.OctahedralGroup",
+            "display_name": "OctahedralGroup",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.mojang.math",
+            "class_name": "OctahedralGroup"
+          }
+        }
+      ]
+    },
+    "inverts": {
+      "key": "inverts",
+      "members": [
+        {
+          "key": "inverts",
+          "display_name": "inverts",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "axis",
+              "display_name": "axis",
+              "type": {
+                "key": "net.minecraft.core.Direction.Axis",
+                "display_name": "Axis",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Axis"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "rotate": {
+      "key": "rotate",
+      "members": [
+        {
+          "key": "rotate",
+          "display_name": "rotate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "direction",
+              "display_name": "direction",
+              "type": {
+                "key": "net.minecraft.core.Direction",
+                "display_name": "Direction",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "Direction"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.Direction",
+            "display_name": "Direction",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "Direction"
+          }
+        },
+        {
+          "key": "rotate",
+          "display_name": "rotate",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "frontAndTop",
+              "display_name": "frontAndTop",
+              "type": {
+                "key": "net.minecraft.core.FrontAndTop",
+                "display_name": "FrontAndTop",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "FrontAndTop"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.core.FrontAndTop",
+            "display_name": "FrontAndTop",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.core",
+            "class_name": "FrontAndTop"
+          }
+        }
+      ]
+    },
+    "serializedName": {
+      "key": "serializedName",
+      "members": [
+        {
+          "key": "getSerializedName",
+          "display_name": "getSerializedName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "serializedName",
+          "display_name": "serializedName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the serialized name."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "transformation": {
+      "key": "transformation",
+      "members": [
+        {
+          "key": "transformation",
+          "display_name": "transformation",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "org.joml.Matrix3f",
+            "display_name": "Matrix3f",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "org.joml",
+            "class_name": "Matrix3f"
+          }
+        },
+        {
+          "key": "transformation",
+          "display_name": "transformation",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "org.joml.Matrix3f",
+            "display_name": "Matrix3f",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "org.joml",
+            "class_name": "Matrix3f"
+          }
+        }
+      ]
+    }
+  }
+}

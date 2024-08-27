@@ -1,0 +1,200 @@
+{
+  "key": "vanilla/api/recipe/replacement/ITargetingStrategy",
+  "display_name": "ITargetingStrategy",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "since": {
+      "since": [
+        {
+          "type": "plaintext",
+          "content": "10.0.0"
+        }
+      ]
+    },
+    "see": [
+      [
+        {
+          "type": "plaintext",
+          "content": "#find(ResourceLocation)"
+        }
+      ],
+      [
+        {
+          "type": "plaintext",
+          "content": "com.blamejared.crafttweaker.api.plugin.ICraftTweakerPlugin#registerRecipeHandlers(com.blamejared.crafttweaker.api.plugin.IRecipeHandlerRegistrationHandler)"
+        }
+      ]
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Represents a way of targeting components for replacement."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "A targeting strategy is thus responsible for determining how"
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.recipe.component.IRecipeComponent",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "IRecipeComponent"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s are treated when dealing\r\n with replacement. For example, a strategy might determine that all composite components should be decomposed into\r\n atoms."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "For script writers, a strategy can be obtained with the"
+    },
+    {
+      "type": "code",
+      "content": "\u003ctargetingstrategy\u003e"
+    },
+    {
+      "type": "plaintext",
+      "content": "bracket handler."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "For integration writers, an instance of a targeting strategy can be obtained through the"
+    },
+    {
+      "type": "code",
+      "content": "find"
+    },
+    {
+      "type": "plaintext",
+      "content": "method. Any\r\n newly created strategy must be registered in the CraftTweaker plugin to be available to users."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "This is a"
+    },
+    {
+      "type": "link",
+      "to": "FunctionalInterface",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "FunctionalInterface"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": " whose functional method is\r\n "
+    },
+    {
+      "type": "link",
+      "to": "#castStrategy(IRecipeComponent,",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "Object, Function)"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": ".\u003c/p\u003e"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.recipe.replacement.ITargetingStrategy",
+    "display_name": "ITargetingStrategy",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.recipe.replacement",
+    "class_name": "ITargetingStrategy",
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.recipe.replacement.ITargetingStrategy",
+  "member_groups": {
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

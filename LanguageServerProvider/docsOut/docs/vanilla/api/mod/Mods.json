@@ -1,0 +1,327 @@
+{
+  "key": "vanilla/api/mod/Mods",
+  "display_name": "Mods",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "loadedMods"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Holds information on all the mods that are registered.\r\n Can be accessed using the `loadedMods` global keyword"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.mod.Mods",
+    "display_name": "Mods",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.mod",
+    "class_name": "Mods",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.mod.Mods",
+  "member_groups": {
+    "getMod": {
+      "key": "getMod",
+      "members": [
+        {
+          "key": "getMod",
+          "display_name": "getMod",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a specific mod"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "modid",
+              "display_name": "modid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "modid": [
+                    "\"minecraft\""
+                  ]
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.mod.Mod",
+            "display_name": "Mod",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.mod",
+            "class_name": "Mod"
+          }
+        }
+      ]
+    },
+    "indexget": {
+      "key": "indexget",
+      "members": [
+        {
+          "key": "getModByIndex",
+          "display_name": "getModByIndex",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "modid",
+              "display_name": "modid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.mod.Mod",
+            "display_name": "Mod",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.mod",
+            "class_name": "Mod"
+          },
+          "operator_type": "indexget"
+        }
+      ]
+    },
+    "isModLoaded": {
+      "key": "isModLoaded",
+      "members": [
+        {
+          "key": "isModLoaded",
+          "display_name": "isModLoaded",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Checks if a mod is laoded"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "modid",
+              "display_name": "modid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "modid": [
+                    "\"minecraft\""
+                  ]
+                }
+              },
+              "optional": false,
+              "description": [
+                {
+                  "type": "plaintext",
+                  "content": "modid to check"
+                }
+              ]
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "membergetter": {
+      "key": "membergetter",
+      "members": [
+        {
+          "key": "getMod",
+          "display_name": "getMod",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a specific mod"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "modid",
+              "display_name": "modid",
+              "type": {
+                "key": "java.lang.String",
+                "display_name": "string",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "modid": [
+                    "\"minecraft\""
+                  ]
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.mod.Mod",
+            "display_name": "Mod",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.mod",
+            "class_name": "Mod"
+          },
+          "operator_type": "membergetter"
+        }
+      ]
+    },
+    "mods": {
+      "key": "mods",
+      "members": [
+        {
+          "key": "getMods",
+          "display_name": "getMods",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a list of all mods in the game"
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cMod\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.mod.Mod",
+                "display_name": "Mod",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.mod",
+                "class_name": "Mod"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        },
+        {
+          "key": "mods",
+          "display_name": "mods",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets a list of all mods in the game"
+            }
+          ],
+          "return_type": {
+            "key": "java.util.List",
+            "display_name": "List\u003cMod\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.mod.Mod",
+                "display_name": "Mod",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.mod",
+                "class_name": "Mod"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "List"
+          }
+        }
+      ]
+    },
+    "size": {
+      "key": "size",
+      "members": [
+        {
+          "key": "getSize",
+          "display_name": "getSize",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of mods loaded"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "size",
+          "display_name": "size",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the amount of mods loaded"
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

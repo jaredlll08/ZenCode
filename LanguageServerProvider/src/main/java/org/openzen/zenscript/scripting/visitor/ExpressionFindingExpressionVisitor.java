@@ -1,17 +1,15 @@
 package org.openzen.zenscript.scripting.visitor;
 
 import org.openzen.zencode.shared.CodePosition;
+import org.openzen.zenscript.ZCLSPServer;
 import org.openzen.zenscript.codemodel.expression.*;
 
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.function.Function;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class ExpressionFindingExpressionVisitor implements ExpressionVisitor<Optional<Expression>> {
 	private final CodePosition queriedPosition;
-	private static final Logger LOG = Logger.getGlobal();
 
 	public ExpressionFindingExpressionVisitor(CodePosition queriedPosition) {
 		this.queriedPosition = queriedPosition;
@@ -34,14 +32,14 @@ public class ExpressionFindingExpressionVisitor implements ExpressionVisitor<Opt
 
 	@Override
 	public Optional<Expression> visitCall(CallExpression expression) {
-		LOG.log(Level.INFO, "CALL", expression.position.toLongString());
+		ZCLSPServer.log("CALL " + expression.position.toLongString());
 
 		return checkExpressions(expression.arguments.arguments);
 	}
 
 	@Override
 	public Optional<Expression> visitCallStatic(CallStaticExpression expression) {
-		LOG.log(Level.INFO, "CALL_STATIC", expression.position.toLongString());
+		ZCLSPServer.log("CALL_STATIC", expression.position.toLongString());
 		return checkExpressions(expression.arguments.arguments);
 	}
 
@@ -208,7 +206,7 @@ public class ExpressionFindingExpressionVisitor implements ExpressionVisitor<Opt
 
 	@Override
 	public Optional<Expression> visitGlobalCall(GlobalCallExpression expression) {
-		LOG.log(Level.INFO, "GLOBAL_CALL", expression.position.toLongString());
+		ZCLSPServer.log("GLOBAL_CALL", expression.position.toLongString());
 		return checkExpressions(expression.arguments.arguments);
 	}
 

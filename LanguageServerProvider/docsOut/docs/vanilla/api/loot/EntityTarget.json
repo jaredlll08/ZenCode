@@ -1,0 +1,163 @@
+{
+  "key": "vanilla/api/loot/EntityTarget",
+  "display_name": "EntityTarget",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "bracket_enum": "minecraft:entitytarget"
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.LootContext.EntityTarget",
+    "display_name": "EntityTarget",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot",
+    "class_name": "EntityTarget",
+    "super_type": {
+      "key": "java.lang.Enum",
+      "display_name": "Enum\u003cEntityTarget\u003e",
+      "type_type": "java",
+      "nullable": false,
+      "type_parameters": {
+        "E": {
+          "key": "net.minecraft.world.level.storage.loot.LootContext.EntityTarget",
+          "display_name": "EntityTarget",
+          "type_type": "java",
+          "nullable": false,
+          "package_name": "net.minecraft.world.level.storage.loot",
+          "class_name": "EntityTarget"
+        }
+      },
+      "package_name": "java.lang",
+      "class_name": "Enum"
+    },
+    "interfaces": [
+      {
+        "key": "java.lang.constant.Constable",
+        "display_name": "Constable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.lang.constant",
+        "class_name": "Constable"
+      },
+      {
+        "key": "java.lang.Comparable",
+        "display_name": "Comparable\u003cE : Enum\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "E",
+            "display_name": "E",
+            "type_type": "generic",
+            "nullable": false,
+            "type": {
+              "key": "java.lang.Enum",
+              "display_name": "Enum\u003cE : Enum\u003e",
+              "type_type": "java",
+              "nullable": false,
+              "package_name": "java.lang",
+              "class_name": "Enum"
+            },
+            "bound": "upper"
+          }
+        },
+        "package_name": "java.lang",
+        "class_name": "Comparable"
+      },
+      {
+        "key": "java.io.Serializable",
+        "display_name": "Serializable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "java.io",
+        "class_name": "Serializable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.EntityTarget",
+  "member_groups": {
+    "DIRECT_KILLER": {
+      "key": "DIRECT_KILLER",
+      "members": [
+        {
+          "key": "DIRECT_KILLER",
+          "display_name": "DIRECT_KILLER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext.EntityTarget",
+            "display_name": "EntityTarget",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "EntityTarget"
+          }
+        }
+      ]
+    },
+    "KILLER": {
+      "key": "KILLER",
+      "members": [
+        {
+          "key": "KILLER",
+          "display_name": "KILLER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext.EntityTarget",
+            "display_name": "EntityTarget",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "EntityTarget"
+          }
+        }
+      ]
+    },
+    "KILLER_PLAYER": {
+      "key": "KILLER_PLAYER",
+      "members": [
+        {
+          "key": "KILLER_PLAYER",
+          "display_name": "KILLER_PLAYER",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext.EntityTarget",
+            "display_name": "EntityTarget",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "EntityTarget"
+          }
+        }
+      ]
+    },
+    "THIS": {
+      "key": "THIS",
+      "members": [
+        {
+          "key": "THIS",
+          "display_name": "THIS",
+          "member_type": "enum_constant",
+          "origin": "native",
+          "static": true,
+          "type": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext.EntityTarget",
+            "display_name": "EntityTarget",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "EntityTarget"
+          }
+        }
+      ]
+    }
+  }
+}

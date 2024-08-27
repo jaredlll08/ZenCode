@@ -1,0 +1,229 @@
+{
+  "key": "vanilla/api/predicate/builder/EntityFlagsPredicateBuilder",
+  "display_name": "EntityFlagsPredicateBuilder",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate.Builder",
+    "display_name": "Builder",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.advancements.critereon",
+    "class_name": "Builder",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.predicate.builder.EntityFlagsPredicateBuilder",
+  "member_groups": {
+    "baby": {
+      "key": "baby",
+      "members": [
+        {
+          "key": "baby",
+          "display_name": "baby",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "baby",
+              "display_name": "baby",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "build": {
+      "key": "build",
+      "members": [
+        {
+          "key": "build",
+          "display_name": "build",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate",
+            "display_name": "EntityFlagsPredicate",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "EntityFlagsPredicate"
+          }
+        }
+      ]
+    },
+    "crouching": {
+      "key": "crouching",
+      "members": [
+        {
+          "key": "crouching",
+          "display_name": "crouching",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "crouching",
+              "display_name": "crouching",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "onFire": {
+      "key": "onFire",
+      "members": [
+        {
+          "key": "onFire",
+          "display_name": "onFire",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "onFire",
+              "display_name": "onFire",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "sprinting": {
+      "key": "sprinting",
+      "members": [
+        {
+          "key": "sprinting",
+          "display_name": "sprinting",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "sprinting",
+              "display_name": "sprinting",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    },
+    "swimming": {
+      "key": "swimming",
+      "members": [
+        {
+          "key": "swimming",
+          "display_name": "swimming",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "swimming",
+              "display_name": "swimming",
+              "type": {
+                "key": "java.lang.Boolean",
+                "display_name": "Boolean",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "java.lang",
+                "class_name": "Boolean"
+              },
+              "optional": true,
+              "default_value": "true"
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.critereon.EntityFlagsPredicate.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements.critereon",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

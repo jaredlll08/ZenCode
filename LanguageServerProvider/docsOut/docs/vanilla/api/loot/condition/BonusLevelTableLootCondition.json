@@ -1,0 +1,117 @@
+{
+  "key": "vanilla/api/loot/condition/BonusLevelTableLootCondition",
+  "display_name": "BonusLevelTableLootCondition",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition",
+    "display_name": "BonusLevelTableCondition",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage.loot.predicates",
+    "class_name": "BonusLevelTableCondition",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition",
+        "display_name": "LootItemCondition",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage.loot.predicates",
+        "class_name": "LootItemCondition"
+      },
+      {
+        "key": "net.minecraft.world.level.storage.loot.LootContextUser",
+        "display_name": "LootContextUser",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage.loot",
+        "class_name": "LootContextUser"
+      },
+      {
+        "key": "java.util.function.Predicate",
+        "display_name": "Predicate\u003cLootContext\u003e",
+        "type_type": "java",
+        "nullable": false,
+        "type_parameters": {
+          "T": {
+            "key": "net.minecraft.world.level.storage.loot.LootContext",
+            "display_name": "LootContext",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot",
+            "class_name": "LootContext"
+          }
+        },
+        "package_name": "java.util.function",
+        "class_name": "Predicate"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.loot.condition.BonusLevelTableLootCondition",
+  "member_groups": {
+    "create": {
+      "key": "create",
+      "members": [
+        {
+          "key": "create",
+          "display_name": "create",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "enchantment",
+              "display_name": "enchantment",
+              "type": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              },
+              "optional": false
+            },
+            {
+              "key": "values",
+              "display_name": "values",
+              "type": {
+                "key": "float[]",
+                "display_name": "float[]",
+                "type_type": "array",
+                "nullable": false,
+                "type": {
+                  "key": "float",
+                  "display_name": "float",
+                  "type_type": "basic",
+                  "nullable": false
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition.Builder",
+            "display_name": "Builder",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.storage.loot.predicates",
+            "class_name": "Builder"
+          }
+        }
+      ]
+    }
+  }
+}

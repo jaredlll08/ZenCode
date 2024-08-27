@@ -1,0 +1,174 @@
+{
+  "key": "vanilla/api/entity/effect/MobEffectUtil",
+  "display_name": "MobEffectUtil",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.effect.MobEffectUtil",
+    "display_name": "MobEffectUtil",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.effect",
+    "class_name": "MobEffectUtil",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.entity.effect.MobEffectUtil",
+  "member_groups": {
+    "formatDuration": {
+      "key": "formatDuration",
+      "members": [
+        {
+          "key": "formatDuration",
+          "display_name": "formatDuration",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "instance",
+              "display_name": "instance",
+              "type": {
+                "key": "net.minecraft.world.effect.MobEffectInstance",
+                "display_name": "MobEffectInstance",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffectInstance"
+              },
+              "optional": false
+            },
+            {
+              "key": "durationFactor",
+              "display_name": "durationFactor",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.network.chat.Component",
+            "display_name": "Component",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.network.chat",
+            "class_name": "Component"
+          }
+        }
+      ]
+    },
+    "getDigSpeedAmplification": {
+      "key": "getDigSpeedAmplification",
+      "members": [
+        {
+          "key": "getDigSpeedAmplification",
+          "display_name": "getDigSpeedAmplification",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.LivingEntity",
+                "display_name": "LivingEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "LivingEntity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasDigSpeed": {
+      "key": "hasDigSpeed",
+      "members": [
+        {
+          "key": "hasDigSpeed",
+          "display_name": "hasDigSpeed",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.LivingEntity",
+                "display_name": "LivingEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "LivingEntity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "hasWaterBreathing": {
+      "key": "hasWaterBreathing",
+      "members": [
+        {
+          "key": "hasWaterBreathing",
+          "display_name": "hasWaterBreathing",
+          "member_type": "method",
+          "origin": "native",
+          "static": true,
+          "parameters": [
+            {
+              "key": "entity",
+              "display_name": "entity",
+              "type": {
+                "key": "net.minecraft.world.entity.LivingEntity",
+                "display_name": "LivingEntity",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity",
+                "class_name": "LivingEntity"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

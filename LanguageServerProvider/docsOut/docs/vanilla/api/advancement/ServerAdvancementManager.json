@@ -1,0 +1,140 @@
+{
+  "key": "vanilla/api/advancement/ServerAdvancementManager",
+  "display_name": "ServerAdvancementManager",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.server.ServerAdvancementManager",
+    "display_name": "ServerAdvancementManager",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.server",
+    "class_name": "ServerAdvancementManager",
+    "super_type": {
+      "key": "net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener",
+      "display_name": "SimpleJsonResourceReloadListener",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "net.minecraft.server.packs.resources",
+      "class_name": "SimpleJsonResourceReloadListener"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraft.server.packs.resources.PreparableReloadListener",
+        "display_name": "PreparableReloadListener",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.server.packs.resources",
+        "class_name": "PreparableReloadListener"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.advancement.ServerAdvancementManager",
+  "member_groups": {
+    "allAdvancements": {
+      "key": "allAdvancements",
+      "members": [
+        {
+          "key": "allAdvancements",
+          "display_name": "allAdvancements",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cAdvancement\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.advancements.Advancement",
+                "display_name": "Advancement",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.advancements",
+                "class_name": "Advancement"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "getAdvancement": {
+      "key": "getAdvancement",
+      "members": [
+        {
+          "key": "getAdvancement",
+          "display_name": "getAdvancement",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.Advancement",
+            "display_name": "Advancement",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "Advancement"
+          }
+        }
+      ]
+    },
+    "indexget": {
+      "key": "indexget",
+      "members": [
+        {
+          "key": "getAdvancement",
+          "display_name": "getAdvancement",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "id",
+              "display_name": "id",
+              "type": {
+                "key": "net.minecraft.resources.ResourceLocation",
+                "display_name": "ResourceLocation",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.resources",
+                "class_name": "ResourceLocation"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "net.minecraft.advancements.Advancement",
+            "display_name": "Advancement",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.advancements",
+            "class_name": "Advancement"
+          },
+          "operator_type": "indexget"
+        }
+      ]
+    }
+  }
+}

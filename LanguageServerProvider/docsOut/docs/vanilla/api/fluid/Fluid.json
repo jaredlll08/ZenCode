@@ -1,0 +1,360 @@
+{
+  "key": "vanilla/api/fluid/Fluid",
+  "display_name": "Fluid",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.material.Fluid",
+    "display_name": "Fluid",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.material",
+    "class_name": "Fluid",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "net.minecraftforge.common.extensions.IForgeFluid",
+        "display_name": "IForgeFluid",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraftforge.common.extensions",
+        "class_name": "IForgeFluid"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.fluid.Fluid",
+  "member_groups": {
+    "bucket": {
+      "key": "bucket",
+      "members": [
+        {
+          "key": "getBucket",
+          "display_name": "getBucket",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.Item",
+            "display_name": "Item",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Item"
+          }
+        },
+        {
+          "key": "bucket",
+          "display_name": "bucket",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.item.Item",
+            "display_name": "Item",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.item",
+            "class_name": "Item"
+          }
+        }
+      ]
+    },
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "equals": {
+      "key": "equals",
+      "members": [
+        {
+          "key": "isSame",
+          "display_name": "isSame",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.level.material.Fluid",
+                "display_name": "Fluid",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.material",
+                "class_name": "Fluid"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          },
+          "operator_type": "equals"
+        }
+      ]
+    },
+    "isIn": {
+      "key": "isIn",
+      "members": [
+        {
+          "key": "isIn",
+          "display_name": "isIn",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "tag",
+              "display_name": "tag",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+                "display_name": "KnownTag\u003cFluid\u003e",
+                "type_type": "java",
+                "nullable": false,
+                "type_parameters": {
+                  "T": {
+                    "key": "net.minecraft.world.level.material.Fluid",
+                    "display_name": "Fluid",
+                    "type_type": "java",
+                    "nullable": false,
+                    "package_name": "net.minecraft.world.level.material",
+                    "class_name": "Fluid"
+                  }
+                },
+                "package_name": "com.blamejared.crafttweaker.api.tag.type",
+                "class_name": "KnownTag"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isSame": {
+      "key": "isSame",
+      "members": [
+        {
+          "key": "isSame",
+          "display_name": "isSame",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "net.minecraft.world.level.material.Fluid",
+                "display_name": "Fluid",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.material",
+                "class_name": "Fluid"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "makeStack": {
+      "key": "makeStack",
+      "members": [
+        {
+          "key": "makeStack",
+          "display_name": "makeStack",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IFluidStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " with the given amount of fluid."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "amount": [
+                    "1000"
+                  ]
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          }
+        }
+      ]
+    },
+    "mul": {
+      "key": "mul",
+      "members": [
+        {
+          "key": "multiply",
+          "display_name": "multiply",
+          "member_type": "operator",
+          "origin": "native",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Creates a new "
+            },
+            {
+              "type": "link",
+              "to": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+              "content": [
+                {
+                  "type": "plaintext",
+                  "content": "IFluidStack"
+                }
+              ],
+              "plain": false
+            },
+            {
+              "type": "plaintext",
+              "content": " with the given amount of fluid."
+            }
+          ],
+          "parameters": [
+            {
+              "key": "amount",
+              "display_name": "amount",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "extra": {
+                "examples": {
+                  "amount": [
+                    "1000"
+                  ]
+                }
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.fluid.IFluidStack",
+            "display_name": "IFluidStack",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.fluid",
+            "class_name": "IFluidStack"
+          },
+          "operator_type": "mul"
+        }
+      ]
+    },
+    "registryName": {
+      "key": "registryName",
+      "members": [
+        {
+          "key": "getRegistryName",
+          "display_name": "getRegistryName",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        },
+        {
+          "key": "registryName",
+          "display_name": "registryName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.resources.ResourceLocation",
+            "display_name": "ResourceLocation",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.resources",
+            "class_name": "ResourceLocation"
+          }
+        }
+      ]
+    }
+  }
+}

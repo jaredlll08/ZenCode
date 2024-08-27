@@ -1,0 +1,858 @@
+{
+  "key": "vanilla/api/mod/Mod",
+  "display_name": "Mod",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ],
+    "examples": {
+      "this": [
+        "loadedMods.botania"
+      ]
+    }
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "Represents a mod in the game."
+    },
+    {
+      "type": "new_line"
+    },
+    {
+      "type": "plaintext",
+      "content": "You can get a mod by using"
+    },
+    {
+      "type": "code",
+      "content": "loadedMods.botania"
+    },
+    {
+      "type": "plaintext",
+      "content": " or "
+    },
+    {
+      "type": "code",
+      "content": "loadedMods[\"botania\"]"
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.mod.Mod",
+    "display_name": "Mod",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.mod",
+    "class_name": "Mod",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    }
+  },
+  "zen_code_name": "crafttweaker.api.mod.Mod",
+  "member_groups": {
+    "attributes": {
+      "key": "attributes",
+      "members": [
+        {
+          "key": "getAttributes",
+          "display_name": "getAttributes",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the attributes that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cAttribute\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.entity.ai.attributes.Attribute",
+                "display_name": "Attribute",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Attribute"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "attributes",
+          "display_name": "attributes",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the attributes that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cAttribute\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.entity.ai.attributes.Attribute",
+                "display_name": "Attribute",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.ai.attributes",
+                "class_name": "Attribute"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "blocks": {
+      "key": "blocks",
+      "members": [
+        {
+          "key": "getBlocks",
+          "display_name": "getBlocks",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blocks that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cBlock\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "blocks",
+          "display_name": "blocks",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the blocks that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cBlock\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.block.Block",
+                "display_name": "Block",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.block",
+                "class_name": "Block"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "displayName": {
+      "key": "displayName",
+      "members": [
+        {
+          "key": "displayName",
+          "display_name": "displayName",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the display name of this mod."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "displayName",
+          "display_name": "displayName",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the display name of this mod."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "enchantments": {
+      "key": "enchantments",
+      "members": [
+        {
+          "key": "getEnchantments",
+          "display_name": "getEnchantments",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the enchantments that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cEnchantment\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "enchantments",
+          "display_name": "enchantments",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the enchantments that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cEnchantment\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.enchantment.Enchantment",
+                "display_name": "Enchantment",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.enchantment",
+                "class_name": "Enchantment"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "fluids": {
+      "key": "fluids",
+      "members": [
+        {
+          "key": "getFluids",
+          "display_name": "getFluids",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the fluids that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cFluid\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.material.Fluid",
+                "display_name": "Fluid",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.material",
+                "class_name": "Fluid"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "fluids",
+          "display_name": "fluids",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the fluids that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cFluid\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.level.material.Fluid",
+                "display_name": "Fluid",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.material",
+                "class_name": "Fluid"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "id": {
+      "key": "id",
+      "members": [
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the id (namespace) of this mod."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "id",
+          "display_name": "id",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the id (namespace) of this mod."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "itemStacks": {
+      "key": "itemStacks",
+      "members": [
+        {
+          "key": "getItemStacks",
+          "display_name": "getItemStacks",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the ItemStacks that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cIItemStack\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "itemStacks",
+          "display_name": "itemStacks",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the ItemStacks that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cIItemStack\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "com.blamejared.crafttweaker.api.item.IItemStack",
+                "display_name": "IItemStack",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.item",
+                "class_name": "IItemStack"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "items": {
+      "key": "items",
+      "members": [
+        {
+          "key": "getItems",
+          "display_name": "getItems",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the items that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cItem\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "items",
+          "display_name": "items",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the items that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cItem\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.Item",
+                "display_name": "Item",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item",
+                "class_name": "Item"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "mobEffects": {
+      "key": "mobEffects",
+      "members": [
+        {
+          "key": "getMobEffects",
+          "display_name": "getMobEffects",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the mob effects that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cMobEffect\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.effect.MobEffect",
+                "display_name": "MobEffect",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffect"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "mobEffects",
+          "display_name": "mobEffects",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the mob effects that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cMobEffect\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.effect.MobEffect",
+                "display_name": "MobEffect",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.effect",
+                "class_name": "MobEffect"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "potions": {
+      "key": "potions",
+      "members": [
+        {
+          "key": "getPotions",
+          "display_name": "getPotions",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the potions that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cPotion\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.alchemy.Potion",
+                "display_name": "Potion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.alchemy",
+                "class_name": "Potion"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "potions",
+          "display_name": "potions",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the potions that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cPotion\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.item.alchemy.Potion",
+                "display_name": "Potion",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.item.alchemy",
+                "class_name": "Potion"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "soundEvents": {
+      "key": "soundEvents",
+      "members": [
+        {
+          "key": "getSoundEvents",
+          "display_name": "getSoundEvents",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the sound events that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cSoundEvent\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.sounds.SoundEvent",
+                "display_name": "SoundEvent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.sounds",
+                "class_name": "SoundEvent"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "soundEvents",
+          "display_name": "soundEvents",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the sound events that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cSoundEvent\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.sounds.SoundEvent",
+                "display_name": "SoundEvent",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.sounds",
+                "class_name": "SoundEvent"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    },
+    "version": {
+      "key": "version",
+      "members": [
+        {
+          "key": "version",
+          "display_name": "version",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the version of this mod."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "version",
+          "display_name": "version",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the version of this mod."
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "villagerProfessions": {
+      "key": "villagerProfessions",
+      "members": [
+        {
+          "key": "getVillagerProfessions",
+          "display_name": "getVillagerProfessions",
+          "member_type": "method",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the villager professions that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cVillagerProfession\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        },
+        {
+          "key": "villagerProfessions",
+          "display_name": "villagerProfessions",
+          "member_type": "getter",
+          "origin": "declared",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Gets the villager professions that are registered under this mod\u0027s ID."
+            }
+          ],
+          "return_type": {
+            "key": "java.util.Collection",
+            "display_name": "Collection\u003cVillagerProfession\u003e",
+            "type_type": "java",
+            "nullable": false,
+            "type_parameters": {
+              "E": {
+                "key": "net.minecraft.world.entity.npc.VillagerProfession",
+                "display_name": "VillagerProfession",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.entity.npc",
+                "class_name": "VillagerProfession"
+              }
+            },
+            "package_name": "java.util",
+            "class_name": "Collection"
+          }
+        }
+      ]
+    }
+  }
+}

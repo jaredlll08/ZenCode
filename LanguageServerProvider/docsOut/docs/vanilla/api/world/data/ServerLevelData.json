@@ -1,0 +1,966 @@
+{
+  "key": "vanilla/api/world/data/ServerLevelData",
+  "display_name": "ServerLevelData",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "type": {
+    "key": "net.minecraft.world.level.storage.ServerLevelData",
+    "display_name": "ServerLevelData",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "net.minecraft.world.level.storage",
+    "class_name": "ServerLevelData",
+    "interfaces": [
+      {
+        "key": "net.minecraft.world.level.storage.WritableLevelData",
+        "display_name": "WritableLevelData",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage",
+        "class_name": "WritableLevelData"
+      },
+      {
+        "key": "net.minecraft.world.level.storage.LevelData",
+        "display_name": "LevelData",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "net.minecraft.world.level.storage",
+        "class_name": "LevelData"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.world.data.ServerLevelData",
+  "member_groups": {
+    "allowCommands": {
+      "key": "allowCommands",
+      "members": [
+        {
+          "key": "allowCommands",
+          "display_name": "allowCommands",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "clearWeatherTime": {
+      "key": "clearWeatherTime",
+      "members": [
+        {
+          "key": "clearWeatherTime",
+          "display_name": "clearWeatherTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "clearWeatherTime",
+          "display_name": "clearWeatherTime",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "time",
+              "display_name": "time",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "dayTime": {
+      "key": "dayTime",
+      "members": [
+        {
+          "key": "dayTime",
+          "display_name": "dayTime",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "time",
+              "display_name": "time",
+              "type": {
+                "key": "long",
+                "display_name": "long",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "dayTime",
+          "display_name": "dayTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "long",
+            "display_name": "long",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "difficulty": {
+      "key": "difficulty",
+      "members": [
+        {
+          "key": "difficulty",
+          "display_name": "difficulty",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.Difficulty",
+            "display_name": "Difficulty",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world",
+            "class_name": "Difficulty"
+          }
+        }
+      ]
+    },
+    "gameTime": {
+      "key": "gameTime",
+      "members": [
+        {
+          "key": "gameTime",
+          "display_name": "gameTime",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "time",
+              "display_name": "time",
+              "type": {
+                "key": "long",
+                "display_name": "long",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "gameTime",
+          "display_name": "gameTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "long",
+            "display_name": "long",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "gameType": {
+      "key": "gameType",
+      "members": [
+        {
+          "key": "gameType",
+          "display_name": "gameType",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.GameType",
+            "display_name": "GameType",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level",
+            "class_name": "GameType"
+          }
+        },
+        {
+          "key": "gameType",
+          "display_name": "gameType",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "gameType",
+              "display_name": "gameType",
+              "type": {
+                "key": "net.minecraft.world.level.GameType",
+                "display_name": "GameType",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level",
+                "class_name": "GameType"
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "hardcore": {
+      "key": "hardcore",
+      "members": [
+        {
+          "key": "hardcore",
+          "display_name": "hardcore",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "initialized": {
+      "key": "initialized",
+      "members": [
+        {
+          "key": "initialized",
+          "display_name": "initialized",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "isDifficultyLocked": {
+      "key": "isDifficultyLocked",
+      "members": [
+        {
+          "key": "isDifficultyLocked",
+          "display_name": "isDifficultyLocked",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "levelName": {
+      "key": "levelName",
+      "members": [
+        {
+          "key": "levelName",
+          "display_name": "levelName",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "rainTime": {
+      "key": "rainTime",
+      "members": [
+        {
+          "key": "rainTime",
+          "display_name": "rainTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "rainTime",
+          "display_name": "rainTime",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "time",
+              "display_name": "time",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "raining": {
+      "key": "raining",
+      "members": [
+        {
+          "key": "raining",
+          "display_name": "raining",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "raining",
+          "display_name": "raining",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.LevelData",
+                "display_name": "LevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "LevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "raining",
+              "display_name": "raining",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "setSpawn": {
+      "key": "setSpawn",
+      "members": [
+        {
+          "key": "setSpawn",
+          "display_name": "setSpawn",
+          "member_type": "method",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "pos",
+              "display_name": "pos",
+              "type": {
+                "key": "net.minecraft.core.BlockPos",
+                "display_name": "BlockPos",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.core",
+                "class_name": "BlockPos"
+              },
+              "optional": false
+            },
+            {
+              "key": "spawnAngle",
+              "display_name": "spawnAngle",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "void",
+            "display_name": "void",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "spawnAngle": {
+      "key": "spawnAngle",
+      "members": [
+        {
+          "key": "spawnAngle",
+          "display_name": "spawnAngle",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.WritableLevelData",
+                "display_name": "WritableLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "WritableLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "spawnAngle",
+              "display_name": "spawnAngle",
+              "type": {
+                "key": "float",
+                "display_name": "float",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "spawnAngle",
+          "display_name": "spawnAngle",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "float",
+            "display_name": "float",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "thunderTime": {
+      "key": "thunderTime",
+      "members": [
+        {
+          "key": "thunderTime",
+          "display_name": "thunderTime",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "time",
+              "display_name": "time",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "thunderTime",
+          "display_name": "thunderTime",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "thundering": {
+      "key": "thundering",
+      "members": [
+        {
+          "key": "thundering",
+          "display_name": "thundering",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "thundering",
+              "display_name": "thundering",
+              "type": {
+                "key": "boolean",
+                "display_name": "bool",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "thundering",
+          "display_name": "thundering",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "boolean",
+            "display_name": "bool",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "wanderingTraderSpawnChance": {
+      "key": "wanderingTraderSpawnChance",
+      "members": [
+        {
+          "key": "wanderingTraderSpawnChance",
+          "display_name": "wanderingTraderSpawnChance",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "wanderingTraderSpawnChance",
+          "display_name": "wanderingTraderSpawnChance",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "chance",
+              "display_name": "chance",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "wanderingTraderSpawnDelay": {
+      "key": "wanderingTraderSpawnDelay",
+      "members": [
+        {
+          "key": "wanderingTraderSpawnDelay",
+          "display_name": "wanderingTraderSpawnDelay",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "wanderingTraderSpawnDelay",
+          "display_name": "wanderingTraderSpawnDelay",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "delay",
+              "display_name": "delay",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    "worldBorder": {
+      "key": "worldBorder",
+      "members": [
+        {
+          "key": "worldBorder",
+          "display_name": "worldBorder",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.ServerLevelData",
+                "display_name": "ServerLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "ServerLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "border",
+              "display_name": "border",
+              "type": {
+                "key": "net.minecraft.world.level.border.WorldBorder.Settings",
+                "display_name": "Settings",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.border",
+                "class_name": "Settings"
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "worldBorder",
+          "display_name": "worldBorder",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "net.minecraft.world.level.border.WorldBorder.Settings",
+            "display_name": "Settings",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "net.minecraft.world.level.border",
+            "class_name": "Settings"
+          }
+        }
+      ]
+    },
+    "xSpawn": {
+      "key": "xSpawn",
+      "members": [
+        {
+          "key": "xSpawn",
+          "display_name": "xSpawn",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.WritableLevelData",
+                "display_name": "WritableLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "WritableLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "xSpawn",
+              "display_name": "xSpawn",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "xSpawn",
+          "display_name": "xSpawn",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "ySpawn": {
+      "key": "ySpawn",
+      "members": [
+        {
+          "key": "ySpawn",
+          "display_name": "ySpawn",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.WritableLevelData",
+                "display_name": "WritableLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "WritableLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "ySpawn",
+              "display_name": "ySpawn",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "ySpawn",
+          "display_name": "ySpawn",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "zSpawn": {
+      "key": "zSpawn",
+      "members": [
+        {
+          "key": "zSpawn",
+          "display_name": "zSpawn",
+          "member_type": "setter",
+          "origin": "native",
+          "static": false,
+          "parameters": [
+            {
+              "key": "internal",
+              "display_name": "internal",
+              "type": {
+                "key": "net.minecraft.world.level.storage.WritableLevelData",
+                "display_name": "WritableLevelData",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "net.minecraft.world.level.storage",
+                "class_name": "WritableLevelData"
+              },
+              "optional": false
+            },
+            {
+              "key": "zSpawn",
+              "display_name": "zSpawn",
+              "type": {
+                "key": "int",
+                "display_name": "int",
+                "type_type": "basic",
+                "nullable": false
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "key": "zSpawn",
+          "display_name": "zSpawn",
+          "member_type": "getter",
+          "origin": "native",
+          "static": false,
+          "return_type": {
+            "key": "int",
+            "display_name": "int",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "key": "vanilla/api/entity/EntityIngredient",
+  "display_name": "EntityIngredient",
+  "page_type": "type",
+  "extra": {
+    "loaders": [
+      "crafttweaker"
+    ]
+  },
+  "comments": [
+    {
+      "type": "plaintext",
+      "content": "EntityIngredient that facilitates accepting either a single, or multiple "
+    },
+    {
+      "type": "link",
+      "to": "net.minecraft.world.entity.EntityType",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "EntityType"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s, "
+    },
+    {
+      "type": "link",
+      "to": "com.blamejared.crafttweaker.api.tag.type.KnownTag",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "\u003cEntityType\u003e"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s\r\n or "
+    },
+    {
+      "type": "link",
+      "to": "Many\u003c",
+      "content": [
+        {
+          "type": "plaintext",
+          "content": "KnownTag \u003cEntityType\u003e\u003e"
+        }
+      ],
+      "plain": false
+    },
+    {
+      "type": "plaintext",
+      "content": "s."
+    }
+  ],
+  "type": {
+    "key": "com.blamejared.crafttweaker.api.entity.CTEntityIngredient",
+    "display_name": "CTEntityIngredient",
+    "type_type": "java",
+    "nullable": false,
+    "package_name": "com.blamejared.crafttweaker.api.entity",
+    "class_name": "CTEntityIngredient",
+    "super_type": {
+      "key": "java.lang.Object",
+      "display_name": "Object",
+      "type_type": "java",
+      "nullable": false,
+      "package_name": "java.lang",
+      "class_name": "Object"
+    },
+    "interfaces": [
+      {
+        "key": "com.blamejared.crafttweaker.api.bracket.CommandStringDisplayable",
+        "display_name": "CommandStringDisplayable",
+        "type_type": "java",
+        "nullable": false,
+        "package_name": "com.blamejared.crafttweaker.api.bracket",
+        "class_name": "CommandStringDisplayable"
+      }
+    ]
+  },
+  "zen_code_name": "crafttweaker.api.entity.EntityIngredient",
+  "member_groups": {
+    "commandString": {
+      "key": "commandString",
+      "members": [
+        {
+          "key": "getCommandString",
+          "display_name": "getCommandString",
+          "member_type": "method",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        },
+        {
+          "key": "commandString",
+          "display_name": "commandString",
+          "member_type": "getter",
+          "origin": "inherited",
+          "static": false,
+          "comments": [
+            {
+              "type": "plaintext",
+              "content": "Returns the BEP to get this thingy"
+            }
+          ],
+          "return_type": {
+            "key": "java.lang.String",
+            "display_name": "string",
+            "type_type": "basic",
+            "nullable": false
+          }
+        }
+      ]
+    },
+    "or": {
+      "key": "or",
+      "members": [
+        {
+          "key": "asCompound",
+          "display_name": "asCompound",
+          "member_type": "operator",
+          "origin": "declared",
+          "static": false,
+          "parameters": [
+            {
+              "key": "other",
+              "display_name": "other",
+              "type": {
+                "key": "com.blamejared.crafttweaker.api.entity.CTEntityIngredient",
+                "display_name": "CTEntityIngredient",
+                "type_type": "java",
+                "nullable": false,
+                "package_name": "com.blamejared.crafttweaker.api.entity",
+                "class_name": "CTEntityIngredient"
+              },
+              "optional": false
+            }
+          ],
+          "return_type": {
+            "key": "com.blamejared.crafttweaker.api.entity.CTEntityIngredient",
+            "display_name": "CTEntityIngredient",
+            "type_type": "java",
+            "nullable": false,
+            "package_name": "com.blamejared.crafttweaker.api.entity",
+            "class_name": "CTEntityIngredient"
+          },
+          "operator_type": "or"
+        }
+      ]
+    }
+  }
+}
